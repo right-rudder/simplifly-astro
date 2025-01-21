@@ -32,7 +32,7 @@
 
   .swiper-button-next,
   .swiper-button-prev {
-    @apply bg-gray-100 opacity-20 hover:opacity-70 duration-300 ease-in-out px-8 py-9;
+    @apply bg-sky-100 rounded-sm opacity-20 hover:opacity-70 duration-300 ease-in-out px-8 py-9;
   }
 }
 
@@ -46,16 +46,16 @@
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: black !important;
+  color: rgb(1, 26, 68) !important;
 }
 
 .swiper-pagination-bullet {
-  background-color: white !important;
+  background-color: rgb(71, 184, 228) !important;
   opacity: 0.5;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: rgb(255, 174, 174) !important;
+  background-color: rgb(39, 130, 235) !important;
 }
 
 /* .swiper-wrapper {

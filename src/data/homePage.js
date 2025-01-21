@@ -1,8 +1,6 @@
 const homePage = {
   data: {
     //SEO Header Stuff
-    pageTitle:
-      "Flight Training in Kankakee, IL | SimpliFly Flight School & Aircraft Management",
     pageDescription:
       "SimpliFly Flight School & Aircraft Management offers flight training in Kankakee, IL. We offer private pilot training, instrument rating training, commercial pilot training, and more. Contact us today!",
     pageKeywords:
@@ -14,7 +12,7 @@ const homePage = {
       imagePath: "/src/assets/jim-witkowski-sYHjFbnIYbA-unsplash.jpg",
       imageAlt:
         "SimpliFly Flight School & Aircraft Management flight over Kankakee, IL",
-      headerH1: `PILOT TRAINING<br>MADE SIMPLE`,
+      headerH1: `PILOT TRAINING</br><span class="text-sky-300">MADE SIMPLE</span>`,
       paragraph:
         "Start your aviation journey with SimpliFly Flight School. Whether you're looking to fly for fun or pursue a career in aviation, Our programs and instructors to help you achieve your goals.",
       buttons: [
@@ -27,6 +25,55 @@ const homePage = {
           name: "Book a Discovery Flight",
           link: "/discovery-flight",
           primary: false,
+        },
+      ],
+    },
+
+    airlinesCloud: {
+      airlines: [
+        {
+          imagePath: "/src/assets/southwest-airlines-logo.webp",
+          imageAlt: "Southwest Airlines Logo",
+        },
+        {
+          imagePath: "/src/assets/allegiant-air-logo.webp",
+          imageAlt: "Allegiant Airlines Logo",
+        },
+        {
+          imagePath: "/src/assets/frontier-airlines-logo.webp",
+          imageAlt: "Frontier Airlines Logo",
+        },
+        {
+          imagePath: "/src/assets/hawaiian-airlines-Logo.webp",
+          imageAlt: "Hawaiian Airlines Logo",
+        },
+        {
+          imagePath: "/src/assets/skywest-airlines-logo.webp",
+          imageAlt: "Skywest Airlines Logo",
+        },
+        {
+          imagePath: "/src/assets/envoy-air-logo.webp",
+          imageAlt: "Envoy Air Logo",
+        },
+        {
+          imagePath: "/src/assets/Republic-Airways-Logo.webp",
+          imageAlt: "Republic Airways Logo",
+        },
+        {
+          imagePath: "/src/assets/endeavor-air-logo.webp",
+          imageAlt: "Endeavor Air Logo",
+        },
+        {
+          imagePath: "/src/assets/contour-airlines-logo.webp",
+          imageAlt: "Contour Airlines Logo",
+        },
+        {
+          imagePath: "/src/assets/elite-jets-logo.webp",
+          imageAlt: "Elite Jets Logo",
+        },
+        {
+          imagePath: "/src/assets/pinnacle-aviation-logo.webp",
+          imageAlt: "Pinnacle Aviation Logo",
         },
       ],
     },
@@ -112,7 +159,7 @@ const homePage = {
     },
 
     testimonials: {
-      upperHeading: "The Elite Family",
+      upperHeading: "The SimpliFly Family",
       heading: "Our Students Love Us",
       headingText: [
         "While our main goal is to train future pilots safely and effectively, it’s important to us at SimpliFly Flight School our students have a fun and comfortable environment to practice in. We are proud of the relationships we have built with our students and guests.",

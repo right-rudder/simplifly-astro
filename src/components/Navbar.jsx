@@ -79,7 +79,7 @@ const Navbar = ({ pathname }) => {
       <div
         className={`${
           navBar || openMobile
-            ? "bg-sky-600/95 backdrop-blur-sm"
+            ? "bg-sky-500/95 backdrop-blur-sm"
             : "bg-transparent"
         } duration-500`}
       >
@@ -92,7 +92,7 @@ const Navbar = ({ pathname }) => {
               <a
                 href="/"
                 title="SimpliFly flight school"
-                className="hover:brightness-110 flex p-3 h-20 lg:h-28 justify-end align-middle items-center duration-200 ease-in-out w-2/3 lg:w-1/5"
+                className="hover:brightness-110 flex p-3 h-20 lg:h-28 justify-end align-middle items-center duration-200 ease-in-out w-2/3 lg:w-[20%]"
               >
                 <img
                   src="/simplifly_250.webp"
@@ -100,10 +100,10 @@ const Navbar = ({ pathname }) => {
                   aria-label="SimpliFly Flight School & Aircraft Management Logo"
                   title="SimpliFly Flight School & Aircraft Management"
                   loading="eager"
-                  className={`${navBar || openMobile ? "h-20 lg:h-24 lg:mt-8" : "h-24 lg:h-36 mt-12"} object-contain duration-500 drop-shadow-md`}
+                  className={`${navBar || openMobile ? "h-20 lg:h-24 lg:mt-6" : "h-24 lg:h-36 mt-12"} object-contain duration-500 drop-shadow-md`}
                 />
               </a>
-              <div className="hidden ml-12 lg:flex justify-end lg:w-[72%]">
+              <div className="hidden ml-12 lg:flex justify-end lg:w-[80%]">
                 <ul className="flex justify-between align-middle w-full items-center text-white">
                   {navbarLinks.map((item, index) => (
                     <li
@@ -116,9 +116,9 @@ const Navbar = ({ pathname }) => {
                         <a
                           href={item.link}
                           target={`${item.link.includes("http") ? "_blank" : "_self"}`}
-                          className="font-normal text-xl duration-300 hover:underline decoration-sky-600 decoration-4 underline-offset-[10px] py-12 whitespace-nowrap group-last:font-bold group-last:bg-sky-700 group-last:py-3 group-last:px-5 group-last:hover:bg-sky-500 group-last:hover:no-underline"
+                          className="font-bold lg:text-xl xl:text-2xl duration-300 hover:underline drop-shadow-sm decoration-sky-300 decoration-4 underline-offset-[10px] py-12 whitespace-nowrap group-last:font-bold group-last:bg-sky-700 group-last:ring-2 group-last:ring-white/50 group-last:py-2 group-last:px-5 group-last:hover:bg-sky-300 group-last:hover:no-underline"
                         >
-                          <span className="relative text-white group-last:text-white group-last:hover:text-sky-950">
+                          <span className="relative text-white group-last:text-white w-full h-full group-last:hover:text-black">
                             {item.name}
                           </span>
                         </a>
@@ -129,12 +129,12 @@ const Navbar = ({ pathname }) => {
                       )}
                       {item.submenu && item.submenu.length > 0 && (
                         <ul
-                          className={`absolute top-10 bg-sky-800/95 min-w-52 text-center border-b-4 border-white/20 whitespace-nowrap text-white -left-4 duration-200 ease-out ${hoveredIndex === index ? "max-h-auto w-auto opacity-100" : "max-h-0 h-0 opacity-0 overflow-hidden"}`}
+                          className={`absolute top-10 -left-8 bg-sky-600/95 min-w-56 text-center border-b-4 border-white/20 whitespace-nowrap text-white duration-200 ease-out ${hoveredIndex === index ? "max-h-auto w-auto opacity-100" : "max-h-0 h-0 opacity-0 overflow-hidden"}`}
                         >
                           {item.submenu.map((subitem, subIndex) => (
                             <li
                               key={subIndex}
-                              className={`${isActive(subitem, pathname) ? "bg-sky-700 text-sky-100" : ""} relative font-normal hover:bg-sky-600 hover:scale-105 px-1 hover:font-semibold hover:shadow-sm drop-shadow-sm`}
+                              className={`${isActive(subitem, pathname) ? "bg-sky-700 text-sky-100" : ""} relative font-normal hover:bg-sky-700 hover:scale-105 px-1 hover:shadow-sm drop-shadow-sm`}
                               onMouseEnter={() => setSubHoveredIndex(subIndex)}
                               onMouseLeave={() => setSubHoveredIndex(null)}
                             >

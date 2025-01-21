@@ -8,20 +8,18 @@ import programsSwiper from "../data/programSwiper";
 import BlogFeed from "../components/BlogFeed.astro";
 
 import homePage from "../data/homePage";
+import flyWithUsCTA from "../data/fly-with-us-cta";
+import AirlinesCloud from "../components/AirlinesCloud.astro";
 const { data } = homePage;
 ---
 
-<BaseLayout
-  siteTitle={data.pageTitle}
-  siteDescription={data.pageDescription}
-  keywords={data.pageKeywords}
->
+<BaseLayout siteDescription={data.pageDescription} keywords={data.pageKeywords}>
   <!-- HEADER -->
   <HeaderScreen content={data.header} />
-
+  <AirlinesCloud data={data.airlinesCloud} />
   <ProgramSwiper content={programsSwiper} />
   <Testimonials content={data.testimonials} />
   <BlogFeed data={data.blogfeed} />
-  <CTAColor content={data.flyWithUsCTA} />
+  <CTAColor content={flyWithUsCTA} />
   <script src="../scripts/creativeSwiper.js"></script>
 </BaseLayout>

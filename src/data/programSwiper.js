@@ -6,7 +6,7 @@ const programsSwiper = {
   cards: [
     {
       title: "Private Pilot",
-      imagePath: "/src/assets/jim-witkowski-sYHjFbnIYbA-unsplash.jpg",
+      imagePath: "/src/assets/two-pilot-smiling.webp",
       imageAlt:
         "SimpliFly Flight School student and flight instructor in a Cessna airplane",
       description:
@@ -15,7 +15,7 @@ const programsSwiper = {
     },
     {
       title: "Instrument Rating",
-      imagePath: "/src/assets/jim-witkowski-sYHjFbnIYbA-unsplash.jpg",
+      imagePath: "/src/assets/david-ballew-pH6-eomaijQ-unsplash.jpg",
       imageAlt: "SimpliFly Flight School Cirrus airplane instrument panel",
       description:
         "Navigate through clouds and the skies with precision through our Instrument Rating course.",
@@ -23,7 +23,7 @@ const programsSwiper = {
     },
     {
       title: "Commercial Pilot",
-      imagePath: "/src/assets/jim-witkowski-sYHjFbnIYbA-unsplash.jpg",
+      imagePath: "/src/assets/simplifly-cfi.webp",
       imageAlt:
         "SimpliFly Flight School student and flight instructor in a Cessna airplane cockpit",
       description:
@@ -32,7 +32,7 @@ const programsSwiper = {
     },
     {
       title: "Multi-Engine Rating",
-      imagePath: "/src/assets/jim-witkowski-sYHjFbnIYbA-unsplash.jpg",
+      imagePath: "/src/assets/multi-pass.webp",
       imageAlt: "SimpliFly Flight School student by a multi-engine airplane",
       description:
         "Master the art of multi engine flying and unlock new horizons in your aviation career.",
@@ -40,7 +40,7 @@ const programsSwiper = {
     },
     {
       title: "Certified Flight Instructor",
-      imagePath: "/src/assets/jim-witkowski-sYHjFbnIYbA-unsplash.jpg",
+      imagePath: "/src/assets/avel-chuklanov-ZEiqbaQhmvE-unsplash.jpg",
       imageAlt:
         "SimpliFly Flight School student and flight instructor in a Cessna airplane cockpit",
       description:

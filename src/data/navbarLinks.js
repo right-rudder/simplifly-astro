@@ -1,83 +1,83 @@
 export const navbarLinks = [
   {
     name: "New to Flying?",
-    link: "/pilot-training-guide",
+    link: "/pilot-training-made-simple",
     submenu: [
-      {
-        name: "Why Become a Pilot?",
-        link: "/why-become-a-pilot",
-      },
       {
         name: "Discovery Flight",
         link: "/discovery-flight",
       },
+      {
+        name: "Enroll at SimpliFly",
+        link: "/enroll-at-simplifly",
+      },
+      {
+        name: "Pilot Training",
+        link: "/pilot-training",
+      },
+      {
+        name: "Begin Pilot Career",
+        link: "/instruct-at-simplifly",
+      },
+      {
+        name: "Timeline",
+        link: "/timeline-to-be-a-pilot",
+      },
+      {
+        name: "Cost",
+        link: "/approximate-pilot-training-costs",
+      },
     ],
   },
   {
-    name: "Flight Training",
-    link: "/flight-training",
+    name: "Airline Pilot",
+    link: "/airline-pilot-courses",
     submenu: [
       {
         name: "Private Pilot",
-        link: "/flight-training/private-pilot-training",
+        link: "/private-pilot-training",
       },
       {
         name: "Instrument Rating",
-        link: "/flight-training/instrument-rating",
+        link: "/instrument-rating",
       },
       {
         name: "Commercial Pilot",
-        link: "/flight-training/commercial-pilot-training",
+        link: "/commercial-pilot-training",
       },
       {
         name: "Multi-Engine Rating",
-        link: "/flight-training/multi-engine-rating",
+        link: "/multi-engine-rating",
       },
       {
         name: "Certified Flight Instructor",
-        link: "/flight-training/certified-flight-instructor-cfi",
+        link: "/instruct-at-simplifly",
       },
     ],
   },
 
   {
-    name: "Aircraft Services",
-    link: "/aircraft-services",
+    name: "Financing",
+    link: "/financing",
     submenu: [
       {
-        name: "Brokerage",
-        link: "/aircraft-services/aircraft-brokerage",
-      },
-      {
-        name: "Rentals",
-        link: "/aircraft-services/aircraft-rentals",
-      },
-      {
-        name: "For Sale",
-        link: "/aircraft-services/aircraft-for-sale",
-      },
-      {
-        name: "Maintenance",
-        link: "/aircraft-services/aircraft-maintenance",
-      },
-      {
-        name: "Charter Revenue",
-        link: "/aircraft-services/charter-revenue",
+        name: "Stratus Financial",
+        link: "/stratus-finance",
       },
     ],
   },
 
   {
-    name: "About",
-    link: "/our-team",
+    name: "SimpliFly",
+    link: "/why-simplifly",
     submenu: [
       {
         name: "Our Team",
         link: "/our-team",
       },
       {
-        name: "Our Fleet",
-        link: "/our-fleet",
+        name: "Visit Us",
+        link: "/visit-simplifly",
       },
       {
         name: "Blog",
@@ -86,7 +86,7 @@ export const navbarLinks = [
     ],
   },
   {
-    name: "Start Today",
+    name: "Enroll Now",
     link: "/enroll-now",
     submenu: [],
   },
