@@ -1,6 +1,6 @@
 // CHANGE Default title
 export const SITE_TITLE =
-  "Flight Training in Kankakee, IL | SimpliFly Flight School & Aircraft Management";
+  "Pilot Training Made Simple at Mesa, AZ | SimpliFly Flight School";
 
 // CHANGE default meta description -> should only be used in homepage technically, but is there for a fallback in case a page is missed
 export const SITE_DESCRIPTION =
@@ -17,26 +17,32 @@ export const OG_IMAGE = "/Elite-OG-image.webp";
 
 export const LOCATIONS = [
   {
-    title: `Greater Kankakee Airport - IKK`,
-    address: "809 East 4000S Road",
-    city: "Kankakee",
-    state: "IL",
-    zip: "60901",
-    gMaps: "https://maps.app.goo.gl/q1SJrrPdmpFBcyjY7",
-    phone: "+1 815-369-0525",
+    title: `Flight Dispatch Center`,
+    address: "4855 E Falcon Dr",
+    city: "Mesa",
+    state: "AZ",
+    zip: "85215",
+    gMaps: "https://maps.app.goo.gl/CPLB59b8BbPALwtf7",
+    phone: "1-480-256-8355",
+  },
+  {
+    title: `Ground Training Center`,
+    address: " 4710 E Falcon Dr Suite 105",
+    city: "Mesa",
+    state: "AZ",
+    zip: "85215",
+    gMaps: "https://maps.app.goo.gl/CPLB59b8BbPALwtf7",
+    phone: "1-480-256-8355",
   },
 ];
 
 // CHANGE client business info
-export const PHONE_NUMBER = "+1 815-369-0525";
-export const ADDRESS_LINE_1 = "809 East 4000S Road";
-export const ADDRESS_LINE_2 = "Kankakee, Illinois 60901";
-export const FACEBOOK_URL =
-  "https://www.facebook.com/eliteflighttrainingkankakee";
-export const INSTAGRAM_URL =
-  "https://www.instagram.com/eliteflighttrainingkankakee/";
-export const LINKEDIN_URL =
-  "https://www.linkedin.com/in/elite-flight-training-21781512a/";
+export const PHONE_NUMBER = "1-480-256-8355";
+export const ADDRESS_LINE_1 = "4855 E Falcon Dr";
+export const ADDRESS_LINE_2 = "Mesa, Arizona 85215";
+export const FACEBOOK_URL = "https://www.facebook.com/SimpliFlyFlightSchool";
+export const INSTAGRAM_URL = "https://www.instagram.com/simpliflyco";
+export const LINKEDIN_URL = null;
 export const YOUTUBE_URL = null;
-export const TWITTER_URL = "https://twitter.com/EliteFlightTr";
-export const EMAIL_ADDRESS = "eliteproaviation@gmail.com";
+export const TWITTER_URL = null;
+export const EMAIL_ADDRESS = "info@simpliflyco.com";
