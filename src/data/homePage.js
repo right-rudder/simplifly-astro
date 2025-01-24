@@ -170,32 +170,32 @@ const homePage = {
         "https://search.google.com/local/writereview?placeid=ChIJYR6NGmjpDYgR_m6mDUwAToY",
       reviews: [
         {
-          body: "I absolutely love the facility and instructors at Elite. I'm able to easily keep current as a pilot and have easy access to aircraft just to take some friends up! The training is excellent if not better than when I was at a university for my aviation education. The one on one aspect here is a plus, not to mention the multi engine rating program is the most affordable I've seen in the country so far!",
-          author: "Kevin D.",
+          body: "I had a wonderful experience at SimpliFly. I could tell the entire staff was invested in my success. I really appreciated the flexibility the school provides, allowing me to work full time and work toward my PPL at the same time. Cannot thank my instructor Dolly enough for all the hard work she put in getting me ready for my checkride.",
+          author: "Josh A.",
         },
         {
-          body: "Great flying school with very knowledgeable, supporting and patient instructors. Kaleb and Bryan are outstanding professionals and would recommend to anyone who would like to fulfill a dream of flying.",
-          author: "Tomas M.",
+          body: "Best school! Great instructors and very affordable! I feel very fortunate to find this school that allows me to work and learn aviation at the same time. Student environment is also very healthy, not competitive and the students are very encouraging to others.",
+          author: "Kathryn W.",
         },
         {
-          body: "My daughter did her first discovery flight over the weekend with SimpliFly Flight School out of Kankakee airport. She had Kellen as her instructor, such an amazing experience! A+++ instructors!!! Awesomeness!!! If you're thinking of taking flight instruction this is the place!!! Best part for papa is i got to come along for the ride!",
-          author: "Zack K.",
+          body: "I became an instructor through SimpliFly and have been more than thrilled with the support from the SimpliFly team through my ratings and up to joining the team my self! I was able to get through my ratings quickly and have made the best friendships along the way! Love this school!",
+          author: "Ally M.",
         },
         {
-          body: "Went to SimpliFly Flight School to build some multi engine hours in their Twin Comanche. Very well equipped airplane and fun to fly. Best value for twin time I have found. Highly recommend Elite!",
-          author: "G. Colby",
+          body: "Just got my private with SimpliFly and have had nothing but great experiences. Doug is a great instructor and wouldn’t have passed my check ride without him. SimpliFly constantly goes above and beyond for me working around my schedule helping me get the training and hours I need. Everyone is very friendly and helpful. Even the owners have personally helped me outside the school navigate the purchase of an airplane. I can’t recommend SimpliFly enough.",
+          author: "Parker K.",
         },
         {
-          body: "5/5. The training costs is more on the affordable end in terms of normal pricing for aviation training and the CFIs are very friendly! All three make you feel safe to fly a plane.",
-          author: "Andrew B.",
+          body: "Positive experience at this upstart flight school! The instructors are knowledgeable & super personable and the personalized training has really boosted a lot of confidence in flying for me and so many students. A great place to begin your journey from zero time to the airlines.",
+          author: "Nate B.",
         },
         {
-          body: "Great local flight school, great instructors, airplanes, etc. I had a great experience with Elite for my PPL and highly recommend them to anyone who is interested in learning to fly!",
-          author: "Carter G.",
+          body: "SimpliFly is a great school. The sense of community within the school is exceptional. From the administrative staff to the flight instructors, everyone works together seamlessly to create a positive and supportive atmosphere. This teamwork extends to our interactions with students, fostering an environment that encourages questions, collaboration, and continuous improvement.",
+          author: "Caitney S.",
         },
         {
-          body: "Wonderful place to train as a pilot. Friendly, courteous, flexible, and dedicated to safe instruction.  Brian Rose is a great instructor and keeps you on track with your training goals.  I recommended Elite to the flying club for members to gain further certifications, especially multi-engine.",
-          author: "Jason C.",
+          body: "SimpliFly is an awesome fight school. I have been around to a few flight schools in the area and they are top notch! I completed my CFI with them and they helped me to feel confident in my teaching and training. The instructor are amazing and you can tell they have a passion for what they do. If you want to really understand aviation and become a better pilot this is the place to go!",
+          author: "Zach F.",
         },
       ],
     },
