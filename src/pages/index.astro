@@ -6,10 +6,12 @@ import CTAColor from "../components/CTAColor.astro";
 import Testimonials from "../components/Testimonials.astro";
 import programsSwiper from "../data/programSwiper";
 import BlogFeed from "../components/BlogFeed.astro";
-
 import homePage from "../data/homePage";
 import flyWithUsCTA from "../data/fly-with-us-cta";
 import AirlinesCloud from "../components/AirlinesCloud.astro";
+import FAQs from "../components/FAQs";
+import { GeneralFAQs } from "../data/general-faqs";
+
 const { data } = homePage;
 ---
 
@@ -21,5 +23,6 @@ const { data } = homePage;
   <Testimonials content={data.testimonials} />
   <BlogFeed data={data.blogfeed} />
   <CTAColor content={flyWithUsCTA} />
+  <FAQs faqs={GeneralFAQs} type="General" client:visible />
   <script src="../scripts/creativeSwiper.js"></script>
 </BaseLayout>
