@@ -18,7 +18,7 @@ const homePage = {
       buttons: [
         {
           name: "Enroll Now",
-          link: "/enroll-now",
+          link: "/enroll-at-simplifly",
           primary: false,
         },
         {

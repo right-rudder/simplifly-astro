@@ -6,20 +6,17 @@ import { PHONE_NUMBER } from "../consts";
 
 const PriceCalcZero2Hero = () => {
   const [total, setTotal] = useState(0);
-  const pricePpl = 17000;
-  const priceInstrument = 16000;
-  const priceCplShared = 19500;
-  const priceCplSolo = 24000;
-  const priceCfi = 6500;
-  const priceCfii = 4000;
-  const priceMe = 5000;
-  const priceMei = 6000;
-  const priceMeTbd = 5500;
+  const pricePpl = 20000;
+  const priceInstrument = 18000;
+  const priceCplSolo = 27000;
+  const priceCfi = 9000;
+  const priceCfii = 4500;
+  const priceMe = 10500;
 
-  const priceStarter = 600;
-  const priceCheckride = 6600;
-  const priceWritten = 875;
-  const priceHeadset = 899;
+  const priceStarter = 1000;
+  const priceCheckride = 7000;
+  const priceWritten = 1050;
+  const priceHeadset = 1200;
 
   const [starter, setStarter] = useState(false);
   const [checkride, setCheckride] = useState(false);
@@ -28,12 +25,10 @@ const PriceCalcZero2Hero = () => {
 
   const [ppl, setPpl] = useState(false);
   const [instrument, setInstrument] = useState(false);
-  const [cplShared, setCplShared] = useState(false);
   const [cplSolo, setCplSolo] = useState(false);
   const [cfi, setCfi] = useState(false);
   const [cfii, setCfii] = useState(false);
   const [me, setMe] = useState(false);
-  const [mei, setMei] = useState(false);
   const [meTbd, setMeTbd] = useState(false);
 
   const [heldPpl, setHeldPpl] = useState(false);
@@ -44,22 +39,21 @@ const PriceCalcZero2Hero = () => {
   const [heldMe, setHeldMe] = useState(false);
 
   useEffect(() => {
+    setTotal(0);
     setPpl(true);
     setInstrument(true);
-    setCplShared(true);
+    setCplSolo(true);
     setCfi(true);
     setCfii(true);
     setMe(true);
-    setMei(true);
     setTotal(
       total +
         pricePpl +
         priceInstrument +
-        priceCplShared +
+        priceCplSolo +
         priceCfi +
         priceCfii +
-        priceMe +
-        priceMei,
+        priceMe,
     );
   }, []);
 
@@ -85,7 +79,7 @@ const PriceCalcZero2Hero = () => {
                 <div className="mt-2 flex justify-between gap-6 w-full">
                   <div className="grid grid-cols-1">
                     <fieldset>
-                      <legend className="mb-2 text-xl text-gray-800 font-semibold">
+                      <legend className="mb-2 text-xl font-title leading-tight text-gray-800 font-semibold">
                         Certificates and Ratings Currently Held:
                       </legend>
 
@@ -104,7 +98,10 @@ const PriceCalcZero2Hero = () => {
                             }
                           }}
                         />
-                        <label htmlFor="heldPpl" className="text-sm">
+                        <label
+                          htmlFor="heldPpl"
+                          className="text-sm tracking-tighter"
+                        >
                           Private Pilot Certificate{" "}
                           <small className="font-bold">(PPL)</small>
                         </label>
@@ -125,7 +122,10 @@ const PriceCalcZero2Hero = () => {
                             }
                           }}
                         />
-                        <label htmlFor="heldInstrument" className="text-sm">
+                        <label
+                          htmlFor="heldInstrument"
+                          className="text-sm tracking-tighter"
+                        >
                           Instrument Rating
                         </label>
                       </div>
@@ -139,17 +139,16 @@ const PriceCalcZero2Hero = () => {
                           name="heldCpl"
                           onChange={(e) => {
                             setHeldCpl(!heldCpl);
-                            if (cplShared) {
-                              setTotal(total - priceCplShared);
-                              setCplShared(!cplShared);
-                            }
                             if (cplSolo) {
                               setTotal(total - priceCplSolo);
                               setCplSolo(!cplSolo);
                             }
                           }}
                         />
-                        <label htmlFor="heldCpl" className="text-sm">
+                        <label
+                          htmlFor="heldCpl"
+                          className="text-sm tracking-tighter"
+                        >
                           Commercial Pilot Certificate{" "}
                           <small className="font-bold">(CPL)</small>
                         </label>
@@ -170,7 +169,10 @@ const PriceCalcZero2Hero = () => {
                             }
                           }}
                         />
-                        <label htmlFor="heldCfi" className="text-sm">
+                        <label
+                          htmlFor="heldCfi"
+                          className="text-sm tracking-tighter"
+                        >
                           Certified Flight Instructor{" "}
                           <small className="font-bold">(CFI)</small>
                         </label>
@@ -191,7 +193,10 @@ const PriceCalcZero2Hero = () => {
                             }
                           }}
                         />
-                        <label htmlFor="heldCfii" className="text-sm">
+                        <label
+                          htmlFor="heldCfii"
+                          className="text-sm tracking-tighter"
+                        >
                           Certified Flight Instructor-Instrument{" "}
                           <small className="font-bold">(CFII)</small>
                         </label>
@@ -212,7 +217,10 @@ const PriceCalcZero2Hero = () => {
                             }
                           }}
                         />
-                        <label htmlFor="heldMe" className="text-sm">
+                        <label
+                          htmlFor="heldMe"
+                          className="text-sm tracking-tighter"
+                        >
                           Multi-Engine Rating
                         </label>
                       </div>
@@ -247,7 +255,7 @@ const PriceCalcZero2Hero = () => {
                     Fly for a career, within a year!
                   </p>
                   <div className="flex justify-around has-tooltip">
-                    <span class="tooltip">
+                    <span className="tooltip">
                       This pricing is based on <strong>250 hours</strong> and
                       flying full-time. While pricing can vary within our other
                       programs, it does less so for our Zero to Hero Program.
@@ -272,10 +280,10 @@ const PriceCalcZero2Hero = () => {
 
                   <ul
                     role="list"
-                    className="w-full px-3 space-y-2 text-sm pb-6 m-auto text-gray-600 grid grid-cols-1 lg:grid-cols-2 gap-4"
+                    className="w-full px-3 flex flex-col gap-2 text-gray-800 text-sm mt-3 mb-8"
                   >
                     {total == 0 && (
-                      <li className="space-x-2 flex flex-nowrap align-middle justify-center items-center">
+                      <li className="text-center">
                         <span className="font-semibold text-xl text-center">
                           Choose your training goal
                         </span>
@@ -295,7 +303,7 @@ const PriceCalcZero2Hero = () => {
                         <span>Instrument Rating</span>
                       </li>
                     )}
-                    {(cplShared || cplSolo) && (
+                    {cplSolo && (
                       <li className="space-x-2 flex flex-nowrap align-middle items-center">
                         <span className="text-sky-500 font-semibold">
                           <FaCheckCircle className="text-green-600 text-xl" />
@@ -327,17 +335,9 @@ const PriceCalcZero2Hero = () => {
                         <span>Multi-Engine Rating</span>
                       </li>
                     )}
-                    {(mei || meTbd) && (
-                      <li className="space-x-2 flex flex-nowrap align-middle items-center">
-                        <span className="text-sky-500 font-semibold">
-                          <FaCheckCircle className="text-green-600 text-xl" />
-                        </span>
-                        <span>Multi-Engine Instructor</span>
-                      </li>
-                    )}
                   </ul>
                   <fieldset className="flex flex-col justify-center items-center align-top w-full text-left">
-                    <legend className="mb-2 text-xl text-center w-full text-gray-800 font-semibold">
+                    <legend className="mb-2 text-xl font-title text-center w-full text-gray-800 font-semibold">
                       Add Ons:
                     </legend>
 
@@ -356,13 +356,16 @@ const PriceCalcZero2Hero = () => {
                             setStarter(!starter);
                           }}
                         />
-                        <span class="tooltip text-sm">
+                        <span className="tooltip text-sm tracking-tighter">
                           Includes a passive headset, pilot bag, pilot training
                           books, a logbook, foggles, a ForeFlight subscription
                           while enrolled, and a kneeboard.
                         </span>
-                        <label htmlFor="starter" className="text-sm">
-                          Starter Package
+                        <label
+                          htmlFor="starter"
+                          className="text-sm tracking-tighter"
+                        >
+                          Starter Bundle
                         </label>
                       </div>
 
@@ -380,12 +383,15 @@ const PriceCalcZero2Hero = () => {
                             setCheckride(!checkride);
                           }}
                         />
-                        <span class="tooltip text-sm">
+                        <span className="tooltip text-sm tracking-tighter">
                           Depending on your DPE, you can plan to budget around
                           $900 for most checkrides with the exceptions being the
                           CFI initial (~$1,500) and CFI add-ons (~$1,200 each).
                         </span>
-                        <label htmlFor="checkride" className="text-sm">
+                        <label
+                          htmlFor="checkride"
+                          className="text-sm tracking-tighter"
+                        >
                           Checkride Fees
                         </label>
                       </div>
@@ -404,11 +410,14 @@ const PriceCalcZero2Hero = () => {
                             setWritten(!written);
                           }}
                         />
-                        <span class="tooltip text-sm">
+                        <span className="tooltip text-sm tracking-tighter">
                           Written tests are ~$175 per certification (not
                           required for the Multi-Engine Rating or MEI add-on).
                         </span>
-                        <label htmlFor="written" className="text-sm">
+                        <label
+                          htmlFor="written"
+                          className="text-sm tracking-tighter"
+                        >
                           Written Test Fees
                         </label>
                       </div>
@@ -427,26 +436,32 @@ const PriceCalcZero2Hero = () => {
                             setHeadset(!headset);
                           }}
                         />
-                        <span class="tooltip text-sm">
+                        <span className="tooltip text-sm tracking-tighter">
                           Receive <strong>$299.00</strong> off of your Zulu 3
                           Headset if you choose to upgrade your Starter Package
                           at Summit Flight Academy.
                         </span>
-                        <label htmlFor="headset" className="text-sm">
-                          Zulu 3 Headset
+                        <label
+                          htmlFor="headset"
+                          className="text-sm tracking-tighter"
+                        >
+                          Aviation Headset
                         </label>
                       </div>
                     </div>
                   </fieldset>
-                </div>
-                <div className="mt-8 mx-auto text-center">
-                  <a
-                    href={`tel: ${PHONE_NUMBER}`}
-                    className="mt-6 flex space-x-3 justify-center flex-nowrap hover:font-bold hover:scale-105 transition-all duration-500"
-                  >
-                    <FaPhone />
-                    <span>{PHONE_NUMBER}</span>
-                  </a>
+                  <div className="mt-8 flex flex-col justify-center items-center align-middle gap-2">
+                    <a href="/contact" className="btn-accent w-full">
+                      <span>Contact Us</span>
+                    </a>
+                    <a
+                      href={`tel: ${PHONE_NUMBER}`}
+                      className="btn-accent inline-flex justify-center items-center gap-2 w-full"
+                    >
+                      <FaPhone />
+                      <span>{PHONE_NUMBER}</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -457,7 +472,7 @@ const PriceCalcZero2Hero = () => {
               ></div>
               <div className="relative p-5 pt-12 md:p-8 md:pl-8 md:rounded-r-2xl lg:pr-10 lg:p-12">
                 <fieldset>
-                  <legend className="mb-2 text-xl text-gray-800 font-semibold">
+                  <legend className="mb-2 font-title leading-tight text-xl text-gray-800 font-semibold">
                     Certificates and Ratings You Want to Obtain:
                   </legend>
 
@@ -476,7 +491,7 @@ const PriceCalcZero2Hero = () => {
                         setPpl(!ppl);
                       }}
                     />
-                    <label htmlFor="ppl" className="text-sm">
+                    <label htmlFor="ppl" className="text-sm tracking-tighter">
                       Private Pilot Certificate{" "}
                       <small className="font-bold">(PPL)</small>
                     </label>
@@ -497,33 +512,11 @@ const PriceCalcZero2Hero = () => {
                         setInstrument(!instrument);
                       }}
                     />
-                    <label htmlFor="instrument" className="text-sm">
+                    <label
+                      htmlFor="instrument"
+                      className="text-sm tracking-tighter"
+                    >
                       Instrument Rating
-                    </label>
-                  </div>
-
-                  <div className="has-tooltip">
-                    <input
-                      type="checkbox"
-                      checked={cplShared}
-                      disabled={heldCpl || cplSolo}
-                      className="mx-2"
-                      id="cplShared"
-                      name="cplShared"
-                      onChange={(e) => {
-                        cplShared
-                          ? setTotal(total - priceCplShared)
-                          : setTotal(total + priceCplShared);
-                        setCplShared(!cplShared);
-                      }}
-                    />
-                    <span class="tooltip text-sm">
-                      Shared time building will make this certification
-                      achievable in a shorter time.
-                    </span>
-                    <label htmlFor="cplShared" className="text-sm">
-                      Commercial Pilot Certificate{" "}
-                      <small className="font-bold">(Shared)</small>
                     </label>
                   </div>
 
@@ -531,7 +524,7 @@ const PriceCalcZero2Hero = () => {
                     <input
                       type="checkbox"
                       checked={cplSolo}
-                      disabled={heldCpl || cplShared}
+                      disabled={heldCpl}
                       className="mx-2"
                       id="cplSolo"
                       name="cplSolo"
@@ -542,7 +535,10 @@ const PriceCalcZero2Hero = () => {
                         setCplSolo(!cplSolo);
                       }}
                     />
-                    <label htmlFor="cplSolo" className="text-sm">
+                    <label
+                      htmlFor="cplSolo"
+                      className="text-sm tracking-tighter"
+                    >
                       Commercial Pilot Certificate{" "}
                       <small className="font-bold">(Solo)</small>
                     </label>
@@ -563,7 +559,7 @@ const PriceCalcZero2Hero = () => {
                         setCfi(!cfi);
                       }}
                     />
-                    <label htmlFor="cfi" className="text-sm">
+                    <label htmlFor="cfi" className="text-sm tracking-tighter">
                       Certified Flight Instructor{" "}
                       <small className="font-bold">(CFI)</small>
                     </label>
@@ -584,7 +580,7 @@ const PriceCalcZero2Hero = () => {
                         setCfii(!cfii);
                       }}
                     />
-                    <label htmlFor="cfii" className="text-sm">
+                    <label htmlFor="cfii" className="text-sm tracking-tighter">
                       Certified Flight Instructor-Instrument{" "}
                       <small className="font-bold">(CFII)</small>
                     </label>
@@ -605,56 +601,17 @@ const PriceCalcZero2Hero = () => {
                         setMe(!me);
                       }}
                     />
-                    <label htmlFor="me" className="text-sm has-tooltip">
-                      <span className="tooltip text-sm">
+                    <label
+                      htmlFor="me"
+                      className="text-sm tracking-tighter has-tooltip"
+                    >
+                      <span className="tooltip text-sm tracking-tighter">
                         Career track students need 25 total ME hours to reach a
                         Multi-Engine certification. You can achieve this by
                         either getting your MEI or flying 15 hours via time
                         building.
                       </span>
                       Multi-Engine Rating
-                    </label>
-                  </div>
-
-                  <div className="">
-                    <input
-                      type="checkbox"
-                      checked={mei}
-                      disabled={meTbd}
-                      className="mx-2"
-                      id="mei"
-                      name="mei"
-                      onChange={(e) => {
-                        mei
-                          ? setTotal(total - priceMei)
-                          : setTotal(total + priceMei);
-                        setMei(!mei);
-                      }}
-                    />
-                    <label htmlFor="mei" className="text-sm">
-                      Multi-Engine Instructor{" "}
-                      <small className="font-bold">(MEI)</small>
-                    </label>
-                  </div>
-
-                  <div className="">
-                    <input
-                      type="checkbox"
-                      checked={meTbd}
-                      disabled={mei}
-                      className="mx-2"
-                      id="meTbd"
-                      name="meTbd"
-                      onChange={(e) => {
-                        meTbd
-                          ? setTotal(total - priceMeTbd)
-                          : setTotal(total + priceMeTbd);
-                        setMeTbd(!meTbd);
-                      }}
-                    />
-                    <label htmlFor="meTbd" className="text-sm">
-                      Multi-Engine Time Building{" "}
-                      <small className="font-bold">(15 Hours)</small>
                     </label>
                   </div>
                 </fieldset>

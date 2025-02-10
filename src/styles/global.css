@@ -4,7 +4,7 @@
 
 @layer components {
   .btn-primary {
-    @apply text-center uppercase font-title font-bold py-3 px-6 bg-sky-700 w-fit text-white rounded-sm hover:bg-sky-800 duration-300;
+    @apply text-center uppercase hover:scale-105 font-title font-bold py-3 px-6 bg-sky-700 w-fit text-white rounded-sm hover:bg-sky-800 duration-300;
   }
 
   .btn-accent {
@@ -23,11 +23,15 @@
   }
 
   .tooltip {
-    @apply invisible opacity-0 absolute rounded-lg shadow-md shadow-slate-800/50 bg-sky-50 text-center text-gray-800 p-6;
+    @apply invisible opacity-0 absolute w-[24rem] rounded-lg z-50 -top-10 left-12 shadow-md shadow-slate-800/50 bg-sky-50 text-center text-gray-800 p-6;
+  }
+
+  .has-tooltip {
+    @apply relative;
   }
 
   .has-tooltip:hover .tooltip {
-    @apply visible opacity-95 transition-all duration-300 cursor-help;
+    @apply visible opacity-95 transition-all duration-300 top-0 cursor-help;
   }
 
   .section-upper {
@@ -36,6 +40,10 @@
 
   .section-title {
     @apply mx-auto text-4xl lg:text-6xl lg:max-w-5xl font-title text-center font-bold tracking-tight text-sky-950;
+  }
+
+  .section-description {
+    @apply mx-auto mb-12 text-lg max-w-3xl text-center tracking-wider text-gray-900;
   }
 
   .swiper-button-next,
