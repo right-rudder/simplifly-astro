@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeaderScreen from "../components/HeaderScreen.astro";
+import ProgramSwiper from "../components/ProgramSwiper.astro";
+import CTAColor from "../components/CTAColor.astro";
+import programsSwiper from "../data/programSwiper";
+import flyWithUsCTA from "../data/fly-with-us-cta";
+import PageSummary from "../components/PageSummary.astro";
+import instructAtSimplifly from "../data/instruct-at-simplifly";
+import ContentSplit from "../components/ContentSplit.astro";
+
+const { data } = instructAtSimplifly;
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <!-- HEADER -->
+  <HeaderScreen content={data.header} />
+  <!-- PAGE SUMMARY -->
+  <PageSummary content={data.pageSummary} />
+
+  <ContentSplit content={data.contentSplit} />
+
+  <ProgramSwiper content={programsSwiper} />
+  <CTAColor content={flyWithUsCTA} />
+  <script src="../scripts/creativeSwiper.js"></script>
+</BaseLayout>

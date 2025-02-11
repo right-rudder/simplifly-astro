@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeaderScreen from "../components/HeaderScreen.astro";
+import ProgramSwiper from "../components/ProgramSwiper.astro";
+import CTAColor from "../components/CTAColor.astro";
+import programsSwiper from "../data/programSwiper";
+import flyWithUsCTA from "../data/fly-with-us-cta";
+import PageSummary from "../components/PageSummary.astro";
+import PriceCalcZero2Hero from "../components/priceCalcZero2Hero";
+import aproxPilotTrainingCosts from "../data/approximate-pilot-training-costs";
+
+const { data } = aproxPilotTrainingCosts;
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <!-- HEADER -->
+  <HeaderScreen content={data.header} />
+  <!-- PAGE SUMMARY -->
+  <PageSummary content={data.pageSummary} />
+
+  <PriceCalcZero2Hero client:load />
+
+  <ProgramSwiper content={programsSwiper} />
+  <CTAColor content={flyWithUsCTA} />
+  <script src="../scripts/creativeSwiper.js"></script>
+</BaseLayout>

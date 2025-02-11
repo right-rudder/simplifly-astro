@@ -1,0 +1,61 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ProgramSwiper from "../components/ProgramSwiper.astro";
+import programsSwiper from "../data/programSwiper";
+import HeaderSmall from "../components/HeaderSmall.astro";
+import discoveryFlight from "../data/discovery-flight";
+
+const { data } = discoveryFlight;
+---
+
+<BaseLayout siteDescription={data.pageDescription} keywords={data.pageKeywords}>
+  <!-- HEADER -->
+  <HeaderSmall content={data.header} />
+  <section
+    class="bg-white flex flex-wrap justify-center align-middle items-center pt-12"
+  >
+    <div class="w-full">
+      {
+        data.form.upperHeading && (
+          <h3 class="mx-auto mt-12 uppercase text-lg lg:text-xl lg:max-w-3xl font-sans text-center font-bold tracking-tight text-sky-400">
+            {data.form.upperHeading}
+          </h3>
+        )
+      }
+      {
+        data.form.heading && (
+          <h2 class="mx-auto mb-3 text-4xl lg:text-6xl lg:max-w-3xl font-title text-center font-bold tracking-tight text-sky-950">
+            {data.form.heading}
+          </h2>
+        )
+      }
+      {
+        data.form.heading && (
+          <p class="mx-auto mb-12 text-lg max-w-3xl text-center tracking-loose text-gray-900">
+            {data.form.description}
+          </p>
+        )
+      }
+    </div>
+    <div class="w-full flex flex-wrap justify-center">
+      <div class="w-full lg:w-1/2 px-12 bg-gradient-to-b from-sky-100 to-white">
+        {
+          data.form.info.map((inf) => (
+            <div class="mt-8">
+              <h4 class="font-title font-bold text-4xl">{inf.title}</h4>
+              {inf.paragraphs.map((paragraph) => (
+                <p class="mt-3 text-lg text-pretty">{paragraph}</p>
+              ))}
+            </div>
+          ))
+        }
+      </div>
+      <iframe
+        src="https://www.flightcircle.com/shop/f97c5d7539a7/4000001403"
+        class="w-full px-4 lg:w-1/2 h-screen overflow-y-auto"
+        title="Flight Circle Embed"></iframe>
+    </div>
+  </section>
+  <ProgramSwiper content={programsSwiper} />
+  <script src="../scripts/creativeSwiper.js"></script>
+</BaseLayout>

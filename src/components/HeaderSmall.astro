@@ -14,7 +14,7 @@ if (!images[content.imagePath]) {
 ---
 
 <header
-  class="relative lg:mt-0 min-h-screen font-sans2 h-fit bg-gray-800 text-white flex flex-col items-center justify-center overflow-hidden"
+  class="relative lg:mt-0 min-h-2/3 font-sans bg-gray-800 text-white flex flex-col items-center justify-center overflow-hidden"
 >
   <Image
     src={images[content.imagePath]()}
@@ -36,7 +36,7 @@ if (!images[content.imagePath]) {
       set:html={content.headerH1}
     />
     <h2
-      class="text-xl mt-3 font-medium font-sans tracking-wide text-center max-w-5xl"
+      class="text-xl mt-3 font-light font-sans tracking-wide text-center max-w-5xl"
       set:html={content.paragraph}
     />
     <div

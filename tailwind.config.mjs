@@ -17,6 +17,15 @@ export default {
           "Noto Color Emoji",
         ],
       },
+      minHeight: {
+        "1/2": "50vh",
+        "2/3": "66vh",
+        "3/4": "75vh",
+      },
+      height: {
+        "1/2": "50vh",
+        "3/4": "75vh",
+      },
     },
   },
   plugins: [],

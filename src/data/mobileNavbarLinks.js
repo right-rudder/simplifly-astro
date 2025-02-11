@@ -87,7 +87,7 @@ export const mobileNavbarLinks = [
   },
   {
     name: "Start Today",
-    link: "/enroll-now",
+    link: "/enroll-at-simplifly",
     submenu: [],
   },
 ];

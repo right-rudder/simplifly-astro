@@ -4,11 +4,11 @@
 
 @layer components {
   .btn-primary {
-    @apply text-center uppercase font-title font-bold py-3 px-6 bg-sky-700 w-fit text-white rounded-sm hover:bg-sky-800 duration-300;
+    @apply text-center uppercase hover:scale-105 font-title font-bold py-3 px-6 bg-sky-700 w-fit text-white rounded-sm hover:bg-sky-800 duration-300;
   }
 
   .btn-accent {
-    @apply text-center hover:scale-105 font-title uppercase font-medium py-3 px-6 bg-sky-400/90 w-fit text-white hover:bg-sky-600/80 duration-300 ring-2 hover:ring-sky-600 ring-sky-600;
+    @apply text-center hover:scale-105 font-title uppercase font-medium py-3 px-6 bg-sky-400/90 w-fit text-sky-950 hover:text-white hover:bg-sky-600/80 duration-300 ring-2 hover:ring-sky-600 ring-sky-600;
   }
 
   .btn-animate {
@@ -23,11 +23,27 @@
   }
 
   .tooltip {
-    @apply invisible opacity-0 absolute rounded-sm shadow-md shadow-slate-800/50 bg-gray-50 text-center text-gray-800;
+    @apply invisible opacity-0 absolute w-[24rem] rounded-lg z-50 -top-10 left-12 shadow-md shadow-slate-800/50 bg-sky-50 text-center text-gray-800 p-6;
+  }
+
+  .has-tooltip {
+    @apply relative;
   }
 
   .has-tooltip:hover .tooltip {
-    @apply visible opacity-95 transition-all duration-300 cursor-help;
+    @apply visible opacity-95 transition-all duration-300 top-0 cursor-help;
+  }
+
+  .section-upper {
+    @apply mx-auto mt-12 uppercase text-lg lg:text-xl lg:max-w-3xl font-sans text-center font-bold tracking-tight text-sky-400;
+  }
+
+  .section-title {
+    @apply mx-auto text-4xl lg:text-6xl lg:max-w-5xl font-title text-center font-bold tracking-tight text-sky-950;
+  }
+
+  .section-description {
+    @apply mx-auto mb-12 text-lg max-w-3xl text-center tracking-wider text-gray-900;
   }
 
   .swiper-button-next,
