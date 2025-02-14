@@ -4,11 +4,11 @@
 
 @layer components {
   .btn-primary {
-    @apply text-center uppercase hover:scale-105 font-title font-bold py-3 px-6 bg-sky-700 w-fit text-white rounded-sm hover:bg-sky-800 duration-300;
+    @apply text-center uppercase hover:scale-105 font-title font-bold py-3 px-6 bg-sky-700/80 w-fit text-white rounded-sm hover:bg-white/90 hover:text-sky-800 duration-300 border-2 border-transparent hover:border-sky-600;
   }
 
   .btn-accent {
-    @apply text-center hover:scale-105 font-title uppercase font-medium py-3 px-6 bg-sky-400/90 w-fit text-sky-950 hover:text-white hover:bg-sky-600/80 duration-300 ring-2 hover:ring-sky-600 ring-sky-600;
+    @apply text-center hover:scale-105 font-title uppercase font-medium py-3 px-6 bg-sky-400/90 w-fit text-sky-950 hover:text-white hover:bg-sky-600/80 duration-300 ring-2 hover:ring-sky-600 ring-transparent;
   }
 
   .btn-animate {
@@ -58,6 +58,14 @@
     1px -1px 0 white,
     -1px 1px 0 white,
     1px 1px 0 white;
+}
+
+.outlined-text-black {
+  text-shadow:
+    -1px -1px 0 black,  
+    1px -1px 0 black,
+    -1px  1px 0 black,
+    1px  1px 0 black;
 }
 
 .swiper-button-prev,
