@@ -15,7 +15,7 @@ export default function FAQs({ faqs, type }) {
   };
 
   return (
-    <div className="bg-gradient-to-b from-sky-100 via-white to-sky-200">
+    <div className="bg-gradient-to-b from-sky-100 via-white to-accent-400/75">
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-12 lg:pt-16 lg:pb-12">
         <div className="mx-auto max-w-4xl">
           <p className="mx-auto mt-12 uppercase text-lg lg:text-xl lg:max-w-3xl font-sans text-center font-bold tracking-tight text-sky-400">
