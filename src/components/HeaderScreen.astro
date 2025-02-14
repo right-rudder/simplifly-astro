@@ -8,7 +8,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
 );
 if (!images[content.imagePath]) {
   throw new Error(
-    `"${content.imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,webp}"`
+    `"${content.imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,webp,HEIC}"`
   );
 }
 ---
@@ -24,19 +24,19 @@ if (!images[content.imagePath]) {
     class="absolute inset-0 -z-0 object-cover object-center w-full h-full animate-slow-zoom"
   />
   <div
-    class="absolute bg-gradient-to-b from-white/40 to-white/50 w-full h-full z-0"
+    class="absolute bg-gradient-to-b from-black/40 to-black/50 w-full h-full z-0"
   >
   </div>
   <!-- Text -->
   <div
-    class="text-white mt-20 lg:mt-0 text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
+    class="text-white mt-20 lg:mt-0 text-center lg:text-left z-10 flex flex-col items-end gap-4 px-5 w-[80vw] h-full lg:pt-28 justify-center"
   >
-    <p
-      class="text-5xl md:text-6xl uppercase leading-3 lg:text-8xl font-title drop-shadow-md xl:text-8xl text-center font-bold max-w-3xl text-slate-900"
+    <h1
+      class="text-5xl md:text-6xl uppercase outlined-text drop-shadow-md leading-3 lg:text-8xl font-title xl:text-8xl text-right font-bold max-w-3xl text-sky-950"
       set:html={content.headerH1}
     />
-    <h1
-      class="text-xl mt-3 font-semibold text-slate-800 font-sans tracking-wide text-center max-w-5xl"
+    <p
+      class="text-lg lg:text-2xl mt-3 outlined-text font-semibold text-slate-800 font-sans tracking-wide text-right max-w-5xl"
       set:html={content.paragraph}
     />
     <div
