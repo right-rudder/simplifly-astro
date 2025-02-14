@@ -17,6 +17,21 @@ export default {
           "Noto Color Emoji",
         ],
       },
+      colors: {
+        accent: {
+          50: "#fffcea",
+          100: "#fff6c5",
+          200: "#ffed87",
+          300: "#ffde48",
+          400: "#ffcc1e",
+          500: "#fcab04",
+          600: "#df8100",
+          700: "#b95a04",
+          800: "#96450a",
+          900: "#7b390c",
+          950: "#471c01",
+        },
+      },
       minHeight: {
         "1/2": "50vh",
         "2/3": "66vh",
