@@ -4,8 +4,8 @@ import ImageComp from "./ImageComp.astro";
 const { data } = Astro.props;
 ---
 
-<section>
-  <div class="bg-sky-100 py-24">
+<section class="p-5">
+  <div class="bg-gradient-to-br from-sky-200 via-white to-accent-300 py-24 rounded-lg">
     <div class="mx-auto max-w-5xl px-6 lg:px-8">
       <h3
         class="text-4xl lg:text-6xl lg:max-w-5xl font-title text-center font-bold tracking-tight text-sky-950"
@@ -13,7 +13,7 @@ const { data } = Astro.props;
         Your Path From Student Pilot to First Officer
       </h3>
       <h4
-        class="mx-auto mt-4 text-lg max-w-3xl text-center tracking-loose text-gray-900"
+        class="mx-auto mt-4 text-lg lg:text-2xl max-w-3xl text-center tracking-loose text-gray-900"
       >
         Our student pilots have gone on to fly with…
       </h4>
@@ -23,11 +23,16 @@ const { data } = Astro.props;
       >
         {
           data.airlines.map((airline) => (
-            <ImageComp
-              imagePath={airline.imagePath}
-              imageAlt={airline.imageAlt}
-              styles="max-w-52 lg:max-w-40 lg:max-h-16 object-contain"
-            />
+            <a
+              href={airline.link}
+              target="_blank"
+            >
+              <ImageComp
+                imagePath={airline.imagePath}
+                imageAlt={airline.imageAlt}
+                styles="max-w-52 lg:max-w-40 lg:max-h-16 object-contain hover:scale-110 duration-500 ease-in-out"
+              />
+            </a>
           ))
         }
       </div>
