@@ -114,9 +114,9 @@ const Navbar = ({ pathname }) => {
                         <a
                           href={item.link}
                           target={`${item.link.includes("http") ? "_blank" : "_self"}`}
-                          className="lg:text-xl xl:text-2xl duration-500 ease-in-out hover:underline drop-shadow-sm decoration-sky-300 decoration-4 underline-offset-[10px] py-12 whitespace-nowrap group-last:font-bold group-last:bg-sky-700 group-last:ring-2 group-last:ring-white/50 group-last:py-2 group-last:px-5 group-last:hover:bg-sky-300 group-last:hover:no-underline text-white group-last:hover:text-black"
+                          className={`${navBar || openMobile ? "hover:text-accent-400" : "hover:text-accent-500"} lg:text-xl xl:text-2xl duration-500 ease-in-out hover:underline drop-shadow-sm decoration-accent-500 decoration-2 underline-offset-[10px] py-12 whitespace-nowrap group-last:font-bold group-last:bg-sky-700 group-last:ring-2 group-last:ring-white/50 group-last:py-2 group-last:px-5 group-last:hover:bg-sky-800 group-last:hover:no-underline text-white`}
                         >
-                          <span className="relative w-full h-full">
+                          <span className="relative w-full h-full group-last:hover:drop-shadow-lg">
                             {item.name}
                           </span>
                         </a>
@@ -132,7 +132,7 @@ const Navbar = ({ pathname }) => {
                           {item.submenu.map((subitem, subIndex) => (
                             <li
                               key={subIndex}
-                              className={`${isActive(subitem, pathname) ? "bg-sky-700 text-sky-100" : ""} relative font-normal hover:bg-sky-700 hover:scale-105 px-1 hover:shadow-sm drop-shadow-sm duration-300 ease-in-out`}
+                              className={`${isActive(subitem, pathname) ? "bg-sky-700 text-sky-100" : ""} relative font-normal hover:bg-sky-700 hover:text-accent-500 hover:scale-105 px-1 hover:shadow-sm drop-shadow-sm duration-300 ease-in-out`}
                               onMouseEnter={() => setSubHoveredIndex(subIndex)}
                               onMouseLeave={() => setSubHoveredIndex(null)}
                             >
