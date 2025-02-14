@@ -78,14 +78,12 @@ const Navbar = ({ pathname }) => {
     <nav className="w-full h-0 sticky inset-0 z-20 font-sans tracking-wider">
       <div
         className={`${
-          navBar || openMobile
-            ? "bg-sky-500/95 backdrop-blur-sm"
-            : "bg-transparent"
+          navBar || openMobile ? "bg-sky-500/95 backdrop-blur-sm" : "bg-sky-700"
         } duration-500`}
       >
         <div className="px-5 max-w-7xl mx-auto top-0">
           <div
-            className={`${navBar || openMobile ? "lg:h-20" : "lg:h-28"} relative flex h-24 align-middle justify-center transition-all`}
+            className={`${navBar || openMobile ? "lg:h-20" : "lg:h-20"} relative flex h-24 align-middle justify-center transition-all`}
             id="navbar"
           >
             <div className="flex w-full items-center justify-between">

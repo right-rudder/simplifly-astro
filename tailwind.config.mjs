@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter Variable", ...defaultTheme.fontFamily.sans],
+        sans: ["Open Sans Variable", ...defaultTheme.fontFamily.sans],
         title: ["Kanit", ...defaultTheme.fontFamily.sans],
         stock: [
           "ui-sans-serif",
@@ -25,6 +25,16 @@ export default {
       height: {
         "1/2": "50vh",
         "3/4": "75vh",
+      },
+      keyframes: {
+        zoom: {
+          "0%": { transform: "scale(1)" },
+          "100%": { transform: "scale(1.2)" },
+        },
+      },
+      animation: {
+        "slow-zoom": "zoom 45s alternate infinite ease-in-out",
+        "mid-zoom": "zoom 18s alternate infinite ease-in-out",
       },
     },
   },

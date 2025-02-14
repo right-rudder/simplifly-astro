@@ -8,23 +8,21 @@ const homePage = {
 
     //top header
     header: {
-      stars: true,
-      imagePath: "/src/assets/jim-witkowski-sYHjFbnIYbA-unsplash.jpg",
-      imageAlt:
-        "SimpliFly Flight School & Aircraft Management flight over Kankakee, IL",
-      headerH1: `PILOT TRAINING</br><span class="text-sky-300">MADE SIMPLE</span>`,
+      imagePath: "/src/assets/Simplifly-flight-school-pilots.png",
+      imageAlt: "SimpliFly Flight School Team at the runway",
+      headerH1: `PILOT TRAINING MADE SIMPLE`,
       paragraph:
         "Start your aviation journey with SimpliFly Flight School. Whether you're looking to fly for fun or pursue a career in aviation, Our programs and instructors to help you achieve your goals.",
       buttons: [
         {
           name: "Enroll Now",
           link: "/enroll-at-simplifly",
-          primary: false,
+          primary: true,
         },
         {
           name: "Book a Discovery Flight",
           link: "/discovery-flight",
-          primary: false,
+          primary: true,
         },
       ],
     },
