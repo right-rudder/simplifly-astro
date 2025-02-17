@@ -4,7 +4,7 @@
 
 @layer components {
   .btn-primary {
-    @apply text-center uppercase hover:scale-105 font-title font-bold py-3 px-6 bg-sky-700 w-fit text-white rounded-sm hover:bg-sky-800 duration-300;
+    @apply text-center uppercase hover:scale-105 font-title font-bold py-3 px-8 bg-sky-400 w-fit text-slate-900 hover:text-white rounded-sm hover:bg-sky-700 duration-100;
   }
 
   .btn-accent {

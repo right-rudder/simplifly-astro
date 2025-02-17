@@ -24,16 +24,16 @@ if (!images[imagePath])
   class=`${style} flex flex-col bg-white group relative overflow-hidden rounded-md`
 >
   <div
-    class="w-full h-[27rem] overflow-hidden flex flex-col justify-center items-center align-middle"
+    class="w-full h-[27rem] overflow-hidden flex flex-col lg:justify-center justify-end items-center align-middle"
   >
-    <p
-      class="z-10 w-full uppercase px-6 text-3xl font-title font-bold lg:translate-y-12 drop-shadow-md text-center leading-7 text-sky-700 lg:text-sky-950 group-hover:text-sky-900 group-hover:-translate-y-3 duration-300 ease-in-out"
+    <h4
+      class="z-10 w-full uppercase px-6 text-3xl font-title font-bold lg:translate-y-12 drop-shadow-md text-center leading-7 text-sky-50 lg:text-sky-50 group-hover:text-sky-950 group-hover:-translate-y-3 duration-300 ease-in-out"
       set:html={title}
     />
     {
       description && (
         <p
-          class="z-10 mt-3 lg:mt-0 px-8 w-full lg:leading-3 lg:translate-y-10 font-sans font-normal text-lg lg:opacity-0 text-center leading-tight text-gray-950 group-hover:opacity-95 group-hover:-translate-y-1 group-hover:leading-tight duration-500 ease-out"
+          class="z-10 mt-3 lg:my-0 mb-24 px-8 w-full lg:leading-3 lg:translate-y-10 font-sans font-normal text-lg lg:opacity-0 text-center leading-tight text-gray-50 group-hover:text-sky-900 group-hover:opacity-95 group-hover:-translate-y-1 group-hover:leading-tight duration-500 ease-out"
           set:html={description}
         />
       )
@@ -45,7 +45,7 @@ if (!images[imagePath])
       quality={60}
     />
     <div
-      class="absolute z-0 w-full h-full bg-white/70 group-hover:bg-sky-100/80 duration-500"
+      class="absolute z-0 w-full h-full bg-slate-900/30 lg:bg-slate-600/10 group-hover:bg-white/80 duration-500"
     >
     </div>
   </div>

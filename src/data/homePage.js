@@ -8,14 +8,14 @@ const homePage = {
 
     //top header
     header: {
-      imagePath: "/src/assets/Simplifly-flight-school-pilots.png",
+      imagePath: "/src/assets/DSC02358 copy.png",
       imageAlt: "SimpliFly Flight School Team at the runway",
-      headerH1: `PILOT TRAINING MADE SIMPLE`,
+      headerH1: `PILOT TRAINING<br>MADE SIMPLE`,
       paragraph:
         "Start your aviation journey with SimpliFly Flight School. Whether you're looking to fly for fun or pursue a career in aviation, Our programs and instructors to help you achieve your goals.",
       buttons: [
         {
-          name: "Enroll Now",
+          name: "Start Your Journey",
           link: "/enroll-at-simplifly",
           primary: true,
         },
