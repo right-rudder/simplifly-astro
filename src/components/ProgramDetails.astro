@@ -1,0 +1,56 @@
+---
+const { program } = Astro.props;
+---
+
+<section class="container mx-auto px-4 py-12 grid md:grid-cols-2 gap-8">
+  <!-- Left Side: Description & Key Points -->
+  <div>
+    <h2 class="text-3xl font-bold text-gray-900 mb-4">{ program.title }</h2>
+    <p class="text-gray-700 mb-6">{ program.description }</p>
+
+    <!-- Key Points -->
+    <div>
+      <h3 class="text-xl font-semibold text-gray-900 mb-3">Key Points</h3>
+      <ul class="space-y-2">
+        {program.keyPoints.map((point) => (
+          <li class="flex items-center text-gray-700">
+            <span class="mr-2 text-primary-600">✔</span> {point}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+
+  <!-- Right Side: CTA & FAQs -->
+  <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+    <!-- CTA Section -->
+    <div class="mb-6">
+      <h3 class="text-2xl font-semibold text-gray-900 mb-2">
+        Take a Discovery Flight
+      </h3>
+      <p class="text-gray-700 mb-4">
+        Experience flying firsthand with a SimpliFly discovery flight. Book now
+        and take the first step toward your aviation dreams!
+      </p>
+      <a
+        href="/discovery-flight"
+        class="inline-block bg-primary-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-primary-700 transition"
+      >
+        Book Now
+      </a>
+    </div>
+
+    <!-- FAQs Section -->
+    <div>
+      <h3 class="text-xl font-semibold text-gray-900 mb-3">FAQs</h3>
+      <div class="space-y-4">
+        {program.faqs.map((faq) => (
+          <div class="border-b pb-2">
+            <h4 class="text-gray-900 font-medium">{faq.question}</h4>
+            <p class="text-gray-700 text-sm mt-1">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
