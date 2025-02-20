@@ -3,16 +3,16 @@ const discoveryFlight = {
     //SEO Header Stuff
     pageTitle: "Discovery Flight | SimpliFly Flight School, Mesa, AZ",
     pageDescription:
-      "SimpliFly Flight School & Aircraft Management offers flight training in Kankakee, IL. We offer private pilot training, instrument rating training, commercial pilot training, and more. Contact us today!",
+      "Book a Discovery Flight at SimpliFly Flight School in Mesa, AZ. Experience the thrill of flying and see if becoming a pilot is right for you!",
     pageKeywords:
-      "flight training, flight school, pilot training, private pilot training, instrument rating training, commercial pilot training, Kankakee, IL",
+      "Discovery Flight, Flight School, Flight Training, Pilot Training, Learn to Fly, Private Pilot, Sport Pilot, Recreational Pilot, Flight Instructor, Flight Instruction, Flight School Mesa, AZ, Kankakee Flight School, Kankakee Flight Training, Mesa Pilot Training, Mesa Learn to Fly, Mesa Private Pilot, Mesa Sport Pilot, Mesa Recreational Pilot, Mesa Flight Instructor, Mesa Flight Instruction",
+    //
 
     //top header
     header: {
       stars: true,
-      imagePath: "/src/assets/jim-witkowski-sYHjFbnIYbA-unsplash.jpg",
-      imageAlt:
-        "SimpliFly Flight School & Aircraft Management flight over Kankakee, IL",
+      imagePath: "/src/assets/Simplifly-flight-school-discovery-flight.jpg",
+      imageAlt: "SimpliFly Flight School flight over Mesa, AZ",
       headerH1: `Discovery Flight`,
       paragraph:
         "Fly at SimpliFly and See if Flying is for You! Book a Discovery Flight Today!",

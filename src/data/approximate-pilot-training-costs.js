@@ -11,10 +11,10 @@ const aproxPilotTrainingCosts = {
     //top header
     header: {
       stars: true,
-      imagePath: "/src/assets/airplane-streaking-by-a-runway-in-mesa-az.webp",
+      imagePath: "/src/assets/Simplifly-flight-school-happy-pilots-2.jpg",
       imageAlt:
         "SimpliFly Flight School airplane landing at Falcon Field Airport in Mesa, Arizona",
-      headerH1: `Approximate<br><span class="text-sky-300">Training Costs</span>`,
+      headerH1: `Approximate<br>Training Costs`,
       paragraph:
         "The cost of flight training varies greatly depending on a number of factors such as type of training, the student's aptitude and experience level, and the type of aircraft used. Affordable options for pilot training are available at SimpliFly Flight School.",
       buttons: [

@@ -43,14 +43,15 @@ if (!images[content.imagePath]) {
       class="mt-6 flex flex-wrap justify-center align-middle items-center gap-6 z-10"
     >
       {
-        content.buttons.map((btn) => (
-          <a
-            href={btn.link}
-            class={`${btn.primary ? "btn-primary" : "btn-white"} w-full md:w-auto`}
-          >
-            <span class="drop-shadow-sm">{btn.name}</span>
-          </a>
-        ))
+        content.buttons &&
+          content.buttons.map((btn) => (
+            <a
+              href={btn.link}
+              class={`${btn.primary ? "btn-primary" : "btn-white"} w-full md:w-auto`}
+            >
+              <span class="drop-shadow-sm">{btn.name}</span>
+            </a>
+          ))
       }
     </div>
   </div>
