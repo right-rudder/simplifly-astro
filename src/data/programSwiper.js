@@ -11,7 +11,7 @@ const programsSwiper = {
         "SimpliFly Flight School student and flight instructor in a Cessna airplane",
       description:
         "Your passport to the skies! Learn to pilot your dreams with our Private Pilot Course.",
-      link: "/flight-training/private-pilot-training",
+      link: "/programs/private-pilot",
     },
     {
       title: "Instrument Rating",
@@ -19,7 +19,7 @@ const programsSwiper = {
       imageAlt: "SimpliFly Flight School Cirrus airplane instrument panel",
       description:
         "Navigate through clouds and the skies with precision through our Instrument Rating course.",
-      link: "/flight-training/instrument-rating",
+      link: "/programs/instrument-rating",
     },
     {
       title: "Commercial Pilot",
@@ -28,7 +28,7 @@ const programsSwiper = {
         "SimpliFly Flight School student and flight instructor in a Cessna airplane cockpit",
       description:
         "Start your pilot career with our Commercial Pilot Course. Your path to the captain's seat is here.",
-      link: "/flight-training/commercial-pilot-training",
+      link: "/programs/commercial-pilot",
     },
     {
       title: "Multi-Engine Rating",
@@ -36,7 +36,7 @@ const programsSwiper = {
       imageAlt: "SimpliFly Flight School student by a multi-engine airplane",
       description:
         "Master the art of multi engine flying and unlock new horizons in your aviation career.",
-      link: "/flight-training/multi-engine-rating",
+      link: "/programs/multi-engine-rating",
     },
     {
       title: "Certified Flight Instructor",
@@ -45,7 +45,7 @@ const programsSwiper = {
         "SimpliFly Flight School student and flight instructor in a Cessna airplane cockpit",
       description:
         "Become a trusted guide in the world of aviation. Become a CFI and help others reach their dreams.",
-      link: "/flight-training/certified-flight-instructor-cfi",
+      link: "/programs/certified-flight-instructor",
     },
   ],
 };
