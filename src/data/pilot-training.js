@@ -3,9 +3,9 @@ const pilotTraining = {
     //SEO Header Stuff
     pageTitle: "Pilot Training | SimpliFly Flight School, Mesa, AZ",
     pageDescription:
-      "SimpliFly Flight School & Aircraft Management offers flight training in Kankakee, IL. We offer private pilot training, instrument rating training, commercial pilot training, and more. Contact us today!",
+      "Learn to fly at SimpliFly Flight School in Mesa, AZ. We offer a variety of pilot training programs to help you achieve your aviation goals. Contact us today to learn more!",
     pageKeywords:
-      "flight training, flight school, pilot training, private pilot training, instrument rating training, commercial pilot training, Kankakee, IL",
+      "Pilot Training, Flight School, Flight Training, Pilot Training, Learn to Fly, Private Pilot, Sport Pilot, Recreational Pilot, Flight Instructor, Flight Instruction, Flight School Mesa, AZ, Kankakee Flight School, Kankakee Flight Training, Mesa Pilot Training, Mesa Learn to Fly, Mesa Private Pilot, Mesa Sport Pilot, Mesa Recreational Pilot, Mesa Flight Instructor, Mesa Flight Instruction",
 
     //top header
     header: {
@@ -13,7 +13,7 @@ const pilotTraining = {
       imagePath: "/src/assets/kristopher-allison-KU4zYj4u0mo-unsplash.jpg",
       imageAlt:
         "SimpliFly Flight School airplane landing at Falcon Field Airport in Mesa, Arizona",
-      headerH1: `PILOT TRAINING</br><span class="text-sky-300">PROGRAMS</span>`,
+      headerH1: `Pilot Training<br>Programs`,
       paragraph:
         "SimpliFly makes becoming a pilot simple. Offering training for pathways to the airlines, we will take you from your private pilot certificate to being a commercial pilot.",
       buttons: [

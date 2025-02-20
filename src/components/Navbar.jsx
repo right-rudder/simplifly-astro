@@ -79,8 +79,8 @@ const Navbar = ({ pathname }) => {
       <div
         className={`${
           navBar || openMobile
-            ? "bg-sky-500/95 border-b-2 border-sky-950/10"
-            : "bg-transparent"
+            ? "bg-sky-500/95 shadow-md"
+            : "bg-gradient-to-b from-white/30 to-transparent"
         } duration-500`}
       >
         <div className="px-12 mx-auto top-0">
@@ -105,7 +105,7 @@ const Navbar = ({ pathname }) => {
               </a>
               <div className="hidden ml-12 lg:flex justify-end lg:w-[70%]">
                 <ul
-                  className={`${navBar || openMobile ? "text-white" : "text-sky-950"} flex justify-end align-middle gap-7 w-full items-center`}
+                  className={`${navBar || openMobile ? "text-white" : "text-slate-950"} flex justify-end align-middle gap-7 w-full items-center`}
                 >
                   {navbarLinks.map((item, index) => (
                     <li
@@ -118,7 +118,7 @@ const Navbar = ({ pathname }) => {
                         <a
                           href={item.link}
                           target={`${item.link.includes("http") ? "_blank" : "_self"}`}
-                          className="font-bold lg:text-xl duration-300 hover:underline drop-shadow-sm decoration-sky-300 decoration-4 underline-offset-[10px] py-12 whitespace-nowrap group-last:font-bold group-last:bg-sky-700 group-last:ring-2 group-last:ring-white/50 group-last:py-2 group-last:px-5 group-last:hover:bg-sky-300 group-last:hover:no-underline"
+                          className="font-bold lg:text-xl duration-300 hover:underline drop-shadow-sm decoration-amber-300 decoration-4 underline-offset-[10px] py-12 whitespace-nowrap group-last:font-bold group-last:bg-sky-700 group-last:ring-2 group-last:ring-white/50 group-last:py-2 group-last:px-5 group-last:hover:bg-sky-300 group-last:hover:no-underline"
                         >
                           <span className="relative group-last:text-white w-full h-full group-last:hover:text-black">
                             {item.name}
@@ -199,7 +199,7 @@ const Navbar = ({ pathname }) => {
                 <span className="sr-only">Open main menu</span>
 
                 <svg
-                  className={`${openMobile ? "hidden" : "block"} h-6 w-6 text-white`}
+                  className={`${openMobile ? "hidden" : "block"} h-6 w-6 text-slate-950`}
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth="2.0"
@@ -215,7 +215,7 @@ const Navbar = ({ pathname }) => {
                 </svg>
 
                 <svg
-                  className={`${openMobile ? "block" : "hidden"} h-6 w-6 text-white`}
+                  className={`${openMobile ? "block" : "hidden"} h-6 w-6 text-slate-950`}
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth="2.0"

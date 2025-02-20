@@ -3,12 +3,28 @@ export const mobileNavbarLinks = [
     name: "New to Flying?",
     submenu: [
       {
-        name: "Why Become a Pilot?",
-        link: "/why-become-a-pilot",
-      },
-      {
         name: "Discovery Flight",
         link: "/discovery-flight",
+      },
+      {
+        name: "Enroll at SimpliFly",
+        link: "/enroll-at-simplifly",
+      },
+      {
+        name: "Pilot Training",
+        link: "/pilot-training",
+      },
+      {
+        name: "Begin Pilot Career",
+        link: "/instruct-at-simplifly",
+      },
+      {
+        name: "Timeline",
+        link: "/timeline-to-be-a-pilot",
+      },
+      {
+        name: "Cost",
+        link: "/approximate-pilot-training-costs",
       },
     ],
   },
