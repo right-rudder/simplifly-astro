@@ -13,7 +13,7 @@ const discoveryFlight = {
       imagePath: "/src/assets/jim-witkowski-sYHjFbnIYbA-unsplash.jpg",
       imageAlt:
         "SimpliFly Flight School & Aircraft Management flight over Kankakee, IL",
-      headerH1: `<span class="text-sky-300">Discovery Flight</span>`,
+      headerH1: `Discovery Flight`,
       paragraph:
         "Fly at SimpliFly and See if Flying is for You! Book a Discovery Flight Today!",
       buttons: [],

@@ -78,19 +78,21 @@ const Navbar = ({ pathname }) => {
     <nav className="w-full h-0 sticky inset-0 z-20 font-sans tracking-wider">
       <div
         className={`${
-          navBar || openMobile ? "bg-sky-500/95 backdrop-blur-sm" : "bg-sky-700"
+          navBar || openMobile
+            ? "bg-sky-500/95 border-b-2 border-sky-950/10"
+            : "bg-transparent"
         } duration-500`}
       >
-        <div className="px-5 max-w-7xl mx-auto top-0">
+        <div className="px-12 mx-auto top-0">
           <div
-            className={`${navBar || openMobile ? "lg:h-20" : "lg:h-20"} relative flex h-24 align-middle justify-center transition-all`}
+            className={`${navBar || openMobile ? "lg:h-24" : "lg:h-20"} relative flex h-20 align-middle justify-between transition-all`}
             id="navbar"
           >
-            <div className="flex w-full items-center justify-between">
+            <div className="flex w-full items-center justify-center lg:justify-between">
               <a
                 href="/"
                 title="SimpliFly flight school"
-                className="hover:brightness-110 flex p-3 h-20 lg:h-28 justify-end align-middle items-center duration-200 ease-in-out w-2/3 lg:w-[20%]"
+                className="hover:brightness-110 flex p-3 h-20 lg:h-28 justify-end align-middle items-center duration-200 ease-in-out"
               >
                 <img
                   src="/simplifly_250.webp"
@@ -98,11 +100,13 @@ const Navbar = ({ pathname }) => {
                   aria-label="SimpliFly Flight School & Aircraft Management Logo"
                   title="SimpliFly Flight School & Aircraft Management"
                   loading="eager"
-                  className={`${navBar || openMobile ? "h-20 lg:h-24 lg:mt-6" : "h-24 lg:h-36 mt-12"} object-contain duration-500 drop-shadow-md`}
+                  className={`${navBar || openMobile ? "h-[5.5rem] mt-4 md:h-[7.2rem] md:mt-9 lg:mt-7" : "h-24 md:h-36 mt-6 md:mt-12"} object-contain duration-500 drop-shadow-md`}
                 />
               </a>
-              <div className="hidden ml-12 lg:flex justify-end lg:w-[80%]">
-                <ul className="flex justify-between align-middle w-full items-center text-white">
+              <div className="hidden ml-12 lg:flex justify-end lg:w-[70%]">
+                <ul
+                  className={`${navBar || openMobile ? "text-white" : "text-sky-950"} flex justify-end align-middle gap-7 w-full items-center`}
+                >
                   {navbarLinks.map((item, index) => (
                     <li
                       key={index}
@@ -114,14 +118,14 @@ const Navbar = ({ pathname }) => {
                         <a
                           href={item.link}
                           target={`${item.link.includes("http") ? "_blank" : "_self"}`}
-                          className="font-bold lg:text-xl xl:text-2xl duration-300 hover:underline drop-shadow-sm decoration-sky-300 decoration-4 underline-offset-[10px] py-12 whitespace-nowrap group-last:font-bold group-last:bg-sky-700 group-last:ring-2 group-last:ring-white/50 group-last:py-2 group-last:px-5 group-last:hover:bg-sky-300 group-last:hover:no-underline"
+                          className="font-bold lg:text-xl duration-300 hover:underline drop-shadow-sm decoration-sky-300 decoration-4 underline-offset-[10px] py-12 whitespace-nowrap group-last:font-bold group-last:bg-sky-700 group-last:ring-2 group-last:ring-white/50 group-last:py-2 group-last:px-5 group-last:hover:bg-sky-300 group-last:hover:no-underline"
                         >
-                          <span className="relative text-white group-last:text-white w-full h-full group-last:hover:text-black">
+                          <span className="relative group-last:text-white w-full h-full group-last:hover:text-black">
                             {item.name}
                           </span>
                         </a>
                       ) : (
-                        <span className="cursor-default text-white text-lg duration-300 hover:underline decoration-sky-500 decoration-4 underline-offset-[10px] py-12 whitespace-nowrap">
+                        <span className="cursor-default text-lg duration-300 hover:underline decoration-sky-500 decoration-4 underline-offset-[10px] py-12 whitespace-nowrap">
                           {item.name}
                         </span>
                       )}
