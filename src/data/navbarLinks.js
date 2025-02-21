@@ -30,28 +30,28 @@ export const navbarLinks = [
     ],
   },
   {
-    name: "Airline Pilot",
-    link: "/airline-pilot-courses",
+    name: "Programs",
+    link: "/programs",
     submenu: [
       {
         name: "Private Pilot",
-        link: "/private-pilot-training",
+        link: "/programs/private-pilot",
       },
       {
         name: "Instrument Rating",
-        link: "/instrument-rating",
+        link: "/programs/instrument-rating",
       },
       {
         name: "Commercial Pilot",
-        link: "/commercial-pilot-training",
+        link: "/programs/commercial-pilot",
       },
       {
         name: "Multi-Engine Rating",
-        link: "/multi-engine-rating",
+        link: "/programs/multi-engine-rating",
       },
       {
         name: "Certified Flight Instructor",
-        link: "/instruct-at-simplifly",
+        link: "/programs/certified-flight-instructor",
       },
     ],
   },

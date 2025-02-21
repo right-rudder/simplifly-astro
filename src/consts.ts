@@ -15,6 +15,8 @@ export const KEYWORDS =
 
 export const OG_IMAGE = "/Elite-OG-image.webp";
 
+export const COMPANY_NAME = "SimpliFly Flight School, Mesa, AZ"
+
 export const LOCATIONS = [
   {
     title: `Flight Dispatch Center`,
