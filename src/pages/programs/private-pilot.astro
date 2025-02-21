@@ -1,24 +1,22 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HeaderSmall from "../../components/HeaderSmall.astro";
-import GridPrograms from "../../components/GridPrograms.astro";
-import programs from "../../data/programSwiper";
 import CTAColor from "../../components/CTAColor.astro";
 import flyWithUsCTA from "../../data/fly-with-us-cta";
 
 import ProgramDetails from "../../components/ProgramDetails.astro";
-import privatePilotData from "../../data/privatePilotData.js";
+import programData from "../../data/privatePilotData.js";
 
 ---
 <BaseLayout
-  siteTitle={privatePilotData.pageTitle}
-  siteDescription={privatePilotData.pageDescription}
-  keywords={privatePilotData.pageKeywords}
+  siteTitle={programData.pageTitle}
+  siteDescription={programData.pageDescription}
+  keywords={programData.pageKeywords}
   >
   
-  <HeaderSmall content = {privatePilotData.header} />
+  <HeaderSmall content={programData.header} />
 
-  <ProgramDetails program={privatePilotData.details} />
+  <ProgramDetails program={programData.details} />
 
   <CTAColor content={flyWithUsCTA} />
 
