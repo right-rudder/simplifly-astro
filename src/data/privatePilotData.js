@@ -30,12 +30,18 @@ const privatePilotData = {
 
   // Program Details
   details: {
-    title: "Private Pilot License",
+    upperHeading: "Get Started With a",
+    heading: "Private Pilot License",
+    subHeading: "A PPL is the begining of your journey in aviation, whether you want to fly for fun or professionally, this is the starting point for every aspiring pilot",
+    
+    title: "Overview",
     description: `
       Earning your Private Pilot License (PPL) at SimpliFly Flight School is your first step into the world of aviation. This program is designed for aspiring pilots who want to learn how to operate an aircraft safely and confidently. Whether you aim to fly recreationally or use this as a stepping stone toward a professional pilot career, our expert instructors will guide you through each phase of your training.
-
+      <br/>
+      <br/>
       Throughout the course, you will receive a combination of in-depth ground school instruction and hands-on flight training. You’ll learn about aerodynamics, flight controls, navigation, meteorology, airspace regulations, and emergency procedures. Additionally, you'll gain experience in essential skills such as radio communication, flight planning, and performing takeoffs and landings at different airports.
-
+      <br/>
+      <br/>
       By the end of the program, you will have completed the necessary flight hours, mastered basic and advanced maneuvers, and be fully prepared to pass your FAA Private Pilot checkride. Our goal is to ensure that you graduate with not only the knowledge but also the confidence to take to the skies as a licensed private pilot.`,
 
     keyPoints: [
@@ -44,6 +50,16 @@ const privatePilotData = {
       "FAA-Approved Curriculum",
       "Mastering Basic and Advanced Flight Maneuvers",
     ],
+    cta: {
+      title: "Take a Discovery Flight",
+      description:
+        "Experience flying firsthand with a SimpliFly discovery flight. This is your chance to take control and explore the skies over Arizona.",
+      button: {
+        name: "Book Now",
+        link: "/discovery-flight",
+      },
+    },
+
     faqs: [
       {
         question: "How long does it take to get a Private Pilot License?",
@@ -62,18 +78,6 @@ const privatePilotData = {
       },
     ],  
   },
-
-  // CTA & FAQs
-  cta: {
-    title: "Take a Discovery Flight",
-    description:
-      "Experience flying firsthand with a SimpliFly discovery flight. This is your chance to take control and explore the skies over Arizona.",
-    button: {
-      name: "Book Now",
-      link: "/discovery-flight",
-    },
-  },
-
 };
 
 export default privatePilotData;
