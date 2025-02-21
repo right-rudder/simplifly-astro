@@ -31,8 +31,13 @@ const privatePilotData = {
   // Program Details
   details: {
     title: "Private Pilot License",
-    description:
-      "SimpliFly Flight School’s Private Pilot License course provides the foundation for your aviation career. This program includes hands-on flight training, in-depth ground school, and one-on-one instruction to prepare you for solo flights and certification.",
+    description: `
+      Earning your Private Pilot License (PPL) at SimpliFly Flight School is your first step into the world of aviation. This program is designed for aspiring pilots who want to learn how to operate an aircraft safely and confidently. Whether you aim to fly recreationally or use this as a stepping stone toward a professional pilot career, our expert instructors will guide you through each phase of your training.
+
+      Throughout the course, you will receive a combination of in-depth ground school instruction and hands-on flight training. You’ll learn about aerodynamics, flight controls, navigation, meteorology, airspace regulations, and emergency procedures. Additionally, you'll gain experience in essential skills such as radio communication, flight planning, and performing takeoffs and landings at different airports.
+
+      By the end of the program, you will have completed the necessary flight hours, mastered basic and advanced maneuvers, and be fully prepared to pass your FAA Private Pilot checkride. Our goal is to ensure that you graduate with not only the knowledge but also the confidence to take to the skies as a licensed private pilot.`,
+
     keyPoints: [
       "Expert Guidance from Certified Flight Instructors",
       "Comprehensive Flight and Ground Training",
