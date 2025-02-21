@@ -1,11 +1,11 @@
 import { COMPANY_NAME } from "../consts";
 
 const privatePilotData = {
-  pageTitle: `Private Pilot | ${COMPANY_NAME}`,
+  pageTitle: `Private Pilot License | ${COMPANY_NAME}`,
   pageDescription:
-    "Start your aviation journey with SimpliFly Flight School’s Private Pilot License course. Learn from experienced instructors and gain the foundational skills needed to become a licensed pilot.",
+    "Start your aviation journey with SimpliFly Flight School’s Private Pilot License (PPL) program. Learn from experienced instructors and gain the foundational skills needed to become a licensed pilot.",
   pageKeywords:
-    "private pilot license Arizona, flight school Mesa, pilot training programs, aviation school, learn to fly in Arizona",
+    "private pilot license Arizona, flight school Mesa, learn to fly, PPL certification, aviation school, beginner pilot training",
 
   // Top Header
   header: {
@@ -13,7 +13,7 @@ const privatePilotData = {
     imagePath: "/src/assets/two-pilot-smiling.webp",
     imageAlt: "A SimpliFly Flight School aircraft in flight over Arizona",
     headerH1: `Private Pilot <br>LICENSE</span>`,
-    paragraph: `Begin your journey into aviation with SimpliFly Flight School's Private Pilot program. Gain the skills, knowledge, and confidence to take control of the skies.`,
+    paragraph: `Begin your aviation journey with SimpliFly Flight School’s Private Pilot License program. Gain the skills, knowledge, and confidence to take control of the skies.`,
     buttons: [
       {
         name: "Enroll Today",
@@ -32,8 +32,8 @@ const privatePilotData = {
   details: {
     upperHeading: "Get Started With a",
     heading: "Private Pilot License",
-    subHeading: "A PPL is the begining of your journey in aviation, whether you want to fly for fun or professionally, this is the starting point for every aspiring pilot",
-    
+    subHeading: "A PPL is the beginning of your journey in aviation, whether you want to fly for fun or professionally, this is the starting point for every aspiring pilot.",
+
     title: "Overview",
     description: `
       Earning your Private Pilot License (PPL) at SimpliFly Flight School is your first step into the world of aviation. This program is designed for aspiring pilots who want to learn how to operate an aircraft safely and confidently. Whether you aim to fly recreationally or use this as a stepping stone toward a professional pilot career, our expert instructors will guide you through each phase of your training.
@@ -50,10 +50,11 @@ const privatePilotData = {
       "FAA-Approved Curriculum",
       "Mastering Basic and Advanced Flight Maneuvers",
     ],
+
     cta: {
-      title: "Enroll in This Program",
+      title: "Start Your Aviation Journey",
       description:
-        "Take the next step toward your aviation career. Join SimpliFly Flight School's expert-led program and start your journey to becoming a licensed pilot today.",
+        "Take the first step toward your dream of flying. Join SimpliFly Flight School’s Private Pilot License program and earn your wings with expert instruction and hands-on training.",
       button: {
         name: "Enroll Now",
         link: "/enroll-at-simplifly",
