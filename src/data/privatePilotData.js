@@ -51,12 +51,12 @@ const privatePilotData = {
       "Mastering Basic and Advanced Flight Maneuvers",
     ],
     cta: {
-      title: "Take a Discovery Flight",
+      title: "Enroll in This Program",
       description:
-        "Experience flying firsthand with a SimpliFly discovery flight. This is your chance to take control and explore the skies over Arizona.",
+        "Take the next step toward your aviation career. Join SimpliFly Flight School's expert-led program and start your journey to becoming a licensed pilot today.",
       button: {
-        name: "Book Now",
-        link: "/discovery-flight",
+        name: "Enroll Now",
+        link: "/enroll-at-simplifly",
       },
     },
 
