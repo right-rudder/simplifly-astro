@@ -5,9 +5,9 @@ import { Image } from "astro:assets";
 const {
   imagePath,
   imageAlt,
-  quality,
-  styles,
-  loading,
+  quality = 100,
+  styles = "",
+  loading = "lazy",
 } = Astro.props;
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
