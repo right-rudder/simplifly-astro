@@ -5,9 +5,9 @@ import { Image } from "astro:assets";
 const {
   imagePath,
   imageAlt,
-  quality = 60,
-  styles = "",
-  loading = "lazy",
+  quality,
+  styles,
+  loading,
 } = Astro.props;
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
@@ -25,4 +25,6 @@ if (!images[imagePath])
   class={styles}
   quality={quality}
   loading={loading}
+  widths={[240, 540, 720, 1080, 1440, 1980]}
+  sizes={`(max-width: 240px) 240px, (max-width: 540px) 540px, (max-width: 720px) 720px, (max-width: 1080px) 1080px, (max-width: 1440px) 1440px, 1920px`}
 />
