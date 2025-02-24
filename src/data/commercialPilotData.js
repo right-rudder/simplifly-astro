@@ -53,6 +53,8 @@ const commercialPilotData = {
     ],
 
     cta: {
+      imagePath: "/src/assets/female_pilot_smiling.webp",
+      imageAlt: "Female pilot smiling",
       title: "Enroll in the Commercial Pilot Program",
       description:
         "Take the next step in your aviation career. Join SimpliFly Flight School's Commercial Pilot program and train to become a professional pilot.",
