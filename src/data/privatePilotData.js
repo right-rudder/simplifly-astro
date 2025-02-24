@@ -52,6 +52,8 @@ const privatePilotData = {
     ],
 
     cta: {
+      imagePath: "/src/assets/female_pilot_smiling.webp",
+      imageAlt: "Female pilot smiling",
       title: "Start Your Aviation Journey",
       description:
         "Take the first step toward your dream of flying. Join SimpliFly Flight School’s Private Pilot License program and earn your wings with expert instruction and hands-on training.",
