@@ -14,7 +14,7 @@ const instructAtSimplifly = {
         "/src/assets/airline-pilot-courses-at-simplifly-flight-school.webp",
       imageAlt:
         "SimpliFly Flight School airplane landing at Falcon Field Airport in Mesa, Arizona",
-      headerH1: `<span class="text-sky-300"> Career Track Pilots</span>`,
+      headerH1: `Career Track<br>Pilots`,
       paragraph:
         "Start your pilot career after getting your commercial certificate. Start flying now and build the necessary hours to become an airline pilot. One way SimpliFly can help is by becoming a certified flight instructor (CFI).",
       buttons: [
