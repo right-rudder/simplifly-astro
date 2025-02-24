@@ -8,7 +8,7 @@ const homePage = {
 
     //top header
     header: {
-      imagePath: "/src/assets/student-pilot-and-cfi-getting-ready-to-take-off-simplifly.webp",
+      imagePath: "/src/assets/DSC02358 copy.png",
       imageAlt: "SimpliFly Flight School Team at the runway",
       headerH1: `PILOT TRAINING MADE SIMPLE`,
       paragraph:
