@@ -52,6 +52,8 @@ const instrumentRatingData = {
     ],
 
     cta: {
+      imagePath: "/src/assets/female_pilot_smiling.webp",
+      imageAlt: "Female pilot smiling",
       title: "Enroll in the Instrument Rating Program",
       description:
         "Take your aviation skills to the next level. Join SimpliFly Flight School's Instrument Rating program and become a more capable, professional pilot.",
