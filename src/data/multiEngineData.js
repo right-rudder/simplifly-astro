@@ -52,6 +52,8 @@ const multiEngineData = {
     ],
 
     cta: {
+      imagePath: "/src/assets/female_pilot_smiling.webp",
+      imageAlt: "Female pilot smiling",
       title: "Enroll in the Multi-Engine Rating Program",
       description:
         "Advance your aviation skills and career opportunities by earning your Multi-Engine Rating at SimpliFly Flight School.",
