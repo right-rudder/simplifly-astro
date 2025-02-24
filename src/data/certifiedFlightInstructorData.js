@@ -53,6 +53,8 @@ const certifiedFlightInstructorData = {
     ],
 
     cta: {
+      imagePath: "/src/assets/female_pilot_smiling.webp",
+      imageAlt: "Female pilot smiling",
       title: "Enroll in the CFI Program",
       description:
         "Start your journey as a Certified Flight Instructor at SimpliFly Flight School and gain the experience needed for a successful aviation career.",
