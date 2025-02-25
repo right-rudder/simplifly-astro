@@ -85,7 +85,7 @@ export const mobileNavbarLinks = [
     submenu: [
       {
         name: "Our Team",
-        link: "/our-team",
+        link: "/simplifly/team",
       },
       {
         name: "Our Fleet",
