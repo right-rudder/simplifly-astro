@@ -63,8 +63,8 @@ const {content} = Astro.props;
         {
             content.team.map((t) => (
                 <div class="flex flex-col items-center w-1/5">
-                    <div class="w-40 h-40 rounded-full overflow-hidden">
-                        <ImageComp imagePath={t.img} imageAlt={`${t.name} ${t.title} at SimplyFly Flight Academy`} styles="h-40 w-40 object-center object-cover hover:scale-110 transition-all duration-500" />
+                    <div class="w-48 h-48 rounded-full overflow-hidden">
+                        <ImageComp imagePath={t.img} imageAlt={`${t.name} ${t.title} at SimplyFly Flight Academy`} styles="w-48 h-48 object-center object-cover hover:scale-110 transition-all duration-500" />
                     </div>
                     <div class="flex flex-col px-9 w-max justify-center items-center">
                         <h3 set:html={t.name} 
