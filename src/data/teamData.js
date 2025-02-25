@@ -10,7 +10,7 @@ const certifiedFlightInstructorData = {
   // Top Header
   header: {
     stars: true,
-    imagePath: "/src/assets/simplifly-student-pilot-and-cfi-smiling.jpg",
+    imagePath: "/src/assets/simplifly-student-pilot-and-cfi-smiling-croped.jpg",
     imageAlt:
       "SimpliFly Flight School student and flight instructor in a Cessna airplane cockpit",
     headerH1: `Meet Our <br>TEAM</span>`,
