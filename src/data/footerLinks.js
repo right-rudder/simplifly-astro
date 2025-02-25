@@ -54,7 +54,7 @@ export const footerLinks = [
     links: [
       {
         name: "Our Team",
-        link: "/our-team",
+        link: "/simplifly/team",
       },
       {
         name: "Our Fleet",
