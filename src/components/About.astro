@@ -1,0 +1,81 @@
+---
+import ImageComp from "./ImageComp.astro";
+
+const {content} = Astro.props;
+---
+
+<section class="mx-auto md:px-8 py-12 flex flex-col items-center justify-center">
+    <div class="w-full text-center">
+        {content.upperHeading && (
+          <h3 class="mx-auto uppercase text-lg lg:text-xl max-w-3xl font-sans font-bold tracking-tight text-sky-400">
+            {content.upperHeading}
+          </h3>
+        )}
+        {content.heading && (
+          <h2 class="mx-auto mb-3 text-4xl lg:text-6xl max-w-3xl font-title font-bold tracking-tight text-sky-950">
+            {content.heading}
+          </h2>
+        )}
+        {content.subHeading && (
+          <p class="mx-auto mb-12 text-lg max-w-3xl tracking-loose text-gray-900">
+            {content.subHeading}
+          </p>
+        )}
+    </div>
+    <div class="flex flex-col items-center gap-12">
+        {
+            content.leadership.map((l) => (
+                <div class="items-center h-[30rem] w-3/5 bg-slate-100 rounded-lg shadow-md lg:flex overflow-hidden ring-1 ring-slate-200">
+                    <ImageComp imagePath={l.img} imageAlt={l.alt} styles="w-2/5 h-full object-cover object-top" />
+                    <div class="px-9 w-3/5">
+                        <h3 set:html={l.name} 
+                            class="text-2xl font-bold text-slate-900"
+                        />
+                        <h4 set:html={l.title} 
+                            class="text-lg font-semibold text-slate-700 pb-5"
+                        />
+                        <p set:html={l.summary} 
+                            class="text-base text-slate-600"
+                        />
+                    </div>
+                </div>
+            ))
+        }
+    </div>
+    <div class="w-full text-center pt-20">
+        {content.upperHeading2 && (
+          <h3 class="mx-auto uppercase text-lg lg:text-xl max-w-3xl font-sans font-bold tracking-tight text-sky-400">
+            {content.upperHeading2}
+          </h3>
+        )}
+        {content.heading2 && (
+          <h2 class="mx-auto mb-3 text-4xl lg:text-6xl max-w-3xl font-title font-bold tracking-tight text-sky-950">
+            {content.heading2}
+          </h2>
+        )}
+        {content.subHeading && (
+          <p class="mx-auto mb-12 text-lg max-w-3xl tracking-loose text-gray-900">
+            {content.subHeading2}
+          </p>
+        )}
+    </div>
+    <div class="flex flex-wrap items-center justify-center gap-12 lg:max-w-7xl">
+        {
+            content.team.map((t) => (
+                <div class="flex flex-col items-center w-1/5">
+                    <div class="w-40 h-40 rounded-full overflow-hidden">
+                        <ImageComp imagePath={t.img} imageAlt={`${t.name} ${t.title} at SimplyFly Flight Academy`} styles="h-40 w-40 object-center object-cover hover:scale-110 transition-all duration-500" />
+                    </div>
+                    <div class="flex flex-col px-9 w-max justify-center items-center">
+                        <h3 set:html={t.name} 
+                            class="text-2xl font-bold text-slate-900"
+                        />
+                        <h4 set:html={t.title} 
+                            class="text-lg font-semibold text-slate-600 pb-5 text-center"
+                        />
+                    </div>
+                </div>
+            ))
+        }
+
+</section>
