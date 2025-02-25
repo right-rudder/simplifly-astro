@@ -1,7 +1,7 @@
 import { COMPANY_NAME } from "../consts";
 
 const certifiedFlightInstructorData = {
-  pageTitle: `Certified Flight Instructor (CFI) | ${COMPANY_NAME}`,
+  pageTitle: `The SimpliFly Crew | ${COMPANY_NAME}`,
   pageDescription:
     "Launch your career as a flight instructor with SimpliFly Flight School’s Certified Flight Instructor (CFI) program. Gain the experience and skills needed to teach the next generation of pilots.",
   pageKeywords:
@@ -34,22 +34,125 @@ const certifiedFlightInstructorData = {
     upperHeading: "Meet the Crew",
     heading: "Leadership Team",
     subHeading: "Our leadership team consists of skilled and experienced aviation experts who have a deep passion for the flight training and are dedicated to delivering exceptional training and support to our students.",
+    
+    leadership:[
+      {
+        img: "/src/assets/Greg-Hadley.webp",
+        alt: "Greg Hadley Co-Owner at SimpliFly Flight School",
+        name: "Greg Hadley",
+        title: "Owner",
+        summary: "Greg has had a lifelong passion for airplanes and flying, which began at a young age. While still in high school, he worked at Sky Park in Bountiful, Utah, and earned his private pilot's license. Though life led him through a successful career in HVAC construction and over 20 years in real estate, he has returned to his first love: aviation. Together with his wife, he owns and operates SimpliFly, a venture that combines their shared love for flying. As he continues to work toward earning additional ratings, Greg balances his professional pursuits with personal interests that include fishing, spending time with family, and solving puzzles.",
+      },
+      {
+        img: "/src/assets/Julie-Hadley.webp",
+        alt: "Julie Hadley Co-Owner at SimpliFly Flight School",
+        name: "Julie Hadley",
+        title: "Owner",
+        summary: "With 18 years of experience in education, Julie is a lifelong learner and passionate teacher. Known for her organizational skills and talent for working with numbers, she thrives in both creative and analytical pursuits. Outside the classroom, she enjoys reading, sewing, paddle boarding, and exploring family history. A true collaborator, she loves working alongside her husband and supporting him in their shared ventures, including their exciting journey with SimpliFly. Above all, she treasures spending time with her children and grandchildren, cherishing every moment with her growing family.",
+      },
+      {
+        img: "/src/assets/Caitney-Hollenbeck.webp",
+        alt: "Caitney Hollenbeck Office Manager at SimpliFly Flight School",
+        name: "Caitney Hollenbeck",
+        title: "Office Manager",
+        summary: "Caitney has been with Simplifly for two years, working as the office manager. Currently in her second year of college, she is pursuing a degree to become a registered dietitian, with four years left in their program. While she has no interest in piloting herself, she enjoys flying with her husband, who is a commercially rated pilot.",
+      },
+    ],
 
-    title: "SimpliFly",
-    description: `
-      The Certified Flight Instructor (CFI) program at SimpliFly Flight School is designed for pilots looking to advance their careers by teaching others how to fly. This program equips you with the instructional skills, flight proficiency, and teaching techniques necessary to become an FAA-certified instructor.
-      <br/>
-      <br/>
-      As a CFI, you will develop expertise in aerodynamics, flight instruction principles, and student pilot training strategies. You’ll also refine your communication skills to effectively teach flight maneuvers, emergency procedures, and airspace regulations.
-      <br/>
-      <br/>
-      Upon completion of this program, you will be prepared to pass the FAA Certified Flight Instructor checkride and begin your career as a flight instructor—gaining flight hours and advancing toward airline or corporate pilot opportunities.`,
+    heading2: "Our Certified Flight Instructors",
+    subHeading2: "At SimpliFly, our dedicated instructors prioritize delivering top-notch flight training to students. They combine their extensive aviation expertise, passion for the field, and commitment to creating a safe and supportive learning atmosphere. By doing so, they enable students to reach their aspirations and develop into proficient pilots.",
 
-    keyPoints: [
-      "Gain Valuable Flight Experience While Teaching",
-      "Refine Your Instructional & Communication Skills",
-      "Prepare for the FAA Certified Flight Instructor Checkride",
-      "Start Your Career in Aviation with a CFI Position",
+    team:[
+      {
+        img: "/src/assets/Scott-Wilson.webp",
+        name: "Scott Wilson",
+        title: "A&P, IA, MEI",
+      },
+      {
+        img: "/src/assets/Anders-Jones.webp",
+        name: "Anders Jones",
+        title: "CFI/CFII",
+      },
+      {
+        img: "/src/assets/Bridon-Bowen.webp",
+        name: "Bridon Bowen",
+        title: "CFI/CFII",
+      },
+      {
+        img: "/src/assets/Blake-Meservy.webp",
+        name: "Blake Meservy",
+        title: "CFI/CFII",
+      },
+      {
+        img: "/src/assets/Davin-Hansen.webp",
+        name: "Davin Hansen",
+        title: "CFI/CFII",
+      },
+      {
+        img: "/src/assets/Adel-Ho.webp",
+        name: "Adel Ho",
+        title: "CFI/CFII/MEI",
+      },
+      {
+        img: "/src/assets/Jake-Horn.webp",
+        name: "Jake Horn",
+        title: "CFI/CFII/MEI",
+      },
+      {
+        img: "/src/assets/Dolly-Woodhall.webp",
+        name: "Dolly Woodhall",
+        title: "CFI/CFII",
+      },
+      {
+        img: "/src/assets/Josh-Perkins.webp",
+        name: "Josh Perkins",
+        title: "CFI/CFII",
+      },
+      {
+        img: "/src/assets/Porter-Arnett.webp",
+        name: "Porter Arnett",
+        title: "CFI/CFII",
+      },
+      {
+        img: "/src/assets/Jessica-Roy.webp",
+        name: "Jessica Roy",
+        title: "CFI/CFII",
+      },
+      {
+        img: "/src/assets/Zach-Figgins.webp",
+        name: "Zach Figgins",
+        title: "CFI/CFII",
+      },
+      {
+        img: "/src/assets/Isaac-Young.webp",
+        name: "Isaac Young",
+        title: "CFI/CFII/MEI",
+      },
+      {
+        img: "/src/assets/Mitch-Lovell.webp",
+        name: "Mitch Lovell",
+        title: "CFI/CFII",
+      },
+      {
+        img: "/src/assets/Dallen-Petersen.webp",
+        name: "Dallen Petersen",
+        title: "CFI/CFII",
+      },
+      {
+        img: "/src/assets/Devon-Webb.webp",
+        name: "Devon Webb",
+        title: "CFI/CFII",
+      },
+      {
+        img: "/src/assets/Corey-Elmquist.webp",
+        name: "Corey Elmquist",
+        title: "A&P",
+      },
+      {
+        img: "/src/assets/Olivia-Young.webp",
+        name: "Olivia Young",
+        title: "Scheduler<br/> Student Coordinator",
+      },
     ],
 
     cta: {
