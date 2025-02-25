@@ -3,18 +3,18 @@ import { COMPANY_NAME } from "../consts";
 const certifiedFlightInstructorData = {
   pageTitle: `The SimpliFly Crew | ${COMPANY_NAME}`,
   pageDescription:
-    "Launch your career as a flight instructor with SimpliFly Flight School’s Certified Flight Instructor (CFI) program. Gain the experience and skills needed to teach the next generation of pilots.",
+    "Discover the dedicated team behind SimpliFly Flight School. Our leadership and certified flight instructors are committed to providing exceptional training and support to help you achieve your aviation goals.",
   pageKeywords:
-    "certified flight instructor Arizona, CFI training Mesa, flight instructor certification, become a CFI, flight school, pilot instructor training",
+    "SimpliFly Flight School team, flight instructors, aviation experts, leadership team, certified flight instructors, aviation training",
 
   // Top Header
   header: {
     stars: true,
-    imagePath: "/src/assets/avel-chuklanov-ZEiqbaQhmvE-unsplash.jpg",
+    imagePath: "/src/assets/simplifly-student-pilot-and-cfi-smiling.jpg",
     imageAlt:
       "SimpliFly Flight School student and flight instructor in a Cessna airplane cockpit",
-    headerH1: `Certified Flight <br>INSTRUCTOR (CFI)</span>`,
-    paragraph: `Become a leader in aviation with SimpliFly Flight School’s CFI program. Gain valuable experience while teaching aspiring pilots and advancing your own career.`,
+    headerH1: `Meet Our <br>TEAM</span>`,
+    paragraph: `Get to know the passionate and experienced team at SimpliFly Flight School. Our leadership and certified flight instructors are dedicated to helping you succeed in your aviation journey.`,
     buttons: [
       {
         name: "Enroll Today",
@@ -22,8 +22,8 @@ const certifiedFlightInstructorData = {
         primary: false,
       },
       {
-        name: "Program Guide",
-        link: "/path",
+        name: "Discovery Flight",
+        link: "/discovery-flight",
         primary: false,
       },
     ],
