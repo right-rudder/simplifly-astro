@@ -13,7 +13,7 @@ export const SITE_DESCRIPTION =
 export const KEYWORDS =
   "SimpliFly Flight School, elite aircraft management, elite aircraft rentals, elite aircraft maintenance, elite aircraft brokerage, aircraft management,  aircraft rentals,  aircraft maintenance,  aircraft brokerage, flight training, flight school, pilot training, private pilot training, instrument rating training, commercial pilot training, multi-engine training, Kankakee, IL";
 
-export const OG_IMAGE = "/Elite-OG-image.webp";
+export const OG_IMAGE = "";
 
 export const COMPANY_NAME = "SimpliFly Flight School, Mesa, AZ"
 
@@ -26,6 +26,7 @@ export const LOCATIONS = [
     zip: "85215",
     gMaps: "https://maps.app.goo.gl/CPLB59b8BbPALwtf7",
     phone: "1-480-256-8355",
+    email: "info@simpliflyco.com",
   },
   {
     title: `Ground Training Center`,
@@ -35,6 +36,7 @@ export const LOCATIONS = [
     zip: "85215",
     gMaps: "https://maps.app.goo.gl/CPLB59b8BbPALwtf7",
     phone: "1-480-256-8355",
+    email: "info@simpliflyco.com",
   },
 ];
 
