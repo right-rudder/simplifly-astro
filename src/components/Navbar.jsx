@@ -118,7 +118,7 @@ const Navbar = ({ pathname }) => {
                         <a
                           href={item.link}
                           target={`${item.link.includes("http") ? "_blank" : "_self"}`}
-                          className="font-bold lg:text-xl duration-300 hover:underline drop-shadow-sm decoration-amber-300 decoration-4 underline-offset-[10px] py-12 whitespace-nowrap group-last:font-bold group-last:bg-sky-700 group-last:ring-2 group-last:ring-white/50 group-last:py-2 group-last:px-5 group-last:hover:bg-sky-300 group-last:hover:no-underline"
+                          className="font-bold lg:text-xl duration-300 hover:underline drop-shadow-sm decoration-yellow-400 decoration-4 underline-offset-[10px] py-12 whitespace-nowrap group-last:font-bold group-last:bg-sky-700 group-last:ring-2 group-last:ring-white/50 group-last:py-2 group-last:px-5 group-last:hover:bg-sky-300 group-last:hover:no-underline"
                         >
                           <span className="relative group-last:text-white w-full h-full group-last:hover:text-black">
                             {item.name}
