@@ -18,7 +18,7 @@ const whyData = {
     buttons: [
       {
         name: "Enroll Today",
-        link: "/enroll-now",
+        link: "/enroll-at-simplifly",
         primary: false,
       },
       {
@@ -94,7 +94,7 @@ const whyData = {
     },
     finalButton: {
       name: "Get Started",
-      link: "/enroll-now",
+      link: "/enroll-at-simplifly",
       primary: true,
     },
     imagePath: "/src/assets/female-student-pilot-commemorating-her-new-license.jpg",
