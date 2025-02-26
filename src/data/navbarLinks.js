@@ -77,7 +77,7 @@ export const navbarLinks = [
       },
       {
         name: "Visit Us",
-        link: "/visit-simplifly",
+        link: "/simplifly/visit",
       },
       {
         name: "Blog",
