@@ -69,7 +69,7 @@ export const navbarLinks = [
 
   {
     name: "SimpliFly",
-    link: "/why-simplifly",
+    link: "/simplifly",
     submenu: [
       {
         name: "Our Team",
