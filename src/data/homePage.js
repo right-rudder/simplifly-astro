@@ -10,12 +10,12 @@ const homePage = {
     header: {
       imagePath: "/src/assets/DSC02358 copy.png",
       imageAlt: "SimpliFly Flight School Team at the runway",
-      headerH1: `PILOT TRAINING<br>MADE SIMPLE`,
+      headerH1: `PILOT TRAINING MADE SIMPLE`,
       paragraph:
         "Start your aviation journey with SimpliFly Flight School. Whether you're looking to fly for fun or pursue a career in aviation, Our programs and instructors to help you achieve your goals.",
       buttons: [
         {
-          name: "Start Your Journey",
+          name: "Enroll Now",
           link: "/enroll-at-simplifly",
           primary: true,
         },
@@ -32,46 +32,57 @@ const homePage = {
         {
           imagePath: "/src/assets/southwest-airlines-logo.webp",
           imageAlt: "Southwest Airlines Logo",
+          link: "https://www.southwest.com/"
         },
         {
           imagePath: "/src/assets/allegiant-air-logo.webp",
           imageAlt: "Allegiant Airlines Logo",
+          link: "https://www.allegiantair.com/"
         },
         {
           imagePath: "/src/assets/frontier-airlines-logo.webp",
           imageAlt: "Frontier Airlines Logo",
+          link: "https://www.flyfrontier.com/"
         },
         {
           imagePath: "/src/assets/hawaiian-airlines-Logo.webp",
           imageAlt: "Hawaiian Airlines Logo",
+          link: "https://www.hawaiianairlines.com/"
         },
         {
           imagePath: "/src/assets/skywest-airlines-logo.webp",
           imageAlt: "Skywest Airlines Logo",
+          link: "https://www.skywest.com/"
         },
         {
           imagePath: "/src/assets/envoy-air-logo.webp",
           imageAlt: "Envoy Air Logo",
+          link: "https://www.envoyair.com/"
         },
         {
           imagePath: "/src/assets/Republic-Airways-Logo.webp",
           imageAlt: "Republic Airways Logo",
+          link: "https://rjet.com/"
         },
         {
           imagePath: "/src/assets/endeavor-air-logo.webp",
           imageAlt: "Endeavor Air Logo",
+          link: "https://www.endeavorair.com/content/endeavor-air/en_us/home.html"
         },
         {
           imagePath: "/src/assets/contour-airlines-logo.webp",
           imageAlt: "Contour Airlines Logo",
+          link: "https://www.contourairlines.com/"
         },
         {
           imagePath: "/src/assets/elite-jets-logo.webp",
           imageAlt: "Elite Jets Logo",
+          link: "https://www.elitejets.com/"
         },
         {
           imagePath: "/src/assets/pinnacle-aviation-logo.webp",
           imageAlt: "Pinnacle Aviation Logo",
+          link: "https://www.pinnacleaviation.com/"
         },
       ],
     },

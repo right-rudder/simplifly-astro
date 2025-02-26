@@ -1,0 +1,43 @@
+---
+import ImageComp from "./ImageComp.astro"
+---
+
+<section class="bg-slate-100 flex flex-col items-center px-5">
+    <h3 class="mx-auto mb-3 py-5 text-3xl lg:text-5xl max-w-3xl font-title font-bold tracking-tight text-sky-950">What Makes SimpliFly Extraordinary?</h3>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 max-w-4xl gap-5">
+      <!--Care about students instead of profit-->
+      <div class="flex flex-row">
+        <div class="pr-10">
+          <ImageComp imagePath="/src/assets/handshake.webp" imageAlt= "handshake icon" styles= " border-2 border-sky-500 rounded-full p-2 bg-white"/>
+        </div>
+        <div class="flex flex-col">
+          <h4 class="font-header uppercase font-semibold text-xl">Student Centered</h4>
+          <p>You're more than a number at SimpliFly.  At SimpliFly, we genuinely care about your success.  Our primary focus is you.</p>
+        </div>
+      </div>
+      <!--Family Environment-->
+      <div class="flex flex-row pt-10 lg:pt-0">
+        <div class="pr-10">
+            <ImageComp imagePath="/src/assets/family.webp" imageAlt= "family icon" styles= " border-2 border-sky-500 rounded-full p-3 bg-white"/>
+        </div>
+        <div class="flex flex-col">
+          <h4 class="font-header uppercase font-semibold text-xl">Family Environment</h4>
+          <p>SimpliFly is a close knit community that supports and uplifts each other on the journey to achieving aviation dreams.</p>
+        </div>
+      </div>
+    </div>
+    <!--2nd row on desktop-->
+    <div class="py-10">
+      <!--Affordable-->
+      <div class="lg:max-w-md  flex flex-row ">
+        <div class="pr-10">
+            <ImageComp imagePath="/src/assets/affordable.webp" imageAlt= "affordable icon" styles= " border-2 border-sky-500 rounded-full p-3 bg-white"/>
+        </div>
+        <div class="flex flex-col">
+          <h4 class="font-header uppercase font-semibold text-xl">Affordable</h4>
+          <p>SimpliFly offers affordable rates that make pilot training accessible to aspiring aviators from all walks of life.</p>
+        </div>
+      </div>
+    </div>
+  </section>

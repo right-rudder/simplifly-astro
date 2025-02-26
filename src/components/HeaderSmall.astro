@@ -14,7 +14,7 @@ if (!images[content.imagePath]) {
 ---
 
 <header
-  class="relative lg:mt-0 min-h-[81vh] font-sans bg-gray-800 text-white flex flex-col items-center justify-center overflow-hidden"
+  class="relative lg:mt-0 h-[75vh] min-h-fit font-sans bg-gray-800 text-white flex flex-col items-center justify-center overflow-hidden pt-12 pb-6"
 >
   <Image
     src={images[content.imagePath]()}
@@ -24,7 +24,7 @@ if (!images[content.imagePath]) {
     class="absolute inset-0 -z-0 object-cover object-center w-full h-full animate-slow-zoom"
   />
   <div
-    class="absolute bg-gradient-to-b from-white/50 to-white/50 w-full h-full z-0"
+    class="absolute inset-0 bg-gradient-to-b from-white/50 to-white/50 w-full h-full z-0"
   >
   </div>
   <!-- Text -->

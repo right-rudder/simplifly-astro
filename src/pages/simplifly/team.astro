@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeaderSmall from "../../components/HeaderSmall.astro";
+import CTAColor from "../../components/CTAColor.astro";
+import flyWithUsCTA from "../../data/fly-with-us-cta";
+import About from "../../components/About.astro";
+
+
+import pageData from "../../data/teamData.js";
+
+---
+<BaseLayout
+  siteTitle={pageData.pageTitle}
+  siteDescription={pageData.pageDescription}
+  keywords={pageData.pageKeywords}
+  >
+  
+  <HeaderSmall content={pageData.header} />
+
+  <About content={pageData.details} />
+
+  <CTAColor content={flyWithUsCTA} />
+
+</BaseLayout>
+
