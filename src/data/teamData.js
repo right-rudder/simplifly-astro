@@ -1,6 +1,6 @@
 import { COMPANY_NAME } from "../consts";
 
-const certifiedFlightInstructorData = {
+const teamData = {
   pageTitle: `The SimpliFly Crew | ${COMPANY_NAME}`,
   pageDescription:
     "Discover the dedicated team behind SimpliFly Flight School. Our leadership and certified flight instructors are committed to providing exceptional training and support to help you achieve your aviation goals.",
@@ -185,4 +185,4 @@ const certifiedFlightInstructorData = {
   },
 };
 
-export default certifiedFlightInstructorData;
+export default teamData;
