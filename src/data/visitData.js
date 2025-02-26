@@ -22,8 +22,8 @@ const visitData = {
         primary: false,
       },
       {
-        name: "Discovery Flight",
-        link: "/discovery-flight",
+        name: "Contact Us",
+        link: "#contact",
         primary: false,
       },
     ],
