@@ -26,17 +26,22 @@ const discoveryFlight = {
         {
           title: "What to Expect",
           paragraphs: [
-            "Your Discovery Flight is designed to give you a taste of what it's like to be a pilot. You'll spend approximately 60 minutes in the air with one of our certified flight instructors, who will guide you through the basics of flying and answer any questions you may have. You'll also have the opportunity to take the controls and experience the thrill of flying first hand.",
-            "During your discovery flight, you'll sit in the pilot seat and the FAA Certified Flight Instructor at your side will allow you to fly for the majority of the flight. A discovery flight is a great option if you’re considering an aviation career. At the end of the flight, the instructor will be able to answer any questions that you may have. ",
+            "Your Discovery Flight is designed to give you a taste of what it's like to be a pilot. You'll spend approximately 60 minutes in the air with one of our certified flight instructors, who will guide you through the basics of flying and answer any questions you may have. You'll also have the opportunity to take the controls and experience the thrill of flying firsthand.",
+            "During your discovery flight, you'll sit in the pilot seat, and the FAA Certified Flight Instructor at your side will allow you to fly for the majority of the flight. A discovery flight is a great option if you’re considering an aviation career. At the end of the flight, the instructor will be able to answer any questions that you may have.",
           ],
         },
         {
           title: "What Happens After the Flight?",
           paragraphs: [
-            "So, you've completed your discovery flight and are ready to take the next step? SimpliFly is here to help you take flight towards your aviation dreams and attain your goals. Let's dive into what happens after your first flight with us.",
+            "So, you've completed your discovery flight and are ready to take the next step? SimpliFly is here to help you take flight toward your aviation dreams and attain your goals.",
+            "Contact us to learn more about your training options and how to get started. Our team is happy to guide you through the next steps. Give us a call, send a text, or email us—we're here to help!"
           ],
         },
       ],
+      button: {
+        text: "Contact Us",
+        link: "/contact",
+      },
     },
   },
 };
