@@ -8,7 +8,9 @@ import {
 
 export default {
   upperHeading: "Enroll to Fly",
-  description: SITE_DESCRIPTION,
+  description: `Get to the skies and experience flying like never before. Sign up
+            and start your training to become a pilot. Fill out the form to get
+            started.`,
   contactTitle: "Contact Us",
   address: `${ADDRESS_LINE_1}, ${ADDRESS_LINE_2}`,
   phone: PHONE_NUMBER,
