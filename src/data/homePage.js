@@ -179,34 +179,41 @@ const homePage = {
         "https://search.google.com/local/writereview?placeid=ChIJYR6NGmjpDYgR_m6mDUwAToY",
       reviews: [
         {
-          body: "I had a wonderful experience at SimpliFly. I could tell the entire staff was invested in my success. I really appreciated the flexibility the school provides, allowing me to work full time and work toward my PPL at the same time. Cannot thank my instructor Dolly enough for all the hard work she put in getting me ready for my checkride.",
+          title: "A More Affordable School with a Great Curriculum",
+          body: "Awesome school! I’ve been flying here for a little over a year and have nothing but good to say. It is a more affordable school than most. They are also flexible and work with my schedule. I’m taking my commercial checkride in a few days, and I feel like they have a great program and curriculum to prepare me for each checkride I’ve taken.",
+          author: "Jared H.",
+        },
+        {
+          title: "One of the Best Flight Schools I’ve Trained At",
+          body: "After several years and multiple flight schools, SimpliFly succeeded where everyone else failed. They found discrepancies in my logbook and insurance that previous schools missed. Thanks to their thorough staff, those mistakes were caught and fixed before becoming a problem. If you’re looking to start flying, this is a great choice. If you're at another flight school and unhappy, I highly recommend switching to SimpliFly.",
+          author: "David D.",
+        },
+        {
+          title: "Highly Recommended for Serious Pilots",
+          body: "Training at SimpliFly has been a fantastic experience. The instructors are knowledgeable, patient, and truly invested in student success. Aircraft are well-maintained, and the overall operation runs seamlessly. Pricing is fair and transparent. I highly recommend SimpliFly to anyone serious about flying—it’s such an amazing environment and group of people!",
+          author: "Tanner G.",
+        },
+        {
+          title: "Best School for Career-Oriented Pilots",
+          body: "The perfect flight school if you want to make a career out of aviation! The instructors and administrators truly make you feel like they care and just want to see you succeed over all else!",
+          author: "Paul B.",
+        },
+        {
+          title: "Flexibility That Fits Any Schedule",
+          body: "SimpliFly is a great school. I really appreciated the flexibility they provide, allowing me to work full-time while earning my PPL at the same time. Cannot thank my instructor Dolly enough for all the hard work she put into getting me ready for my checkride!",
           author: "Josh A.",
         },
         {
-          body: "Best school! Great instructors and very affordable! I feel very fortunate to find this school that allows me to work and learn aviation at the same time. Student environment is also very healthy, not competitive and the students are very encouraging to others.",
+          title: "Supportive and Encouraging Student Environment",
+          body: "Best school! Great instructors and very affordable! I feel very fortunate to find this school that allows me to work and learn aviation at the same time. The student environment is also very healthy—not competitive, and everyone encourages each other.",
           author: "Kathryn W.",
         },
         {
-          body: "I became an instructor through SimpliFly and have been more than thrilled with the support from the SimpliFly team through my ratings and up to joining the team my self! I was able to get through my ratings quickly and have made the best friendships along the way! Love this school!",
-          author: "Ally M.",
-        },
-        {
-          body: "Just got my private with SimpliFly and have had nothing but great experiences. Doug is a great instructor and wouldn’t have passed my check ride without him. SimpliFly constantly goes above and beyond for me working around my schedule helping me get the training and hours I need. Everyone is very friendly and helpful. Even the owners have personally helped me outside the school navigate the purchase of an airplane. I can’t recommend SimpliFly enough.",
-          author: "Parker K.",
-        },
-        {
-          body: "Positive experience at this upstart flight school! The instructors are knowledgeable & super personable and the personalized training has really boosted a lot of confidence in flying for me and so many students. A great place to begin your journey from zero time to the airlines.",
-          author: "Nate B.",
-        },
-        {
-          body: "SimpliFly is a great school. The sense of community within the school is exceptional. From the administrative staff to the flight instructors, everyone works together seamlessly to create a positive and supportive atmosphere. This teamwork extends to our interactions with students, fostering an environment that encourages questions, collaboration, and continuous improvement.",
-          author: "Caitney S.",
-        },
-        {
-          body: "SimpliFly is an awesome fight school. I have been around to a few flight schools in the area and they are top notch! I completed my CFI with them and they helped me to feel confident in my teaching and training. The instructor are amazing and you can tell they have a passion for what they do. If you want to really understand aviation and become a better pilot this is the place to go!",
+          title: "Exceptional Instructors and Training",
+          body: "SimpliFly is an awesome flight school. I have been to a few flight schools in the area, and they are top-notch! I completed my CFI with them, and they helped me feel confident in my teaching and training. The instructors are amazing, and you can tell they have a passion for what they do. If you want to really understand aviation and become a better pilot, this is the place to go!",
           author: "Zach F.",
         },
-      ],
+    ],
     },
   },
 };
