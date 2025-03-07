@@ -1,21 +1,20 @@
-// CHANGE Default title
+// Updated title with location and SEO keywords
 export const SITE_TITLE =
-  "Pilot Training Made Simple at Mesa, AZ | SimpliFly Flight School";
+  "Flight School in Mesa, AZ | SimpliFly Flight Training";
 
-// CHANGE default meta description -> should only be used in homepage technically, but is there for a fallback in case a page is missed
+// Updated meta description with accurate location and keywords
 export const SITE_DESCRIPTION =
-  "SimpliFly Flight School & Aircraft Management offers flight training in Kankakee, IL. We offer private pilot training, instrument rating training, commercial pilot training, and more. Contact us today!";
+  "SimpliFly Flight School in Mesa, AZ, provides top-quality flight training for aspiring pilots. Whether you're looking to earn your private pilot license, instrument rating, or commercial pilot certificate, our experienced instructors and well-maintained fleet will help you achieve your aviation goals. We also offer multi-engine training and flight instructor certification. Start your journey with SimpliFly today!";
 
-//SEO tip -> keyword + city 1
-//Should have between 5-10 different localities to mix and match keywords
-//typical keywords = how to become a pilot, flight school near, private pilot, discovery flight, introductory flight, instrument rating, commercial certificate, certified flight instructor, airline programs, how to become an airline pilot
-// CHANGE default keywords -> should only be used in homepage technically, but is there for a fallback in case a page is missed
+// Updated keywords with a focus on SEO, including relevant aviation terms and multiple localities
 export const KEYWORDS =
-  "SimpliFly Flight School, elite aircraft management, elite aircraft rentals, elite aircraft maintenance, elite aircraft brokerage, aircraft management,  aircraft rentals,  aircraft maintenance,  aircraft brokerage, flight training, flight school, pilot training, private pilot training, instrument rating training, commercial pilot training, multi-engine training, Kankakee, IL";
+  "SimpliFly Flight School, flight training Mesa AZ, how to become a pilot, flight school near me, private pilot training, discovery flight Mesa, introductory flight Arizona, instrument rating, commercial pilot certificate, certified flight instructor, airline pilot training, aviation academy Arizona, best flight school Mesa, multi-engine training, Falcon Field flight school";
 
 export const OG_IMAGE = "";
 
-export const COMPANY_NAME = "SimpliFly Flight School, Mesa, AZ"
+export const COMPANY_NAME = "SimpliFly Flight School";
+
+export const CITY_STATE = "Mesa, AZ";
 
 export const LOCATIONS = [
   {
@@ -30,7 +29,7 @@ export const LOCATIONS = [
   },
   {
     title: `Ground Training Center`,
-    address: " 4710 E Falcon Dr Suite 105",
+    address: "4710 E Falcon Dr Suite 105",
     city: "Mesa",
     state: "AZ",
     zip: "85215",
@@ -40,7 +39,6 @@ export const LOCATIONS = [
   },
 ];
 
-// CHANGE client business info
 export const PHONE_NUMBER = "1-480-256-8355";
 export const ADDRESS_LINE_1 = "4855 E Falcon Dr";
 export const ADDRESS_LINE_2 = "Mesa, Arizona 85215";
