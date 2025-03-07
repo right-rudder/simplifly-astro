@@ -140,10 +140,14 @@ const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
         </div>
         <div class="mt-8">
           <input type="checkbox" name="agree-data-collection" id="agree-data-collection" class="mr-2 size-6 lg:size-5" />
-          <label for="agree-data-collection" class="text-gray-800 text-sm lg:text-base">I agree to data collection</label>
-        </div>
+          <label
+            for="agree-data-collection"
+            class="text-gray-800 text-sm lg:text-base"
+            set:html={enrollData.checkboxText}
+          />
+      </div>
         <button id="submit-button" form="contact-form" disabled type="submit" class="mx-auto mt-8 btn-primary cursor-not-allowed bg-gray-400 hover:bg-gray-400 hover:text-white">
-          Send Message
+          Send Request
         </button>
       </form>
     </div>
