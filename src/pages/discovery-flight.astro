@@ -4,6 +4,7 @@ import ProgramSwiper from "../components/ProgramSwiper.astro";
 import programsSwiper from "../data/programSwiper";
 import HeaderSmall from "../components/HeaderSmall.astro";
 import discoveryFlight from "../data/discovery-flight";
+import { FaCheck } from "react-icons/fa";
 
 const { data } = discoveryFlight;
 ---
@@ -49,12 +50,23 @@ const { data } = discoveryFlight;
             </div>
           ))
         }
-        <div class="mt-8">
+              <div class="pt-2">
+                <ul class="space-y-3">
+                  {data.form.nextSteps.map((step) => (
+                    <li class="flex flex-col text-lg bg-white/70 p-3 rounded-md shadow-sm hover:scale-[1.02] hover:shadow-md transition-all duration-500">
+                      <span class="flex items-center"><FaCheck className="text-yellow-500 mr-2" /> {step.title}</span>
+                      <p class="text-gray-700 text-md mt-1">{step.description}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+        <p class="text-lg pt-4 pl-4">Have more questions?</p>
+        <div class="mt-8 pl-4">
           <a
-            href="/contact"
+            href={data.form.button.link}
             class="mt-24 btn-primary text-right"
           >
-            Contact Us
+            {data.form.button.text}
           </a>
         </div>
     </div>
