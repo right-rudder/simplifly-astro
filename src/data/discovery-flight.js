@@ -33,12 +33,33 @@ const discoveryFlight = {
         {
           title: "What Happens After the Flight?",
           paragraphs: [
-            "So, you've completed your discovery flight and are ready to take the next step? SimpliFly is here to help you take flight toward your aviation dreams and attain your goals.",
-            "Contact us to learn more about your training options and how to get started. Our team is happy to guide you through the next steps. Give us a call, send a text, or email us—we're here to help!"
+            "So, you've completed your discovery flight and are ready to take the next step? SimpliFly is here to help you take flight towards your aviation dreams and attain your goals. Let's dive into what happens after your first flight with us."
           ],
         },
       ],
-      button: {
+      nextSteps: [
+        {
+          title: "Create a Training Plan",
+          description: "Work with a certified flight instructor (CFI) to set a schedule, review the syllabus, and address any questions."
+        },
+        {
+          title: "Complete Prerequisites",
+          description: "Get your medical exam, study materials, and start ground school to prepare for your written exam."
+        },
+        {
+          title: "Begin Flight Training",
+          description: "Start logging flight hours, attending ground school, and mastering essential piloting skills with your CFI."
+        },
+        {
+          title: "Pass Your Checkride",
+          description: "Prepare with stage checks and ensure you're confident and ready to earn your pilot's license."
+        },
+        {
+          title: "Continue Your Aviation Journey",
+          description: "Keep learning with advanced ratings like an instrument or commercial certificate. Whether for fun or career, we’re here to support you."
+        },
+      ],
+        button: {
         text: "Contact Us",
         link: "/contact",
       },
