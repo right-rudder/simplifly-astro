@@ -10,7 +10,7 @@ const pilotTraining = {
     //top header
     header: {
       stars: true,
-      imagePath: "/src/assets/kristopher-allison-KU4zYj4u0mo-unsplash.jpg",
+      imagePath: "/src/assets/simplifly-flight-school-mesa-az-cfe-and-student-after-successful-checkride.jpg",
       imageAlt:
         "SimpliFly Flight School airplane landing at Falcon Field Airport in Mesa, Arizona",
       headerH1: `Pilot Training<br>Programs`,
@@ -20,7 +20,7 @@ const pilotTraining = {
         {
           name: "Enroll Now",
           link: "/enroll-at-simplifly",
-          primary: false,
+          primary: true,
         },
       ],
     },
@@ -30,6 +30,12 @@ const pilotTraining = {
         "At SimpliFly, we are committed to providing the highest quality training programs for our students. Our team is here ensure that you receive the best possible training. Contact us today to learn more about our pilot training programs and take the first step towards achieving your aviation career goals!",
         "We offer a variety of pilot training programs to help you achieve your aviation goals. Our programs are designed to be efficient and easy to understand. Keep reading to learn more about our flight training schedules, how we progress students, and what we expect from our career track students.",
       ],
+      keypoints: [
+        "Professional, safe, friendly instructors",
+        "Aircraft and instructor availability",
+        "Private classrooms and tailored lessons",
+        "Family and community environment",
+      ]
     },
   },
 };
