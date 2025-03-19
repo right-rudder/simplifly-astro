@@ -96,9 +96,9 @@ const Navbar = ({ pathname }) => {
               >
                 <img
                   src="/simplifly_250.webp"
-                  alt="SimpliFly Flight School & Aircraft Management Logo"
-                  aria-label="SimpliFly Flight School & Aircraft Management Logo"
-                  title="SimpliFly Flight School & Aircraft Management"
+                  alt="SimpliFly Flight School  Logo"
+                  aria-label="SimpliFly Flight School  Logo"
+                  title="SimpliFly Flight School "
                   loading="eager"
                   className={`${navBar || openMobile ? "h-[5.5rem] mt-4 md:h-[7.2rem] md:mt-9 lg:mt-7" : "h-24 md:h-36 mt-6 md:mt-12"} object-contain duration-500 drop-shadow-md`}
                 />
@@ -266,9 +266,9 @@ const Navbar = ({ pathname }) => {
         >
           <img
             src="/simplifly_250.webp"
-            alt="SimpliFly Flight School & Aircraft Management Logo"
-            aria-label="SimpliFly Flight School & Aircraft Management Logo"
-            title="SimpliFly Flight School & Aircraft Management"
+            alt="SimpliFly Flight School  Logo"
+            aria-label="SimpliFly Flight School  Logo"
+            title="SimpliFly Flight School "
             className="object-contain h-24 w-auto drop-shadow-sm"
           />
         </a>

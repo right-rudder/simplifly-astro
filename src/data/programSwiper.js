@@ -15,7 +15,8 @@ const programsSwiper = {
     },
     {
       title: "Instrument Rating",
-      imagePath: "/src/assets/david-ballew-pH6-eomaijQ-unsplash.jpg",
+      imagePath:
+        "/src/assets/flying-a-multi-engine-plane-at-simplifly-flight-school-mesa-az.jpg",
       imageAlt: "SimpliFly Flight School Cirrus airplane instrument panel",
       description:
         "Navigate through clouds and the skies with precision through our Instrument Rating course.",
@@ -40,6 +41,24 @@ const programsSwiper = {
     },
     {
       title: "Certified Flight Instructor",
+      imagePath: "/src/assets/avel-chuklanov-ZEiqbaQhmvE-unsplash.jpg",
+      imageAlt:
+        "SimpliFly Flight School student and flight instructor in a Cessna airplane cockpit",
+      description:
+        "Become a trusted guide in the world of aviation. Become a CFI and help others reach their dreams.",
+      link: "/programs/certified-flight-instructor",
+    },
+    {
+      title: "Certified Flight Instructor Instruments",
+      imagePath: "/src/assets/avel-chuklanov-ZEiqbaQhmvE-unsplash.jpg",
+      imageAlt:
+        "SimpliFly Flight School student and flight instructor in a Cessna airplane cockpit",
+      description:
+        "Become a trusted guide in the world of aviation. Become a CFI and help others reach their dreams.",
+      link: "/programs/certified-flight-instructor",
+    },
+    {
+      title: "Multi-Engine Instructor",
       imagePath: "/src/assets/avel-chuklanov-ZEiqbaQhmvE-unsplash.jpg",
       imageAlt:
         "SimpliFly Flight School student and flight instructor in a Cessna airplane cockpit",

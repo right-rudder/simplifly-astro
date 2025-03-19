@@ -16,7 +16,7 @@ export const mobileNavbarLinks = [
       },
       {
         name: "Begin Pilot Career",
-        link: "/instruct-at-simplifly",
+        link: "/begin-pilot-career",
       },
       {
         name: "Timeline",

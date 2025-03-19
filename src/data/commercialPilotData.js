@@ -33,7 +33,8 @@ const commercialPilotData = {
   details: {
     upperHeading: "Become a Professional Pilot with a",
     heading: "Commercial Pilot License",
-    subHeading: "A CPL allows you to fly for hire, opening doors to careers in airlines, charter flights, corporate aviation, and more.",
+    subHeading:
+      "A CPL allows you to fly for hire, opening doors to careers in airlines, charter flights, corporate aviation, and more.",
 
     title: "Overview",
     description: `
@@ -68,7 +69,7 @@ const commercialPilotData = {
       {
         question: "How long does it take to get a Commercial Pilot License?",
         answer:
-          "Most students complete their CPL in 6-12 months, depending on training frequency and flight hours logged.",
+          "Most students complete their CPL in 2-3 months, depending on training frequency and flight hours logged.",
       },
       {
         question: "Do I need an Instrument Rating before starting?",
@@ -80,7 +81,7 @@ const commercialPilotData = {
         answer:
           "With a CPL, you can work as a commercial pilot in charter flights, corporate aviation, flight instruction, and more.",
       },
-    ],  
+    ],
   },
 };
 

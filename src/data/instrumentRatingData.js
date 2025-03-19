@@ -10,7 +10,8 @@ const instrumentRatingData = {
   // Top Header
   header: {
     stars: true,
-    imagePath: "/src/assets/kristopher-allison-KU4zYj4u0mo-unsplash.jpg",
+    imagePath:
+      "/src/assets/flying-a-multi-engine-plane-at-simplifly-flight-school-mesa-az.jpg",
     imageAlt: "SimpliFly Flight School Cirrus airplane instrument panel",
     headerH1: `Instrument <br>RATING</span>`,
     paragraph: `Advance your skills with SimpliFly Flight School's Instrument Rating program. Learn to navigate through clouds, low visibility, and controlled airspace with confidence.`,
@@ -32,7 +33,8 @@ const instrumentRatingData = {
   details: {
     upperHeading: "Advance Your Skills with an",
     heading: "Instrument Rating Certification",
-    subHeading: "An Instrument Rating (IFR) allows you to fly in all weather conditions, improving your safety and proficiency as a pilot.",
+    subHeading:
+      "An Instrument Rating (IFR) allows you to fly in all weather conditions, improving your safety and proficiency as a pilot.",
 
     title: "Overview",
     description: `
@@ -67,7 +69,7 @@ const instrumentRatingData = {
       {
         question: "How long does it take to get an Instrument Rating?",
         answer:
-          "Most students complete the training in 3-6 months, depending on flight frequency and study pace.",
+          "Most students complete the training in 3-4 months, depending on flight frequency and study pace.",
       },
       {
         question: "Do I need a Private Pilot License first?",
@@ -79,7 +81,7 @@ const instrumentRatingData = {
         answer:
           "The course includes IFR ground school, simulator training, in-flight instrument training, and FAA checkride preparation.",
       },
-    ],  
+    ],
   },
 };
 

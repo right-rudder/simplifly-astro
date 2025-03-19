@@ -17,7 +17,7 @@ export const navbarLinks = [
       },
       {
         name: "Begin Pilot Career",
-        link: "/instruct-at-simplifly",
+        link: "/begin-pilot-career",
       },
       {
         name: "Timeline",

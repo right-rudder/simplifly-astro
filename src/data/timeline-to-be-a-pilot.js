@@ -29,7 +29,7 @@ const timelineToBePilot = {
       title: "How much is the cost of flight training?",
       paragraphs: [
         "The cost of flight training varies greatly depending on a number of factors such as type of training, the student's aptitude and experience level, and the type of aircraft used.",
-        "Although the actual cost of flight training can vary widely, plan to budget around $10,000 to $15,000 for private pilot fixed wing. To get more details on hourly rates, program pricing, and potential financing options; give us a call today and speak to a SimpliFly team member.",
+        "Although the actual cost of flight training can vary widely, plan to budget around $18,000 to $20,000 for private pilot fixed wing. To get more details on hourly rates, program pricing, and potential financing options; give us a call today and speak to a SimpliFly team member.",
       ],
       buttons: [
         {

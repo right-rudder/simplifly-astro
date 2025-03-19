@@ -2,9 +2,9 @@ const pilotTrainingMadeSimple = {
   data: {
     //SEO Header Stuff
     pageDescription:
-      "SimpliFly Flight School & Aircraft Management offers flight training in Kankakee, IL. We offer private pilot training, instrument rating training, commercial pilot training, and more. Contact us today!",
+      "SimpliFly Flight School  offers flight training in Mesa, AZ. We offer private pilot training, instrument rating training, commercial pilot training, and more. Contact us today!",
     pageKeywords:
-      "flight training, flight school, pilot training, private pilot training, instrument rating training, commercial pilot training, Kankakee, IL",
+      "flight training, flight school, pilot training, private pilot training, instrument rating training, commercial pilot training, Mesa, AZ",
 
     //top header
     header: {

@@ -2,9 +2,9 @@ const homePage = {
   data: {
     //SEO Header Stuff
     pageDescription:
-      "SimpliFly Flight School & Aircraft Management offers flight training in Kankakee, IL. We offer private pilot training, instrument rating training, commercial pilot training, and more. Contact us today!",
+      "SimpliFly Flight School  offers flight training in Mesa, AZ. We offer private pilot training, instrument rating training, commercial pilot training, and more. Contact us today!",
     pageKeywords:
-      "flight training, flight school, pilot training, private pilot training, instrument rating training, commercial pilot training, Kankakee, IL",
+      "flight training, flight school, pilot training, private pilot training, instrument rating training, commercial pilot training, Mesa, AZ",
 
     //top header
     header: {
@@ -32,57 +32,57 @@ const homePage = {
         {
           imagePath: "/src/assets/southwest-airlines-logo.webp",
           imageAlt: "Southwest Airlines Logo",
-          link: "https://www.southwest.com/"
+          link: "https://www.southwest.com/",
         },
         {
           imagePath: "/src/assets/allegiant-air-logo.webp",
           imageAlt: "Allegiant Airlines Logo",
-          link: "https://www.allegiantair.com/"
+          link: "https://www.allegiantair.com/",
         },
         {
           imagePath: "/src/assets/frontier-airlines-logo.webp",
           imageAlt: "Frontier Airlines Logo",
-          link: "https://www.flyfrontier.com/"
+          link: "https://www.flyfrontier.com/",
         },
         {
           imagePath: "/src/assets/hawaiian-airlines-Logo.webp",
           imageAlt: "Hawaiian Airlines Logo",
-          link: "https://www.hawaiianairlines.com/"
+          link: "https://www.hawaiianairlines.com/",
         },
         {
           imagePath: "/src/assets/skywest-airlines-logo.webp",
           imageAlt: "Skywest Airlines Logo",
-          link: "https://www.skywest.com/"
+          link: "https://www.skywest.com/",
         },
         {
           imagePath: "/src/assets/envoy-air-logo.webp",
           imageAlt: "Envoy Air Logo",
-          link: "https://www.envoyair.com/"
+          link: "https://www.envoyair.com/",
         },
         {
           imagePath: "/src/assets/Republic-Airways-Logo.webp",
           imageAlt: "Republic Airways Logo",
-          link: "https://rjet.com/"
+          link: "https://rjet.com/",
         },
         {
           imagePath: "/src/assets/endeavor-air-logo.webp",
           imageAlt: "Endeavor Air Logo",
-          link: "https://www.endeavorair.com/content/endeavor-air/en_us/home.html"
+          link: "https://www.endeavorair.com/content/endeavor-air/en_us/home.html",
         },
         {
           imagePath: "/src/assets/contour-airlines-logo.webp",
           imageAlt: "Contour Airlines Logo",
-          link: "https://www.contourairlines.com/"
+          link: "https://www.contourairlines.com/",
         },
         {
           imagePath: "/src/assets/elite-jets-logo.webp",
           imageAlt: "Elite Jets Logo",
-          link: "https://www.elitejets.com/"
+          link: "https://www.elitejets.com/",
         },
         {
           imagePath: "/src/assets/pinnacle-aviation-logo.webp",
           imageAlt: "Pinnacle Aviation Logo",
-          link: "https://www.pinnacleaviation.com/"
+          link: "https://www.pinnacleaviation.com/",
         },
       ],
     },
@@ -126,8 +126,7 @@ const homePage = {
         },
       ],
       imagePath: "/src/assets/elite-flight-training-cfi-training.jpg",
-      imageAlt:
-        "SimpliFly Flight School & Aircraft Management cessna 172 waiting for takeoff",
+      imageAlt: "SimpliFly Flight School  cessna 172 waiting for takeoff",
     },
 
     quizCTA: {
@@ -140,8 +139,7 @@ const homePage = {
       ],
       imageLegend: `Luke Poulos<br><small class="text-white font-normal text-sm">Founder & CEO</small>`,
       imagePath: "/src/assets/benjamin-chambon-7LJLXYpqGl4-unsplash.jpg",
-      imageAlt:
-        "SimpliFly Flight School & Aircraft Management cessna 172 instrument panel",
+      imageAlt: "SimpliFly Flight School  cessna 172 instrument panel",
       quizModal: true,
     },
 
@@ -149,7 +147,7 @@ const homePage = {
       upperHeading: "Our Blog",
       heading: "SimpliFly News",
       description:
-        "Stay up to date with the latest news, pilot resources and updates from SimpliFly Flight School & Aircraft Management.",
+        "Stay up to date with the latest news, pilot resources and updates from SimpliFly Flight School .",
     },
 
     flyWithUsCTA: {
@@ -213,7 +211,7 @@ const homePage = {
           body: "SimpliFly is an awesome flight school. I have been to a few flight schools in the area, and they are top-notch! I completed my CFI with them, and they helped me feel confident in my teaching and training. The instructors are amazing, and you can tell they have a passion for what they do. If you want to really understand aviation and become a better pilot, this is the place to go!",
           author: "Zach F.",
         },
-    ],
+      ],
     },
   },
 };
