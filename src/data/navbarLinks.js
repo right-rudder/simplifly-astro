@@ -53,6 +53,14 @@ export const navbarLinks = [
         name: "Certified Flight Instructor",
         link: "/programs/certified-flight-instructor",
       },
+      {
+        name: "Certified Flight Instructor Instruments",
+        link: "/programs/certified-flight-instructor/#addons",
+      },
+      {
+        name: "Multi-Engine Instructor",
+        link: "/programs/certified-flight-instructor/#addons",
+      },
     ],
   },
 

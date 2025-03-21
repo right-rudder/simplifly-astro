@@ -51,14 +51,14 @@ export const footerLinks = [
         name: "CFI",
         link: "/programs/certified-flight-instructor",
       },
-      /*       {
+      {
         name: "CFII",
-        link: "/programs/certified-flight-instructor-instruments",
+        link: "/programs/certified-flight-instructor/#addons",
       },
       {
         name: "MEI",
-        link: "/programs/multi-engine-instructor",
-      }, */
+        link: "/programs/certified-flight-instructor/#addons",
+      },
     ],
   },
   {

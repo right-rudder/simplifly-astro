@@ -32,7 +32,8 @@ const multiEngineData = {
   details: {
     upperHeading: "Expand Your Skills with a",
     heading: "Multi-Engine Rating",
-    subHeading: "A Multi-Engine Rating allows you to fly aircraft with more than one engine, increasing your capabilities and career opportunities.",
+    subHeading:
+      "A Multi-Engine Rating allows you to fly aircraft with more than one engine, increasing your capabilities and career opportunities.",
 
     title: "Overview",
     description: `
@@ -49,6 +50,15 @@ const multiEngineData = {
       "Learn Advanced Emergency Procedures",
       "Increase Career Opportunities in Commercial Aviation",
       "Comprehensive Ground & Flight Training",
+    ],
+
+    addons: [
+      {
+        title: "Multi-Engine Commercial Pilot",
+        description:
+          "Combine your Multi-Engine Rating with a Commercial Pilot License to unlock new career opportunities in commercial aviation. Our integrated training program prepares you for the demands of a professional pilot career. We start training with checkride date set.",
+        duration: "~7-10 days",
+      },
     ],
 
     cta: {
@@ -70,7 +80,8 @@ const multiEngineData = {
           "Most students complete their MER in 2-4 weeks, depending on training frequency and proficiency.",
       },
       {
-        question: "Do I need a Commercial Pilot License before getting a Multi-Engine Rating?",
+        question:
+          "Do I need a Commercial Pilot License before getting a Multi-Engine Rating?",
         answer:
           "No, you can obtain a Multi-Engine Rating with a Private Pilot License, but it is often pursued alongside a Commercial Pilot License.",
       },
@@ -79,7 +90,7 @@ const multiEngineData = {
         answer:
           "With an MER, you can fly multi-engine aircraft, increasing job opportunities in commercial aviation, charter operations, and corporate flying.",
       },
-    ],  
+    ],
   },
 };
 

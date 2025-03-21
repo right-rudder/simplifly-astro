@@ -50,21 +50,21 @@ const programsSwiper = {
     },
     {
       title: "Certified Flight Instructor Instruments",
-      imagePath: "/src/assets/avel-chuklanov-ZEiqbaQhmvE-unsplash.jpg",
+      imagePath: "/src/assets/SimpliFly-Flight-Training-Programs-CFII.jpg",
       imageAlt:
         "SimpliFly Flight School student and flight instructor in a Cessna airplane cockpit",
       description:
         "Become a trusted guide in the world of aviation. Become a CFI and help others reach their dreams.",
-      link: "/programs/certified-flight-instructor",
+      link: "/programs/certified-flight-instructor/#addons",
     },
     {
       title: "Multi-Engine Instructor",
-      imagePath: "/src/assets/avel-chuklanov-ZEiqbaQhmvE-unsplash.jpg",
+      imagePath: "/src/assets/SimpliFly-Flight-Training-Programs-MEI.png",
       imageAlt:
         "SimpliFly Flight School student and flight instructor in a Cessna airplane cockpit",
       description:
         "Become a trusted guide in the world of aviation. Become a CFI and help others reach their dreams.",
-      link: "/programs/certified-flight-instructor",
+      link: "/programs/certified-flight-instructor/#addons",
     },
   ],
 };

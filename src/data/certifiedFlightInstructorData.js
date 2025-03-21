@@ -33,7 +33,8 @@ const certifiedFlightInstructorData = {
   details: {
     upperHeading: "Start Your Career as a",
     heading: "Certified Flight Instructor",
-    subHeading: "Becoming a Certified Flight Instructor (CFI) allows you to gain valuable flight experience while teaching new pilots the skills they need to succeed.",
+    subHeading:
+      "Becoming a Certified Flight Instructor (CFI) allows you to gain valuable flight experience while teaching new pilots the skills they need to succeed.",
 
     title: "Overview",
     description: `
@@ -52,6 +53,20 @@ const certifiedFlightInstructorData = {
       "Start Your Career in Aviation with a CFI Position",
     ],
 
+    addons: [
+      {
+        title: "Certified Flight Instructor Instruments (CFII)",
+        description:
+          "Expand your teaching capabilities with the Certified Flight Instructor Instruments (CFII) add-on. This advanced training allows you to instruct students in instrument flying techniques and procedures. We offer accelerated and flexible CFII training options to fit your schedule.",
+      },
+      {
+        title: "Multi-Engine Instructor (MEI)",
+        description:
+          "Elevate your flight instruction skills with the Multi-Engine Instructor (MEI) add-on. Learn to teach multi-engine aircraft operations and systems to aspiring pilots. Our MEI training program provides the knowledge and experience needed to become a proficient multi-engine flight instructor. Contact us to learn more about our MEI training options.",
+        duration: "~2 months",
+      },
+    ],
+
     cta: {
       imagePath: "/src/assets/female_pilot_smiling.webp",
       imageAlt: "Female pilot smiling",
@@ -66,7 +81,8 @@ const certifiedFlightInstructorData = {
 
     faqs: [
       {
-        question: "How long does it take to become a Certified Flight Instructor?",
+        question:
+          "How long does it take to become a Certified Flight Instructor?",
         answer:
           "Most students complete their CFI training in 4-8 weeks, depending on proficiency and study schedule.",
       },
@@ -80,7 +96,7 @@ const certifiedFlightInstructorData = {
         answer:
           "As a CFI, you can teach student pilots, build valuable flight hours, and gain experience for future airline or corporate pilot opportunities.",
       },
-    ],  
+    ],
   },
 };
 
