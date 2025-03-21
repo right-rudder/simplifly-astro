@@ -33,8 +33,8 @@ const aproxPilotTrainingCosts = {
       ],
       buttons: [
         {
-          name: "View Costs",
-          link: "#cost-calc",
+          name: "Financing Options",
+          link: "/financing",
           primary: true,
         },
       ],
