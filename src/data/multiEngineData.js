@@ -20,11 +20,6 @@ const multiEngineData = {
         link: "/enroll-now",
         primary: false,
       },
-      {
-        name: "Program Guide",
-        link: "/path",
-        primary: false,
-      },
     ],
   },
 
@@ -56,7 +51,7 @@ const multiEngineData = {
       {
         title: "Multi-Engine Commercial Pilot",
         description:
-          "Combine your Multi-Engine Rating with a Commercial Pilot License to unlock new career opportunities in commercial aviation. Our integrated training program prepares you for the demands of a professional pilot career. We start training with checkride date set.",
+          "With the multi-engine add-on to your commercial rating, you can unlock new career opportunities in commercial aviation. Our integrated training program prepares you for the demands of a professional pilot career. We start training with checkride date set.",
         duration: "~7-10 days",
       },
     ],
@@ -77,7 +72,7 @@ const multiEngineData = {
       {
         question: "How long does it take to get a Multi-Engine Rating?",
         answer:
-          "Most students complete their MER in 2-4 weeks, depending on training frequency and proficiency.",
+          "Most students complete their MER in 1-2 weeks, depending on training frequency and proficiency and having completed Commercial Pilot Certificate.",
       },
       {
         question:

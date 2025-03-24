@@ -16,7 +16,7 @@ const pilotTraining = {
         "SimpliFly Flight School airplane landing at Falcon Field Airport in Mesa, Arizona",
       headerH1: `Pilot Training<br>Programs`,
       paragraph:
-        "SimpliFly makes becoming a pilot simple. Offering training for pathways to the airlines, we will take you from your private pilot certificate to being a commercial pilot.",
+        "SimpliFly makes becoming a pilot simple. Offering pathways to the airlines, we will take you from square one to being a commercial pilot. Our programs are designed to be efficient and easy to understand.",
       buttons: [
         {
           name: "Enroll Now",

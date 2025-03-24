@@ -27,7 +27,7 @@ export const LOCATIONS = [
     phone: "1-480-256-8355",
     email: "info@simpliflyco.com",
   },
-  {
+  /* {
     title: `Ground Training Center`,
     address: "4710 E Falcon Dr Suite 105",
     city: "Mesa",
@@ -36,7 +36,7 @@ export const LOCATIONS = [
     gMaps: "https://maps.app.goo.gl/CPLB59b8BbPALwtf7",
     phone: "1-480-256-8355",
     email: "info@simpliflyco.com",
-  },
+  }, */
 ];
 
 export const PHONE_NUMBER = "1-480-256-8355";

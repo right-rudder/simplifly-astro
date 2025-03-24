@@ -21,11 +21,6 @@ const commercialPilotData = {
         link: "/enroll-now",
         primary: false,
       },
-      {
-        name: "Program Guide",
-        link: "/path",
-        primary: false,
-      },
     ],
   },
 

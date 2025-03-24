@@ -10,15 +10,15 @@ const { content } = Astro.props;
         class="mt-2 text-4xl font-bold tracking-tight leading-tighter font-title text-sky-100 md:text-5xl lg:text-7xl text-center lg:text-right px-3 md:px-0"
         set:html={content.title}
       />
-      <ul class="width-min">
+      <ul class="width-min mt-4">
         {
           content.keypoints &&
             content.keypoints.map((keypoint) => (
-            <li class="flex text-lg items-center lg:justify-end p-1 text-white/90">
-              <FaCheck className="text-yellow-500 mr-2" /> {keypoint}
-            </li>
-          ))
-        }  
+              <li class="flex text-lg items-center lg:justify-end p-1 text-white/90">
+                <FaCheck className="text-yellow-500 mr-2" /> {keypoint}
+              </li>
+            ))
+        }
       </ul>
     </div>
     <div

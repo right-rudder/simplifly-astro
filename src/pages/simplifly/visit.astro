@@ -6,24 +6,26 @@ import flyWithUsCTA from "../../data/fly-with-us-cta";
 import ImageComp from "../../components/ImageComp.astro";
 
 import pageData from "../../data/visitData.js";
-import Visit from "../../components/Visit.astro";
+import VisitComp from "../../components/Visit.astro";
 import Form from "../../components/Form.astro";
-
 ---
+
 <BaseLayout
   siteTitle={pageData.pageTitle}
   siteDescription={pageData.pageDescription}
   keywords={pageData.pageKeywords}
-  >
-  
+>
   <HeaderSmall content={pageData.header} />
 
-  <Visit content={pageData.details} />
+  <VisitComp content={pageData.details} />
 
-  <section class="flex flex-col lg:flex-row items-center justify-center w-full bg-sky-500/20" id="contact">
+  <section
+    class="flex flex-col lg:flex-row items-center justify-center w-full bg-sky-500/20"
+    id="contact"
+  >
     <div>
-      <ImageComp 
-        imagePath="/src/assets/simplifly-student-pilot-flying-toward-sunset.jpg" 
+      <ImageComp
+        imagePath="/src/assets/simplifly-student-pilot-flying-toward-sunset.jpg"
         imageAlt="simplifly student pilot flying toward the sunset"
         style="object-cover w-full h-full"
       />
@@ -32,6 +34,4 @@ import Form from "../../components/Form.astro";
   </section>
 
   <CTAColor content={flyWithUsCTA} />
-
 </BaseLayout>
-
