@@ -1,5 +1,12 @@
 ---
+import TestimonialSchema from "./TestimonialSchema.astro";
 const { content } = Astro.props;
+
+// Format testimonials for schema markup
+const testimonialSchemaItems = content.reviews.map((review) => ({
+  author: review.author,
+  text: review.body,
+}));
 ---
 
 <section id="testimonials" class="bg-sky-100 lg:py-24">
@@ -94,4 +101,6 @@ const { content } = Astro.props;
       </div>
     </div>
   </div>
+  <!-- Add testimonial schema markup -->
+  <TestimonialSchema items={testimonialSchemaItems} />
 </section>

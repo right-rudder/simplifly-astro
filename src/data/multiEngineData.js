@@ -1,11 +1,11 @@
 import { COMPANY_NAME } from "../consts";
 
 const multiEngineData = {
-  pageTitle: `Multi-Engine Rating | ${COMPANY_NAME}`,
+  pageTitle: `Multi-Engine Rating Course in Mesa, AZ | ${COMPANY_NAME}`,
   pageDescription:
-    "Enhance your aviation skills with SimpliFly Flight School’s Multi-Engine Rating program. Learn to fly complex aircraft and expand your career opportunities.",
+    "Earn your Multi-Engine Rating at SimpliFly Flight School in Mesa, AZ. Master twin-engine aircraft operations and expand your career opportunities with expert training.",
   pageKeywords:
-    "multi-engine rating Arizona, flight school Mesa, multi-engine pilot training, twin-engine aircraft, aviation school, commercial pilot training",
+    "multi-engine rating Mesa AZ, twin-engine pilot training Mesa, flight school Mesa AZ, commercial pilot training Mesa, aviation school Mesa AZ, multi-engine certification Mesa",
 
   // Top Header
   header: {

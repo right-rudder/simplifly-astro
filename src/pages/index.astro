@@ -10,12 +10,23 @@ import homePage from "../data/homePage";
 import flyWithUsCTA from "../data/fly-with-us-cta";
 import AirlinesCloud from "../components/AirlinesCloud.astro";
 import FAQs from "../components/FAQs";
+import FAQSchema from "../components/FAQSchema.astro";
 import { GeneralFAQs } from "../data/general-faqs";
-
 const { data } = homePage;
+
+// Transform FAQ format for schema
+const faqSchemaItems = GeneralFAQs.map((faq) => ({
+  question: faq.title,
+  // Remove HTML tags for clean schema
+  answer: faq.content.replace(/<[^>]*>?/gm, ""),
+}));
 ---
 
-<BaseLayout siteDescription={data.pageDescription} keywords={data.pageKeywords}>
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
   <!-- HEADER -->
   <HeaderScreen content={data.header} />
   <AirlinesCloud data={data.airlinesCloud} />
@@ -24,5 +35,6 @@ const { data } = homePage;
   <BlogFeed data={data.blogfeed} />
   <CTAColor content={flyWithUsCTA} />
   <FAQs faqs={GeneralFAQs} type="General" client:visible />
+  <FAQSchema items={faqSchemaItems} />
   <script src="../scripts/creativeSwiper.js"></script>
 </BaseLayout>

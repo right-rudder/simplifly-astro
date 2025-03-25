@@ -10,7 +10,7 @@ export const SITE_DESCRIPTION =
 export const KEYWORDS =
   "SimpliFly Flight School, flight training Mesa AZ, how to become a pilot, flight school near me, private pilot training, discovery flight Mesa, introductory flight Arizona, instrument rating, commercial pilot certificate, certified flight instructor, airline pilot training, aviation academy Arizona, best flight school Mesa, multi-engine training, Falcon Field flight school";
 
-export const OG_IMAGE = "";
+export const OG_IMAGE = "/simplifly_250.webp";
 
 export const COMPANY_NAME = "SimpliFly Flight School";
 

@@ -5,6 +5,7 @@ import { SITE_TITLE, SITE_DESCRIPTION, KEYWORDS, OG_IMAGE } from "../consts";
 import "@fontsource/kanit";
 import "@fontsource-variable/open-sans";
 import Navbar from "../components/Navbar";
+import SocialMediaSchema from "../components/SocialMediaSchema.astro";
 const { pathname } = Astro.url;
 const { siteTitle, siteDescription, keywords } = Astro.props;
 import ChatWidget from "../components/ChatWidget.astro";
@@ -38,5 +39,6 @@ import Banner from "../components/Banner.astro";
     </main>
     <Footer />
     <!-- <ChatWidget /> -->
+    <SocialMediaSchema title={siteTitle} description={siteDescription} />
   </body>
 </html>

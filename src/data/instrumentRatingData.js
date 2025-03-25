@@ -1,11 +1,11 @@
 import { COMPANY_NAME } from "../consts";
 
 const instrumentRatingData = {
-  pageTitle: `Instrument Rating | ${COMPANY_NAME}`,
+  pageTitle: `Instrument Rating Course in Mesa, AZ | ${COMPANY_NAME}`,
   pageDescription:
-    "Enhance your piloting skills with SimpliFly Flight School’s Instrument Rating course. Master low-visibility navigation and advance your aviation career.",
+    "Join SimpliFly Flight School in Mesa, AZ, for our Instrument Rating course. Master IFR navigation, low-visibility flying, and advance your aviation career with expert training.",
   pageKeywords:
-    "instrument rating Arizona, flight school Mesa, IFR certification, pilot training, aviation school, advanced pilot training",
+    "instrument rating Mesa AZ, IFR training Mesa, flight school Mesa AZ, advanced pilot training Mesa, aviation school Mesa AZ, instrument flight rules certification",
 
   // Top Header
   header: {
