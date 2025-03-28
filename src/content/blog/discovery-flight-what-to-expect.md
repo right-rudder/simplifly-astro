@@ -1,5 +1,5 @@
 ---
-pubDate: "March 1, 2025"
+pubDate: "March 25, 2025"
 author: SimpliFly Flight School
 title: "Discovery Flight: What to Expect on Your First Lesson"
 description: "Curious about becoming a pilot? A discovery flight is the perfect way to get started. Here's what to expect at SimpliFly Flight School in Mesa, AZ."
