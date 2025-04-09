@@ -173,8 +173,7 @@ const homePage = {
         "Check out what they have to say about their experiences with Us.",
       ],
       buttonText: "Leave Us a Review",
-      buttonLink:
-        "https://search.google.com/local/writereview?placeid=ChIJYR6NGmjpDYgR_m6mDUwAToY",
+      buttonLink: "https://g.co/kgs/TLWS5Yz",
       reviews: [
         {
           title: "A More Affordable School with a Great Curriculum",
