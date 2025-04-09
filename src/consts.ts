@@ -24,7 +24,7 @@ export const LOCATIONS = [
     state: "AZ",
     zip: "85215",
     gMaps: "https://maps.app.goo.gl/CPLB59b8BbPALwtf7",
-    phone: "1-480-256-8355",
+    phone: "1-480-718-2656",
     email: "info@simpliflyco.com",
   },
   /* {
@@ -39,7 +39,7 @@ export const LOCATIONS = [
   }, */
 ];
 
-export const PHONE_NUMBER = "1-480-256-8355";
+export const PHONE_NUMBER = "1-480-718-2656";
 export const ADDRESS_LINE_1 = "4855 E Falcon Dr";
 export const ADDRESS_LINE_2 = "Mesa, Arizona 85215";
 export const FACEBOOK_URL = "https://www.facebook.com/SimpliFlyFlightSchool";
