@@ -17,7 +17,7 @@ const privatePilotData = {
     buttons: [
       {
         name: "Enroll Today",
-        link: "/enroll-now",
+        link: "/enroll-at-simplifly",
         primary: false,
       },
     ],
