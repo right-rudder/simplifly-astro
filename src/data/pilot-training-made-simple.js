@@ -1,6 +1,8 @@
 const pilotTrainingMadeSimple = {
   data: {
     //SEO Header Stuff
+    pageTitle:
+      "Pilot Training Made Simple | SimpliFly Flight School Mesa, AZ",
     pageDescription:
       "SimpliFly Flight School  offers flight training in Mesa, AZ. We offer private pilot training, instrument rating training, commercial pilot training, and more. Contact us today!",
     pageKeywords:
