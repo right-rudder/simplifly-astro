@@ -15,7 +15,7 @@ import ProgramsRoadmap from "../components/ProgramsRoadmap.astro";
 const { data } = pilotTraining;
 ---
 
-<BaseLayout siteDescription={data.pageDescription} keywords={data.pageKeywords}>
+<BaseLayout siteTitle={data.pageTitle} siteDescription={data.pageDescription} keywords={data.pageKeywords}>
   <HeaderScreen content={data.header} />
   <PageSummary content={data.pageSummary} />
   <ProgramsRoadmap />
