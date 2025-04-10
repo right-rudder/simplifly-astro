@@ -33,62 +33,62 @@ export const mobileNavbarLinks = [
     ],
   },
   {
-    name: "Flight Training",
+    name: "Programs",
     submenu: [
       {
+        name: "All Programs",
+        link: "/programs",
+      },
+      {
         name: "Private Pilot",
-        link: "/flight-training/private-pilot-training",
+        link: "/programs/private-pilot",
       },
       {
         name: "Instrument Rating",
-        link: "/flight-training/instrument-rating",
+        link: "/programs/instrument-rating",
       },
       {
         name: "Commercial Pilot",
-        link: "/flight-training/commercial-pilot-training",
+        link: "/programs/commercial-pilot",
       },
       {
         name: "Multi-Engine Rating",
-        link: "/flight-training/multi-engine-rating",
+        link: "/programs/multi-engine-rating",
       },
       {
         name: "Certified Flight Instructor",
-        link: "/flight-training/certified-flight-instructor-cfi",
+        link: "/programs/certified-flight-instructor",
+      },
+      {
+        name: "CFI - Instruments",
+        link: "/programs/certified-flight-instructor/#addons",
+      },
+      {
+        name: "Multi-Engine Instructor",
+        link: "/programs/certified-flight-instructor/#addons",
       },
     ],
   },
 
   {
-    name: "Aircraft Services",
+    name: "Financing",
     submenu: [
       {
-        name: "Brokerage",
-        link: "/aircraft-services/aircraft-brokerage",
+        name: "Financing",
+        link: "/financing",
       },
       {
-        name: "Rentals",
-        link: "/aircraft-services/aircraft-rentals",
-      },
-      {
-        name: "For Sale",
-        link: "/aircraft-services/aircraft-for-sale",
-      },
-      {
-        name: "Maintenance",
-        link: "/aircraft-services/aircraft-maintenance",
-      },
-      {
-        name: "Charter Revenue",
-        link: "/aircraft-services/charter-revenue",
+        name: "Stratus Financial",
+        link: "/stratus-finance",
       },
     ],
   },
 
   {
-    name: "About",
+    name: "SimpliFly",
     submenu: [
       {
-        name: "SimpliFly",
+        name: "Why SimpliFly",
         link: "/simplifly",
       },
       {
@@ -96,8 +96,8 @@ export const mobileNavbarLinks = [
         link: "/simplifly/team",
       },
       {
-        name: "Our Fleet",
-        link: "/our-fleet",
+        name: "Visit Us",
+        link: "/simplifly/visit",
       },
       {
         name: "Blog",
