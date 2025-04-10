@@ -83,7 +83,7 @@ const Navbar = ({ pathname }) => {
             : "bg-gradient-to-b from-white/30 to-transparent"
         } duration-500`}
       >
-        <div className="px-12 mx-auto top-0">
+        <div className="px-4 lg:px-12 mx-auto top-0">
           <div
             className={`${navBar || openMobile ? "lg:h-24" : "lg:h-20"} relative flex h-20 align-middle justify-between transition-all`}
             id="navbar"
