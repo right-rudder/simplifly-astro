@@ -58,7 +58,7 @@ const PriceCalcZero2Hero = () => {
   }, []);
 
   return (
-    <section id="cost-calc">
+    <section id="cost-calc" className="overflow-hidden">
       <div className="bg-sky-100 py-16 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto w-full lg:mx-0">
