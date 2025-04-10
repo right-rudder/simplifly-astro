@@ -3,6 +3,10 @@ export const mobileNavbarLinks = [
     name: "New to Flying?",
     submenu: [
       {
+        name: "Pilot Training Made Simple",
+        link: "/pilot-training-made-simple",
+      },
+      {
         name: "Discovery Flight",
         link: "/discovery-flight",
       },
@@ -83,6 +87,10 @@ export const mobileNavbarLinks = [
   {
     name: "About",
     submenu: [
+      {
+        name: "SimpliFly",
+        link: "/simplifly",
+      },
       {
         name: "Our Team",
         link: "/simplifly/team",
