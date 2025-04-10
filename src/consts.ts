@@ -48,3 +48,4 @@ export const LINKEDIN_URL = null;
 export const YOUTUBE_URL = null;
 export const TWITTER_URL = null;
 export const EMAIL_ADDRESS = "info@simpliflyco.com";
+export const WEBSITE_URL = "https://simpliflyco.com/";
