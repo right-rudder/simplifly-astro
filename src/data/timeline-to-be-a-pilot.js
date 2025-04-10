@@ -49,8 +49,8 @@ const timelineToBePilot = {
         "Start your training today at SimpliFly and take the first step towards building seniority within the airlines, unlocking a world of exciting possibilities and experiences that await you in the aviation industry.",
       ],
       finalButton: {
-        name: "30 Day CFI Program",
-        link: "/accelerated-30-day-cfi-program",
+        name: "Enroll Now",
+        link: "/enroll-at-simplifly",
         primary: true,
       },
       imagePath: "/src/assets/airline_pilot.webp",
