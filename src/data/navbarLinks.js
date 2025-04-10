@@ -4,6 +4,10 @@ export const navbarLinks = [
     link: "/pilot-training-made-simple",
     submenu: [
       {
+        name: "Pilot Training Made Simple",
+        link: "/pilot-training-made-simple",
+      },
+      {
         name: "Discovery Flight",
         link: "/discovery-flight",
       },
@@ -54,7 +58,7 @@ export const navbarLinks = [
         link: "/programs/certified-flight-instructor",
       },
       {
-        name: "Certified Flight Instructor Instruments",
+        name: "CFI - Instruments",
         link: "/programs/certified-flight-instructor/#addons",
       },
       {
