@@ -26,6 +26,10 @@ export const footerLinks = [
         name: "Cost",
         link: "/approximate-pilot-training-costs",
       },
+      {
+        name: "Contact Us",
+        link: "/contact",
+      },
     ],
   },
   {
