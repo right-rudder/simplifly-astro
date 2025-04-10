@@ -92,7 +92,7 @@ const Navbar = ({ pathname }) => {
               <a
                 href="/"
                 title="SimpliFly flight school"
-                className="hover:brightness-110 flex p-3 h-20 lg:h-28 justify-end align-middle items-center duration-200 ease-in-out"
+                className="hover:brightness-110 flex h-20 lg:h-24 justify-end align-middle items-center duration-200 ease-in-out"
               >
                 <img
                   src="/simplifly_250.webp"
