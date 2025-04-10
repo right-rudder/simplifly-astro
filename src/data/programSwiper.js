@@ -41,7 +41,7 @@ const programsSwiper = {
     },
     {
       title: "Certified Flight Instructor",
-      imagePath: "/src/assets/avel-chuklanov-ZEiqbaQhmvE-unsplash.jpg",
+      imagePath: "/src/assets/simplifly-flexible-pilot-training-airline-cessna.webp",
       imageAlt:
         "SimpliFly Flight School student and flight instructor in a Cessna airplane cockpit",
       description:
