@@ -1,7 +1,7 @@
 ---
 import contactData from "../data/contactData.js";
 import programsSwiper from "../data/programSwiper";
-const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
+const GHL_CONTACT_FORM_WEBHOOK_URL = import.meta.env.GHL_CONTACT_FORM_WEBHOOK_URL;
 
 ---
 
@@ -158,7 +158,7 @@ const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
   </div>
 </section>
 <script src="../scripts/creativeSwiper.js"></script>
-<script define:vars={{ GHL_ENROLL_FORM_WEBHOOK_URL }}>
+<script define:vars={{ GHL_CONTACT_FORM_WEBHOOK_URL }}>
   const checkbox = document.getElementById("agree-data-collection");
   const submitButton = document.getElementById("submit-button");
 
@@ -200,7 +200,7 @@ const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
         if (confirmEmailValue === "" || confirmEmailValue === null) {
           // If the honeypot field is empty, it's a human
           // Set the form action to the URL for processing the form and redirecting to thank you
-          contactForm.action = GHL_ENROLL_FORM_WEBHOOK_URL;
+          contactForm.action = GHL_CONTACT_FORM_WEBHOOK_URL;
         }
 
         // Convert FormData to URLSearchParams
