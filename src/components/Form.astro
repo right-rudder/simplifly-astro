@@ -172,7 +172,7 @@ const GHL_CONTACT_FORM_WEBHOOK_URL = import.meta.env.GHL_CONTACT_FORM_WEBHOOK_UR
             // Check if the request was successful (status 200)
             if (xhr.status === 200) {
               // Redirect the user after a successful form submission
-              window.location.href = "/enroll-confirmation";
+              window.location.href = "/form-confirmation";
             } else {
               // Handle errors if any
               console.error("Form submission failed:", xhr.statusText);
