@@ -1,11 +1,11 @@
 import { COMPANY_NAME } from "../consts";
 
 const multiEngineData = {
-  pageTitle: `Multi-Engine Rating | ${COMPANY_NAME}`,
+  pageTitle: `Multi-Engine Rating Course in Mesa, AZ | ${COMPANY_NAME}`,
   pageDescription:
-    "Enhance your aviation skills with SimpliFly Flight School’s Multi-Engine Rating program. Learn to fly complex aircraft and expand your career opportunities.",
+    "Earn your Multi-Engine Rating at SimpliFly Flight School in Mesa, AZ. Master twin-engine aircraft operations and expand your career opportunities with expert training.",
   pageKeywords:
-    "multi-engine rating Arizona, flight school Mesa, multi-engine pilot training, twin-engine aircraft, aviation school, commercial pilot training",
+    "multi-engine rating Mesa AZ, twin-engine pilot training Mesa, flight school Mesa AZ, commercial pilot training Mesa, aviation school Mesa AZ, multi-engine certification Mesa",
 
   // Top Header
   header: {
@@ -17,12 +17,7 @@ const multiEngineData = {
     buttons: [
       {
         name: "Enroll Today",
-        link: "/enroll-now",
-        primary: false,
-      },
-      {
-        name: "Program Guide",
-        link: "/path",
+        link: "/enroll-at-simplifly",
         primary: false,
       },
     ],
@@ -32,7 +27,8 @@ const multiEngineData = {
   details: {
     upperHeading: "Expand Your Skills with a",
     heading: "Multi-Engine Rating",
-    subHeading: "A Multi-Engine Rating allows you to fly aircraft with more than one engine, increasing your capabilities and career opportunities.",
+    subHeading:
+      "A Multi-Engine Rating allows you to fly aircraft with more than one engine, increasing your capabilities and career opportunities.",
 
     title: "Overview",
     description: `
@@ -51,6 +47,15 @@ const multiEngineData = {
       "Comprehensive Ground & Flight Training",
     ],
 
+    addons: [
+      {
+        title: "Multi-Engine Commercial Pilot",
+        description:
+          "With the multi-engine add-on to your commercial rating, you can unlock new career opportunities in commercial aviation. Our integrated training program prepares you for the demands of a professional pilot career. We start training with checkride date set.",
+        duration: "~7-10 days",
+      },
+    ],
+
     cta: {
       imagePath: "/src/assets/female_pilot_smiling.webp",
       imageAlt: "Female pilot smiling",
@@ -67,10 +72,11 @@ const multiEngineData = {
       {
         question: "How long does it take to get a Multi-Engine Rating?",
         answer:
-          "Most students complete their MER in 2-4 weeks, depending on training frequency and proficiency.",
+          "Most students complete their MER in 1-2 weeks, depending on training frequency and proficiency and having completed Commercial Pilot Certificate.",
       },
       {
-        question: "Do I need a Commercial Pilot License before getting a Multi-Engine Rating?",
+        question:
+          "Do I need a Commercial Pilot License before getting a Multi-Engine Rating?",
         answer:
           "No, you can obtain a Multi-Engine Rating with a Private Pilot License, but it is often pursued alongside a Commercial Pilot License.",
       },
@@ -79,7 +85,7 @@ const multiEngineData = {
         answer:
           "With an MER, you can fly multi-engine aircraft, increasing job opportunities in commercial aviation, charter operations, and corporate flying.",
       },
-    ],  
+    ],
   },
 };
 

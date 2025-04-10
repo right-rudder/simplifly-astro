@@ -14,7 +14,7 @@ const {
   title,
   description,
   keywords,
-  image = "/elite-favicon.png",
+  image = "/simplifly_250.webp",
 } = Astro.props;
 ---
 
@@ -34,38 +34,30 @@ const {
       |_|  |_|\__,_|_|  |_|\_\___|\__|_|_| |_|\__, |                
                                                __/ |                
                                               |___/                 
-
     Nice to see you here.  Find new student pilots with Right Rudder Marketing.  https://rightruddermarketing.com/contact-us -->
-
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" type="image/svg+xml" href="/simplifly-favicon.png" />
 <meta name="generator" content={Astro.generator} />
-
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
-
 <!-- Primary Meta Tags -->
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
 <meta name="keywords" content={keywords} />
-
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content={Astro.url} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={new URL(image, Astro.url)} />
-
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
-
 <link rel="sitemap" href="/sitemap-index.xml" />
-
 <!-- Google Tag Manager -->
 <script type="text/partytown">
   (function (w, d, s, l, i) {
@@ -77,15 +69,14 @@ const {
     j.async = true;
     j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
     f.parentNode.insertBefore(j, f);
-  })(window, document, "script", "dataLayer", "GTM-TSLDH43P");
+  })(window, document, "script", "dataLayer", "GTM-N2FPMTG");
 </script>
 <!-- End Google Tag Manager -->
-
 <!-- Google tag (gtag.js) -->
 <script
   type="text/partytown"
   async
-  src="https://www.googletagmanager.com/gtag/js?id=G-VTTTNQQRB1"></script>
+  src="https://www.googletagmanager.com/ns.html?id=GTM-N2FPMTG"></script>
 <script type="text/partytown">
   window.dataLayer = window.dataLayer || [];
   function gtag() {
@@ -93,51 +84,50 @@ const {
   }
   gtag("js", new Date());
 
-  gtag("config", "G-VTTTNQQRB1");
+  gtag("config", "GTM-N2FPMTG");
 </script>
-
-<!-- NEED TO UPDATE SCHEMA -->
+<!-- Updated Schema for SimpliFly Flight School -->
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "LocalBusiness",
-    "name": "SimpliFly Flight School & Aircraft Management",
-    "description": "SimpliFly Flight School & Aircraft Management offers flight training in Kankakee, IL. We offer private pilot training, instrument rating training, commercial pilot training, and more. Contact us today!",
-    "keywords": "SimpliFly Flight School, elite aircraft management, elite aircraft rentals, elite aircraft maintenance, elite aircraft brokerage, aircraft management,  aircraft rentals,  aircraft maintenance,  aircraft brokerage, flight training, flight school, pilot training, private pilot training, instrument rating training, commercial pilot training, multi-engine training, Kankakee, IL",
-    "image": "/Elite-OG-image.webp",
-    "logo": "/elite-favicon.png",
-    "telephone": "+1 815-369-0525",
-    "email": "eliteproaviation@gmail.com",
+    "name": "SimpliFly Flight School",
+    "description": "SimpliFly Flight School offers professional flight training in Mesa, AZ. We provide private pilot training, instrument rating training, commercial pilot training, multi-engine training, and certified flight instructor courses at Falcon Field Airport.",
+    "keywords": "SimpliFly Flight School, flight training Mesa AZ, flight school, pilot training, private pilot training, instrument rating training, commercial pilot training, multi-engine training, certified flight instructor, discovery flight, Falcon Field Airport",
+    "image": "/simplifly_250.webp",
+    "logo": "/simplifly-favicon.png",
+    "telephone": "+1 480-256-8355",
+    "email": "info@simpliflyco.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "809 E 4000 S Rd",
-      "addressLocality": "Kankakee",
-      "addressRegion": "IL",
+      "streetAddress": "4855 E Falcon Dr",
+      "addressLocality": "Mesa",
+      "addressRegion": "AZ",
       "addressCountry": "US",
-      "postalCode": "60901"
+      "postalCode": "85215"
     },
     "currenciesAccepted": "USD",
-    "paymentAccepted": "Cash, Credit Card, Visa, Mastercard, American Express, Discover, Checks",
+    "paymentAccepted": "Cash, Credit Card, Debit Card, Financing",
     "areaServed": {
       "@type": "GeoCircle",
       "geoMidpoint": {
         "@type": "GeoCoordinates",
-        "latitude": 41.09980346439261,
-        "longitude": -87.85572920714803
+        "latitude": 33.4557,
+        "longitude": -111.7281
       },
-      "geoRadius": 9000
+      "geoRadius": 50000
     },
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5",
-      "reviewCount": "14"
+      "reviewCount": "100"
     },
-    "url": "https://www.eliteproaviation.com/",
-    "priceRange": "$",
+    "url": "https://simpliflyco.com/",
+    "priceRange": "$$",
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 41.09980346439261,
-      "longitude": -87.85572920714803
+      "latitude": 33.4557,
+      "longitude": -111.7281
     },
     "openingHoursSpecification": [
       {
@@ -150,13 +140,13 @@ const {
           "Friday",
           "Saturday"
         ],
-        "opens": "09:00",
-        "closes": "17:00"
+        "opens": "08:00",
+        "closes": "18:00"
       },
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": "Sunday",
-        "opens": "12:00",
+        "opens": "09:00",
         "closes": "17:00"
       }
     ],
@@ -169,27 +159,18 @@ const {
       "priceCurrency": "USD",
       "price": "Varies"
     },
-    "memberOf": {
-      "@type": "Organization",
-      "name": "Cessna Pilot Center"
-    },
     "identifier": [
       {
         "@type": "PropertyValue",
-        "name": "IATA Code",
-        "value": "IKK"
+        "name": "Airport Code",
+        "value": "FFZ"
       },
       {
         "@type": "PropertyValue",
         "name": "ICAO Code",
-        "value": "KIKK"
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Airport Code",
-        "value": "IKK"
+        "value": "KFFZ"
       }
     ],
-    "hasMap": "https://maps.app.goo.gl/zCNMFJHjsZ8RvQBFA"
+    "hasMap": "https://maps.app.goo.gl/CPLB59b8BbPALwtf7"
   }
 </script>

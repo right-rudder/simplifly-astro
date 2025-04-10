@@ -1,11 +1,11 @@
 export const GeneralFAQs = [
   {
-    title: "How long it takes to complete the flight training program?",
+    title: "How long does it take to complete the flight training program?",
     content: `Total time depends on a variety of factors including weather, aircraft availability, instructor availability, and student skill level. While times may vary, obtaining your private pilot certificate can be done in less than a year. Check out our <a href="/timeline-to-be-a-pilot" class="text-sky-600 hover:underline">timeline page</a> for more details.`,
   },
   {
     title: "What type of aircraft are used for flight training?",
-    content: `Our primary workhorse is our fleet of Cessna 172s. Depending on which airplane you fly, our Cessna 172s are outfitted with six pack steam gauges, Garmin G5 flight displays, and Garmin G3X flight displays. For multi-engine training, we have a Piper Seneca with a G5 and autopilot.`,
+    content: `Our primary training aircraft are our fleet of Cessna 172s, equipped with six-pack steam gauges and Garmin G5 flight displays. For multi-engine training, we lease Diamond DA42 aircraft.`,
   },
   {
     title: "What is the cost of the flight training program?",
@@ -19,12 +19,12 @@ export const GeneralFAQs = [
   {
     title:
       "What are the different pilot licenses or ratings I can obtain through SimpliFly?",
-    content: `SimpliFly offers training all the way up to certified flight instructor (CFI). This includes private, instrument, commercial, multi-engine, and CFI training. Many of our students have used the experience and training received here at SimpliFly and started successful airline carriers.`,
+    content: `SimpliFly offers training from private pilot through certified flight instructor (CFI), including instrument rating, commercial pilot training, multi-engine training, certified flight instructor-instrument (CFII), and multi-engine instructor (MEI). Many of our students have used the experience and training received here at SimpliFly to begin successful airline careers.`,
   },
   {
     title:
-      "Do SimpliFly provide accommodation or assistance in finding accommodation for students?",
-    content: `We do not offer accommodation or assistance finding accommodation.`,
+      "Does SimpliFly provide accommodation or assistance in finding accommodation for students?",
+    content: `We do not provide accommodation directly, but you can call us for information on housing options that may be available.`,
   },
   {
     title: "Can I choose between part-time or full-time training?",
@@ -33,11 +33,11 @@ export const GeneralFAQs = [
   {
     title:
       "Are there any medical requirements or restrictions for becoming a pilot?",
-    content: `The FAA has medical standards that all pilots must meet in order to be the pilot in command (PIC) of an aircraft. This is done by a medical exam from an FAA approved medical doctor. However to just get started, you can do a discovery flight and start flight training. But by the time you're ready to solo, you'll have needed to complete a FAA medical exam. Talk to an instructor or one of our team members for more information.`,
+    content: `The FAA has medical standards that all pilots must meet in order to be the pilot in command (PIC) of an aircraft. This is done by a medical exam from an FAA-approved medical doctor. However, to just get started, you can do a discovery flight and begin training. By the time you're ready to solo, you'll need to have completed an FAA medical exam. Talk to an instructor or one of our team members for more information.`,
   },
   {
     title:
       "Are there any opportunities for flight experience beyond the standard training curriculum?",
-    content: `Of course! After you complete training at SimpliFly, we guarantee an interview to be a certified flight instructor (CFI). Being a CFI helps build experience and hours to help prepare you for further in your aviation career. Check out our page about beginning your pilot career as a CFI for more details.`,
+    content: `Yes! Students who complete all their ratings through SimpliFly are guaranteed an interview for a certified flight instructor (CFI) position. Becoming a CFI is a great way to build flight hours and gain experience for a career in aviation. Check out our page about beginning your pilot career as a CFI for more details.`,
   },
 ];

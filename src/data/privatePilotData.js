@@ -17,12 +17,7 @@ const privatePilotData = {
     buttons: [
       {
         name: "Enroll Today",
-        link: "/enroll-now",
-        primary: false,
-      },
-      {
-        name: "Program Guide",
-        link: "/path",
+        link: "/enroll-at-simplifly",
         primary: false,
       },
     ],
@@ -32,7 +27,8 @@ const privatePilotData = {
   details: {
     upperHeading: "Get Started With a",
     heading: "Private Pilot License",
-    subHeading: "A PPL is the beginning of your journey in aviation, whether you want to fly for fun or professionally, this is the starting point for every aspiring pilot.",
+    subHeading:
+      "A PPL is the beginning of your journey in aviation, whether you want to fly for fun or professionally, this is the starting point for every aspiring pilot.",
 
     title: "Overview",
     description: `
@@ -79,7 +75,7 @@ const privatePilotData = {
         answer:
           "The program includes flight instruction, ground school, and FAA exam preparation to help you obtain your Private Pilot Certificate.",
       },
-    ],  
+    ],
   },
 };
 

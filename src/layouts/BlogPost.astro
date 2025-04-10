@@ -5,9 +5,9 @@ import BaseLayout from "./BaseLayout.astro";
 import { KEYWORDS } from "../consts";
 import CTAColor from "../components/CTAColor.astro";
 import flyWithUsCTA from "../data/fly-with-us-cta";
+import BlogPostSchema from "../components/BlogPostSchema.astro";
 
 type Props = CollectionEntry<"blog">["data"];
-
 const {
   title,
   author,
@@ -22,8 +22,8 @@ const {
 ---
 
 <BaseLayout
-  siteTitle={title + " | Blog | Right Rudder Marketing"}
-  siteDescription={description + " Right Rudder Marketing Blog."}
+  siteTitle={title + " | SimpliFly Flight School Blog"}
+  siteDescription={description}
   keywords={category + ", " + tags.join(", ") + keywords ? keywords : KEYWORDS}
   ogImage={heroImage}
 >
@@ -57,7 +57,7 @@ const {
             }
           </div>
           <h1
-            class="text-6xl leading-[2.7rem] m-0 font-title font-bold animate-fade-top"
+            class="text-6xl leading-[3.5rem] m-0 font-title font-bold animate-fade-top"
           >
             {title}
           </h1>
@@ -94,4 +94,16 @@ const {
     </article>
   </section>
   <CTAColor content={flyWithUsCTA} />
+
+  <!-- Add BlogPost Schema for SEO -->
+  <BlogPostSchema
+    title={title}
+    description={description}
+    publishDate={pubDate}
+    updateDate={updatedDate}
+    authorName={author}
+    featuredImage={heroImage}
+    tags={tags}
+    section={category}
+  />
 </BaseLayout>

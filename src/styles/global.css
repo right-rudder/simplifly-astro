@@ -133,3 +133,7 @@
 .animate-marquee2mobile {
   animation: marquee2mobile 50s linear infinite;
 }
+
+/* * {
+  border: 1px solid red;
+} */

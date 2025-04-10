@@ -5,6 +5,7 @@ import { SITE_TITLE, SITE_DESCRIPTION, KEYWORDS, OG_IMAGE } from "../consts";
 import "@fontsource/kanit";
 import "@fontsource-variable/open-sans";
 import Navbar from "../components/Navbar";
+import SocialMediaSchema from "../components/SocialMediaSchema.astro";
 const { pathname } = Astro.url;
 const { siteTitle, siteDescription, keywords } = Astro.props;
 import ChatWidget from "../components/ChatWidget.astro";
@@ -25,18 +26,21 @@ import Banner from "../components/Banner.astro";
     <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-TSLDH43P"
+        src="https://www.googletagmanager.com/ns.html?id=GTM-N2FPMTG"
         height="0"
         width="0"
         style="display:none;visibility:hidden"></iframe></noscript
     >
     <!-- End Google Tag Manager (noscript) -->
     <Banner />
-    <Navbar pathname={pathname} client:load />
+    <header class="w-full h-0 sticky inset-0 z-20 font-sans tracking-wider">
+      <Navbar pathname={pathname} client:load />
+    </header>
     <main>
       <slot />
     </main>
     <Footer />
     <!-- <ChatWidget /> -->
+    <SocialMediaSchema title={siteTitle} description={siteDescription} />
   </body>
 </html>

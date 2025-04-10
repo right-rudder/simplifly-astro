@@ -3,23 +3,31 @@ export const footerLinks = [
     title: "Quick Links",
     links: [
       {
-        name: "Home",
-        link: "/",
-      },
-      {
-        name: "Why Become a Pilot?",
-        link: "/why-become-a-pilot",
-      },
-      {
         name: "Discovery Flight",
         link: "/discovery-flight",
       },
       {
-        name: "Aircraft Services",
-        link: "/aircraft-services",
+        name: "Enroll at SimpliFly",
+        link: "/enroll-at-simplifly",
       },
       {
-        name: "Contact",
+        name: "Pilot Training",
+        link: "/pilot-training",
+      },
+      {
+        name: "Begin Pilot Career",
+        link: "/begin-pilot-career",
+      },
+      {
+        name: "Timeline",
+        link: "/timeline-to-be-a-pilot",
+      },
+      {
+        name: "Cost",
+        link: "/approximate-pilot-training-costs",
+      },
+      {
+        name: "Contact Us",
         link: "/contact",
       },
     ],
@@ -29,23 +37,31 @@ export const footerLinks = [
     links: [
       {
         name: "Private Pilot",
-        link: "/flight-training/private-pilot-training",
+        link: "/programs/private-pilot",
       },
       {
         name: "Instrument Rating",
-        link: "/flight-training/instrument-rating",
+        link: "/programs/instrument-rating",
       },
       {
         name: "Commercial Pilot",
-        link: "/flight-training/commercial-pilot-training",
+        link: "/programs/commercial-pilot",
       },
       {
         name: "Multi-Engine Rating",
-        link: "/flight-training/multi-engine-rating",
+        link: "/programs/multi-engine-rating",
       },
       {
         name: "CFI",
-        link: "/flight-training/certified-flight-instructor-cfi",
+        link: "/programs/certified-flight-instructor",
+      },
+      {
+        name: "CFII",
+        link: "/programs/certified-flight-instructor/#addons",
+      },
+      {
+        name: "MEI",
+        link: "/programs/certified-flight-instructor/#addons",
       },
     ],
   },
@@ -53,12 +69,20 @@ export const footerLinks = [
     title: "About",
     links: [
       {
+        name: "Why SimpliFly",
+        link: "/simplifly",
+      },
+      {
         name: "Our Team",
         link: "/simplifly/team",
       },
       {
-        name: "Our Fleet",
-        link: "/our-fleet",
+        name: "Visit Us",
+        link: "/simplifly/visit",
+      },
+      {
+        name: "Financing",
+        link: "/financing",
       },
       {
         name: "Blog",

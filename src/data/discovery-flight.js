@@ -26,17 +26,43 @@ const discoveryFlight = {
         {
           title: "What to Expect",
           paragraphs: [
-            "Your Discovery Flight is designed to give you a taste of what it's like to be a pilot. You'll spend approximately 60 minutes in the air with one of our certified flight instructors, who will guide you through the basics of flying and answer any questions you may have. You'll also have the opportunity to take the controls and experience the thrill of flying first hand.",
-            "During your discovery flight, you'll sit in the pilot seat and the FAA Certified Flight Instructor at your side will allow you to fly for the majority of the flight. A discovery flight is a great option if you’re considering an aviation career. At the end of the flight, the instructor will be able to answer any questions that you may have. ",
+            "Your Discovery Flight is designed to give you a taste of what it's like to be a pilot. You'll spend approximately 60 minutes in the air with one of our certified flight instructors, who will guide you through the basics of flying and answer any questions you may have. You'll also have the opportunity to take the controls and experience the thrill of flying firsthand.",
+            "During your discovery flight, you'll sit in the pilot seat, and the FAA Certified Flight Instructor at your side will allow you to fly for the majority of the flight. A discovery flight is a great option if you’re considering an aviation career. At the end of the flight, the instructor will be able to answer any questions that you may have.",
           ],
         },
         {
           title: "What Happens After the Flight?",
           paragraphs: [
-            "So, you've completed your discovery flight and are ready to take the next step? SimpliFly is here to help you take flight towards your aviation dreams and attain your goals. Let's dive into what happens after your first flight with us.",
+            "So, you've completed your discovery flight and are ready to take the next step? SimpliFly is here to help you take flight towards your aviation dreams and attain your goals. Let's dive into what happens after your first flight with us."
           ],
         },
       ],
+      nextSteps: [
+        {
+          title: "Create a Training Plan",
+          description: "Work with a certified flight instructor (CFI) to set a schedule, review the syllabus, and address any questions."
+        },
+        {
+          title: "Complete Prerequisites",
+          description: "Get your medical exam, study materials, and start ground school to prepare for your written exam."
+        },
+        {
+          title: "Begin Flight Training",
+          description: "Start logging flight hours, attending ground school, and mastering essential piloting skills with your CFI."
+        },
+        {
+          title: "Pass Your Checkride",
+          description: "Prepare with stage checks and ensure you're confident and ready to earn your pilot's license."
+        },
+        {
+          title: "Continue Your Aviation Journey",
+          description: "Keep learning with advanced ratings like an instrument or commercial certificate. Whether for fun or career, we’re here to support you."
+        },
+      ],
+        button: {
+        text: "Contact Us",
+        link: "/contact",
+      },
     },
   },
 };

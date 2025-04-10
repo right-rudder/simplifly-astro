@@ -10,7 +10,7 @@ const certifiedFlightInstructorData = {
   // Top Header
   header: {
     stars: true,
-    imagePath: "/src/assets/avel-chuklanov-ZEiqbaQhmvE-unsplash.jpg",
+    imagePath: "/src/assets/airline-pilot-courses-at-simplifly-flight-school.webp",
     imageAlt:
       "SimpliFly Flight School student and flight instructor in a Cessna airplane cockpit",
     headerH1: `Certified Flight <br>INSTRUCTOR (CFI)</span>`,
@@ -18,12 +18,7 @@ const certifiedFlightInstructorData = {
     buttons: [
       {
         name: "Enroll Today",
-        link: "/enroll-now",
-        primary: false,
-      },
-      {
-        name: "Program Guide",
-        link: "/path",
+        link: "/enroll-at-simplifly",
         primary: false,
       },
     ],
@@ -33,11 +28,15 @@ const certifiedFlightInstructorData = {
   details: {
     upperHeading: "Start Your Career as a",
     heading: "Certified Flight Instructor",
-    subHeading: "Becoming a Certified Flight Instructor (CFI) allows you to gain valuable flight experience while teaching new pilots the skills they need to succeed.",
+    subHeading:
+      "Becoming a Certified Flight Instructor (CFI) allows you to gain valuable flight experience while teaching new pilots the skills they need to succeed.",
 
     title: "Overview",
     description: `
       The Certified Flight Instructor (CFI) program at SimpliFly Flight School is designed for pilots looking to advance their careers by teaching others how to fly. This program equips you with the instructional skills, flight proficiency, and teaching techniques necessary to become an FAA-certified instructor.
+      <br/>
+      <br/>
+      SimpliFly offers an <strong>accelerated(~4-8 weeks)</strong> and a <strong>flexible(at-your-own pace)</strong> CFI training programs. Our flight instructors will guide you through the process of becoming a proficient flight instructor, preparing you for a rewarding career in aviation.
       <br/>
       <br/>
       As a CFI, you will develop expertise in aerodynamics, flight instruction principles, and student pilot training strategies. You’ll also refine your communication skills to effectively teach flight maneuvers, emergency procedures, and airspace regulations.
@@ -46,10 +45,25 @@ const certifiedFlightInstructorData = {
       Upon completion of this program, you will be prepared to pass the FAA Certified Flight Instructor checkride and begin your career as a flight instructor—gaining flight hours and advancing toward airline or corporate pilot opportunities.`,
 
     keyPoints: [
+      "SimpliFly offers accelerated and flexible CFI training programs to fit your schedule.",
       "Gain Valuable Flight Experience While Teaching",
       "Refine Your Instructional & Communication Skills",
       "Prepare for the FAA Certified Flight Instructor Checkride",
       "Start Your Career in Aviation with a CFI Position",
+    ],
+
+    addons: [
+      {
+        title: "Certified Flight Instructor Instruments (CFII)",
+        description:
+          "Expand your teaching capabilities with the Certified Flight Instructor Instruments (CFII) add-on. This advanced training allows you to instruct students in instrument flying techniques and procedures. We offer accelerated and flexible CFII training options to fit your schedule.",
+      },
+      {
+        title: "Multi-Engine Instructor (MEI)",
+        description:
+          "Elevate your flight instruction skills with the Multi-Engine Instructor (MEI) add-on. Learn to teach multi-engine aircraft operations and systems to aspiring pilots. Our MEI training program provides the knowledge and experience needed to become a proficient multi-engine flight instructor. Contact us to learn more about our MEI training options.",
+        duration: "~2 months",
+      },
     ],
 
     cta: {
@@ -66,7 +80,8 @@ const certifiedFlightInstructorData = {
 
     faqs: [
       {
-        question: "How long does it take to become a Certified Flight Instructor?",
+        question:
+          "How long does it take to become a Certified Flight Instructor?",
         answer:
           "Most students complete their CFI training in 4-8 weeks, depending on proficiency and study schedule.",
       },
@@ -80,7 +95,7 @@ const certifiedFlightInstructorData = {
         answer:
           "As a CFI, you can teach student pilots, build valuable flight hours, and gain experience for future airline or corporate pilot opportunities.",
       },
-    ],  
+    ],
   },
 };
 

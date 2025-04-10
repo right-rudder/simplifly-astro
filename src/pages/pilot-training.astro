@@ -1,23 +1,26 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HeaderScreen from "../components/HeaderScreen.astro";
-import ProgramSwiper from "../components/ProgramSwiper.astro";
+import TestimonialsSwiper from "../components/TestimonialsSwiper.astro";
 import CTAColor from "../components/CTAColor.astro";
 import programsSwiper from "../data/programSwiper";
 import flyWithUsCTA from "../data/fly-with-us-cta";
 import PageSummary from "../components/PageSummary.astro";
 import pilotTraining from "../data/pilot-training";
 import GridPrograms from "../components/GridPrograms.astro";
-import ProgramCard from "../components/ProgramCard.astro";
+import ContentSplit from "../components/ContentSplit.astro";
+import contentSplit from "../data/safe-flight";
 import ProgramsRoadmap from "../components/ProgramsRoadmap.astro";
 
 const { data } = pilotTraining;
 ---
 
-<BaseLayout siteDescription={data.pageDescription} keywords={data.pageKeywords}>
+<BaseLayout siteTitle={data.pageTitle} siteDescription={data.pageDescription} keywords={data.pageKeywords}>
   <HeaderScreen content={data.header} />
   <PageSummary content={data.pageSummary} />
-  <GridPrograms content={programsSwiper} />
-  <CTAColor content={flyWithUsCTA} />
   <ProgramsRoadmap />
+  <TestimonialsSwiper />
+  <CTAColor content={flyWithUsCTA} />
+  <ContentSplit content={contentSplit} />
+  <GridPrograms content={programsSwiper} />
 </BaseLayout>

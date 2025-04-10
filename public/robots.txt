@@ -1,0 +1,27 @@
+# robots.txt for SimpliFly Flight School
+# https://simpliflyco.com/
+
+User-agent: *
+Allow: /
+
+# Prevent indexing of any temporary or admin pages if they exist
+Disallow: /admin/
+Disallow: /temp/
+Disallow: /draft/
+
+# Allow all bots to access the sitemap
+Sitemap: https://simpliflyco.com/sitemap-index.xml
+
+# Specific instructions for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Rate limiting for non-Google bots to prevent server overload
+User-agent: *
+Crawl-delay: 10
