@@ -24,13 +24,8 @@ import Banner from "../components/Banner.astro";
   </head>
   <body class="font-sans">
     <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-N2FPMTG"
-        height="0"
-        width="0"
-        style="display:none;visibility:hidden"></iframe></noscript
-    >
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=G-75X25DPQQC"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <Banner />
     <header class="w-full h-0 sticky inset-0 z-20 font-sans tracking-wider">
@@ -40,7 +35,7 @@ import Banner from "../components/Banner.astro";
       <slot />
     </main>
     <Footer />
-    <!-- <ChatWidget /> -->
+    <ChatWidget />
     <SocialMediaSchema title={siteTitle} description={siteDescription} />
   </body>
 </html>
