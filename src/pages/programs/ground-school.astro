@@ -1,0 +1,21 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeaderSmall from "../../components/HeaderSmall.astro";
+import GroundSchoolSessions from "../../components/GroundSchoolSessions.astro";
+import CTAContact from "../../components/CTAContact.astro";
+import contactCTA from "../../data/contactCTA";
+
+import pageData from "../../data/ground-school.js";
+---
+<BaseLayout
+  siteTitle={pageData.pageTitle}
+  siteDescription={pageData.pageDescription}
+  keywords={pageData.pageKeywords}
+>
+  <!-- HEADER -->
+  <HeaderSmall content={pageData.header} />
+
+  <GroundSchoolSessions />
+
+  <CTAContact content={contactCTA} />
+</BaseLayout>

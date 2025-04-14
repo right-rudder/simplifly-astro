@@ -65,6 +65,10 @@ export const navbarLinks = [
         name: "Multi-Engine Instructor",
         link: "/programs/certified-flight-instructor/#addons",
       },
+      {
+        name: "Ground School",
+        link: "/programs/ground-school",
+      },
     ],
   },
 
