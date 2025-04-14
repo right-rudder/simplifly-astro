@@ -1,35 +1,105 @@
 ---
 import groundSchoolSessions from "../data/sessions";
+
+// Utility to parse session date
+function parseDate(dateStr) {
+  return dateStr === "TBD" ? null : new Date(dateStr);
+}
+
+const now = new Date();
+
+// Group sessions
+const scheduled = groundSchoolSessions.filter(
+  (s) => parseDate(s.date) && parseDate(s.date) > now
+);
+const past = groundSchoolSessions.filter(
+  (s) => parseDate(s.date) && parseDate(s.date) <= now
+);
+const upcoming = groundSchoolSessions.filter((s) => !parseDate(s.date));
 ---
 
 <section class="py-20 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 class="text-4xl font-title font-bold text-sky-900 mb-10">Upcoming Ground School Sessions</h2>
+    <h2 class="text-4xl font-title font-bold text-sky-900 mb-10">Ground School Sessions</h2>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      {groundSchoolSessions.map((session) => (
-        <div class="border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition duration-200">
-          <h3 class="text-xl font-semibold text-sky-800 mb-1">{session.date}</h3>
-          <p class="text-gray-600 mb-2">{session.time}</p>
+    {scheduled.length > 0 && (
+      <>
+        <h3 class="text-2xl font-semibold text-sky-800 mb-4">Scheduled Sessions</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          {scheduled.map((session) => (
+            <div class="border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition duration-200">
+              <h3 class="text-xl font-semibold text-sky-800 mb-1">{session.date}</h3>
+              <p class="text-gray-600 mb-2">{session.time}</p>
 
-          <ul class="list-disc list-inside text-gray-700 text-sm mb-4">
-            {session.topics.map((topic) => (
-              <li>{topic}</li>
-            ))}
-          </ul>
+              <ul class="list-disc list-inside text-gray-700 text-sm mb-4">
+                {session.topics.map((topic) => (
+                  <li>{topic}</li>
+                ))}
+              </ul>
 
-          <span
-            class={`inline-block px-3 py-1 text-sm rounded-full ${
-              session.status === "Scheduled"
-                ? "bg-green-100 text-green-800"
-                : "bg-yellow-100 text-yellow-800"
-            }`}
-          >
-            {session.status}
-          </span>
-          <a href="https://www.flightcircle.com/shop/f97c5d7539a7/4000020629" target="_blank" class="text-blue-600 underline">Sign up here</a>
+              <span class="inline-block px-3 py-1 text-sm rounded-full bg-green-100 text-green-800 mb-3">
+                {session.status}
+              </span>
+
+              <a
+                href="https://www.flightcircle.com/shop/f97c5d7539a7/4000020629"
+                class="block mt-3 text-center text-white bg-sky-600 hover:bg-sky-700 px-4 py-2 rounded text-sm font-medium"
+                target="_blank"
+              >
+                Register – $50
+              </a>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
+      </>
+    )}
+
+    {upcoming.length > 0 && (
+      <>
+        <h3 class="text-2xl font-semibold text-sky-800 mb-4">To Be Scheduled</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          {upcoming.map((session) => (
+            <div class="border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition duration-200">
+              <h3 class="text-xl font-semibold text-sky-800 mb-1">TBD</h3>
+              <p class="text-gray-600 mb-2">Time: TBD</p>
+
+              <ul class="list-disc list-inside text-gray-700 text-sm mb-4">
+                {session.topics.map((topic) => (
+                  <li>{topic}</li>
+                ))}
+              </ul>
+
+              <span class="inline-block px-3 py-1 text-sm rounded-full bg-yellow-100 text-yellow-800">
+                {session.status}
+              </span>
+            </div>
+          ))}
+        </div>
+      </>
+    )}
+
+    {past.length > 0 && (
+      <>
+        <h3 class="text-2xl font-semibold text-sky-800 mb-4">Past Sessions</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {past.map((session) => (
+            <div class="border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition duration-200 opacity-70">
+              <h3 class="text-xl font-semibold text-gray-600 mb-1">{session.date}</h3>
+              <p class="text-gray-500 mb-2">{session.time}</p>
+
+              <ul class="list-disc list-inside text-gray-500 text-sm mb-4">
+                {session.topics.map((topic) => (
+                  <li>{topic}</li>
+                ))}
+              </ul>
+
+              <span class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 text-gray-600">
+                {session.status}
+              </span>
+            </div>
+          ))}
+        </div>
+      </>
+    )}
   </div>
 </section>
