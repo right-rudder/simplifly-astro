@@ -2,6 +2,8 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HeaderSmall from "../../components/HeaderSmall.astro";
 import GroundSchoolSessions from "../../components/GroundSchoolSessions.astro";
+import CTAContact from "../../components/CTAContact.astro";
+import contactCTA from "../../data/contactCTA";
 
 import pageData from "../../data/ground-school.js";
 ---
@@ -14,4 +16,6 @@ import pageData from "../../data/ground-school.js";
   <HeaderSmall content={pageData.header} />
 
   <GroundSchoolSessions />
+
+  <CTAContact content={contactCTA} />
 </BaseLayout>
