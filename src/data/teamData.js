@@ -50,13 +50,6 @@ const teamData = {
         title: "Owner",
         summary: "With 18 years of experience in education, Julie is a lifelong learner and passionate teacher. Known for her organizational skills and talent for working with numbers, she thrives in both creative and analytical pursuits. Outside the classroom, she enjoys reading, sewing, paddle boarding, and exploring family history. A true collaborator, she loves working alongside her husband and supporting him in their shared ventures, including their exciting journey with SimpliFly. Above all, she treasures spending time with her children and grandchildren, cherishing every moment with her growing family.",
       },
-      {
-        img: "/src/assets/Caitney-Hollenbeck.webp",
-        alt: "Caitney Hollenbeck Office Manager at SimpliFly Flight School",
-        name: "Caitney Hollenbeck",
-        title: "Office Manager",
-        summary: "Caitney has been with Simplifly for two years, working as the office manager. Currently in her second year of college, she is pursuing a degree to become a registered dietitian, with four years left in their program. While she has no interest in piloting herself, she enjoys flying with her husband, who is a commercially rated pilot.",
-      },
     ],
 
     heading2: "Our Certified Flight Instructors",
