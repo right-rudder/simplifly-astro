@@ -53,7 +53,7 @@ You don’t need to be a current student to attend — just show up ready to lea
 
 Spots are limited, so we recommend reserving your seat in advance.
 
-👉 [**Click here to sign up and pay**](https://www.flightcircle.com/shop/f97c5d7539a7/4000020629)  
+👉 [**Click here to sign up and pay**](/programs/ground-school)  
 📞 Or call us at [Call Us](tel:1-480-256-8355) to register over the phone.
 
 ---
