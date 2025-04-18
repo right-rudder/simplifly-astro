@@ -10,14 +10,19 @@ const groundSchoolData = {
   // Top Header
   header: {
     stars: false,
-    imagePath: "/src/assets/valley-of-the-sun-fly-over.webp",
+    imagePath: "/src/assets/simplifly-flight-school-flying-over-arizona.jpg",
     imageAlt: "SimpliFly students participating in a ground school session",
     headerH1: `Ground School at <br>SimpliFly`,
     paragraph: `Join our in-person ground school sessions in Mesa, AZ—open to anyone who wants to sharpen their aviation knowledge. Whether you're training at SimpliFly, another school, or haven’t started flight training yet, our $50, 3-hour sessions are a great way to build your confidence and understanding. Each session is led by our instructor Dolly Woodhall and covers essential topics for every student pilot.`,
     buttons: [
       {
-        name: "Sign Up Now – $50",
-        link: "https://www.flightcircle.com/shop/f97c5d7539a7/4000020629",
+        name: "Sign Up Now",
+        link: "#form",
+        primary: true,
+      },
+      {
+        name: "See Schedule",
+        link: "#schedule",
         primary: true,
       },
       {
