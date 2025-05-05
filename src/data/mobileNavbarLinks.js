@@ -100,6 +100,10 @@ export const mobileNavbarLinks = [
         link: "/simplifly/visit",
       },
       {
+        name: "Join Us",
+        link: "/simplifly/join-us",
+      },
+      {
         name: "Blog",
         link: "/blog",
       },

@@ -81,6 +81,10 @@ export const footerLinks = [
         link: "/simplifly/visit",
       },
       {
+        name: "Join Us",
+        link: "/simplifly/join-us",
+      },
+      {
         name: "Financing",
         link: "/financing",
       },
