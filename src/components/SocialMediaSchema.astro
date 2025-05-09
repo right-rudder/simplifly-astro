@@ -16,7 +16,9 @@ const {
 const fullLogoUrl = new URL(logoUrl, Astro.site?.toString() || "https://simpliflyco.com").toString();
 const websiteUrl = Astro.site?.toString() || "https://simpliflyco.com";
 
-const primaryLocation = LOCATIONS[0]; // Use the first location as the primary
+const primaryLocation = LOCATIONS.length > 0 
+  ? LOCATIONS[0] 
+  : { phone: "N/A", address: "N/A", city: "N/A", state: "N/A", zip: "N/A" }; // Fallback values
 ---
 
 <!-- LocalBusiness Schema -->
