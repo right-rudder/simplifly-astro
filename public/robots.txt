@@ -21,7 +21,3 @@ Allow: /
 
 User-agent: DuckDuckBot
 Allow: /
-
-# Rate limiting for non-Google bots to prevent server overload
-User-agent: *
-Crawl-delay: 10
