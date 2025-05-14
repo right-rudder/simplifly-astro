@@ -8,7 +8,7 @@ export const SITE_DESCRIPTION =
 
 // Updated keywords with a focus on SEO, including relevant aviation terms and multiple localities
 export const KEYWORDS =
-  "SimpliFly Flight School, flight training Mesa AZ, how to become a pilot, flight school near me, private pilot training, discovery flight Mesa, introductory flight Arizona, instrument rating, commercial pilot certificate, certified flight instructor, airline pilot training, aviation academy Arizona, best flight school Mesa, multi-engine training, Falcon Field flight school";
+  "SimpliFly Flight School, flight training Mesa AZ, pilot school Mesa Arizona, how to become a pilot Arizona, flight school near me, find a flight school Mesa, private pilot license Mesa AZ, discovery flight Mesa, introductory flight Arizona, instrument rating Falcon Field, commercial pilot school Mesa, commercial pilot license Arizona, certified flight instructor training AZ, CFI academy Arizona, airline pilot program Arizona, aviation academy Arizona, best flight school Mesa, top flight schools Phoenix area, multi-engine rating AZ, learn to fly Cessna Mesa AZ, Diamond aircraft training Arizona, flight training cost Mesa AZ, pilot certification Mesa, Falcon Field flight school, KFFZ pilot training";
 
 export const OG_IMAGE = "/simplifly_250.webp";
 
