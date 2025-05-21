@@ -14,7 +14,7 @@ export const GeneralFAQs = [
   {
     title:
       "Is financial assistance or scholarships available for flight training students?",
-    content: `While we don't directly offer financing or scholarships to our students, we have partnered with a few financing companies to help students fund their pilot training. Check out our financing page for more details.`,
+    content: `While we don't directly offer financing or scholarships to our students, we have partnered with a few financing companies to help students fund their pilot training. Check out our <a href="/financing">financing page</a> for more details.`,
   },
   {
     title:
@@ -38,6 +38,6 @@ export const GeneralFAQs = [
   {
     title:
       "Are there any opportunities for flight experience beyond the standard training curriculum?",
-    content: `Yes! Students who complete all their ratings through SimpliFly are guaranteed an interview for a certified flight instructor (CFI) position. Becoming a CFI is a great way to build flight hours and gain experience for a career in aviation. Check out our page about beginning your pilot career as a CFI for more details.`,
+    content: `Yes! Students who complete all their ratings through SimpliFly are guaranteed an interview for a certified flight instructor (CFI) position. Becoming a CFI is a great way to build flight hours and gain experience for a career in aviation. Check out our page about beginning your pilot career as a <a href="/programs/certified-flight-instructor">CFI</a> for more details.`,
   },
 ];
