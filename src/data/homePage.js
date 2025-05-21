@@ -12,7 +12,7 @@ const homePage = {
       imageAlt: "SimpliFly Flight School Team at the runway",
       headerH1: `PILOT TRAINING MADE SIMPLE`,
       paragraph:
-        "Start your aviation journey with SimpliFly Flight School. Whether you're looking to fly for fun or pursue a career in aviation, Our programs and instructors to help you achieve your goals.",
+        "Start your aviation journey with SimpliFly Flight School. Whether you're looking to fly for fun or pursue a career in aviation, our programs and instructors are here to help you achieve your goals.",
       buttons: [
         {
           name: "Enroll Now",
@@ -169,7 +169,7 @@ const homePage = {
       upperHeading: "The SimpliFly Family",
       heading: "Our Students Love Us",
       headingText: [
-        "While our main goal is to train future pilots safely and effectively, it’s important to us at SimpliFly Flight School our students have a fun and comfortable environment to practice in. We are proud of the relationships we have built with our students and guests.",
+        "While our main goal is to train future pilots safely and effectively, it’s important to us at SimpliFly Flight School that our students have a fun and comfortable environment to practice in. We are proud of the relationships we have built with our students and guests.",
         "Check out what they have to say about their experiences with Us.",
       ],
       buttonText: "Leave Us a Review",
