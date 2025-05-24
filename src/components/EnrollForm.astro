@@ -2,7 +2,7 @@
 import enrollData from "../data/enrollData.js";
 import programsSwiper from "../data/programSwiper";
 const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
-
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 ---
 
 <section class="relative isolate bg-white">
@@ -16,16 +16,20 @@ const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
           {enrollData.description}
         </p>
 
-        {enrollData.sections.map((section) => (
-          <div>
-            <h3 class="text-4xl mt-9 font-title font-bold tracking-tight text-sky-900">
-              {section.title}
-            </h3>
-            <p class="mt-3 text-lg text-gray-600">{section.content}</p>
-          </div>
-        ))}
+        {
+          enrollData.sections.map((section) => (
+            <div>
+              <h3 class="text-4xl mt-9 font-title font-bold tracking-tight text-sky-900">
+                {section.title}
+              </h3>
+              <p class="mt-3 text-lg text-gray-600">{section.content}</p>
+            </div>
+          ))
+        }
 
-        <h3 class="text-4xl mt-9 font-title font-bold tracking-tight text-sky-900">
+        <h3
+          class="text-4xl mt-9 font-title font-bold tracking-tight text-sky-900"
+        >
           {enrollData.contactTitle}
         </h3>
         <dl class="mt-10 space-y-4 text-base leading-7 text-gray-600">
@@ -47,7 +51,12 @@ const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
                 ></path>
               </svg>
             </dt>
-            <a href="https://maps.app.goo.gl/EUM1zMbDq8yUS2fU8" target="_blank" class="hover:text-sky-600 duration-200 hover:underline">{enrollData.address}</a>
+            <a
+              href="https://maps.app.goo.gl/EUM1zMbDq8yUS2fU8"
+              target="_blank"
+              class="hover:text-sky-600 duration-200 hover:underline"
+              >{enrollData.address}</a
+            >
           </div>
           <div class="flex gap-x-4">
             <dt class="flex-none">
@@ -100,35 +109,80 @@ const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
             </dd>
           </div>
         </dl>
-
       </div>
     </div>
 
-    <div class="bg-sky-500/20 mx-auto w-full h-full flex justify-center align-top items-start p-6">
-      <form id="contact-form" class="w-full max-w-xl pt-10 pb-20 h-fit sticky top-48">
+    <div
+      class="bg-sky-500/20 mx-auto w-full h-full flex justify-center align-top items-start p-6"
+    >
+      <form
+        id="contact-form"
+        class="w-full max-w-xl pt-10 pb-20 h-fit sticky top-48"
+      >
         <div>
           <div class="mb-4">
-            <label for="first-name" class="block mb-0 font-semibold">First Name</label>
-            <input type="text" id="first-name" name="first-name" autocomplete="given-name" class="w-full h-9 p-2 border bg-gray-100 border-gray-400 rounded-sm focus:outline focus:outline-sky-600/50 focus:ring focus:ring-sky-600/50 focus:border-sky-600/50" required />
+            <label for="first-name" class="block mb-0 font-semibold"
+              >First Name</label
+            >
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              autocomplete="given-name"
+              class="w-full h-9 p-2 border bg-gray-100 border-gray-400 rounded-sm focus:outline focus:outline-sky-600/50 focus:ring focus:ring-sky-600/50 focus:border-sky-600/50"
+              required
+            />
           </div>
           <div class="mb-4">
-            <label for="last-name" class="block mb-0 font-semibold">Last Name</label>
-            <input type="text" id="last-name" name="last-name" autocomplete="family-name" class="w-full h-9 p-2 border bg-gray-100 border-gray-400 rounded-sm focus:outline focus:outline-sky-600/50 focus:ring focus:ring-sky-600/50 focus:border-sky-600/50" required />
+            <label for="last-name" class="block mb-0 font-semibold"
+              >Last Name</label
+            >
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              autocomplete="family-name"
+              class="w-full h-9 p-2 border bg-gray-100 border-gray-400 rounded-sm focus:outline focus:outline-sky-600/50 focus:ring focus:ring-sky-600/50 focus:border-sky-600/50"
+              required
+            />
           </div>
           <div class="mb-4">
             <label for="phone" class="block mb-0 font-semibold">Phone</label>
-            <input type="text" id="phone" name="phone" autocomplete="tel" class="w-full h-9 p-2 border bg-gray-100 border-gray-400 rounded-sm focus:outline focus:outline-sky-600/50 focus:ring focus:ring-sky-600/50 focus:border-sky-600/50" required />
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              autocomplete="tel"
+              class="w-full h-9 p-2 border bg-gray-100 border-gray-400 rounded-sm focus:outline focus:outline-sky-600/50 focus:ring focus:ring-sky-600/50 focus:border-sky-600/50"
+              required
+            />
           </div>
           <div class="mb-4">
             <label for="email" class="block mb-0 font-semibold">Email</label>
-            <input type="email" id="email" name="email" autocomplete="email" class="w-full h-9 p-2 border bg-gray-100 border-gray-400 rounded-sm focus:outline focus:outline-sky-600/50 focus:ring focus:ring-sky-600/50 focus:border-sky-600/50" required />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              class="w-full h-9 p-2 border bg-gray-100 border-gray-400 rounded-sm focus:outline focus:outline-sky-600/50 focus:ring focus:ring-sky-600/50 focus:border-sky-600/50"
+              required
+            />
           </div>
           <div class="mb-4">
-            <label for="interes-program" class="block mb-0 font-semibold">Which pilot program are you interested in?</label>
-            <select required id="interes-program" name="interes-program" class="w-full h-9 p-2 border bg-gray-100 border-gray-400 rounded-sm focus:outline focus:outline-sky-600/50 focus:ring focus:ring-sky-600/50 focus:border-sky-600/50">
-              {programsSwiper.cards.map((program) => (
-                <option>{program.title}</option>
-              ))}
+            <label for="interes-program" class="block mb-0 font-semibold"
+              >Which pilot program are you interested in?</label
+            >
+            <select
+              required
+              id="interes-program"
+              name="interes-program"
+              class="w-full h-9 p-2 border bg-gray-100 border-gray-400 rounded-sm focus:outline focus:outline-sky-600/50 focus:ring focus:ring-sky-600/50 focus:border-sky-600/50"
+            >
+              {
+                programsSwiper.cards.map((program) => (
+                  <option>{program.title}</option>
+                ))
+              }
             </select>
           </div>
           <p class="hidden">
@@ -139,14 +193,25 @@ const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
           </p>
         </div>
         <div class="mt-8">
-          <input type="checkbox" name="agree-data-collection" id="agree-data-collection" class="mr-2 size-6 lg:size-5" />
+          <input
+            type="checkbox"
+            name="agree-data-collection"
+            id="agree-data-collection"
+            class="mr-2 size-6 lg:size-5"
+          />
           <label
             for="agree-data-collection"
             class="text-gray-800 text-sm lg:text-base"
             set:html={enrollData.checkboxText}
           />
-      </div>
-        <button id="submit-button" form="contact-form" disabled type="submit" class="mx-auto mt-8 btn-primary cursor-not-allowed bg-gray-400 hover:bg-gray-400 hover:text-white">
+        </div>
+        <button
+          id="submit-button"
+          form="contact-form"
+          disabled
+          type="submit"
+          class="mx-auto mt-8 btn-primary cursor-not-allowed bg-gray-400 hover:bg-gray-400 hover:text-white"
+        >
           Send Request
         </button>
       </form>
@@ -154,7 +219,7 @@ const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
   </div>
 </section>
 <script src="../scripts/creativeSwiper.js"></script>
-<script define:vars={{ GHL_ENROLL_FORM_WEBHOOK_URL }}>
+<script define:vars={{ GHL_ENROLL_FORM_WEBHOOK_URL, PORTAL_API_KEY }}>
   const checkbox = document.getElementById("agree-data-collection");
   const submitButton = document.getElementById("submit-button");
 
@@ -164,73 +229,96 @@ const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
       submitButton.classList.remove(
         "cursor-not-allowed",
         "bg-gray-400",
-        "hover:bg-gray-400"
+        "hover:bg-gray-400",
       );
     } else {
       submitButton.disabled = true;
       submitButton.classList.add(
         "cursor-not-allowed",
         "bg-gray-400",
-        "hover:bg-gray-400"
+        "hover:bg-gray-400",
       );
     }
   });
 
-  // Wait for the DOM content to be fully loaded
-  document.addEventListener("DOMContentLoaded", function () {
-    // Get the contactUs form element
-    const contactForm = document.getElementById("contact-form");
-
-    // Check if the contactUs form element exists
-    if (contactForm !== null) {
-      // Add submit event listener to the contactUs form
-      contactForm.addEventListener("submit", function (event) {
-        // Prevent the default form submission
-        event.preventDefault();
-
-        // Serialize the form data
-        const formData = new FormData(contactForm);
-
-        // Check the value of the honeypot field
-        const confirmEmailValue = formData.get("confirm-email");
-        if (confirmEmailValue === "" || confirmEmailValue === null) {
-          // If the honeypot field is empty, it's a human
-          // Set the form action to the URL for processing the form and redirecting to thank you
-          contactForm.action = GHL_ENROLL_FORM_WEBHOOK_URL;
-        }
-
-        // Convert FormData to URLSearchParams
-        const urlSearchParams = new URLSearchParams();
-        for (const pair of formData.entries()) {
-          urlSearchParams.append(pair[0], pair[1]);
-        }
-
-        // Send an AJAX request to submit the form
-        const xhr = new XMLHttpRequest();
-        xhr.open("POST", contactForm.action);
-        xhr.setRequestHeader(
-          "Content-Type",
-          "application/x-www-form-urlencoded"
-        );
-        xhr.onload = function () {
-          // Check if the request was successful (status 200)
-          if (xhr.status === 200) {
-            // Redirect the user after a successful form submission
-            window.location.href = "/form-confirmation";
-          } else {
-            // Handle errors if any
-            console.error("Form submission failed:", xhr.statusText);
-          }
-        };
-        xhr.onerror = function () {
-          // Handle network errors
-          console.error("Network error occurred while submitting the form.");
-        };
-        xhr.send(urlSearchParams);
-      });
-    } else {
-      console.error("Enroll form element not found.");
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("contact-form");
+    if (!form) {
+      console.error("Form element not found.");
+      return;
     }
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      const formData = new FormData(form);
+      const confirmEmail = formData.get("confirm-email")?.trim();
+
+      if (confirmEmail) return;
+
+      const webhookURL = GHL_ENROLL_FORM_WEBHOOK_URL;
+      const apiKey = PORTAL_API_KEY;
+
+      const urlEncodedBody = new URLSearchParams(formData).toString();
+
+      const excludedFields = [
+        "first-name",
+        "last-name",
+        "email",
+        "phone",
+        "confirm-email",
+        "agree-data-collection",
+      ];
+      const metadata = {};
+
+      for (const [key, value] of formData.entries()) {
+        if (!excludedFields.includes(key)) {
+          metadata[key] = value?.trim?.() ?? value;
+        }
+      }
+
+      const jsonBody = {
+        first_name: formData.get("first-name")?.trim() || "",
+        last_name: formData.get("last-name")?.trim() || "",
+        email: formData.get("email")?.trim() || "",
+        phone: formData.get("phone")?.trim() || "",
+        campaign: "enrollment",
+        account_random_id: "ac_g6n9ybnw",
+        metadata: metadata,
+      };
+
+      try {
+        const [ghlRes, portalRes] = await Promise.all([
+          fetch(webhookURL, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded",
+            },
+            body: urlEncodedBody,
+          }),
+          fetch("https://portal.rightruddermarketing.com/api/leads", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+              "x-api-key": apiKey,
+            },
+            body: JSON.stringify(jsonBody),
+          }),
+        ]);
+
+        if (ghlRes.ok && portalRes.ok) {
+          window.location.href = "/form-confirmation";
+        } else {
+          console.error("Submission failed", {
+            ghlStatus: ghlRes.status,
+            portalStatus: portalRes.status,
+          });
+        }
+      } catch (err) {
+        console.error("Submission error:", err);
+      }
+    });
   });
 </script>
 
