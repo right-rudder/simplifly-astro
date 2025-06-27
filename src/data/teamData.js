@@ -37,7 +37,7 @@ const teamData = {
     
     leadership:[
       {
-        img: "/src/assets/Greg-Hadley.webp",
+        img: "/src/assets/crew-simplifly-Greg-updated-headshot.jpg",
         alt: "Greg Hadley Co-Owner at SimpliFly Flight School",
         name: "Greg Hadley",
         title: "Owner",
@@ -127,14 +127,14 @@ const teamData = {
         title: "CFI/CFII",
       },
       {
-        img: "/src/assets/Dallen-Petersen.webp",
-        name: "Dallen Petersen",
-        title: "CFI/CFII",
-      },
-      {
         img: "/src/assets/Devon-Webb.webp",
         name: "Devon Webb",
         title: "CFI/CFII",
+      },
+      {
+        img: "/src/assets/crew-simplifly-Garrett-Ruddell-CFI.jpg",
+        name: "Garrett Ruddell",
+        title: "CFI",
       },
       {
         img: "/src/assets/Corey-Elmquist.webp",
@@ -142,9 +142,14 @@ const teamData = {
         title: "A&P",
       },
       {
-        img: "/src/assets/Olivia-Young.webp",
-        name: "Olivia Young",
-        title: "Scheduler<br/> Student Coordinator",
+        img: "/src/assets/crew-simplifly-Sara-Van-Sciver-Office-Manager.jpg",
+        name: "Sara Van Sciver",
+        title: "Office Manager",
+      },
+      {
+        img: "/src/assets/crew-simplifly-Wendi-Painter-Office-Assistant-.jpg",
+        name: "Wendi Painter",
+        title: "Office Assistant",
       },
     ],
 
