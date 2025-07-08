@@ -24,6 +24,12 @@ const groundSchoolSessions = [
     status: "Scheduled",
   },
   {
+    date: "August 9, 2025",
+    time: "9:00 AM – 12:00 PM",
+    topics: ["Performance Limitation", "Traffic Pattern", "Radio Communications"],
+    status: "Scheduled",
+  },
+  {
     date: "TBD",
     time: "TBD",
     topics: ["Systems / POH"],

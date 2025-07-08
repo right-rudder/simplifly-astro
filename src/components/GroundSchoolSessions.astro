@@ -16,7 +16,7 @@ import groundSchoolSessions from "../data/sessions";
     const parseDate = (dateStr) => dateStr === "TBD" ? null : new Date(dateStr);
 
     const scheduled = sessions.filter((s) => parseDate(s.date) && parseDate(s.date) > now);
-    const past = sessions.filter((s) => parseDate(s.date) && parseDate(s.date) <= now);
+    const past = sessions.filter((s) => parseDate(s.date) && parseDate(s.date) <= now).sort((a, b) => parseDate(b.date) - parseDate(a.date));
     const upcoming = sessions.filter((s) => !parseDate(s.date));
 
     const container = document.getElementById("session-container");
