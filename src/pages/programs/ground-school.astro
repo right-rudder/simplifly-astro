@@ -10,6 +10,8 @@ import type { ImageMetadata } from "astro";
 import pageData from "../../data/ground-school.js";
 import groundClassroom from "../../assets/happy-visitors-at-simplifly-flight-school-in-mesa-arizona-for-pilot-training-cropped.webp";
 import pilotStudying from "../../assets/pilot_with_checkride_pass.webp";
+
+const formURL = "https://www.flightcircle.com/shop/f97c5d7539a7/4000020629";
 ---
 <BaseLayout
   siteTitle={pageData.pageTitle}
@@ -57,16 +59,15 @@ import pilotStudying from "../../assets/pilot_with_checkride_pass.webp";
       <!-- Right: Form Embed -->
       <div class="w-full h-full">
         <iframe
-          src="https://www.flightcircle.com/shop/f97c5d7539a7/4000020629"
+          src={formURL}
           class="w-full h-full min-h-[32rem] rounded-lg shadow-lg"
           id="flight-circle-embed"
           title="Flight Circle Ground School Registration"
         ></iframe>
         <a
-          href="https://www.flightcircle.com/shop/f97c5d7539a7/4000020629"
+          href={formURL}
           class="text-blue-600 hover:underline mt-4 block text-sm"
-          target="_blank"
-          rel="noopener noreferrer"
+          {...(formURL.includes("https") && { target: "_blank", rel: "noopener noreferrer" })}
         >
           Not working? Click here to sign up manually.
         </a>
