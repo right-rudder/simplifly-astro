@@ -6,6 +6,8 @@ import programsSwiper from "../data/programSwiper";
 import flyWithUsCTA from "../data/fly-with-us-cta";
 import ImageComp from "../components/ImageComp.astro";
 import HeaderSmall from "../components/HeaderSmall.astro";
+import CTAVideo from "../components/CTAVideo.astro";
+import videoList from "../data/videos.js";
 
 const data = {
   pageTitle: "Financing | SimpliFly Flight School, Mesa, AZ",
@@ -32,6 +34,15 @@ const data = {
       },
     ],
   },
+};
+
+// Video related logic
+const currentVideo = videoList.find((v: { description: string }) =>
+  v.description?.trim().toLowerCase() === 'financing info'
+) || null;
+const dataForVideo = {
+  header: 'How we can help you fund your training',
+  text: 'We understand that financing your flight training can be a significant concern. That’s why we’ve partnered with Stratus Financial, Flight Training Finance, and AOPA to provide you with tailored financing solutions that make your dream of becoming a pilot more accessible than ever.',
 };
 ---
 
@@ -161,6 +172,8 @@ const data = {
       </div>
     </div>
   </section>
+
+  <CTAVideo video={currentVideo} data={dataForVideo} />
 
   <ProgramSwiper content={programsSwiper} />
   <CTAColor content={flyWithUsCTA} />
