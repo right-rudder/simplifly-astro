@@ -112,4 +112,4 @@ The skies above Arizona are calling for the next generation of pilots. The quest
 
 ---
 
-_Ready to start your aviation journey? Learn more about SimpliFly's programs and get a personalized cost estimate at [simpliflyco.com](/). Contact them at 480-718-2656 or visit their facility at Falcon Field Airport in Mesa to see firsthand why Arizona is producing America's next generation of pilots._
+_Ready to start your aviation journey? Learn more about SimpliFly's programs and get a personalized cost estimate at [simpliflyco.com](/). Contact them at 480-256-8355 or visit their facility at Falcon Field Airport in Mesa to see firsthand why Arizona is producing America's next generation of pilots._

@@ -1,4 +1,4 @@
-import { COMPANY_NAME } from "../consts";
+import { COMPANY_NAME, PHONE_NUMBER } from "../consts";
 
 const groundSchoolData = {
   pageTitle: `In-Person Ground School Sessions in Mesa, AZ | ${COMPANY_NAME}`,
@@ -27,7 +27,7 @@ const groundSchoolData = {
       },
       {
         name: "Call to Register",
-        link: "tel:1-480-718-2656",
+        link: `tel:${PHONE_NUMBER}`,
         primary: true,
       },
     ],
