@@ -13,6 +13,8 @@ import FAQs from "../components/FAQs";
 import FAQSchema from "../components/FAQSchema.astro";
 import { GeneralFAQs } from "../data/general-faqs";
 const { data } = homePage;
+import CTAVideo from "../components/CTAVideo.astro";
+import videoList from "../data/videos.js";
 
 // Transform FAQ format for schema
 const faqSchemaItems = GeneralFAQs.map((faq) => ({
@@ -20,6 +22,20 @@ const faqSchemaItems = GeneralFAQs.map((faq) => ({
   // Remove HTML tags for clean schema
   answer: faq.content.replace(/<[^>]*>?/gm, ""),
 }));
+
+// Video related logic
+const contentVideos = videoList.filter((v: { description: string; }) =>
+  v.description?.trim().toLowerCase() === 'content'
+);
+const intervalMs = 2 * 60 * 60 * 1000;
+const index = contentVideos.length > 0
+  ? Math.floor(Date.now() / intervalMs) % contentVideos.length
+  : null;
+const currentVideo = index !== null ? contentVideos[index] : null;
+const dataForVideo = {
+  header: 'Where Excellence Takes Flight',
+  text: 'If you’ve ever dreamed of flying, there’s no better time to begin. Simply Flight School is your launchpad—where you’ll train in modern aircraft, work one-on-one with expert instructors, and earn your pilot certificate and ratings.'
+}
 ---
 
 <BaseLayout
@@ -29,6 +45,7 @@ const faqSchemaItems = GeneralFAQs.map((faq) => ({
 >
   <!-- HEADER -->
   <HeaderScreen content={data.header} />
+  <CTAVideo video={currentVideo} data={dataForVideo} />
   <AirlinesCloud data={data.airlinesCloud} />
   <ProgramSwiper content={programsSwiper} />
   <Testimonials content={data.testimonials} />
