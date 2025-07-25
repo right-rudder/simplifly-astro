@@ -4,7 +4,7 @@ const Accordion = ({ faq, toggled, onShow, index }) => {
   return (
     <div className="relative">
       {/* Header */}
-      <div className="flex flex-col items-start p-7 bg-gradient-to-br from-sky-200 to-sky-300 rounded-t-lg">
+      <dt className="flex flex-col items-start p-7 bg-gradient-to-br from-sky-200 to-sky-300 rounded-t-lg">
         <div
           id={faq.title}
           onClick={onShow}
@@ -23,10 +23,10 @@ const Accordion = ({ faq, toggled, onShow, index }) => {
             <FaPlus className="mr-3 pointer-events-none text-sky-700/50" />
           )}
         </div>
-      </div>
+      </dt>
 
       {/* Smooth animated content */}
-      <div
+      <dd
         className={`transition-all duration-700 ease-in-out overflow-hidden ${
           toggled
             ? "max-h-[1000px] opacity-100 bg-white border-2 border-gray-200 rounded-b-lg"
@@ -104,7 +104,7 @@ const Accordion = ({ faq, toggled, onShow, index }) => {
             ></p>
           )}
         </div>
-      </div>
+      </dd>
     </div>
   );
 };

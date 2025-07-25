@@ -1,7 +1,7 @@
 export const GeneralFAQs = [
   {
     title: "How long does it take to complete the flight training program?",
-    content: `Total time depends on a variety of factors including weather, aircraft availability, instructor availability, and student skill level. While times may vary, obtaining your private pilot certificate can be done in less than a year. Check out our <a href="/timeline-to-be-a-pilot" class="text-sky-600 hover:underline hover:brightness-125 duration-200">timeline page</a> for more details.`,
+    content: `Total time depends on a variety of factors including weather, aircraft availability, instructor availability, and student skill level. While times may vary, obtaining your private pilot certificate can be done in less than a year. Check out our <a href="/timeline-to-be-a-pilot" class="text-sky-800 hover:underline hover:brightness-125 duration-200">timeline page</a> for more details.`,
   },
   {
     title: "What type of aircraft are used for flight training?",
@@ -9,12 +9,12 @@ export const GeneralFAQs = [
   },
   {
     title: "What is the cost of the flight training program?",
-    content: `The total cost of flight training varies depending on how many hours you need, certificate sought, and airplane chosen. To gauge how much flight training might cost you, check out our <a href="/approximate-pilot-training-costs"  class="text-sky-600 hover:underline hover:brightness-125 duration-200">cost estimator page</a>.`,
+    content: `The total cost of flight training varies depending on how many hours you need, certificate sought, and airplane chosen. To gauge how much flight training might cost you, check out our <a href="/approximate-pilot-training-costs"  class="text-sky-800 hover:underline hover:brightness-125 duration-200">cost estimator page</a>.`,
   },
   {
     title:
       "Is financial assistance or scholarships available for flight training students?",
-    content: `While we don't directly offer financing or scholarships to our students, we have partnered with a few financing companies to help students fund their pilot training. Check out our <a href="/financing" class="text-sky-600 hover:underline hover:brightness-125 duration-200">financing page</a> for more details.`,
+    content: `While we don't directly offer financing or scholarships to our students, we have partnered with a few financing companies to help students fund their pilot training. Check out our <a href="/financing" class="text-sky-800 hover:underline hover:brightness-125 duration-200">financing page</a> for more details.`,
   },
   {
     title:
@@ -38,6 +38,6 @@ export const GeneralFAQs = [
   {
     title:
       "Are there any opportunities for flight experience beyond the standard training curriculum?",
-    content: `Yes! Students who complete all their ratings through SimpliFly are guaranteed an interview for a certified flight instructor (CFI) position. Becoming a CFI is a great way to build flight hours and gain experience for a career in aviation. Check out our page about beginning your pilot career as a <a href="/programs/certified-flight-instructor"  class="text-sky-600 hover:underline hover:brightness-125 duration-200">CFI</a> for more details.`,
+    content: `Yes! Students who complete all their ratings through SimpliFly are guaranteed an interview for a certified flight instructor (CFI) position. Becoming a CFI is a great way to build flight hours and gain experience for a career in aviation. Check out our page about beginning your pilot career as a <a href="/programs/certified-flight-instructor"  class="text-sky-800 hover:underline hover:brightness-125 duration-200">CFI</a> for more details.`,
   },
 ];

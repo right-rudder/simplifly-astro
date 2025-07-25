@@ -9,7 +9,11 @@ import { FaCheck } from "react-icons/fa";
 const { data } = discoveryFlight;
 ---
 
-<BaseLayout siteTitle={data.pageTitle} siteDescription={data.pageDescription} keywords={data.pageKeywords}>
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
   <!-- HEADER -->
   <HeaderSmall content={data.header} />
   <section
@@ -18,7 +22,7 @@ const { data } = discoveryFlight;
     <div class="w-full">
       {
         data.form.upperHeading && (
-          <h3 class="mx-auto mt-12 uppercase text-lg lg:text-xl lg:max-w-3xl font-sans text-center font-bold tracking-tight text-sky-400">
+          <h3 class="mx-auto mt-12 uppercase text-lg lg:text-xl lg:max-w-3xl font-sans text-center font-bold tracking-tight text-sky-600">
             {data.form.upperHeading}
           </h3>
         )
@@ -50,22 +54,23 @@ const { data } = discoveryFlight;
             </div>
           ))
         }
-              <div class="pt-2">
-                <ul class="space-y-3">
-                  {data.form.nextSteps.map((step) => (
-                    <li class="flex flex-col text-lg bg-white/70 p-3 rounded-md shadow-sm hover:scale-[1.02] hover:shadow-md transition-all duration-500">
-                      <span class="flex items-center"><FaCheck className="text-yellow-500 mr-2" /> {step.title}</span>
-                      <p class="text-gray-700 text-md mt-1">{step.description}</p>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+        <div class="pt-2">
+          <ul class="space-y-3">
+            {
+              data.form.nextSteps.map((step) => (
+                <li class="flex flex-col text-lg bg-white/70 p-3 rounded-md shadow-sm hover:scale-[1.02] hover:shadow-md transition-all duration-500">
+                  <span class="flex items-center">
+                    <FaCheck className="text-yellow-500 mr-2" /> {step.title}
+                  </span>
+                  <p class="text-gray-700 text-md mt-1">{step.description}</p>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
         <p class="text-lg pt-4 pl-4">Have more questions?</p>
         <div class="mt-8 pl-4">
-          <a
-            href={data.form.button.link}
-            class="mt-24 btn-primary text-right"
-          >
+          <a href={data.form.button.link} class="mt-24 btn-primary text-right">
             {data.form.button.text}
           </a>
         </div>
