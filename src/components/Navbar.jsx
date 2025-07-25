@@ -195,6 +195,7 @@ const Navbar = ({ pathname }) => {
                 className="mobile-menu-button relative inline-flex items-center justify-center rounded-md p-2"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
+                aria-label="Open main menu"
                 onClick={handleHamburgerClick}
               >
                 <span className="absolute -inset-0.5"></span>
@@ -224,6 +225,7 @@ const Navbar = ({ pathname }) => {
                   stroke="currentColor"
                   aria-hidden="true"
                   id="hamburger-icon"
+                  aria-label="Hamburger menu"
                 >
                   <path
                     strokeLinecap="round"
@@ -373,10 +375,13 @@ const Navbar = ({ pathname }) => {
             <a
               href={`tel:${PHONE_NUMBER}`}
               className="p-2 w-fit rounded-full bg-sky-600"
+              aria-label="Call"
             >
               <FaPhone className="size-4 text-white" />
             </a>
-            <a href={`tel:${PHONE_NUMBER}`}>{PHONE_NUMBER}</a>
+            <a href={`tel:${PHONE_NUMBER}`} aria-label="Call">
+              {PHONE_NUMBER}
+            </a>
           </div>
 
           <div className="flex gap-3 mt-2 mb-16 items-center">

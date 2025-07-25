@@ -4,11 +4,13 @@ import ImageComp from "./ImageComp.astro";
 const { content } = Astro.props;
 ---
 
-<section class="grid grid-cols-1 lg:grid-cols-2 px-4 lg:px-12 lg:py-12 h-full bg-white">
+<section
+  class="grid grid-cols-1 lg:grid-cols-2 px-4 lg:px-12 lg:py-12 h-full bg-white"
+>
   <div class="pr-4 lg:pr-12 py-6 lg:py-0">
     {
       content.upperHeading && (
-        <h3 class="mx-auto mt-12 uppercase text-lg lg:text-xl lg:max-w-3xl font-sans text-center font-bold tracking-tight text-sky-400">
+        <h3 class="mx-auto mt-12 uppercase text-lg lg:text-xl lg:max-w-3xl font-sans text-center font-bold tracking-tight text-sky-600">
           {content.upperHeading}
         </h3>
       )
@@ -45,7 +47,7 @@ const { content } = Astro.props;
             {content.bullets.map((bullet) => (
               <li class="flex gap-x-3 text-gray-400">
                 <svg
-                  class="mt-1 size-8 flex-none text-sky-400"
+                  class="mt-1 size-8 flex-none text-sky-600"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
