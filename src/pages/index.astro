@@ -15,6 +15,7 @@ import { GeneralFAQs } from "../data/general-faqs";
 const { data } = homePage;
 import CTAVideo from "../components/CTAVideo.astro";
 import videoList from "../data/videos.js";
+import { getCurrentVideo } from "../scripts/videoSpinner.js";
 
 // Transform FAQ format for schema
 const faqSchemaItems = GeneralFAQs.map((faq) => ({
@@ -23,17 +24,8 @@ const faqSchemaItems = GeneralFAQs.map((faq) => ({
   answer: faq.content.replace(/<[^>]*>?/gm, ""),
 }));
 
-// Video related logic
-const contentVideos = videoList.filter(
-  (v: { description: string }) =>
-    v.description?.trim().toLowerCase() === "content",
-);
-const intervalMs = 2 * 60 * 60 * 1000;
-const index =
-  contentVideos.length > 0
-    ? Math.floor(Date.now() / intervalMs) % contentVideos.length
-    : null;
-const currentVideo = index !== null ? contentVideos[index] : null;
+const currentVideo = getCurrentVideo(videoList, 'content');
+
 const dataForVideo = {
   header: "Where Excellence Takes Flight",
   text: "If you’ve ever dreamed of flying, there’s no better time to begin. SimpliFly Flight School is your launchpad, where you’ll train in modern aircraft, work one-on-one with expert instructors, and earn your pilot certificate and ratings.",

@@ -9,8 +9,19 @@ import pilotTrainingMadeSimple from "../data/pilot-training-made-simple";
 import PageSummary from "../components/PageSummary.astro";
 import ImageComp from "../components/ImageComp.astro";
 import PriceCalcZero2Hero from "../components/priceCalcZero2Hero";
+import CTAVideo from "../components/CTAVideo.astro";
+import videoList from "../data/videos.js";
+import { getCurrentVideo } from "../scripts/videoSpinner.js";
 
 const { data } = pilotTrainingMadeSimple;
+
+const currentVideo = getCurrentVideo(videoList, 'student testimonial');
+
+const dataForVideo = {
+  header: 'What Our Students Say',
+  text: 'Discover how SimpliFly Flight School simplifies the pilot training process, making it more accessible and enjoyable for aspiring pilots.',
+};
+
 ---
 
 <BaseLayout siteTitle={data.pageTitle} siteDescription={data.pageDescription} keywords={data.pageKeywords}>
@@ -351,6 +362,8 @@ const { data } = pilotTrainingMadeSimple;
       </div>
     </div>
   </section>
+
+  <CTAVideo video={currentVideo} data={dataForVideo} />
 
   <PriceCalcZero2Hero client:load />
 
