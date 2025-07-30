@@ -7,6 +7,17 @@ import About from "../../components/About.astro";
 
 
 import pageData from "../../data/teamData.js";
+import CTAVideo from "../../components/CTAVideo.astro";
+import videoList from "../../data/videos.js";
+import { getCurrentVideo } from "../../scripts/videoSpinner.js";
+
+
+const currentVideo = getCurrentVideo(videoList, 'instructor testimonial');
+const dataForVideo = {
+  header: 'Meet Our Team of Experts',
+  text: 'At SimpliFly, our instructors are not just teachers; they are passionate aviators dedicated to your success. With years of experience and a commitment to excellence, they will guide you every step of the way on your journey to becoming a skilled pilot.',
+};
+
 
 ---
 <BaseLayout
@@ -14,10 +25,11 @@ import pageData from "../../data/teamData.js";
   siteDescription={pageData.pageDescription}
   keywords={pageData.pageKeywords}
   >
-  
+
   <HeaderSmall content={pageData.header} />
 
   <About content={pageData.details} />
+  <CTAVideo video={currentVideo} data={dataForVideo} />
 
   <CTAColor content={flyWithUsCTA} />
 
