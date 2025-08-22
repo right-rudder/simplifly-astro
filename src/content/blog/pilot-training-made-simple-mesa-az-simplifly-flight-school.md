@@ -47,7 +47,7 @@ Whether you’re flying for fun or eyeing an airline seat, SimpliFly has a progr
 
 - **CFI, CFII, and MEI:** Teach, lead, and log the experience that opens career doors.
 
-Check out the [full training programs](https://simpliflyco.com/training-programs) for details on each track, including prerequisites and timelines.
+Check out the [full training programs](/programs) for details on each track, including prerequisites and timelines.
 
 Or if you’re still exploring, the school’s Pilot Training Made Simple overview breaks down schedules, expectations, and how students progress—super helpful when planning around work or school.
 
@@ -61,7 +61,7 @@ SimpliFly is based at Falcon Field (Mesa, AZ)—a pilot-friendly environment wit
 
 ### Ready to Take Off? Enroll & Contact
 
-Ready to take the first step toward your pilot license? Enroll today at [SimpliFly Flight School](https://simpliflyco.com/enroll) or call [ (480) 256-8355 ](tel:+14802568355) to speak with our team. Whether you want to book a discovery flight or have questions about programs, financing, or scheduling, we’re ready to help you succeed.
+Ready to take the first step toward your pilot license? Enroll today at [SimpliFly Flight School](/enroll-at-simplifly) or call [ (480) 256-8355 ](tel:+14802568355) to speak with our team. Whether you want to book a discovery flight or have questions about programs, financing, or scheduling, we’re ready to help you succeed.
 
 ---
 
