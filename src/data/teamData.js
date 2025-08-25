@@ -151,6 +151,11 @@ const teamData = {
         name: "Wendi Painter",
         title: "Office Assistant",
       },
+      {
+        img: "/src/assets/dakota-rice-offica-assistant-simplifly-cropped.jpg",
+        name: "Dakota Rice",
+        title: "Office Assistant",
+      },
     ],
 
     cta: {
