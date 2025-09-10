@@ -270,10 +270,11 @@ const Navbar = ({ pathname }) => {
         >
           <img
             src="/simplifly_250.webp"
-            alt="SimpliFly Flight School  Logo"
-            aria-label="SimpliFly Flight School  Logo"
+            alt="SimpliFly Flight School Logo"
+            aria-label="SimpliFly Flight School Logo"
             title="SimpliFly Flight School "
             className="object-contain h-24 w-auto drop-shadow-sm"
+            loading="lazy"
           />
         </a>
 
