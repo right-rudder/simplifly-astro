@@ -92,11 +92,6 @@ const teamData = {
         title: "CFI/CFII/MEI",
       },
       {
-        img: "/src/assets/Dolly-Woodhall.webp",
-        name: "Dolly Woodhall",
-        title: "CFI/CFII",
-      },
-      {
         img: "/src/assets/Josh-Perkins.webp",
         name: "Josh Perkins",
         title: "CFI/CFII",
@@ -145,11 +140,6 @@ const teamData = {
         img: "/src/assets/crew-simplifly-Sara-Van-Sciver-Office-Manager.jpg",
         name: "Sara Van Sciver",
         title: "Office Manager",
-      },
-      {
-        img: "/src/assets/crew-simplifly-Wendi-Painter-Office-Assistant-.jpg",
-        name: "Wendi Painter",
-        title: "Office Assistant",
       },
       {
         img: "/src/assets/dakota-rice-offica-assistant-simplifly-cropped.jpg",
