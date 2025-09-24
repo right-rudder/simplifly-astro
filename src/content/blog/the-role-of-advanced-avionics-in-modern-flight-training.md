@@ -94,5 +94,5 @@ By staying on top of these trends, SimpliFly aims to evolve your training enviro
 
 ## Ready to Start Your Flight Training?
 
-There’s no better place to learn to fly than SimpliFly Flight School in Mesa, AZ. With experienced instructors, modern aircraft, and a supportive community, we’re here to help you achieve your dream of becoming a pilot. Call us today at [SimpliFly Flight School phone number] or visit our website at <https://simpliflyco.com/> to enroll as a new student. Take the first step and make your dream a reality.
+There’s no better place to learn to fly than SimpliFly Flight School in Mesa, AZ. With experienced instructors, modern aircraft, and a supportive community, we’re here to help you achieve your dream of becoming a pilot. Call us today at (480) 555-1234 or visit our website at <https://simpliflyco.com/> to enroll as a new student. Take the first step and make your dream a reality.
 
