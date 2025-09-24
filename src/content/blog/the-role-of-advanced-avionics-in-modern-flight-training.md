@@ -44,7 +44,7 @@ Together, these systems reduce pilot workload, provide clear visual cues, detect
 
 ### 1. **Better Situational Awareness, Fewer Pilot Errors**
 
-Traditional cockpits rely on scanning gagdet‑style instruments and maintaining spatial orientation. Modern avionics like synthetic vision, terrain overlays, and integrated alerts help pilots see what’s around them—even in degraded visibility. That additional layer of awareness reduces the chance of controlled-flight-into-terrain (CFIT) and other spatial errors.
+Traditional cockpits rely on scanning gadget‑style instruments and maintaining spatial orientation. Modern avionics like synthetic vision, terrain overlays, and integrated alerts help pilots see what’s around them—even in degraded visibility. That additional layer of awareness reduces the chance of controlled-flight-into-terrain (CFIT) and other spatial errors.
 
 ### 2. **Efficient Learning Curve — Less “Seat of the Pants” Guessing**
 
