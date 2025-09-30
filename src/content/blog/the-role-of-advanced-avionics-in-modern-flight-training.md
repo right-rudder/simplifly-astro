@@ -1,6 +1,6 @@
 ---
 pubDate: "September 24, 2025"
-author: Blake Murphy
+author: Greg Hadley
 title: "The Role of Advanced Avionics in Modern Flight Training"
 description: "Explore how advanced avionics are transforming flight training, enhancing safety, and preparing pilots for the future of aviation. Learn about the benefits and challenges of avionics-based training at SimpliFly Flight School in Mesa, AZ."
 heroImage: "/blog/airplane-streaking-by-a-runway-in-mesa-az.webp"
