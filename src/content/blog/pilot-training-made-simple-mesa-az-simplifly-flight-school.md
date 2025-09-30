@@ -1,6 +1,6 @@
 ---
 pubDate: "August 19, 2025"
-author: Blake Murphy
+author: Greg Hadley
 title: "Pilot Training Made Simple in Mesa, AZ: Why SimpliFly Is Your Best First Step"
 description: "Discover how SimpliFly Flight School in Mesa, AZ, simplifies pilot training with personalized instruction, modern aircraft, and a clear path to professional flying. Learn about our structured programs, financing options, and how we prepare you for a successful aviation career."
 heroImage: "/blog/pilot-training-made-simple.webp"
