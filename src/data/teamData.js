@@ -132,18 +132,13 @@ const teamData = {
         title: "CFI",
       },
       {
-        img: "/src/assets/Corey-Elmquist.webp",
-        name: "Corey Elmquist",
-        title: "A&P",
-      },
-      {
-        img: "/src/assets/crew-simplifly-Sara-Van-Sciver-Office-Manager.jpg",
-        name: "Sara Van Sciver",
-        title: "Office Manager",
-      },
-      {
         img: "/src/assets/dakota-rice-offica-assistant-simplifly-cropped.jpg",
         name: "Dakota Rice",
+        title: "Office Assistant",
+      },
+      {
+        img: "/src/assets/crew-simplifly-daisy-carter-office-assistant.webp",
+        name: "Daisy Carter",
         title: "Office Assistant",
       },
     ],
