@@ -1,0 +1,15 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeaderScreen from "../components/HeaderScreen.astro";
+import pilotTrainingMadeSimple from "../data/pilot-training-made-simple";
+import PageSummary from "../components/PageSummary.astro";
+import PriceCalcZero2Hero from "../components/priceCalcZero2HeroNew";
+
+const { data } = pilotTrainingMadeSimple;
+---
+
+<BaseLayout siteTitle={data.pageTitle} siteDescription={data.pageDescription} keywords={data.pageKeywords}>
+
+  <PriceCalcZero2Hero client:load />
+
+</BaseLayout>
