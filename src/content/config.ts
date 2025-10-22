@@ -1,4 +1,5 @@
 import { defineCollection, z } from "astro:content";
+import { glob } from "astro/loaders";
 
 const blogCollection = defineCollection({
   type: "content",
@@ -18,19 +19,28 @@ const blogCollection = defineCollection({
   }),
 });
 
-// const locationCollection = defineCollection({
-//   type: "content",
-//   schema: z.object({
-//     city: z.string(),
-//     stateShort: z.string(),
-//     stateLong: z.string(),
-//     description: z.string(),
-//     keyPlace1: z.string(),
-//     keyPlace2: z.string(),
-//   }),
-// });
+const pilotTraining = defineCollection({
+  loader: glob({
+    pattern: "**/[^_]*.{md,mdx}",
+    base: "./src/content/pilot-training",
+  }),
+  schema: ({ image }) =>
+    z.object({
+      siteTitle: z.string(),
+      siteDescription: z.string(),
+      keywords: z.string(),
+      city: z.string(),
+      stateShort: z.string(),
+      stateLong: z.string(),
+      airportLocation: z.string(),
+      keyPlace1: z.string(),
+      keyPlace2: z.string(),
+      distance: z.string(),
+      headlines: z.array(z.string()),
+    }),
+});
 
 export const collections = {
   blog: blogCollection,
-  // location: locationCollection,
+  "pilot-training": pilotTraining,
 };
