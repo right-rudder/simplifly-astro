@@ -22,7 +22,7 @@ const InputCheckboxCard = ({
     return (
       <label
         aria-label={text}
-        className={`group/checkbox has-tooltip-container cursor-pointer flex bg-gray-50 p-4 transition-all duration-200 ease-in-out border border-gray-200 first:rounded-tl-md first:rounded-tr-md last:rounded-br-md last:rounded-bl-md focus:outline-hidden has-[input:checked]:relative has-[input:checked]:bg-sky-50 has-[input:checked]:border-sky-100 has-[input:disabled]:bg-gray-200 has-[input:disabled]:border-gray-300 has-[input:disabled]:cursor-not-allowed${additionalClasses ? " " + additionalClasses : ""}`}
+        className={`group/checkbox has-tooltip-container cursor-pointer flex bg-gray-50 p-4 transition-all duration-200 ease-in-out border border-gray-200 first:rounded-t-md last:rounded-b-md focus:outline-hidden has-[input:checked]:relative has-[input:checked]:bg-sky-50 has-[input:checked]:border-sky-100 has-[input:disabled]:bg-gray-200 has-[input:disabled]:border-gray-300 has-[input:disabled]:cursor-not-allowed${additionalClasses ? " " + additionalClasses : ""}`}
       >
         <input
           id={id}
