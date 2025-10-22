@@ -23,7 +23,7 @@
   }
 
   .tooltip {
-    @apply invisible opacity-0 absolute w-[24rem] rounded-lg z-50 -top-10 left-12 shadow-md shadow-slate-800/50 bg-sky-50 text-center text-gray-800 p-6;
+    @apply invisible opacity-0 absolute w-[24rem] rounded-lg z-50 -top-10 left-12 shadow-md shadow-slate-800/50 bg-white text-center text-gray-800 p-6;
   }
 
   .has-tooltip-container {
@@ -39,7 +39,7 @@
   }
 
   .has-tooltip:hover .tooltip {
-    @apply visible opacity-95 transition-all duration-300 top-0 cursor-help;
+    @apply visible opacity-100 transition-all duration-300 top-0 cursor-help;
   }
 
   .section-upper {

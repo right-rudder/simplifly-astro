@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import { FaPhone } from "react-icons/fa6";
 import { FaInfoCircle } from "react-icons/fa";
 import PriceCalculatorCheck from "./priceCalculatorCheck.jsx";
-import InputCheckboxCard from "./InputCheckboxCard.jsx";
+import InputCheckboxToggle from "./InputCheckboxToggle.jsx";
 
 import { PHONE_NUMBER } from "../consts";
 
-const PriceCalcZero2Hero = () => {
+const PriceCalcZero2HeroTwo = () => {
   const pricePpl = 20000;
   const priceInstrument = 18000;
   const priceCplSolo = 27000;
@@ -76,8 +76,8 @@ const PriceCalcZero2Hero = () => {
                         Certificates and Ratings Currently Held
                       </legend>
 
-                      <div>
-                        <InputCheckboxCard
+                      <div className="flex flex-col gap-2">
+                        <InputCheckboxToggle
                           id="heldPpl"
                           checked={heldPpl}
                           text={`Private Pilot Certificate <small className="font-bold">(PPL)</small>`}
@@ -89,7 +89,7 @@ const PriceCalcZero2Hero = () => {
                             }
                           }}
                         />
-                        <InputCheckboxCard
+                        <InputCheckboxToggle
                           id="heldInstrument"
                           checked={heldInstrument}
                           text={`Instrument Rating`}
@@ -101,7 +101,7 @@ const PriceCalcZero2Hero = () => {
                             }
                           }}
                         />
-                        <InputCheckboxCard
+                        <InputCheckboxToggle
                           id="heldCpl"
                           checked={heldCpl}
                           text={`Commercial Pilot Certificate <small className="font-bold">(CPL)</small>`}
@@ -113,7 +113,7 @@ const PriceCalcZero2Hero = () => {
                             }
                           }}
                         />
-                        <InputCheckboxCard
+                        <InputCheckboxToggle
                           id="heldCfi"
                           checked={heldCfi}
                           text={`Certified Flight Instructor <small className="font-bold">(CFI)</small>`}
@@ -125,7 +125,7 @@ const PriceCalcZero2Hero = () => {
                             }
                           }}
                         />
-                        <InputCheckboxCard
+                        <InputCheckboxToggle
                           id="heldCfii"
                           checked={heldCfii}
                           text={`Certified Flight Instructor-Instrument <small className="font-bold">(CFII)</small>`}
@@ -137,7 +137,7 @@ const PriceCalcZero2Hero = () => {
                             }
                           }}
                         />
-                        <InputCheckboxCard
+                        <InputCheckboxToggle
                           id="heldMe"
                           checked={heldMe}
                           text={`Multi-Engine Rating`}
@@ -239,8 +239,8 @@ const PriceCalcZero2Hero = () => {
                       Add Ons:
                     </legend>
 
-                    <div>
-                      <InputCheckboxCard
+                    <div className="flex flex-col gap-2">
+                      <InputCheckboxToggle
                         id="starter"
                         checked={starter}
                         text="Starter Bundle"
@@ -254,7 +254,7 @@ const PriceCalcZero2Hero = () => {
                           setStarter(!starter);
                         }}
                       />
-                      <InputCheckboxCard
+                      <InputCheckboxToggle
                         id="checkride"
                         checked={checkride}
                         text="Checkride Fees"
@@ -268,7 +268,7 @@ const PriceCalcZero2Hero = () => {
                           setCheckride(!checkride);
                         }}
                       />
-                      <InputCheckboxCard
+                      <InputCheckboxToggle
                         id="written"
                         checked={written}
                         text="Written Test Fees"
@@ -280,7 +280,7 @@ const PriceCalcZero2Hero = () => {
                           setWritten(!written);
                         }}
                       />
-                      <InputCheckboxCard
+                      <InputCheckboxToggle
                         id="headset"
                         checked={headset}
                         text="Aviation Headset"
@@ -318,8 +318,8 @@ const PriceCalcZero2Hero = () => {
                       Certificates and Ratings You Want to Obtain
                     </legend>
 
-                    <div>
-                      <InputCheckboxCard
+                    <div className="flex flex-col gap-2">
+                      <InputCheckboxToggle
                         id="ppl"
                         checked={ppl}
                         disabled={heldPpl}
@@ -331,7 +331,7 @@ const PriceCalcZero2Hero = () => {
                           setPpl(!ppl);
                         }}
                       />
-                      <InputCheckboxCard
+                      <InputCheckboxToggle
                         id="instrument"
                         checked={instrument}
                         disabled={heldInstrument}
@@ -343,7 +343,7 @@ const PriceCalcZero2Hero = () => {
                           setInstrument(!instrument);
                         }}
                       />
-                      <InputCheckboxCard
+                      <InputCheckboxToggle
                         id="cplSolo"
                         checked={cplSolo}
                         disabled={heldCpl}
@@ -355,7 +355,7 @@ const PriceCalcZero2Hero = () => {
                           setCplSolo(!cplSolo);
                         }}
                       />
-                      <InputCheckboxCard
+                      <InputCheckboxToggle
                         id="cfi"
                         checked={cfi}
                         disabled={heldCfi}
@@ -367,7 +367,7 @@ const PriceCalcZero2Hero = () => {
                           setCfi(!cfi);
                         }}
                       />
-                      <InputCheckboxCard
+                      <InputCheckboxToggle
                         id="cfii"
                         checked={cfii}
                         disabled={heldCfii}
@@ -379,7 +379,7 @@ const PriceCalcZero2Hero = () => {
                           setCfii(!cfii);
                         }}
                       />
-                      <InputCheckboxCard
+                      <InputCheckboxToggle
                         id="me"
                         checked={me}
                         disabled={heldMe}
@@ -413,4 +413,4 @@ const PriceCalcZero2Hero = () => {
   );
 };
 
-export default PriceCalcZero2Hero;
+export default PriceCalcZero2HeroTwo;

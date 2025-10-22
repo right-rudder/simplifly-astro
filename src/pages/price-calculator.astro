@@ -1,9 +1,9 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import HeaderScreen from "../components/HeaderScreen.astro";
 import pilotTrainingMadeSimple from "../data/pilot-training-made-simple";
-import PageSummary from "../components/PageSummary.astro";
 import PriceCalcZero2Hero from "../components/priceCalcZero2HeroNew";
+import PriceCalcZero2HeroTwo from "../components/priceCalcZero2HeroNewTwo";
+import PriceCalcZero2HeroThree from "../components/priceCalcZero2HeroNewThree";
 
 const { data } = pilotTrainingMadeSimple;
 ---
@@ -12,4 +12,7 @@ const { data } = pilotTrainingMadeSimple;
 
   <PriceCalcZero2Hero client:load />
 
+  <PriceCalcZero2HeroTwo client:load />
+  
+  <PriceCalcZero2HeroThree client:load />
 </BaseLayout>
