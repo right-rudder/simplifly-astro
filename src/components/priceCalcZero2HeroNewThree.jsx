@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaPhone } from "react-icons/fa6";
 import { FaInfoCircle } from "react-icons/fa";
-import PriceCalculatorCheck from "./priceCalculatorCheck.jsx";
 import InputCheckboxCard from "./InputCheckboxCard.jsx";
 
 import { PHONE_NUMBER } from "../consts";
@@ -46,6 +45,59 @@ const PriceCalcZero2HeroThree = () => {
     );
   }, []);
 
+  function getDescription() {
+    let selectedCourses = [];
+    let addOns = [];
+
+    if (ppl)
+      selectedCourses.push(
+        `Private Pilot Certificate (PPL): $ ${pricePpl.toLocaleString()}`,
+      );
+    if (instrument)
+      selectedCourses.push(
+        `Instrument Rating: $ ${priceInstrument.toLocaleString()}`,
+      );
+    if (cplSolo)
+      selectedCourses.push(
+        `Commercial Pilot Certificate (Solo): $ ${priceCplSolo.toLocaleString()}`,
+      );
+    if (cfi)
+      selectedCourses.push(
+        `Certified Flight Instructor (CFI): $ ${priceCfi.toLocaleString()}`,
+      );
+    if (cfii)
+      selectedCourses.push(
+        `Certified Flight Instructor-Instrument (CFII): $ ${priceCfii.toLocaleString()}`,
+      );
+    if (me)
+      selectedCourses.push(
+        `Multi-Engine Rating: $ ${priceMe.toLocaleString()}`,
+      );
+
+    if (starter)
+      addOns.push(`Starter Bundle: $ ${priceStarter.toLocaleString()}`);
+    if (checkride)
+      addOns.push(`Checkride Fees: $ ${priceCheckride.toLocaleString()}`);
+    if (written)
+      addOns.push(`Written Test Fees: $ ${priceWritten.toLocaleString()}`);
+    if (headset)
+      addOns.push(`Aviation Headset: $ ${priceHeadset.toLocaleString()}`);
+
+    return `${
+      selectedCourses.length > 0
+        ? `Certificates and Ratings I want to obtain:\n${selectedCourses.map((item) => `• ${item}`).join("\n")}`
+        : ""
+    }${
+      addOns.length > 0
+        ? `\n\nRequested Add Ons:\n${addOns.map((item) => `• ${item}`).join("\n")}`
+        : ""
+    }${
+      selectedCourses.length > 0 || addOns.length > 0
+        ? `\n\nTotal: ${total.toLocaleString()}.`
+        : ""
+    }`.trim();
+  }
+
   return (
     <section id="cost-calc" className="overflow-hidden">
       <div className="bg-gray-50 py-16 sm:py-32">
@@ -66,6 +118,7 @@ const PriceCalcZero2HeroThree = () => {
             <p className="italic mt-2 mb-6 text-center text-gray-700">
               Fly for a career, within a year!
             </p>
+
             <div className="relative grid grid-cols-1 gap-5 lg:grid-cols-2 lg:gap-12">
               <fieldset>
                 <legend className="mb-4 text-xl font-title text-center w-full text-gray-800 font-semibold">
@@ -140,6 +193,14 @@ const PriceCalcZero2HeroThree = () => {
                       setMe(!me);
                     }}
                   />
+                  <div className="w-full flex justify-center items-center my-4 lg:hidden">
+                    <p className="text-3xl">
+                      Total
+                      <span className="ml-2 font-bold">
+                        $ {total.toLocaleString()}
+                      </span>
+                    </p>
+                  </div>
                 </div>
               </fieldset>
 
@@ -202,8 +263,14 @@ const PriceCalcZero2HeroThree = () => {
                       setHeadset(!headset);
                     }}
                   />
-                  <InputCheckboxCard empty={true} additionalClasses="hidden lg:flex" />
-                  <InputCheckboxCard empty={true} additionalClasses="hidden lg:flex" />
+                  <InputCheckboxCard
+                    empty={true}
+                    additionalClasses="hidden lg:flex"
+                  />
+                  <InputCheckboxCard
+                    empty={true}
+                    additionalClasses="hidden lg:flex"
+                  />
                 </div>
               </fieldset>
             </div>
@@ -243,7 +310,22 @@ const PriceCalcZero2HeroThree = () => {
 
             <div className="max-w-96 m-auto">
               <div className="mt-8 flex flex-col justify-center items-center align-middle gap-2">
-                <a href="/contact" className="btn-white w-full">
+                <a
+                  href="/contact"
+                  className="btn-white w-full"
+                  onClick={(e) => {
+                    const description = getDescription();
+
+                    if (description.length <= 0) return;
+
+                    e.preventDefault();
+                    const params = new URLSearchParams();
+
+                    params.append("message", description);
+
+                    window.location.href = `/contact?${params.toString()}`;
+                  }}
+                >
                   <span>Contact Us</span>
                 </a>
                 <a

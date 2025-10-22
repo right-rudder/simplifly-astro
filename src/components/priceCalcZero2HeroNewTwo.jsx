@@ -53,6 +53,59 @@ const PriceCalcZero2HeroTwo = () => {
     );
   }, []);
 
+  function getDescription() {
+    let selectedCourses = [];
+    let addOns = [];
+
+    if (ppl)
+      selectedCourses.push(
+        `Private Pilot Certificate (PPL): $ ${pricePpl.toLocaleString()}`,
+      );
+    if (instrument)
+      selectedCourses.push(
+        `Instrument Rating: $ ${priceInstrument.toLocaleString()}`,
+      );
+    if (cplSolo)
+      selectedCourses.push(
+        `Commercial Pilot Certificate (Solo): $ ${priceCplSolo.toLocaleString()}`,
+      );
+    if (cfi)
+      selectedCourses.push(
+        `Certified Flight Instructor (CFI): $ ${priceCfi.toLocaleString()}`,
+      );
+    if (cfii)
+      selectedCourses.push(
+        `Certified Flight Instructor-Instrument (CFII): $ ${priceCfii.toLocaleString()}`,
+      );
+    if (me)
+      selectedCourses.push(
+        `Multi-Engine Rating: $ ${priceMe.toLocaleString()}`,
+      );
+
+    if (starter)
+      addOns.push(`Starter Bundle: $ ${priceStarter.toLocaleString()}`);
+    if (checkride)
+      addOns.push(`Checkride Fees: $ ${priceCheckride.toLocaleString()}`);
+    if (written)
+      addOns.push(`Written Test Fees: $ ${priceWritten.toLocaleString()}`);
+    if (headset)
+      addOns.push(`Aviation Headset: $ ${priceHeadset.toLocaleString()}`);
+
+    return `${
+      selectedCourses.length > 0
+        ? `Certificates and Ratings I want to obtain:\n${selectedCourses.map((item) => `• ${item}`).join("\n")}`
+        : ""
+    }${
+      addOns.length > 0
+        ? `\n\nRequested Add Ons:\n${addOns.map((item) => `• ${item}`).join("\n")}`
+        : ""
+    }${
+      selectedCourses.length > 0 || addOns.length > 0
+        ? `\n\nTotal: ${total.toLocaleString()}.`
+        : ""
+    }`.trim();
+  }
+
   return (
     <section id="cost-calc" className="overflow-hidden">
       <div className="bg-gray-50 py-16 sm:py-32">
@@ -295,7 +348,22 @@ const PriceCalcZero2HeroTwo = () => {
                     </div>
                   </fieldset>
                   <div className="mt-8 flex flex-col justify-center items-center align-middle gap-2">
-                    <a href="/contact" className="btn-white w-full">
+                    <a
+                      href="/contact"
+                      className="btn-white w-full"
+                      onClick={(e) => {
+                        const description = getDescription();
+
+                        if (description.length <= 0) return;
+
+                        e.preventDefault();
+                        const params = new URLSearchParams();
+
+                        params.append("message", description);
+
+                        window.location.href = `/contact?${params.toString()}`;
+                      }}
+                    >
                       <span>Contact Us</span>
                     </a>
                     <a

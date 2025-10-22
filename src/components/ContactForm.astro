@@ -245,6 +245,13 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
   });
 
   document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    const message = params.get('message');
+
+    if (message) {
+      document.getElementById("message").value = message;
+    }
+
     const form = document.getElementById("contact-form");
     if (!form) {
       console.error("Form element not found.");
