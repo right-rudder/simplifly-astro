@@ -25,11 +25,6 @@ const faqSchemaItems = GeneralFAQs.map((faq) => ({
 
 const currentVideo = getCurrentVideo(videoList, "content");
 
-const dataForVideo = {
-  header: "Where Excellence Takes Flight",
-  text: "If you’ve ever dreamed of flying, there’s no better time to begin. SimpliFly Flight School is your launchpad, where you’ll train in modern aircraft, work one-on-one with expert instructors, and earn your pilot certificate and ratings.",
-};
-
 export async function getStaticPaths() {
   const locations = await getCollection("pilot-training");
   return locations.map((entry) => {
@@ -44,21 +39,51 @@ export async function getStaticPaths() {
 }
 type PilotTrainingEntry = CollectionEntry<"pilot-training">;
 
+const locations = Astro.props;
+
+const headerImages = [
+  "/src/assets/470211179_18030932552525825_7256846206203556551_n.jpg",
+  "/src/assets/470198895_18030936461525825_8196635400235759355_n.jpg",
+  "/src/assets/multi-pass.webp",
+  "/src/assets/multi-engine-airplane-flying-over-mesa-az.webp",
+  "/src/assets/pilot_pass_multi_engine_checkride.webp",
+  "/src/assets/pilot_thumbs.png",
+  "/src/assets/pilot_pass_checkride_cessna.webp",
+  "/src/assets/ppl-pass.webp",
+  "/src/assets/seminole1.webp",
+];
+
+const randomHeaderImage =
+  headerImages[Math.floor(Math.random() * headerImages.length)];
+
+const randomHeadlines =
+  locations.data.headlines[
+    Math.floor(Math.random() * locations.data.headlines.length)
+  ];
+
+const dataForVideo = {
+  header: `Where Excellence Takes Flight near ${locations.data.city}, ${locations.data.stateShort}`,
+  text: `If you’ve ever dreamed of flying, there’s no better time to begin. Just ${locations.data.distance} away from ${locations.data.city} - ${locations.data.stateShort}, SimpliFly Flight School is your launchpad, where you’ll train in modern aircraft, work one-on-one with expert instructors, and earn your pilot certificate and ratings.`,
+};
+
 const data = {
   //SEO Header Stuff
-  pageTitle: "Pilot Training in Mesa, AZ | SimpliFly Flight School ",
+  pageTitle:
+    locations.data.siteTitle ||
+    "Pilot Training in Mesa, AZ | SimpliFly Flight School ",
   pageDescription:
+    locations.data.siteDescription ||
     "SimpliFly Flight School  offers flight training in Mesa, AZ. We offer private pilot training, instrument rating training, commercial pilot training, and more. Contact us today!",
   pageKeywords:
+    locations.data.keywords ||
     "flight training, flight school, pilot training, private pilot training, instrument rating training, commercial pilot training, Mesa, AZ",
 
   //top header
   header: {
-    imagePath: "/src/assets/DSC02358 copy.png",
+    imagePath: randomHeaderImage || "/src/assets/DSC02358 copy.png",
     imageAlt: "SimpliFly Flight School Team at the runway",
-    headerH1: `PILOT TRAINING MADE SIMPLE`,
-    paragraph:
-      "Start your aviation journey with SimpliFly Flight School. Whether you're looking to fly for fun or pursue a career in aviation, our programs and instructors are here to help you achieve your goals.",
+    headerH1: randomHeadlines || `PILOT TRAINING MADE SIMPLE`,
+    paragraph: `Start your aviation journey near ${locations.data.city}, ${locations.data.stateLong}, at SimpliFly Flight School. Whether you're looking to fly for fun or pursue a career in aviation, our programs and instructors are here to help you achieve your goals.`,
     buttons: [
       {
         name: "Enroll Now",
@@ -135,7 +160,7 @@ const data = {
 
   whyElite: {
     upperHeading: "Why SimpliFly Flight School",
-    heading: "Our Commitment",
+    heading: `Pilot Training in ${locations.data.city}, ${locations.data.stateLong}`,
     descriptions: [
       "Founded in 2014 with a vision to bring a flight school to the south suburbs of Chicago,  SimpliFly Flight School continues to be one of the only complete flight institutions in the area.  Join us and make your flying dreams come true!",
       "SimpliFly Flight School and Aircraft Management, LLC is located in Kankakee, just 50 miles south of Chicago. We offer professional and customized flight training programs including one of Chicagoland's only Multi-Engine Accelerated course.",
@@ -197,14 +222,13 @@ const data = {
   },
 
   flyWithUsCTA: {
-    imagePath: "/src/assets/jim-witkowski-sYHjFbnIYbA-unsplash.jpg",
-    imageAlt: "Right Rudder Marketing team on the runway",
-    headerH1: `<span class="text-accent-600">Start Your Aviation Journey</br></span>With a Discovery Flight`,
-    paragraph:
-      "Doing a discovery flight is the best way to determine if being a pilot is right for you. Whether you're trying it out for fun or want to fly professionally, doing a discovery flight will allow you to see Kankakee from a new perspective.",
+    imagePath: "/src/assets/valley-of-the-sun-fly-over.webp",
+    imageAlt: "SimpliFly Flight School student flying over Arizona",
+    headerH1: `<span class="text-sky-600">Start flying near ${locations.data.city}, ${locations.data.stateShort} in a way that makes</br></span>becoming a pilot simple`,
+    paragraph: `We are a team of aviation experts near to ${locations.data.city}, ${locations.data.stateShort} with decades of combined experience in the flight training industry. Our simple and effective training programs are designed to get you safely in the air as quickly as possible.`,
     buttons: [
       {
-        name: "Schedule Today",
+        name: "START FLYING TODAY",
         link: "/discovery-flight",
         primary: true,
       },
@@ -273,7 +297,7 @@ const data = {
   <ProgramSwiper content={programsSwiper} />
   <Testimonials content={data.testimonials} />
   <BlogFeed data={data.blogfeed} />
-  <CTAColor content={flyWithUsCTA} />
+  <CTAColor content={data.flyWithUsCTA} />
   <FAQs faqs={GeneralFAQs} type="General" client:visible />
   <FAQSchema items={faqSchemaItems} />
   <script src="../../scripts/creativeSwiper.js"></script>
