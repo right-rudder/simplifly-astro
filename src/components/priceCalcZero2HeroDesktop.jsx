@@ -9,13 +9,22 @@ const PriceCalcZero2HeroDesktop = () => {
   // Create dynamic state for all checkboxes
   const initialState = {};
 
-  [
-    ...data.coursesHeld.items,
-    ...data.courses.items,
-    ...data.addOns.items,
-  ].forEach((item) => {
-    initialState[item.id] = item.controlVar || false;
-  });
+  if (data.addOns) {
+    [
+      ...data.coursesHeld.items,
+      ...data.courses.items,
+      ...data.addOns.items,
+    ].forEach((item) => {
+      initialState[item.id] = item.controlVar || false;
+    });
+  } else {
+    [
+      ...data.coursesHeld.items,
+      ...data.courses.items
+    ].forEach((item) => {
+      initialState[item.id] = item.controlVar || false;
+    });
+  }
 
   const [controls, setControls] = useState(initialState);
   const [total, setTotal] = useState(0);
@@ -29,10 +38,12 @@ const PriceCalcZero2HeroDesktop = () => {
       if (controls[course.id]) newTotal += course.cost;
     });
 
-    // Add selected add-ons
-    data.addOns.items.forEach((addon) => {
-      if (controls[addon.id]) newTotal += addon.cost;
-    });
+    if (data.addOns) {
+      // Add selected add-ons
+      data.addOns.items.forEach((addon) => {
+        if (controls[addon.id]) newTotal += addon.cost;
+      });
+    }
 
     setTotal(newTotal);
   }, [controls]);
@@ -66,9 +77,12 @@ const PriceCalcZero2HeroDesktop = () => {
         (course) => `${course.simpleTitle}: $ ${course.cost.toLocaleString()}`,
       );
 
-    const selectedAddOns = data.addOns.items
-      .filter((addon) => controls[addon.id])
-      .map((addon) => `${addon.title}: $ ${addon.cost.toLocaleString()}`);
+    let selectedAddOns = [];
+    if (data.addOns) {
+      selectedAddOns = data.addOns.items
+        .filter((addon) => controls[addon.id])
+        .map((addon) => `${addon.title}: $ ${addon.cost.toLocaleString()}`);
+    }
 
     return `${
       selectedCourses.length
@@ -173,24 +187,28 @@ const PriceCalcZero2HeroDesktop = () => {
                       />
                     ))}
                   </ul>
-                  <fieldset className="flex flex-col align-top w-full text-left">
-                    <legend className="mb-2 text-xl font-title text-center w-full text-gray-800 font-semibold">
-                      {data.addOns.title}
-                    </legend>
 
-                    <div>
-                      {data.addOns.items.map((addon) => (
-                        <InputCheckboxCard
-                          key={addon.id}
-                          id={addon.id}
-                          checked={controls[addon.id]}
-                          text={addon.title}
-                          tooltipText={addon.tooltip}
-                          onChange={() => toggleControl(addon.id)}
-                        />
-                      ))}
-                    </div>
-                  </fieldset>
+                  {data.addOns && (
+                    <fieldset className="flex flex-col align-top w-full text-left">
+                      <legend className="mb-2 text-xl font-title text-center w-full text-gray-800 font-semibold">
+                        {data.addOns.title}
+                      </legend>
+
+                      <div>
+                        {data.addOns.items.map((addon) => (
+                          <InputCheckboxCard
+                            key={addon.id}
+                            id={addon.id}
+                            checked={controls[addon.id]}
+                            text={addon.title}
+                            tooltipText={addon.tooltip}
+                            onChange={() => toggleControl(addon.id)}
+                          />
+                        ))}
+                      </div>
+                    </fieldset>
+                  )}
+
                   <div className="mt-8 flex flex-col justify-center items-center align-middle gap-2">
                     {data.ctas.map((item, index) => {
                       if (item.sendData) {

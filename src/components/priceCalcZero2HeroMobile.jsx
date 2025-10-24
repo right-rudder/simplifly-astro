@@ -8,9 +8,15 @@ const PriceCalcZero2HeroMobile = () => {
   // Create dynamic state for all checkboxes
   const initialState = {};
 
-  [...data.courses.items, ...data.addOns.items].forEach((item) => {
-    initialState[item.idMobile] = item.controlVar || false;
-  });
+  if (data.addOns) {
+    [...data.courses.items, ...data.addOns.items].forEach((item) => {
+      initialState[item.idMobile] = item.controlVar || false;
+    });
+  } else {
+    [...data.courses.items].forEach((item) => {
+      initialState[item.idMobile] = item.controlVar || false;
+    });
+  }
 
   const [controls, setControls] = useState(initialState);
   const [total, setTotal] = useState(0);
@@ -24,10 +30,12 @@ const PriceCalcZero2HeroMobile = () => {
       if (controls[course.idMobile]) newTotal += course.cost;
     });
 
-    // Add selected add-ons
-    data.addOns.items.forEach((addon) => {
-      if (controls[addon.idMobile]) newTotal += addon.cost;
-    });
+    if (data.addOns) {
+      // Add selected add-ons
+      data.addOns.items.forEach((addon) => {
+        if (controls[addon.idMobile]) newTotal += addon.cost;
+      });
+    }
 
     setTotal(newTotal);
   }, [controls]);
@@ -45,9 +53,12 @@ const PriceCalcZero2HeroMobile = () => {
         (course) => `${course.simpleTitle}: $ ${course.cost.toLocaleString()}`,
       );
 
-    const selectedAddOns = data.addOns.items
-      .filter((addon) => controls[addon.idMobile])
-      .map((addon) => `${addon.title}: $ ${addon.cost.toLocaleString()}`);
+    let selectedAddOns = [];
+    if (data.addOns) {
+      selectedAddOns = data.addOns.items
+        .filter((addon) => controls[addon.idMobile])
+        .map((addon) => `${addon.title}: $ ${addon.cost.toLocaleString()}`);
+    }
 
     return `${
       selectedCourses.length
@@ -131,43 +142,49 @@ const PriceCalcZero2HeroMobile = () => {
                 </div>
               </fieldset>
 
-              <fieldset className="flex flex-col align-top w-full text-left">
-                <legend className="mb-4 text-xl font-title text-center w-full text-gray-800 font-semibold">
-                  {data.addOns.title}
-                </legend>
+              {data.addOns && (
+                <fieldset className="flex flex-col align-top w-full text-left">
+                  <legend className="mb-4 text-xl font-title text-center w-full text-gray-800 font-semibold">
+                    {data.addOns.title}
+                  </legend>
 
-                <div>
-                  {data.addOns.items.map((addon) => (
-                    <InputCheckboxCard
-                      key={addon.idMobile}
-                      id={addon.idMobile}
-                      checked={controls[addon.idMobile]}
-                      text={addon.title}
-                      tooltipText={addon.tooltip}
-                      onChange={() => toggleControl(addon.idMobile)}
-                    />
-                  ))}
-                </div>
-              </fieldset>
+                  <div>
+                    {data.addOns.items.map((addon) => (
+                      <InputCheckboxCard
+                        key={addon.idMobile}
+                        id={addon.idMobile}
+                        checked={controls[addon.idMobile]}
+                        text={addon.title}
+                        tooltipText={addon.tooltip}
+                        onChange={() => toggleControl(addon.idMobile)}
+                      />
+                    ))}
+                  </div>
+                </fieldset>
+              )}
             </div>
 
-            <div className="w-3/4 h-0.5 mt-12 mb-8 mx-auto bg-gray-300 rounded-sm"></div>
+            {data.addOns && (
+              <div>
+                <div className="w-3/4 h-0.5 mt-12 mb-8 mx-auto bg-gray-300 rounded-sm"></div>
 
-            <div className="text-gray-800">
-              <h3 className="mt-8 text-5xl font-bold text-center font-title">
-                Total
-              </h3>
-              <div className="mt-2 mb-6 flex items-center justify-center gap-2">
-                <div className="flex items-center">
-                  <div>
-                    <span className="block text-3xl font-bold">$</span>
+                <div className="text-gray-800">
+                  <h3 className="mt-8 text-5xl font-bold text-center font-title">
+                    Total
+                  </h3>
+                  <div className="mt-2 mb-6 flex items-center justify-center gap-2">
+                    <div className="flex items-center">
+                      <div>
+                        <span className="block text-3xl font-bold">$</span>
+                      </div>
+                      <span className="text-4xl font-bold leading-0">
+                        {total.toLocaleString()}
+                      </span>
+                    </div>
                   </div>
-                  <span className="text-4xl font-bold leading-0">
-                    {total.toLocaleString()}
-                  </span>
                 </div>
               </div>
-            </div>
+            )}
 
             <div className="max-w-96 m-auto">
               <div className="mt-8 flex flex-col justify-center items-center align-middle gap-2">
