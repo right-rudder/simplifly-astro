@@ -256,15 +256,7 @@ const PriceCalcZero2Hero = () => {
                   </p>
                   <div className="flex justify-around has-tooltip">
                     <span className="tooltip">
-                      This pricing is based on <strong>250 hours</strong> and
-                      flying full-time. While pricing can vary within our other
-                      programs, it does less so for our Zero to Hero Program.
-                      However, the speed at which you can achieve the level you
-                      wish will be based upon your availability and time
-                      commitment. There is no way to go Zero to Hero in a year
-                      doing anything less than full-time. Flying 3-4 days a week
-                      makes Zero to Hero achievable in 12-15 months and flying
-                      2-3 days a week is achievable in 15-18 months.
+                      This pricing is based on <strong>250 hours</strong> and flying full-time. While pricing can vary within our other programs, it does less so for our Zero to Hero Program. However, the speed at which you can achieve the level you wish will be based upon your availability and time commitment. There is no way to go Zero to Hero in a year doing anything less than full-time. Flying 3-4 days a week makes Zero to Hero achievable in 12-15 months and flying 2-3 days a week is achievable in 15-18 months.
                     </span>
                     <div className="my-6 flex items-center">
                       <div className="">
@@ -357,9 +349,7 @@ const PriceCalcZero2Hero = () => {
                           }}
                         />
                         <span className="tooltip text-sm tracking-tighter">
-                          Includes a passive headset, pilot bag, pilot training
-                          books, a logbook, foggles, a ForeFlight subscription
-                          while enrolled, and a kneeboard.
+                          Includes a passive headset, pilot bag, pilot training books, a logbook, foggles, a ForeFlight subscription while enrolled, and a kneeboard.
                         </span>
                         <label
                           htmlFor="starter"
@@ -384,9 +374,7 @@ const PriceCalcZero2Hero = () => {
                           }}
                         />
                         <span className="tooltip text-sm tracking-tighter">
-                          Depending on your DPE, you can plan to budget around
-                          $900 for most checkrides with the exceptions being the
-                          CFI initial (~$1,500) and CFI add-ons (~$1,200 each).
+                          Depending on your DPE, you can plan to budget around $900 for most checkrides with the exceptions being the CFI initial (~$1,500) and CFI add-ons (~$1,200 each).
                         </span>
                         <label
                           htmlFor="checkride"
@@ -411,8 +399,7 @@ const PriceCalcZero2Hero = () => {
                           }}
                         />
                         <span className="tooltip text-sm tracking-tighter">
-                          Written tests are ~$175 per certification (not
-                          required for the Multi-Engine Rating or MEI add-on).
+                          Written tests are ~$175 per certification (not required for the Multi-Engine Rating or MEI add-on).
                         </span>
                         <label
                           htmlFor="written"
@@ -437,9 +424,7 @@ const PriceCalcZero2Hero = () => {
                           }}
                         />
                         <span className="tooltip text-sm tracking-tighter">
-                          Receive <strong>$299.00</strong> off of your Zulu 3
-                          Headset if you choose to upgrade your Starter Package
-                          at Summit Flight Academy.
+                          Receive <strong>$299.00</strong> off of your Zulu 3 Headset if you choose to upgrade your Starter Package at Summit Flight Academy.
                         </span>
                         <label
                           htmlFor="headset"
@@ -606,10 +591,7 @@ const PriceCalcZero2Hero = () => {
                       className="text-sm tracking-tighter has-tooltip"
                     >
                       <span className="tooltip text-sm tracking-tighter">
-                        Career track students need 25 total ME hours to reach a
-                        Multi-Engine certification. You can achieve this by
-                        either getting your MEI or flying 15 hours via time
-                        building.
+                        Career track students need 25 total ME hours to reach a Multi-Engine certification. You can achieve this by either getting your MEI or flying 15 hours via time building.
                       </span>
                       Multi-Engine Rating
                     </label>
