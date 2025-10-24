@@ -8,7 +8,8 @@ import flyWithUsCTA from "../data/fly-with-us-cta";
 import pilotTrainingMadeSimple from "../data/pilot-training-made-simple";
 import PageSummary from "../components/PageSummary.astro";
 import ImageComp from "../components/ImageComp.astro";
-import PriceCalcZero2Hero from "../components/priceCalcZero2Hero";
+import PriceCalcZero2HeroDesktop from "../components/priceCalcZero2HeroDesktop";
+import PriceCalcZero2HeroMobile from "../components/priceCalcZero2HeroMobile";
 import CTAVideo from "../components/CTAVideo.astro";
 import videoList from "../data/videos.js";
 import { getCurrentVideo } from "../scripts/videoSpinner.js";
@@ -365,7 +366,8 @@ const dataForVideo = {
 
   <CTAVideo video={currentVideo} data={dataForVideo} />
 
-  <PriceCalcZero2Hero client:load />
+  <PriceCalcZero2HeroDesktop client:load />
+  <PriceCalcZero2HeroMobile client:load />
 
   <ProgramSwiper content={programsSwiper} />
   <CTAColor content={flyWithUsCTA} />
