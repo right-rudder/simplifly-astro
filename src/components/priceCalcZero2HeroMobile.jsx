@@ -69,7 +69,7 @@ const PriceCalcZero2HeroMobile = () => {
   }
 
   return (
-    <section id="cost-calc" className="overflow-hidden block md:hidden">
+    <section className="overflow-hidden block md:hidden">
       <div className="bg-gray-50 py-16 sm:py-32">
         <div className="mx-auto max-w-7xl px-4">
           <div className="mx-auto w-full">

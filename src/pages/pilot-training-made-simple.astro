@@ -16,13 +16,12 @@ import { getCurrentVideo } from "../scripts/videoSpinner.js";
 
 const { data } = pilotTrainingMadeSimple;
 
-const currentVideo = getCurrentVideo(videoList, 'student testimonial');
+const currentVideo = getCurrentVideo(videoList, "student testimonial");
 
 const dataForVideo = {
-  header: 'What Our Students Say',
-  text: 'Discover how SimpliFly Flight School simplifies the pilot training process, making it more accessible and enjoyable for aspiring pilots.',
+  header: "What Our Students Say",
+  text: "Discover how SimpliFly Flight School simplifies the pilot training process, making it more accessible and enjoyable for aspiring pilots.",
 };
-
 ---
 
 <BaseLayout siteTitle={data.pageTitle} siteDescription={data.pageDescription} keywords={data.pageKeywords}>
@@ -30,16 +29,12 @@ const dataForVideo = {
   <HeaderScreen content={data.header} />
   <!-- PAGE SUMMARY -->
   <PageSummary content={data.pageSummary} />
-  <section
-    id="first-time-pilots"
-    class="py-24 px-5 w-full bg-white flex flex-col items-center mx-auto scroll-my-20"
-  >
+  <section id="first-time-pilots" class="py-24 px-5 w-full bg-white flex flex-col items-center mx-auto scroll-my-20">
     <h3 class="section-upper">Pilot Training Made Simple</h3>
     <h4 class="section-title">Simplifly’s Training Structure</h4>
     <p class="text-gray-600 text-center max-w-5xl mt-6">
-      Simplifly Flight School offers career-track pilot training (Zero to Hero)
-      for students in the greater Phoenix area at Falcon Field Airport (KFFZ) in
-      Mesa, Arizona. Our goal is for students to fly 3-4 times per week with
+      Simplifly Flight School offers career-track pilot training (Zero to Hero) for students in the greater Phoenix area
+      at Falcon Field Airport (KFFZ) in Mesa, Arizona. Our goal is for students to fly 3-4 times per week with
       additional ground school and personal study.
     </p>
     <div class="grid mt-12 lg:grid-cols-3 mx-auto gap-10">
@@ -48,9 +43,7 @@ const dataForVideo = {
       >
         <a href="#daily-training">
           <div class="flex justify-center align-middle items-center">
-            <h3
-              class="text-lg text-slate-800 uppercase font-semibold tracking-widest duration-700"
-            >
+            <h3 class="text-lg text-slate-800 uppercase font-semibold tracking-widest duration-700">
               Daily Training Schedule
             </h3>
             <ImageComp
@@ -67,16 +60,10 @@ const dataForVideo = {
       >
         <a href="#expectations">
           <div class="flex justify-center align-middle items-center">
-            <h3
-              class="text-lg text-slate-800 uppercase font-semibold tracking-widest duration-700"
-            >
+            <h3 class="text-lg text-slate-800 uppercase font-semibold tracking-widest duration-700">
               Student Expectations
             </h3>
-            <ImageComp
-              imagePath="/src/assets/flights.png"
-              imageAlt="SimpliFly flight school"
-              styles="w-20 h-20"
-            />
+            <ImageComp imagePath="/src/assets/flights.png" imageAlt="SimpliFly flight school" styles="w-20 h-20" />
           </div>
         </a>
       </div>
@@ -86,213 +73,134 @@ const dataForVideo = {
       >
         <a href="#cost-calc">
           <div class="flex justify-center align-middle items-center">
-            <h3
-              class="text-lg text-slate-800 uppercase font-semibold tracking-widest duration-700"
-            >
+            <h3 class="text-lg text-slate-800 uppercase font-semibold tracking-widest duration-700">
               Training Cost Estimator
             </h3>
-            <ImageComp
-              imagePath="/src/assets/budget.png"
-              imageAlt="SimpliFly flight school"
-              styles="w-20 h-20"
-            />
+            <ImageComp imagePath="/src/assets/budget.png" imageAlt="SimpliFly flight school" styles="w-20 h-20" />
           </div>
         </a>
       </div>
     </div>
   </section>
 
-  <section
-    id="daily-training"
-    class="bg-gradient-to-r from-sky-100 to-blue-50 md:px-16 py-20"
-  >
+  <section id="daily-training" class="bg-gradient-to-r from-sky-100 to-blue-50 md:px-16 py-20">
     <h3 class="section-upper">Fly from Dawn to Dusk</h3>
     <h2 class="section-title">Simplifly’s Flight Training Blocks</h2>
 
     <div class="flex flex-col items-center">
       <p class="lg:w-1/2 lg:mx-16 mx-5 mt-4 text-center items-center mb-10">
-        At SimpliFly, we are committed to providing the highest quality training
-        programs for our students. Our team is here ensure that you receive the
-        best possible training. Contact us today to learn more about our pilot
-        training programs and take the first step towards achieving your
-        aviation career goals!
+        At SimpliFly, we are committed to providing the highest quality training programs for our students. Our team is
+        here ensure that you receive the best possible training. Contact us today to learn more about our pilot training
+        programs and take the first step towards achieving your aviation career goals!
       </p>
     </div>
 
     <div class="min-h-screen flex items-center justify-center">
       <div class="flex flex-col md:grid grid-cols-9 mx-auto p-2">
         <div class="flex flex-row-reverse md:contents">
-          <div
-            class="w-full col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto bg-sky-200"
-          >
-            <h3
-              class="font-bold text-4xl font-title mb-2 text-gray-700 text-center"
-            >
-              Morning
-            </h3>
+          <div class="w-full col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto bg-sky-200">
+            <h3 class="font-bold text-4xl font-title mb-2 text-gray-700 text-center">Morning</h3>
             <div class="flex flex-col justify-center p-4">
-              <h4 class="text-3xl text-slate-600 italic py-5 mb-1 text-center">
-                Private Pilot Certification (PPL)
-              </h4>
+              <h4 class="text-3xl text-slate-600 italic py-5 mb-1 text-center">Private Pilot Certification (PPL)</h4>
               <p class="text-slate-800 p-text pb-5 text-justify">
-                Embark on your aviation journey with a private pilot
-                certificate, the first stepping stone for aspiring pilots. This
-                certification allows you to operate an aircraft for
-                non-commercial purposes. Our experienced instructors are
-                committed to providing thorough guidance, ensuring you master
-                the fundamental skills of flight. Learn to confidently take off,
-                land, and navigate the skies with the support of our
-                knowledgeable team.
+                Embark on your aviation journey with a private pilot certificate, the first stepping stone for aspiring
+                pilots. This certification allows you to operate an aircraft for non-commercial purposes. Our
+                experienced instructors are committed to providing thorough guidance, ensuring you master the
+                fundamental skills of flight. Learn to confidently take off, land, and navigate the skies with the
+                support of our knowledgeable team.
               </p>
-              <a href="/programs/private-pilot" class="btn-primary w-full"
-                >PRIVATE PILOT TRAINING</a
-              >
+              <a href="/programs/private-pilot" class="btn-primary w-full">PRIVATE PILOT TRAINING</a>
             </div>
             <div class="flex flex-col justify-center mt-8 p-4">
-              <h4 class="text-3xl text-slate-600 italic py-5 mb-1 text-center">
-                Multi Engine Rating
-              </h4>
+              <h4 class="text-3xl text-slate-600 italic py-5 mb-1 text-center">Multi Engine Rating</h4>
               <p class="text-slate-800 p-text pb-5 text-justify">
-                A multi engine rating allows you to handle complex aircraft with
-                multiple engines. You will learn advanced systems and procedures
-                including engine management, emergency protocols, and more. Our
-                advanced training program will empower you with the skills and
-                confidence to effortlessly pilot multi-engine aircraft.
+                A multi engine rating allows you to handle complex aircraft with multiple engines. You will learn
+                advanced systems and procedures including engine management, emergency protocols, and more. Our advanced
+                training program will empower you with the skills and confidence to effortlessly pilot multi-engine
+                aircraft.
               </p>
-              <a href="/programs/multi-engine-rating" class="btn-primary w-full"
-                >MULTI ENGINE TRAINING</a
-              >
+              <a href="/programs/multi-engine-rating" class="btn-primary w-full">MULTI ENGINE TRAINING</a>
             </div>
           </div>
 
-          <div
-            class="col-start-5 col-end-6 md:mx-auto hidden md:block relative mr-10"
-          >
+          <div class="col-start-5 col-end-6 md:mx-auto hidden md:block relative mr-10">
             <div class="h-full w-6 flex items-center justify-center">
               <div class="h-full w-0.5 bg-sky-300 pointer-events-none"></div>
             </div>
 
-            <div
-              class="w-6 h-6 absolute top-1/2 -mt-3 border-2 border-ideal-blue rounded-full bg-sky-300 shadow"
-            >
-            </div>
+            <div class="w-6 h-6 absolute top-1/2 -mt-3 border-2 border-ideal-blue rounded-full bg-sky-300 shadow"></div>
           </div>
         </div>
 
         <div class="flex md:contents">
-          <div
-            class="col-start-5 col-end-6 mr-10 md:mx-auto hidden md:block relative"
-          >
+          <div class="col-start-5 col-end-6 mr-10 md:mx-auto hidden md:block relative">
             <div class="h-full w-6 flex items-center justify-center">
               <div class="h-full w-0.5 bg-sky-300 pointer-events-none"></div>
             </div>
 
-            <div
-              class="w-6 h-6 absolute top-1/2 -mt-3 border-2 border-ideal-blue rounded-full bg-sky-300 shadow"
-            >
-            </div>
+            <div class="w-6 h-6 absolute top-1/2 -mt-3 border-2 border-ideal-blue rounded-full bg-sky-300 shadow"></div>
           </div>
 
-          <div
-            class="w-full col-start-6 col-end-10 my-4 mr-auto p-4 bg-sky-200 rounded-xl"
-          >
-            <h3
-              class="font-bold text-4xl mb-2 font-title text-gray-700 text-center"
-            >
-              Afternoon
-            </h3>
+          <div class="w-full col-start-6 col-end-10 my-4 mr-auto p-4 bg-sky-200 rounded-xl">
+            <h3 class="font-bold text-4xl mb-2 font-title text-gray-700 text-center">Afternoon</h3>
             <div class="flex flex-col justify-center p-4">
-              <h4 class="text-3xl text-slate-600 italic py-5 mb-1 text-center">
-                Commercial Pilot Certification (CPL)
-              </h4>
+              <h4 class="text-3xl text-slate-600 italic py-5 mb-1 text-center">Commercial Pilot Certification (CPL)</h4>
               <p class="text-slate-800 p-text pb-5 text-justify">
-                A commercial certificate grants you the privilege to fly for
-                compensation or hire. With the guidance of our seasoned
-                instructors, you'll acquire the mastery of operating advanced
-                aircraft, encompassing advanced maneuvers and emergency
-                procedures. Rest assured, you will be thoroughly prepared and
-                equipped to overcome any challenges in your aviation career.
+                A commercial certificate grants you the privilege to fly for compensation or hire. With the guidance of
+                our seasoned instructors, you'll acquire the mastery of operating advanced aircraft, encompassing
+                advanced maneuvers and emergency procedures. Rest assured, you will be thoroughly prepared and equipped
+                to overcome any challenges in your aviation career.
               </p>
-              <a href="/programs/commercial-pilot" class="btn-primary w-full"
-                >COMMERCIAL PILOT TRAINING</a
-              >
+              <a href="/programs/commercial-pilot" class="btn-primary w-full">COMMERCIAL PILOT TRAINING</a>
             </div>
             <div class="flex flex-col justify-center mt-8 p-4">
-              <h4 class="text-3xl text-slate-600 italic py-5 mb-1 text-center">
-                Certified Flight Instructor (CFI)
-              </h4>
+              <h4 class="text-3xl text-slate-600 italic py-5 mb-1 text-center">Certified Flight Instructor (CFI)</h4>
               <p class="text-slate-800 p-text pb-5 text-justify">
-                Share your expertise and proficiency with aspiring pilots, while
-                accumulating valuable flight hours and experience. Once you get
-                your CFI at SimpliFly, we offer guaranteed interviews to
-                instruct at SimpliFly. Build you hours here and then qualify to
-                go to the airlines.
+                Share your expertise and proficiency with aspiring pilots, while accumulating valuable flight hours and
+                experience. Once you get your CFI at SimpliFly, we offer guaranteed interviews to instruct at SimpliFly.
+                Build you hours here and then qualify to go to the airlines.
               </p>
-              <a href="/programs/certified-flight-instructor" class="btn-primary w-full">CFI TRAINING</a
-              >
+              <a href="/programs/certified-flight-instructor" class="btn-primary w-full">CFI TRAINING</a>
             </div>
           </div>
         </div>
 
         <div class="flex flex-row-reverse md:contents">
-          <div
-            class="w-full col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto bg-sky-200"
-          >
-            <h3
-              class="font-bold text-4xl mb-2 font-title text-gray-700 text-center"
-            >
-              Evening
-            </h3>
+          <div class="w-full col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto bg-sky-200">
+            <h3 class="font-bold text-4xl mb-2 font-title text-gray-700 text-center">Evening</h3>
             <div class="flex flex-col justify-center p-4">
-              <h4 class="text-3xl text-slate-600 italic py-5 mb-1 text-center">
-                Instrument Rating
-              </h4>
+              <h4 class="text-3xl text-slate-600 italic py-5 mb-1 text-center">Instrument Rating</h4>
               <p class="text-slate-800 p-text pb-5 text-justify">
-                The Instrument Rating empowers you with the expertise and
-                abilities to navigate through low visibility and challenging
-                weather conditions, relying solely on your aircraft's
-                instruments. This rating unlocks a multitude of opportunities,
-                enhancing your safety and proficiency as a pilot.
+                The Instrument Rating empowers you with the expertise and abilities to navigate through low visibility
+                and challenging weather conditions, relying solely on your aircraft's instruments. This rating unlocks a
+                multitude of opportunities, enhancing your safety and proficiency as a pilot.
               </p>
-              <a href="/programs/instrument-rating" class="btn-primary w-full"
-                >INSTRUMENT TRAINING</a
-              >
+              <a href="/programs/instrument-rating" class="btn-primary w-full">INSTRUMENT TRAINING</a>
             </div>
             <div class="flex flex-col justify-center mt-8 p-4">
               <h4 class="text-3xl text-slate-600 italic py-5 mb-1 text-center">
                 Certified Flight Instructor-Instrument (CFII)
               </h4>
               <p class="text-slate-800 p-text pb-5 text-justify">
-                Advance in your flight instructor capabilities by adding an
-                instrument rating to your teaching credentials. This is the
-                final step in instructor training at Simplifly Flight School.
+                Advance in your flight instructor capabilities by adding an instrument rating to your teaching
+                credentials. This is the final step in instructor training at Simplifly Flight School.
               </p>
-              <a href="/programs/certified-flight-instructor/#addons" class="btn-primary w-full"
-                >CFII TRAINING</a
-              >
+              <a href="/programs/certified-flight-instructor/#addons" class="btn-primary w-full">CFII TRAINING</a>
             </div>
           </div>
-          <div
-            class="col-start-5 col-end-6 mr-10 md:mx-auto hidden md:block relative"
-          >
+          <div class="col-start-5 col-end-6 mr-10 md:mx-auto hidden md:block relative">
             <div class="h-full w-6 flex items-center justify-center">
               <div class="h-full w-0.5 bg-sky-300 pointer-events-none"></div>
             </div>
 
-            <div
-              class="w-6 h-6 absolute top-1/2 -mt-3 border-2 border-ideal-blue rounded-full bg-sky-300 shadow"
-            >
-            </div>
+            <div class="w-6 h-6 absolute top-1/2 -mt-3 border-2 border-ideal-blue rounded-full bg-sky-300 shadow"></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section
-    id="expectations"
-    class="bg-sky-200 flex flex-col items-center py-16"
-  >
+  <section id="expectations" class="bg-sky-200 flex flex-col items-center py-16">
     <h3 class="section-title">Simplifly Student Expectations</h3>
 
     <div class="grid grid-cols-1 lg:grid-cols-2 max-w-4xl lg:gap-10 mt-12">
@@ -306,13 +214,10 @@ const dataForVideo = {
           />
         </div>
         <div class="flex flex-col">
-          <h4 class="font-title uppercase font-semibold text-xl">
-            Training Frequency
-          </h4>
+          <h4 class="font-title uppercase font-semibold text-xl">Training Frequency</h4>
           <p>
-            We expect all students to fly 3-4 times each week. This means a
-            minimum of 25 hours per week dedicated for flight training, ground
-            training and personal study.
+            We expect all students to fly 3-4 times each week. This means a minimum of 25 hours per week dedicated for
+            flight training, ground training and personal study.
           </p>
         </div>
       </div>
@@ -326,14 +231,11 @@ const dataForVideo = {
           />
         </div>
         <div class="flex flex-col">
-          <h4 class="font-title uppercase font-semibold text-xl">
-            Time Commitment
-          </h4>
+          <h4 class="font-title uppercase font-semibold text-xl">Time Commitment</h4>
           <p>
-            We ask all students to commit to the 6-hour training window
-            indicated by their training stage. We recommend that you come in
-            during that window even when between flight or ground sessions for
-            additional study support.
+            We ask all students to commit to the 6-hour training window indicated by their training stage. We recommend
+            that you come in during that window even when between flight or ground sessions for additional study
+            support.
           </p>
         </div>
       </div>
@@ -350,14 +252,11 @@ const dataForVideo = {
           />
         </div>
         <div class="flex flex-col">
-          <h4 class="font-title uppercase font-semibold text-xl">
-            Flexible Schedule
-          </h4>
+          <h4 class="font-title uppercase font-semibold text-xl">Flexible Schedule</h4>
           <p>
-            We consider all our students as “full-time”, but understand that
-            some work part-time outside pilot training. As long as your
-            part-time employment is flexible enough to accommodate the changes
-            in training times per certification, we encourage you to join.
+            We consider all our students as “full-time”, but understand that some work part-time outside pilot training.
+            As long as your part-time employment is flexible enough to accommodate the changes in training times per
+            certification, we encourage you to join.
           </p>
         </div>
       </div>
@@ -366,8 +265,11 @@ const dataForVideo = {
 
   <CTAVideo video={currentVideo} data={dataForVideo} />
 
-  <PriceCalcZero2HeroDesktop client:load />
-  <PriceCalcZero2HeroMobile client:load />
+  <div id="cost-calc">
+    <PriceCalcZero2HeroDesktop client:load />
+
+    <PriceCalcZero2HeroMobile client:load />
+  </div>
 
   <ProgramSwiper content={programsSwiper} />
   <CTAColor content={flyWithUsCTA} />

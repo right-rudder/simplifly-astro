@@ -14,19 +14,17 @@ import aproxPilotTrainingCosts from "../data/approximate-pilot-training-costs";
 const { data } = aproxPilotTrainingCosts;
 ---
 
-<BaseLayout
-  siteTitle={data.pageTitle}
-  siteDescription={data.pageDescription}
-  keywords={data.pageKeywords}
->
+<BaseLayout siteTitle={data.pageTitle} siteDescription={data.pageDescription} keywords={data.pageKeywords}>
   <!-- HEADER -->
   <HeaderScreen content={data.header} />
   <!-- PAGE SUMMARY -->
   <PageSummary content={data.pageSummary} />
 
-  <PriceCalcZero2HeroDesktop client:load />
+  <div id="cost-calc">
+    <PriceCalcZero2HeroDesktop client:load />
 
-  <PriceCalcZero2HeroMobile client:load />
+    <PriceCalcZero2HeroMobile client:load />
+  </div>
 
   <ProgramSwiper content={programsSwiper} />
   <CTAColor content={flyWithUsCTA} />
