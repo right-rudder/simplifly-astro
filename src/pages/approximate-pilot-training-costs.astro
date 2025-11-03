@@ -6,23 +6,25 @@ import CTAColor from "../components/CTAColor.astro";
 import programsSwiper from "../data/programSwiper";
 import flyWithUsCTA from "../data/fly-with-us-cta";
 import PageSummary from "../components/PageSummary.astro";
-import PriceCalcZero2Hero from "../components/priceCalcZero2Hero";
+import PriceCalcZero2HeroDesktop from "../components/priceCalcZero2HeroDesktop";
+import PriceCalcZero2HeroMobile from "../components/priceCalcZero2HeroMobile";
+
 import aproxPilotTrainingCosts from "../data/approximate-pilot-training-costs";
 
 const { data } = aproxPilotTrainingCosts;
 ---
 
-<BaseLayout
-  siteTitle={data.pageTitle}
-  siteDescription={data.pageDescription}
-  keywords={data.pageKeywords}
->
+<BaseLayout siteTitle={data.pageTitle} siteDescription={data.pageDescription} keywords={data.pageKeywords}>
   <!-- HEADER -->
   <HeaderScreen content={data.header} />
   <!-- PAGE SUMMARY -->
   <PageSummary content={data.pageSummary} />
 
-  <PriceCalcZero2Hero client:load />
+  <div id="cost-calc">
+    <PriceCalcZero2HeroDesktop client:load />
+
+    <PriceCalcZero2HeroMobile client:load />
+  </div>
 
   <ProgramSwiper content={programsSwiper} />
   <CTAColor content={flyWithUsCTA} />
