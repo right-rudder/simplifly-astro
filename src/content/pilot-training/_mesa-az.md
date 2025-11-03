@@ -1,0 +1,18 @@
+---
+slug: "mesa-az"
+siteTitle: "Instrument Rating Course in Mesa, AZ | SimpliFly Flight School"
+siteDescription: "SimpliFly Flight School offers flight training in Mesa, AZ. We offer private pilot training, instrument rating training, commercial pilot training, and more. Contact us today!"
+city: "Mesa"
+stateShort: "AZ"
+stateLong: "Arizona"
+airportLocation: "Falcon Field Airport, KFFZ"
+keyPlace1: "Downtown Mesa"
+keyPlace2: "Red Mountain District"
+distance: "0 minutes"
+headlines: -"Pilot Training"
+  - "Your Aviation Future Begins Here"
+  - "Fly Over Arizona Skies"
+  - "Train at Falcon Field Airport"
+  - "Take Off from Mesa"
+keywords: "flight training, flight school, pilot training, private pilot training, instrument rating training, commercial pilot training, Mesa, AZ"
+---
