@@ -13,6 +13,7 @@ import PriceCalcZero2HeroMobile from "../components/priceCalcZero2HeroMobile";
 import CTAVideo from "../components/CTAVideo.astro";
 import videoList from "../data/videos.js";
 import { getCurrentVideo } from "../scripts/videoSpinner.js";
+import CTAFacebookStory from "../components/CTAFacebookStory.astro";
 
 const { data } = pilotTrainingMadeSimple;
 
@@ -22,13 +23,28 @@ const dataForVideo = {
   header: "What Our Students Say",
   text: "Discover how SimpliFly Flight School simplifies the pilot training process, making it more accessible and enjoyable for aspiring pilots.",
 };
+
+const dataForFBStory = {
+  url: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1304818530959353%2F&show_text=false&width=267&t=0",
+  title: "The Rising Pilot Demand",
+  subTitle: "30,000+ pilots needed, won't you be one of them?",
+  paragraph: "The aviation industry is changing fast. Charter and corporate aviation have exploded from a $20 billion market to over $90 billion, and projections show it'll soar past $150 billion by 2030. That growth means one thing: opportunity. With a shortage of 30,000 pilots expected in the next five years, there's never been a better time to take flight. Simplifly can help you get there. Schedule a Discovery Flight and start your journey today!",
+  cta: {
+    url: "/discovery-flight",
+    text: "Book a Discovery Flight",
+  }
+}
 ---
 
 <BaseLayout siteTitle={data.pageTitle} siteDescription={data.pageDescription} keywords={data.pageKeywords}>
   <!-- HEADER -->
   <HeaderScreen content={data.header} />
+
   <!-- PAGE SUMMARY -->
   <PageSummary content={data.pageSummary} />
+
+  <CTAFacebookStory data={dataForFBStory} />
+
   <section id="first-time-pilots" class="py-24 px-5 w-full bg-white flex flex-col items-center mx-auto scroll-my-20">
     <h3 class="section-upper">Pilot Training Made Simple</h3>
     <h4 class="section-title">Simplifly’s Training Structure</h4>
