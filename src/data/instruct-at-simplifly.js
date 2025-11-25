@@ -1,7 +1,7 @@
 const instructAtSimplifly = {
   data: {
     //SEO Header Stuff
-    pageTitle: "Start Your Pilot Career || SimpliFly Flight School, Mesa, AZ",
+    pageTitle: "Start Your Pilot Career | SimpliFly Flight School, Mesa, AZ",
     pageDescription:
       "Begin your pilot career as a certified flight instructor (CFI) at SimpliFly Flight School. We offer a 30-day CFI program to help you build the necessary hours to become an airline pilot. Contact us today!",
     pageKeywords:

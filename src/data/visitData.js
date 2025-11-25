@@ -5,7 +5,7 @@ const visitData = {
   pageDescription:
     "Visit SimpliFly Flight School in Mesa, AZ, and explore our state-of-the-art aviation training facilities. Schedule a tour today to kickstart your pilot training journey.",
   pageKeywords:
-    "flight school Mesa AZ, visit SimpliFly, aviation training Mesa, flight school tour Mesa, pilot training facilities Mesa AZ",
+    "flight school Mesa AZ, visit SimpliFly, aviation training Mesa, flight school tour Mesa, pilot training facilities Mesa AZ, flight training Arizona",
 
   // Top Header
   header: {

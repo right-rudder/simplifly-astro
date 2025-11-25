@@ -2,7 +2,7 @@
 pubDate: "December 19, 2024"
 author: Greg Hadley
 title: "Top 5 Reasons to Learn to Fly with SimpliFly Flight School in Mesa, AZ"
-description: "If you’ve ever thought about becoming a pilot, now is the perfect time to start. SimpliFly Flight School, located right here in Mesa, Arizona, can help you reach your goals. Learning to fly is more than just a skill—it’s an opportunity to expand your horizons."
+description: "If you’ve ever thought about becoming a pilot, now is the perfect time to start, check out these 5 compiled reasons to start learning at Simplifly Flight School. We are located right here in Mesa, Arizona, and are excited to help you reach your goals. Learning to fly is more than just a skill—it’s an opportunity to expand your horizons."
 heroImage: "/blog/airline_pilot_simplifly_alumni.webp"
 readingTime: 4
 category: "Pilot Resources"

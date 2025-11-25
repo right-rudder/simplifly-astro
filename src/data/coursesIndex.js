@@ -23,11 +23,12 @@ const coursesIndex = {
           link: "/enroll-at-simplifly",
           primary: false,
         },
-        {
+        /* TODO Guilherme : Remove? Not sure where this is supposed to point to */
+        /* {
           name: "Program Guide",
           link: "/path",
           primary: false,
-        },
+        }, */
       ],
     },
   },

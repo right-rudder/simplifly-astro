@@ -4,9 +4,9 @@ const pilotTrainingMadeSimple = {
     pageTitle:
       "Pilot Training Made Simple | SimpliFly Flight School Mesa, AZ",
     pageDescription:
-      "SimpliFly Flight School  offers flight training in Mesa, AZ. We offer private pilot training, instrument rating training, commercial pilot training, and more. Contact us today!",
+      "New to flying? At SimpliFly, we make it easy to get started, our flight school offers a variety of pilot training programs to help you achieve your aviation goals. Contact us to schedule your Discovery Flight and start your aviation journey.",
     pageKeywords:
-      "flight training, flight school, pilot training, private pilot training, instrument rating training, commercial pilot training, Mesa, AZ",
+      "discovery flight, flight training, flight school, Simplifly Flight School, pilot training, private pilot training, instrument rating training, commercial pilot training, Mesa, AZ",
 
     //top header
     header: {
