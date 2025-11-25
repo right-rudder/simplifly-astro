@@ -7,7 +7,9 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "img:csv": "node ./scripts/imgNewNameCSV.js",
+    "img:renaming": "node ./scripts/imgRenaming.js"
   },
   "dependencies": {
     "@astrojs/react": "^4.3.0",
@@ -19,6 +21,7 @@
     "@types/react-dom": "^18.3.1",
     "astro": "^5.8.0",
     "astro-embed": "^0.9.0",
+    "csv-parse": "^6.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.4.0",
