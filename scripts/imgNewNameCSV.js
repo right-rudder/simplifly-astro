@@ -24,6 +24,13 @@ const keywords = {
   ],
 };
 
+const CSV_COLUMNS = {
+  ORIGINAL_IMG_FULL_PATH: 0,
+  NEW_IMG_FULL_PATH: 1,
+  ORIGINAL_IMG_RELATIVE_PATH: 2,
+  NEW_IMG_RELATIVE_PATH: 3,
+}
+
 const fullKeywordList = [
   keywords.company,
   ...keywords.location,
@@ -63,7 +70,7 @@ async function scanDirectory(dir, extensions) {
   return files;
 }
 
-function generateNewName(filePath) {
+function generateNewImagePath(filePath) {
   const parsedPath = path.parse(filePath);
 
   let newName = parsedPath.name.toLowerCase();
@@ -86,47 +93,39 @@ function generateNewName(filePath) {
   );
 }
 
+async function listImagesFromDir(dir, relativeDirForm, results) {
+  console.log(`### Generating image path list for "${dir}".`);
+  const images = await scanDirectory(dir, [
+    ".jpg",
+    ".jpeg",
+    ".png",
+    ".gif",
+    ".webp",
+    ".avif",
+  ]);
+
+  console.log(`### Populating resulting image paths from "${dir}".`);
+  for (const imagePath of images) {
+    const newPath = generateNewImagePath(imagePath);
+
+    results.push([
+      imagePath,
+      newPath,
+      "/" + path.relative(relativeDirForm, imagePath).replaceAll("\\", "/"),
+      "/" + path.relative(relativeDirForm, newPath).replaceAll("\\", "/"),
+    ]);
+  }
+}
+
 async function listImages() {
   const results = [];
 
   const assetsDir = path.join(__dirname, "../src/assets");
   const publicDir = path.join(__dirname, "../public");
+  const projectDir = path.join(__dirname, "../");
 
-  console.log("### Generating image path list for the assets folder. ###");
-  const assetImages = await scanDirectory(assetsDir, [
-    ".jpg",
-    ".jpeg",
-    ".png",
-    ".gif",
-    ".webp",
-    ".avif",
-  ]);
-
-  console.log("### Populating assets folder resulting image paths. ###");
-  for (const imagePath of assetImages) {
-    results.push([
-      imagePath,
-      generateNewName(imagePath),
-    ]);
-  }
-
-  console.log("### Generating image path list for the public folder. ###");
-  const publicImages = await scanDirectory(publicDir, [
-    ".jpg",
-    ".jpeg",
-    ".png",
-    ".gif",
-    ".webp",
-    ".avif",
-  ]);
-
-  console.log("### Populating public folder resulting image paths. ###");
-  for (const imagePath of publicImages) {
-    results.push([
-      imagePath,
-      generateNewName(imagePath),
-    ]);
-  }
+  await listImagesFromDir(assetsDir, projectDir, results);
+  await listImagesFromDir(publicDir, publicDir, results);
 
   return results;
 }
@@ -134,7 +133,7 @@ async function listImages() {
 async function generateCSV() {
   const results = await listImages();
 
-  console.log("### Outputting CSV file. ###");
+  console.log("### Outputting CSV file.");
 
   // Convert the array to a CSV string
   const csvString = results.map((row) => row.join(",")).join("\n");
@@ -144,7 +143,7 @@ async function generateCSV() {
     if (err) {
       console.error("### Error writing CSV file:", err);
     } else {
-      console.log("### CSV file saved successfully! ###");
+      console.log("### CSV file saved successfully!");
     }
   });
 }
@@ -160,4 +159,4 @@ if (importFilePath === process.argv[1]) {
   generateCSV();
 }
 
-export { generateCSV };
+export { generateCSV, scanDirectory, CSV_COLUMNS };
