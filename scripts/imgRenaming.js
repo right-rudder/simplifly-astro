@@ -4,13 +4,25 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import { parse } from "csv-parse";
-import { scanDirectory, CSV_COLUMNS } from "./imgNewNameCSV";
+import { scanDirectory, CSV_COLUMNS, CSV_ERRORS } from "./imgNewNameCSV.js";
+import { createInterface } from "node:readline/promises";
+import { stdin as input, stdout as output } from "node:process";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+/* TODO : Remove encoding replacement */
+const importFilePath = import.meta.url
+  .replace("file:///", "")
+  .replaceAll("/", "\\")
+  .replace("%C3%81", "Á")
+  .replaceAll("%20", " ");
+
+let isCommandLineExecution = importFilePath === process.argv[1];
+let rl;
+
 async function parseCSV() {
-  console.log("#### Parsing CSV file");
+  console.log("### Parsing CSV file");
 
   const records = [];
   const csvPath = `${__dirname}/output.csv`;
@@ -38,37 +50,80 @@ async function parseCSV() {
 }
 
 async function renameImages(records) {
-  console.log("#### Renaming images");
+  console.log("### Renaming images");
+
+  let yesAll = false;
+  let noAll = false;
+
   for (const record of records) {
-    try {
-      const stats = fs.lstatSync(record[CSV_COLUMNS.ORIGINAL_IMG_FULL_PATH]);
-      if (!stats.isFile()) {
-        console.error(`---- ERROR: "${record[CSV_COLUMNS.ORIGINAL_IMG_FULL_PATH]}" is not a file path.`);
-        return;
-      }
-    } catch (err) {
-      console.error(
-        `---- ERROR: "${record[CSV_COLUMNS.ORIGINAL_IMG_FULL_PATH]}" does not exist or is inaccessible (synchronously):`,
-        err.message,
-      );
-      return;
+    if (noAll) {
+      record[CSV_COLUMNS.ERROR] = CSV_ERRORS.USER_SKIPPED;
+      continue;
     }
 
     try {
-      fs.rename(record[CSV_COLUMNS.ORIGINAL_IMG_FULL_PATH], record[CSV_COLUMNS.NEW_IMG_FULL_PATH], (err) => {
-        if (err) {
-          console.error("---- ERROR: Error renaming file:", err);
-          return;
-        }
-
-        console.log(`File ${record[CSV_COLUMNS.ORIGINAL_IMG_FULL_PATH]} renamed successfully to ${record[CSV_COLUMNS.NEW_IMG_FULL_PATH]}!`);
-      });
-    } catch (err) {
-      console.error(
-        `---- ERROR: Couldn't rename the following file: "${record[CSV_COLUMNS.ORIGINAL_IMG_FULL_PATH]}"`,
-        err.message,
+      await fs.promises.access(
+        record[CSV_COLUMNS.ORIGINAL_IMG_FULL_PATH],
+        fs.promises.constants.F_OK,
       );
-      return;
+
+      // Original file exists. Safe to rename.
+    } catch (error) {
+      console.log(
+        `### Operation skipped, the following file does not exist:\n${record[CSV_COLUMNS.ORIGINAL_IMG_FULL_PATH]}\n`,
+      );
+
+      record[CSV_COLUMNS.ERROR] = CSV_ERRORS.ORIGINAL_DOES_NOT_EXIST;
+      continue;
+    }
+
+    try {
+      await fs.promises.access(
+        record[CSV_COLUMNS.NEW_IMG_FULL_PATH],
+        fs.promises.constants.F_OK,
+      );
+
+      console.error(
+        `---- ERROR: Renamed file already exists, skipping file renaming.\n${record[CSV_COLUMNS.ORIGINAL_IMG_FULL_PATH]}\n"${record[CSV_COLUMNS.ORIGINAL_IMG_FULL_PATH]}"\n${err.message}`,
+      );
+
+      record[CSV_COLUMNS.ERROR] = CSV_ERRORS.RENAMED_ALREADY_EXISTS;
+      continue;
+    } catch (error) {
+      // The renamed file doesn't exist. Safe to rename.
+    }
+
+    if (!yesAll && isCommandLineExecution) {
+      const answer = await rl.question(
+        `### Do you want to proceed with the following renaming operation? (y/n | yes/no | yesAll/noAll):\n${record[CSV_COLUMNS.ORIGINAL_IMG_FULL_PATH]}\n${record[CSV_COLUMNS.NEW_IMG_FULL_PATH]}\n`,
+      );
+
+      if (!["yes", "y", "yesall", "noall"].includes(answer.toLowerCase())) {
+        record[CSV_COLUMNS.ERROR] = CSV_ERRORS.USER_SKIPPED;
+        console.log("### Operation skipped");
+
+        continue;
+      } else if (answer.toLowerCase() === "yesall") {
+        yesAll = true;
+      } else if (answer.toLowerCase() === "noall") {
+        noAll = true;
+        record[CSV_COLUMNS.ERROR] = CSV_ERRORS.USER_SKIPPED;
+        console.log("### Operations skipped");
+
+        continue;
+      }
+    }
+
+    try {
+      await fs.promises.rename(
+        record[CSV_COLUMNS.ORIGINAL_IMG_FULL_PATH],
+        record[CSV_COLUMNS.NEW_IMG_FULL_PATH],
+      );
+
+      console.log("### File renamed successfully!");
+    } catch (err) {
+      console.error(`---- ERROR: Couldn't rename the file:`, err.message);
+      continue;
     }
   }
 }
@@ -86,24 +141,48 @@ async function substituteImageFileReferences(records) {
     ".mdx",
   ]);
 
+  const filteredRecords = records.filter(
+    (record) => record[CSV_COLUMNS.ERROR] === CSV_ERRORS.OK,
+  );
+
   for (const filePath of files) {
     try {
-      fs.readFile(filePath, "utf-8", (err, data) => {
-        if (err) {
-          console.error("---- ERROR: Error reading file:", err);
-          return;
-        }
+      const data = await fs.promises.readFile(filePath, "utf-8");
 
-        for (const record of records) {
-          const updatedContent = data.replaceAll(record[CSV_COLUMNS.ORIGINAL_IMG_RELATIVE_PATH], record[CSV_COLUMNS.NEW_IMG_RELATIVE_PATH]);
-  
-          fs.writeFile(filePath, updatedContent, "utf-8", (err) => {
-            if (err) {
-              console.error("---- ERROR: Error writing file:", err);
-            }
-          });
-        }
-      });
+      let updatedContent = data;
+      for (const record of filteredRecords) {
+        updatedContent = updatedContent.replaceAll(
+          `"${record[CSV_COLUMNS.ORIGINAL_IMG_RELATIVE_PATH]}"`,
+          `"${record[CSV_COLUMNS.NEW_IMG_RELATIVE_PATH]}"`,
+        );
+      }
+
+      for (const record of filteredRecords) {
+        updatedContent = updatedContent.replaceAll(
+          `'${record[CSV_COLUMNS.ORIGINAL_IMG_RELATIVE_PATH]}'`,
+          `'${record[CSV_COLUMNS.NEW_IMG_RELATIVE_PATH]}'`,
+        );
+      }
+
+      // For Markdown img links. Ex: ![Come check out our fleet at Falcon Field Airport (KFFZ)!](/blog/SimpliFly-KFFZ-aircraft.webp)
+      for (const record of filteredRecords) {
+        updatedContent = updatedContent.replaceAll(
+          `(${record[CSV_COLUMNS.ORIGINAL_IMG_RELATIVE_PATH]})`,
+          `(${record[CSV_COLUMNS.NEW_IMG_RELATIVE_PATH]})`,
+        );
+      }
+
+      if (data === updatedContent) {
+        continue;
+      }
+
+      try {
+        await fs.promises.writeFile(filePath, updatedContent, "utf-8");
+
+        console.log("### File updated successfully: ", filePath);
+      } catch (err) {
+        console.error("---- ERROR: Error writing file:", err);
+      }
     } catch (err) {
       console.error(
         `---- ERROR: Error reading a file: "${filePath}".`,
@@ -113,20 +192,22 @@ async function substituteImageFileReferences(records) {
   }
 }
 
-/* TODO : Remove encoding replacement */
-const importFilePath = import.meta.url
-  .replace("file:///", "")
-  .replaceAll("/", "\\")
-  .replace("%C3%81", "Á")
-  .replaceAll("%20", " ");
+async function runCommand() {
+  if (!isCommandLineExecution) return;
 
-if (importFilePath === process.argv[1]) {
-  // const records = await parseCSV();
+  rl = createInterface({ input, output });
 
-  // if (records.length === 0) return;
+  const records = await parseCSV();
+  if (records.length === 0) {
+    return;
+  }
 
-  // await renameImages(records);
-  // await substituteImageFileReferences(records);
+  await renameImages(records);
+  await substituteImageFileReferences(records);
+
+  rl.close();
 }
+
+await runCommand();
 
 export { renameImages };

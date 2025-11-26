@@ -29,6 +29,14 @@ const CSV_COLUMNS = {
   NEW_IMG_FULL_PATH: 1,
   ORIGINAL_IMG_RELATIVE_PATH: 2,
   NEW_IMG_RELATIVE_PATH: 3,
+  ERROR: 4,
+}
+
+const CSV_ERRORS = {
+  OK: "OK",
+  ORIGINAL_DOES_NOT_EXIST: "ORIGINAL FILE DOES NOT EXIST",
+  RENAMED_ALREADY_EXISTS: "RENAMED FILE ALREADY EXISTS",
+  USER_SKIPPED: "THE FILE RENAMING WAS SKIPPED BY THE USER",
 }
 
 const fullKeywordList = [
@@ -113,6 +121,7 @@ async function listImagesFromDir(dir, relativeDirForm, results) {
       newPath,
       "/" + path.relative(relativeDirForm, imagePath).replaceAll("\\", "/"),
       "/" + path.relative(relativeDirForm, newPath).replaceAll("\\", "/"),
+      CSV_ERRORS.OK,
     ]);
   }
 }
@@ -159,4 +168,4 @@ if (importFilePath === process.argv[1]) {
   generateCSV();
 }
 
-export { generateCSV, scanDirectory, CSV_COLUMNS };
+export { generateCSV, scanDirectory, CSV_COLUMNS, CSV_ERRORS };
