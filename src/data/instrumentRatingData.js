@@ -5,7 +5,7 @@ const instrumentRatingData = {
   pageDescription:
     "Join SimpliFly Flight School in Mesa, AZ, for our Instrument Rating course. Master IFR navigation, low-visibility flying, and advance your aviation career with expert training.",
   pageKeywords:
-    "instrument rating Mesa AZ, IFR training Mesa, flight school Mesa AZ, advanced pilot training Mesa, aviation school Mesa AZ, instrument flight rules certification",
+    "instrument rating Mesa AZ, IFR training Mesa, flight school Mesa AZ, advanced pilot training Mesa, aviation school Mesa AZ, flight training Arizona, instrument flight rules certification",
 
   // Top Header
   header: {

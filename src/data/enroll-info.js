@@ -3,19 +3,9 @@ const enrollInfo = {
     //SEO Header Stuff
     pageTitle: "Enroll Now | SimpliFly Flight School, Mesa, AZ",
     pageDescription:
-      "Start your aviation journey with a discovery flight at Elite Flight Training Academy. Contact us to schedule your flight today!",
+      "Enroll now at Simplifly Flight School. Whether you're just starting your aviation journey with a Discovery Flight or getting a new rating, Simplifly is the flight school has the best options for you. Meet us at Mesa, Arizona.",
     pageKeywords:
-      "discovery flight, discovery flight training, discovery flight school, aviation academy, Elite Flight Training academy, flight training programs, aviation goals",
-
-    checkboxText: `I agree to <a href="/terms-of-service" target="_blank" class="font-semibold hover:underline">terms</a> & <a href="/privacy-policy" target="_blank" class="font-semibold hover:underline">conditions</a> provided by the company. By providing my phone number, I agree to receive text messages from the business.`,
-
-    header: {
-      imagePath: "/src/assets/sun-city-aviation-academy-fly-over-sunset.jpg",
-      imageAlt: "Elite Flight Training Academy Fly Over Sunset",
-      headerH1: "Enroll Now",
-      paragraph:
-        "Sign up for flight training at Elite Flight Training Academy. This is the first step to achieving your aviation goals!",
-    },
+      "flight school, aviation academy, Simplifly Flight School, flight training programs, aviation goals, private pilot, instrument rating, commercial pilot, multi-engine rating, certified flight instructor",
   },
 };
 

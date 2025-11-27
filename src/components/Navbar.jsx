@@ -102,7 +102,7 @@ const Navbar = ({ pathname }) => {
                   aria-label="SimpliFly Flight School  Logo"
                   title="SimpliFly Flight School "
                   loading="eager"
-                  className={`${navBar || openMobile ? "h-[5.5rem] mt-4 md:h-[7.2rem] md:mt-9 lg:mt-7" : "h-24 md:h-36 mt-6 md:mt-12"} object-contain duration-500 drop-shadow-md`}
+                  className={`${navBar || openMobile ? "h-[5.5rem] mt-4 md:h-[7.2rem] md:mt-9 lg:mt-7" : "h-24 md:h-36 mt-6 md:mt-20"} object-contain duration-500 drop-shadow-md`}
                 />
               </a>
               <div className="hidden ml-12 lg:flex justify-end lg:w-[70%]">
@@ -469,7 +469,7 @@ const Navbar = ({ pathname }) => {
                 className="transition-colors duration-300 text-white hover:text-white/70 hover:scale-105"
               >
                 <svg
-                  className="size-7"
+                  className="size-10"
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
                   y="0px"
