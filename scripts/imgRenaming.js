@@ -1,5 +1,36 @@
 #!/usr/bin/env node
 
+// This script reads a CSV file with original image names and new image names for this project and renames the files accordingly, as well as, replaces those files references in code with new names.
+// Required npm package: csv-parse
+//
+// To run: 
+// On the VS Code terminal at the root of the project run "node ./scripts/imgRenaming.js"
+// You can also add the command above in the package.json similar to the astro commands:
+// "scripts": {
+//    "dev": "astro dev",
+//    "img:renaming": "node ./scripts/imgRenaming.js",
+// },
+// And then run the command in the terminal as "npm run img:renaming"
+
+// ########################################################################################################################################
+// ### IMPORTANT ###### IMPORTANT ###### IMPORTANT ###### IMPORTANT ###### IMPORTANT ###### IMPORTANT ###### IMPORTANT ###### IMPORTANT ###
+// ########################################################################################################################################
+//
+//   The expected project directory configuration is as follows.
+//   If this file or the CSV file is not in the expected directory or the directory configuration is different from this, the script won't work:
+//
+//   root
+//   [...]
+//   /scripts
+//     thisFile.js
+//     output.csv 
+//   /src
+//   [...]
+//
+// ########################################################################################################################################
+// ### IMPORTANT ###### IMPORTANT ###### IMPORTANT ###### IMPORTANT ###### IMPORTANT ###### IMPORTANT ###### IMPORTANT ###### IMPORTANT ###
+// ########################################################################################################################################
+
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -8,17 +39,16 @@ import { scanDirectory, CSV_COLUMNS, CSV_ERRORS } from "./imgNewNameCSV.js";
 import { createInterface } from "node:readline/promises";
 import { stdin as input, stdout as output } from "node:process";
 
+const SRC_FILE_EXT = [".astro", ".js", ".ts", ".jsx", ".md", ".mdx"];
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-/* TODO : Remove encoding replacement */
 const importFilePath = import.meta.url
   .replace("file:///", "")
-  .replaceAll("/", "\\")
-  .replace("%C3%81", "Á")
-  .replaceAll("%20", " ");
+  .replaceAll("/", "\\");
 
-let isCommandLineExecution = importFilePath === process.argv[1];
+const isCommandLineExecution = importFilePath === process.argv[1];
 let rl;
 
 async function parseCSV() {
@@ -35,10 +65,7 @@ async function parseCSV() {
       }),
     );
   } catch (err) {
-    console.error(
-      `---- ERROR: Couldn't parse the CSV file: "${csvPath}".`,
-      err,
-    );
+    console.error(`--- ERROR: Couldn't parse the CSV file: "${csvPath}".`, err);
     return records;
   }
 
@@ -84,7 +111,7 @@ async function renameImages(records) {
       );
 
       console.error(
-        `---- ERROR: Renamed file already exists, skipping file renaming.\n${record[CSV_COLUMNS.ORIGINAL_IMG_FULL_PATH]}\n"${record[CSV_COLUMNS.ORIGINAL_IMG_FULL_PATH]}"\n${err.message}`,
+        `--- ERROR: Renamed file already exists, skipping file renaming.\n${record[CSV_COLUMNS.ORIGINAL_IMG_FULL_PATH]}\n"${record[CSV_COLUMNS.ORIGINAL_IMG_FULL_PATH]}"\n${err.message}`,
       );
 
       record[CSV_COLUMNS.ERROR] = CSV_ERRORS.RENAMED_ALREADY_EXISTS;
@@ -122,24 +149,51 @@ async function renameImages(records) {
 
       console.log("### File renamed successfully!");
     } catch (err) {
-      console.error(`---- ERROR: Couldn't rename the file:`, err.message);
+      console.error(`--- ERROR: Couldn't rename the file:`, err.message);
       continue;
     }
   }
+}
+
+function replaceImageReferences(csvRecords, fileContent) {
+  for (const record of csvRecords) {
+    fileContent = fileContent.replaceAll(
+      `"${record[CSV_COLUMNS.ORIGINAL_IMG_RELATIVE_PATH]}"`,
+      `"${record[CSV_COLUMNS.NEW_IMG_RELATIVE_PATH]}"`,
+    );
+  }
+
+  for (const record of csvRecords) {
+    fileContent = fileContent.replaceAll(
+      `'${record[CSV_COLUMNS.ORIGINAL_IMG_RELATIVE_PATH]}'`,
+      `'${record[CSV_COLUMNS.NEW_IMG_RELATIVE_PATH]}'`,
+    );
+  }
+
+  // For Markdown img links. Ex: ![Come check out our fleet at Falcon Field Airport (KFFZ)!](/blog/SimpliFly-KFFZ-aircraft.webp)
+  for (const record of csvRecords) {
+    fileContent = fileContent.replaceAll(
+      `(${record[CSV_COLUMNS.ORIGINAL_IMG_RELATIVE_PATH]})`,
+      `(${record[CSV_COLUMNS.NEW_IMG_RELATIVE_PATH]})`,
+    );
+  }
+  
+  // For Markdown frontmatter. Ex: /src/assets/logos/SolidGround-Symbol-1.png
+  for (const record of csvRecords) {
+    fileContent = fileContent.replaceAll(
+      `: ${record[CSV_COLUMNS.ORIGINAL_IMG_RELATIVE_PATH]}`,
+      `: ${record[CSV_COLUMNS.NEW_IMG_RELATIVE_PATH]}`,
+    );
+  }
+
+  return fileContent;
 }
 
 async function substituteImageFileReferences(records) {
   console.log(`### Substituting image file references in the "src" folder`);
   const srcDir = path.join(__dirname, "../src");
 
-  const files = await scanDirectory(srcDir, [
-    ".astro",
-    ".js",
-    ".ts",
-    ".jsx",
-    ".md",
-    ".mdx",
-  ]);
+  const files = await scanDirectory(srcDir, SRC_FILE_EXT);
 
   const filteredRecords = records.filter(
     (record) => record[CSV_COLUMNS.ERROR] === CSV_ERRORS.OK,
@@ -148,29 +202,7 @@ async function substituteImageFileReferences(records) {
   for (const filePath of files) {
     try {
       const data = await fs.promises.readFile(filePath, "utf-8");
-
-      let updatedContent = data;
-      for (const record of filteredRecords) {
-        updatedContent = updatedContent.replaceAll(
-          `"${record[CSV_COLUMNS.ORIGINAL_IMG_RELATIVE_PATH]}"`,
-          `"${record[CSV_COLUMNS.NEW_IMG_RELATIVE_PATH]}"`,
-        );
-      }
-
-      for (const record of filteredRecords) {
-        updatedContent = updatedContent.replaceAll(
-          `'${record[CSV_COLUMNS.ORIGINAL_IMG_RELATIVE_PATH]}'`,
-          `'${record[CSV_COLUMNS.NEW_IMG_RELATIVE_PATH]}'`,
-        );
-      }
-
-      // For Markdown img links. Ex: ![Come check out our fleet at Falcon Field Airport (KFFZ)!](/blog/SimpliFly-KFFZ-aircraft.webp)
-      for (const record of filteredRecords) {
-        updatedContent = updatedContent.replaceAll(
-          `(${record[CSV_COLUMNS.ORIGINAL_IMG_RELATIVE_PATH]})`,
-          `(${record[CSV_COLUMNS.NEW_IMG_RELATIVE_PATH]})`,
-        );
-      }
+      const updatedContent = replaceImageReferences(filteredRecords, data);
 
       if (data === updatedContent) {
         continue;
@@ -181,11 +213,11 @@ async function substituteImageFileReferences(records) {
 
         console.log("### File updated successfully: ", filePath);
       } catch (err) {
-        console.error("---- ERROR: Error writing file:", err);
+        console.error("--- ERROR: Error writing file:", err);
       }
     } catch (err) {
       console.error(
-        `---- ERROR: Error reading a file: "${filePath}".`,
+        `--- ERROR: Error reading a file: "${filePath}".`,
         err.message,
       );
     }

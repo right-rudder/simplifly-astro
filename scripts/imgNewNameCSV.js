@@ -1,8 +1,62 @@
 #!/usr/bin/env node
 
-import { promises as fs, writeFile } from "fs";
+// This script searches through a project for images in the public and src/assets folders and prepares a CSV file with the generated new names with keywords for better SEO.
+// The chosen pattern is "original-file-name-company-name-localization-keyword-general-keyword.ext". Ex: crew-greg-updated-headshot-simplifly-arizona-flying-lessons.jpg
+// OBS: The script also removes keywords, from the list of keywords, from the original file name.
+// Required npm package: csv-parse
+//
+// To run: 
+// On the VS Code terminal at the root of the project run "node ./scripts/imgNewNameCSV.js"
+// You can also add the command above in the package.json similar to the astro commands:
+// "scripts": {
+//    "dev": "astro dev",
+//    "img:csv": "node ./scripts/imgNewNameCSV.js",
+// },
+// And then run the command in the terminal as "npm run img:csv"
+
+// ########################################################################################################################################
+// ### IMPORTANT ###### IMPORTANT ###### IMPORTANT ###### IMPORTANT ###### IMPORTANT ###### IMPORTANT ###### IMPORTANT ###### IMPORTANT ###
+// ########################################################################################################################################
+//
+//   The script doesn't account for positional based relative image paths, so those should be updated manually. Ex: "../assets/image.jpg"
+//   In the future it is preferred to always use paths relative to the root of the project. Ex: "/src/assets/image.jpg"
+//
+//   The expected project directory configuration is as follows.
+//   If this file is not placed in the expected directory or the directory configuration is different from this, the script won't work:
+//
+//   root
+//   [...]
+//   /public
+//   /scripts
+//     thisFile.js 
+//   /src
+//     /assets
+//   [...]
+//
+// ########################################################################################################################################
+// ### IMPORTANT ###### IMPORTANT ###### IMPORTANT ###### IMPORTANT ###### IMPORTANT ###### IMPORTANT ###### IMPORTANT ###### IMPORTANT ###
+// ########################################################################################################################################
+
+import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+
+const CSV_COLUMNS = {
+  ORIGINAL_IMG_FULL_PATH: 0,
+  NEW_IMG_FULL_PATH: 1,
+  ORIGINAL_IMG_RELATIVE_PATH: 2,
+  NEW_IMG_RELATIVE_PATH: 3,
+  ERROR: 4,
+};
+
+const CSV_ERRORS = {
+  OK: "OK",
+  ORIGINAL_DOES_NOT_EXIST: "ORIGINAL FILE DOES NOT EXIST",
+  RENAMED_ALREADY_EXISTS: "RENAMED FILE ALREADY EXISTS",
+  USER_SKIPPED: "THE FILE RENAMING WAS SKIPPED BY THE USER",
+};
+
+const IMG_EXT = [".jpg", ".jpeg", ".png", ".gif", ".webp", ".avif"];
 
 const keywords = {
   company: "simplifly",
@@ -24,31 +78,20 @@ const keywords = {
   ],
 };
 
-const CSV_COLUMNS = {
-  ORIGINAL_IMG_FULL_PATH: 0,
-  NEW_IMG_FULL_PATH: 1,
-  ORIGINAL_IMG_RELATIVE_PATH: 2,
-  NEW_IMG_RELATIVE_PATH: 3,
-  ERROR: 4,
-}
-
-const CSV_ERRORS = {
-  OK: "OK",
-  ORIGINAL_DOES_NOT_EXIST: "ORIGINAL FILE DOES NOT EXIST",
-  RENAMED_ALREADY_EXISTS: "RENAMED FILE ALREADY EXISTS",
-  USER_SKIPPED: "THE FILE RENAMING WAS SKIPPED BY THE USER",
-}
-
 const fullKeywordList = [
   keywords.company,
   ...keywords.location,
   ...keywords.generic,
   ...keywords.programs,
 ];
-const generalKeywords = [...keywords.generic, ...keywords.programs];
 
+const generalKeywords = [...keywords.generic, ...keywords.programs];
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const importFilePath = import.meta.url
+  .replace("file:///", "")
+  .replaceAll("/", "\\");
+const isCommandLineExecution = importFilePath === process.argv[1];
 
 function randomFromArray(array) {
   return array[Math.floor(Math.random() * array.length)];
@@ -59,7 +102,7 @@ async function scanDirectory(dir, extensions) {
   const extArray = Array.isArray(extensions) ? extensions : [extensions];
 
   async function* walk(dir) {
-    const dirEntries = await fs.readdir(dir, { withFileTypes: true });
+    const dirEntries = await fs.promises.readdir(dir, { withFileTypes: true });
 
     for (const dirEntry of dirEntries) {
       const res = path.resolve(dir, dirEntry.name);
@@ -103,14 +146,7 @@ function generateNewImagePath(filePath) {
 
 async function listImagesFromDir(dir, relativeDirForm, results) {
   console.log(`### Generating image path list for "${dir}".`);
-  const images = await scanDirectory(dir, [
-    ".jpg",
-    ".jpeg",
-    ".png",
-    ".gif",
-    ".webp",
-    ".avif",
-  ]);
+  const images = await scanDirectory(dir, IMG_EXT);
 
   console.log(`### Populating resulting image paths from "${dir}".`);
   for (const imagePath of images) {
@@ -128,7 +164,6 @@ async function listImagesFromDir(dir, relativeDirForm, results) {
 
 async function listImages() {
   const results = [];
-
   const assetsDir = path.join(__dirname, "../src/assets");
   const publicDir = path.join(__dirname, "../public");
   const projectDir = path.join(__dirname, "../");
@@ -147,25 +182,25 @@ async function generateCSV() {
   // Convert the array to a CSV string
   const csvString = results.map((row) => row.join(",")).join("\n");
 
-  // Write the CSV string to a file
-  writeFile(path.join(__dirname, "output.csv"), csvString, (err) => {
-    if (err) {
-      console.error("### Error writing CSV file:", err);
-    } else {
-      console.log("### CSV file saved successfully!");
-    }
-  });
+  try {
+    await fs.promises.writeFile(
+      path.join(__dirname, "output.csv"),
+      csvString,
+      "utf-8",
+    );
+
+    console.log("### CSV file saved successfully!");
+  } catch (err) {
+    console.error("--- Error writing CSV file:", err);
+  }
 }
 
-/* TODO : Remove encoding replacement */
-const importFilePath = import.meta.url.replace("file:///", "").replaceAll("/", "\\").replace('%C3%81', "Á").replaceAll("%20", " ");
+async function runCommand() {
+  if (!isCommandLineExecution) return;
 
-// console.log(import.meta.url);
-// console.log(importFilePath);
-// console.log(process.argv[1]);
-
-if (importFilePath === process.argv[1]) {
-  generateCSV();
+  await generateCSV();
 }
+
+await runCommand();
 
 export { generateCSV, scanDirectory, CSV_COLUMNS, CSV_ERRORS };
