@@ -3,7 +3,7 @@ pubDate: "November 7, 2024"
 author: Greg Hadley
 title: "Understanding R-ATP and ATP Certification: The Path to Becoming an Airline Pilot"
 description: "At SimpliFly Flight School, we provide the training and foundation necessary for aspiring pilots to progress through their aviation journey, leading them toward the ATP (Airline Transport Pilot) certification. While we do not offer the ATP certification itself, we train pilots up to the point where they are ready to pursue it through an authorized ATP certification provider."
-heroImage: "/blog/avel-chuklanov-ZEiqbaQhmvE-unsplash.jpg"
+heroImage: "/blog/avel-chuklanov-zeiqbaqhmve-unsplash-simplifly-arizona-flight-training.jpg"
 readingTime: 4
 category: "Pilot Resources"
 tags:

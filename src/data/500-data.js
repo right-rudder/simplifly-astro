@@ -17,7 +17,7 @@ const data500 = {
 
     header: {
       imagePath:
-        "/src/assets/stock-victor-zhuk-3MYtBMg8Ex4-unsplash.jpg",
+        "/src/assets/stock-victor-zhuk-3mytbmg8ex4-unsplash-simplifly-mesa-become-a-pilot.jpg",
       imageAlt: `${COMPANY_NAME} plane taking off`,
       headerH1: `well, this is AWKWARD`,
       paragraph:

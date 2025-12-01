@@ -11,7 +11,7 @@ const beginPilotCareer = {
     header: {
       stars: true,
       imagePath:
-        "/src/assets/airline-pilot-courses-at-simplifly-flight-school.webp",
+        "/src/assets/airline-pilot-courses-at-flight-school-simplifly-arizona-flying-lessons.webp",
       imageAlt:
         "SimpliFly Flight School airplane landing at Falcon Field Airport in Mesa, Arizona",
       headerH1: `Career Track<br>Pilots`,
@@ -110,7 +110,7 @@ const beginPilotCareer = {
         link: "/enroll-at-simplifly",
         primary: true,
       },
-      imagePath: "/src/assets/female_pilot_smiling.webp",
+      imagePath: "/src/assets/female_pilot_smiling-simplifly-mesa-become-a-pilot.webp",
       imageAlt:
         "sun city aviation founder luke poulos in front of a sun city airplane",
     },

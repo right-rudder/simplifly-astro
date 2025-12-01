@@ -3,7 +3,7 @@ pubDate: "March 25, 2025"
 author: SimpliFly Flight School
 title: "Discovery Flight: What to Expect on Your First Lesson"
 description: "Curious about becoming a pilot? A discovery flight is the perfect way to get started. Here's what to expect at SimpliFly Flight School in Mesa, AZ."
-heroImage: "/blog/simplifly-wing-view-blue-skies.jpg"
+heroImage: "/blog/wing-view-blue-skies-simplifly-mesa-private-pilot.jpg"
 readingTime: 4
 category: "Pilot Resources"
 tags:

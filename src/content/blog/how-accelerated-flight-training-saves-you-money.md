@@ -3,7 +3,7 @@ pubDate: "October 3, 2023"
 author: Blake Murphy
 title: "How Accelerated Flight Training Saves You Money"
 description: "Accelerated flight training is a great option for students who want to get their pilot certificates and ratings quickly. While it is typically more expensive than traditional flight training, accelerated training can actually save students money in the long run."
-heroImage: "/blog/simplifly-pilot-and-cfi-studying.webp"
+heroImage: "/blog/pilot-and-cfi-studying-simplifly-arizona-pilot-training.webp"
 readingTime: 4
 category: "Pilot Resources"
 tags:

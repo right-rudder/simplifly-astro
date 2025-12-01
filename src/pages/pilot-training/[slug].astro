@@ -42,15 +42,15 @@ type PilotTrainingEntry = CollectionEntry<"pilot-training">;
 const locations = Astro.props;
 
 const headerImages = [
-  "/src/assets/470211179_18030932552525825_7256846206203556551_n.jpg",
-  "/src/assets/470198895_18030936461525825_8196635400235759355_n.jpg",
-  "/src/assets/multi-pass.webp",
-  "/src/assets/multi-engine-airplane-flying-over-mesa-az.webp",
-  "/src/assets/pilot_pass_multi_engine_checkride.webp",
-  "/src/assets/pilot_thumbs.png",
-  "/src/assets/pilot_pass_checkride_cessna.webp",
-  "/src/assets/ppl-pass.webp",
-  "/src/assets/seminole1.webp",
+  "/src/assets/cfi-and-student-with-certificate-shaking-hands-in-front-of-airplane-simplifly-arizona-flight-school.jpg",
+  "/src/assets/man-with-certificate-standing-next-to-aircraft-simplifly-arizona-private-pilot.jpg",
+  "/src/assets/multi-pass-simplifly-mesa-flight-training.webp",
+  "/src/assets/multi-engine-airplane-flying-over-az-simplifly-arizona-private-pilot.webp",
+  "/src/assets/pilot_pass_multi_engine_checkride-simplifly-arizona-private-pilot.webp",
+  "/src/assets/pilot_thumbs-simplifly-arizona-multi-engine-rating.png",
+  "/src/assets/pilot_pass_checkride_cessna-simplifly-arizona-private-pilot.webp",
+  "/src/assets/ppl-pass-simplifly-arizona-discovery-flight.webp",
+  "/src/assets/seminole1-simplifly-mesa-commercial-pilot.webp",
 ];
 
 const randomHeaderImage =
@@ -80,7 +80,7 @@ const data = {
 
   //top header
   header: {
-    imagePath: randomHeaderImage || "/src/assets/DSC02358 copy.png",
+    imagePath: randomHeaderImage || "/src/assets/dsc02358 copy-simplifly-arizona-multi-engine-rating.png",
     imageAlt: "SimpliFly Flight School Team at the runway",
     headerH1: randomHeadlines || `PILOT TRAINING MADE SIMPLE`,
     paragraph: `Start your aviation journey near ${locations.data.city}, ${locations.data.stateLong}, at SimpliFly Flight School. Whether you're looking to fly for fun or pursue a career in aviation, our programs and instructors are here to help you achieve your goals.`,
@@ -101,57 +101,57 @@ const data = {
   airlinesCloud: {
     airlines: [
       {
-        imagePath: "/src/assets/southwest-airlines-logo.webp",
+        imagePath: "/src/assets/southwest-airlines-logo-simplifly-mesa-commercial-pilot.webp",
         imageAlt: "Southwest Airlines Logo",
         link: "https://www.southwest.com/",
       },
       {
-        imagePath: "/src/assets/allegiant-air-logo.webp",
+        imagePath: "/src/assets/allegiant-air-logo-simplifly-arizona-commercial-pilot.webp",
         imageAlt: "Allegiant Airlines Logo",
         link: "https://www.allegiantair.com/",
       },
       {
-        imagePath: "/src/assets/frontier-airlines-logo.webp",
+        imagePath: "/src/assets/frontier-airlines-logo-simplifly-arizona-flight-school.webp",
         imageAlt: "Frontier Airlines Logo",
         link: "https://www.flyfrontier.com/",
       },
       {
-        imagePath: "/src/assets/hawaiian-airlines-Logo.webp",
+        imagePath: "/src/assets/hawaiian-airlines-logo-simplifly-arizona-private-pilot.webp",
         imageAlt: "Hawaiian Airlines Logo",
         link: "https://www.hawaiianairlines.com/",
       },
       {
-        imagePath: "/src/assets/skywest-airlines-logo.webp",
+        imagePath: "/src/assets/skywest-airlines-logo-simplifly-arizona-instrument-rating.webp",
         imageAlt: "Skywest Airlines Logo",
         link: "https://www.skywest.com/",
       },
       {
-        imagePath: "/src/assets/envoy-air-logo.webp",
+        imagePath: "/src/assets/envoy-air-logo-simplifly-mesa-multi-engine-rating.webp",
         imageAlt: "Envoy Air Logo",
         link: "https://www.envoyair.com/",
       },
       {
-        imagePath: "/src/assets/Republic-Airways-Logo.webp",
+        imagePath: "/src/assets/republic-airways-logo-simplifly-arizona-become-a-pilot.webp",
         imageAlt: "Republic Airways Logo",
         link: "https://rjet.com/",
       },
       {
-        imagePath: "/src/assets/endeavor-air-logo.webp",
+        imagePath: "/src/assets/endeavor-air-logo-simplifly-mesa-flying-lessons.webp",
         imageAlt: "Endeavor Air Logo",
         link: "https://www.endeavorair.com/content/endeavor-air/en_us/home.html",
       },
       {
-        imagePath: "/src/assets/contour-airlines-logo.webp",
+        imagePath: "/src/assets/contour-airlines-logo-simplifly-mesa-discovery-flight.webp",
         imageAlt: "Contour Airlines Logo",
         link: "https://www.contourairlines.com/",
       },
       {
-        imagePath: "/src/assets/elite-jets-logo.webp",
+        imagePath: "/src/assets/elite-jets-logo-simplifly-mesa-flight-school.webp",
         imageAlt: "Elite Jets Logo",
         link: "https://www.elitejets.com/",
       },
       {
-        imagePath: "/src/assets/pinnacle-aviation-logo.webp",
+        imagePath: "/src/assets/pinnacle-aviation-logo-simplifly-arizona-certified-flight-instructor.webp",
         imageAlt: "Pinnacle Aviation Logo",
         link: "https://www.pinnacleaviation.com/",
       },
@@ -222,7 +222,7 @@ const data = {
   },
 
   flyWithUsCTA: {
-    imagePath: "/src/assets/valley-of-the-sun-fly-over.webp",
+    imagePath: "/src/assets/valley-of-the-sun-fly-over-simplifly-mesa-flight-school.webp",
     imageAlt: "SimpliFly Flight School student flying over Arizona",
     headerH1: `<span class="text-sky-600">Start flying near ${locations.data.city}, ${locations.data.stateShort} in a way that makes</br></span>becoming a pilot simple`,
     paragraph: `We are a team of aviation experts near to ${locations.data.city}, ${locations.data.stateShort} with decades of combined experience in the flight training industry. Our simple and effective training programs are designed to get you safely in the air as quickly as possible.`,

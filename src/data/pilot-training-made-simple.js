@@ -12,7 +12,7 @@ const pilotTrainingMadeSimple = {
     header: {
       stars: true,
       imagePath:
-        "/src/assets/SimpliFly-flight-school-airplane-landing-at-falcon-field-airport-pilot-training-mesa-arizona.webp",
+        "/src/assets/airplane-landing-at-falcon-field-airport-arizona-simplifly-arizona-pilot-training.webp",
       imageAlt:
         "SimpliFly Flight School airplane landing at Falcon Field Airport in Mesa, Arizona",
       headerH1: `PILOT TRAINING</br><span class="text-sky-300">MADE SIMPLE</span>`,

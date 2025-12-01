@@ -3,7 +3,7 @@ pubDate: "July 17, 2024"
 author: Blake Murphy
 title: "Why We Fly What We Do: A Look at SimpliFly Flight School’s Fleet"
 description: "At SimpliFly Flight School in Mesa, AZ, we have carefully selected our fleet to provide the best possible training experience for our students. Our aircraft include the Cessna 172s, Diamond DA40, and Piper Seneca, each chosen for their unique strengths in training pilots. Here’s an overview of our aircraft and how they support our training programs."
-heroImage: "/blog/wing-view-over-phoenix-arizona-from-right-seat.webp"
+heroImage: "/blog/wing-view-over-phoenix-from-right-seat-simplifly-mesa-flight-training.webp"
 readingTime: 4
 category: "Pilot Resources"
 tags:
@@ -28,7 +28,7 @@ Our Cessna 172s offer students early exposure to advanced avionics. This not onl
 
 The versatility of the Cessna 172 means it can be used for a range of training activities, from private pilot lessons to advanced instrument rating courses. This flexibility allows students to build a solid foundation of skills without needing to transition to different aircraft early in their training.
 
-![Cessna 172 Skyhawk](/blog/cessna-172-skyhawk-simplifly-flight-school-mesa-az.webp)
+![Cessna 172 Skyhawk](/blog/cessna-172-skyhawk-az-simplifly-mesa-flight-training.webp)
 _One of our Cessna 172 Skyhawks_
 
 ## Diamond DA40: Advance Your Training
@@ -39,7 +39,7 @@ The DA40’s composite airframe offers durability and lower maintenance costs co
 
 The DA40 is also known for its fuel efficiency, reducing operational costs and minimizing environmental impact. Its efficient design makes it an ideal aircraft for cross-country navigation and night flying, providing students with a well-rounded training experience.
 
-![Cessna 172 Skyhawk](/blog/diamond-da40-multi-engine-piper-aircraft-at-simplifly-falcon-field-airport-phoenix-az.webp)
+![Cessna 172 Skyhawk](/blog/diamond-da40-multi-engine-piper-aircraft-at-falcon-field-airport-phoenix-az-simplifly-arizona-pilot-training.webp)
 _The Piper Diamond DA40 at Falcon Field Airport (KFFZ)_
 
 ## Piper Seneca: The Multi-Engine Stage
@@ -59,7 +59,7 @@ At SimpliFly, our aircraft fleet supports a range of training programs designed 
 - **[Commercial Pilot License (CPL):](/commercial-pilot-training)** For commercial pilot training, the combination of the Cessna 172, DA40, and Piper Seneca offers a robust training experience. Students gain exposure to a variety of aircraft, preparing them for the diverse range of aircraft they will fly in their careers.
 - **[Multi-Engine Rating (MER):](/multi-engine-rating)** The Piper Seneca is central to our multi-engine training program, providing the necessary experience and skills to operate twin-engine aircraft safely and efficiently.
 
-![Cessna 172 Skyhawk](/blog/inside-the-diamond-da40-multi-engine-aircraft-at-simplifly.webp)
+![Cessna 172 Skyhawk](/blog/inside-the-diamond-da40-multi-engine-aircraft-at-simplifly-simplifly-arizona-become-a-pilot.webp)
 _You can only get these views in one place!_
 
 At **SimpliFly Flight School** in Mesa, AZ, our carefully selected fleet of Cessna 172s, Diamond DA40s, and Piper Senecas ensures that our students receive the best possible training. These aircraft are chosen for their reliability, safety, and advanced features, supporting a full spectrum of flight training programs that prepare students for successful careers in aviation. Whether you are just starting out or advancing to more complex training, our fleet and our dedicated instructors are here to help you achieve your aviation goals.

@@ -3,7 +3,7 @@ pubDate: "April 12, 2024"
 author: Blake Murphy
 title: "SimpliFly's Instrument Panel Guide"
 description: "At SimpliFly Flight School, located at Falcon Field Airport in Mesa, Arizona, we understand the importance of mastering the basics for safe and efficient flying. An integral part of this learning process is getting to know the aircraft instrument panel."
-heroImage: "/blog/simplifly-student-pilot-taxiing-mesa-arizona.webp"
+heroImage: "/blog/student-pilot-taxiing-arizona-simplifly-arizona-flight-training.webp"
 readingTime: 4
 category: "Pilot Resources"
 tags:
@@ -52,7 +52,7 @@ Beyond the basics, the instrument panel houses more sophisticated tools to aid i
 
 ---
 
-![SimpliFly flight school The instrument panel of one of our aircraft at Falcon Field Airport in Mesa, Arizona](/blog/simplifly-student-pilot-on-cockpit-mesa-arizona.webp)
+![SimpliFly flight school The instrument panel of one of our aircraft at Falcon Field Airport in Mesa, Arizona](/blog/student-pilot-on-cockpit-arizona-simplifly-arizona-multi-engine-rating.webp)
 _The instrument panel of one of our aircraft at Falcon Field Airport in Mesa, Arizona_
 
 ---

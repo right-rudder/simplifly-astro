@@ -3,7 +3,7 @@ pubDate: "November 19, 2025"
 author: Greg Hadley
 title: "Balancing Work, Life, and Flight Training: A Guide for Part-Time Student Pilots"
 description: "Discover how to balance work, family, and your dream of becoming a pilot. Learn scheduling strategies, study habits, and training tips for part-time students at SimpliFly Flight School in Mesa, AZ."
-heroImage: "/blog/person-sitting-mountain-top.jpg"
+heroImage: "/blog/person-sitting-mountain-top-simplifly-arizona-discovery-flight.jpg"
 readingTime: 7
 category: "Flight Training"
 tags:

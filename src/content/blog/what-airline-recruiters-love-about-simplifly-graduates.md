@@ -3,7 +3,7 @@ pubDate: "May 13, 2025"
 author: Greg Hadley
 title: "What Airline Recruiters Love About SimpliFly Graduates"
 description: "Discover why airline recruiters love SimpliFly graduates. With high checkride pass rates, career-ready training, and strong industry connections, SimpliFly Flight School in Mesa, AZ prepares pilots to excel in the aviation industry. Start your journey to the skies today!"
-heroImage: "/blog/simplifly-pilot-demand-2025.webp"
+heroImage: "/blog/pilot-demand-2025-simplifly-mesa-commercial-pilot.webp"
 readingTime: 4
 category: "Pilot Resources"
 tags:

@@ -11,7 +11,7 @@ const pilotTraining = {
     header: {
       stars: true,
       imagePath:
-        "/src/assets/simplifly-flight-school-mesa-az-cfe-and-student-after-successful-checkride.jpg",
+        "/src/assets/az-cfe-and-student-after-successful-checkride-simplifly-arizona-flying-lessons.jpg",
       imageAlt:
         "SimpliFly Flight School airplane landing at Falcon Field Airport in Mesa, Arizona",
       headerH1: `Pilot Training<br>Programs`,

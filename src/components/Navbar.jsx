@@ -97,7 +97,7 @@ const Navbar = ({ pathname }) => {
                 className="hover:brightness-110 flex h-20 lg:h-24 justify-end align-middle items-center duration-200 ease-in-out"
               >
                 <img
-                  src="/simplifly_250.webp"
+                  src="/simplifly_250-simplifly-arizona-flight-training.webp"
                   alt="SimpliFly Flight School  Logo"
                   aria-label="SimpliFly Flight School  Logo"
                   title="SimpliFly Flight School "
@@ -269,7 +269,7 @@ const Navbar = ({ pathname }) => {
           className="z-30 relative flex justify-center items-center align-middle"
         >
           <img
-            src="/simplifly_250.webp"
+            src="/simplifly_250-simplifly-arizona-flight-training.webp"
             alt="SimpliFly Flight School Logo"
             aria-label="SimpliFly Flight School Logo"
             title="SimpliFly Flight School "

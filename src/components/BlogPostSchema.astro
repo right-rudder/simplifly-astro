@@ -28,7 +28,7 @@ const publishDateIso = new Date(publishDate).toISOString();
 const updateDateIso = updateDate ? new Date(updateDate).toISOString() : publishDateIso;
 
 // Image with fallback
-const articleImage = featuredImage ? new URL(featuredImage, Astro.url).toString() : new URL("/simplifly_250.webp", Astro.url).toString();
+const articleImage = featuredImage ? new URL(featuredImage, Astro.url).toString() : new URL("/simplifly_250-simplifly-arizona-flight-training.webp", Astro.url).toString();
 ---
 
 <script type="application/ld+json" set:html={JSON.stringify({
@@ -47,7 +47,7 @@ const articleImage = featuredImage ? new URL(featuredImage, Astro.url).toString(
     "name": "SimpliFly Flight School",
     "logo": {
       "@type": "ImageObject",
-      "url": new URL("/simplifly-favicon.png", Astro.url).toString()
+      "url": new URL("/favicon.png", Astro.url).toString()
     }
   },
   "datePublished": publishDateIso,

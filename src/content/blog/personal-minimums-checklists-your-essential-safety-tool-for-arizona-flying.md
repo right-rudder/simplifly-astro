@@ -3,7 +3,7 @@ pubDate: "Jul 25, 2025"
 author: Greg Hadley
 title: "Personal Minimums Checklists: Your Essential Safety Tool for Arizona Flying"
 description: "Learn why Arizona student pilots need Personal Minimums Checklists beyond FAA requirements. SimpliFly Flight School's expert guide covers density altitude, monsoon weather safety, and creating your custom checklist for safe flying in challenging desert conditions."
-heroImage: "/blog/airplane-landing-at-falcon-field-airport-pilot-training-mesa-arizona.webp"
+heroImage: "/blog/airplane-landing-at-falcon-field-airport-arizona-simplifly-arizona-certified-flight-instructor.webp"
 readingTime: 6
 category: "Safety"
 tags:
@@ -31,7 +31,7 @@ This moment separates cautious pilots from accident statistics. The difference i
 
 ---
 
-![SimpliFly Flight Training](/blog/inside-the-diamond-da40-multi-engine-aircraft-at-simplifly.webp)  
+![SimpliFly Flight Training](/blog/inside-the-diamond-da40-multi-engine-aircraft-at-simplifly-simplifly-arizona-become-a-pilot.webp)  
 _SimpliFly conducts safety-focused training over Arizona's challenging terrain_
 
 ---
@@ -89,7 +89,7 @@ Flying over Arizona’s desert and mountain terrain presents visual and navigati
 
 ---
 
-![Arizona Flight Training](/blog/valley-of-the-sun-fly-over.webp)  
+![Arizona Flight Training](/blog/valley-of-the-sun-fly-over-simplifly-mesa-become-a-pilot.webp)  
 _Valley view of Arizona from plane wing_
 
 ---

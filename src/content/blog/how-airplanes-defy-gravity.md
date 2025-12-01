@@ -3,7 +3,7 @@ pubDate: "June 16, 2023"
 author: Blake Murphy
 title: "How Airplanes Defy Gravity"
 description: "Have you ever marveled at the sight of an airplane gracefully soaring through the sky? Have you ever wondered how it manages to stay airborne?"
-heroImage: "/blog/wing.webp"
+heroImage: "/blog/wing-simplifly-arizona-certified-flight-instructor.webp"
 readingTime: 4
 category: "Pilot Resources"
 tags:

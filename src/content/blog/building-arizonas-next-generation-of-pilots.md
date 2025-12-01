@@ -3,7 +3,7 @@ pubDate: "June 27, 2025"
 author: Julie Hadley
 title: "Building Arizona's Next Generation of Pilots"
 description: "The desert skies above Arizona are busier than ever, and it's not just because of the stunning sunsets that draw pilots from around the world. The Grand Canyon State has quietly become one of America's premier pilot training destinations, with flight schools like SimpliFly Flight School leading the charge in developing the next generation of aviation professionals."
-heroImage: "/blog/airline-pilot-courses-at-simplifly-flight-school.webp"
+heroImage: "/blog/airline-pilot-courses-at-flight-school-simplifly-mesa-certified-flight-instructor.webp"
 readingTime: 4
 category: "Aviation Industry Insights"
 tags:

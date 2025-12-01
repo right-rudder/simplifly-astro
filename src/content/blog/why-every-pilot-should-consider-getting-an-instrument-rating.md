@@ -3,7 +3,7 @@ pubDate: "August 28, 2023"
 author: Blake Murphy
 title: "Why Every Pilot Should Consider Getting an Instrument Rating"
 description: "Are you a pilot wondering if getting an instrument rating is worth it? If so, you're not alone. Many pilots ask themselves the same question, and it's a decision that requires careful consideration. But before we delve into the benefits of an instrument rating, it's important to understand exactly what an instrument rating is."
-heroImage: "/blog/simplifly-student-pilot-taxiing-mesa-arizona.webp"
+heroImage: "/blog/student-pilot-taxiing-arizona-simplifly-arizona-flight-training.webp"
 readingTime: 4
 category: "Pilot Resources"
 tags:

@@ -3,7 +3,7 @@ pubDate: "December 15, 2025"
 author: Greg Hadley
 title: "Avionics Failures & Emergency Scenarios: What Every Student Should Know"
 description: "Learn how to recognize, manage, and respond to avionics failures in flight. Discover essential skills every student pilot should develop to handle emergencies confidently with SimpliFly Flight School in Mesa, AZ."
-heroImage: "/blog/aircraft-cockpit-night.jpg"
+heroImage: "/blog/aircraft-cockpit-night-simplifly-mesa-flight-school.jpg"
 readingTime: 6
 category: "Flight Training"
 tags:

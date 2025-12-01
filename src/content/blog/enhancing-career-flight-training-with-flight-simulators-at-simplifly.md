@@ -3,7 +3,7 @@ pubDate: "May 22, 2024"
 author: Blake Murphy
 title: "Enhancing Career Flight Training with Flight Simulators at SimpliFly"
 description: "At SimpliFly, we recognize the critical role that advanced simulation technology plays in career-oriented flight training. Our state-of-the-art flight simulators are an integral part of the curriculum, designed to provide aspiring commercial pilots with a robust and comprehensive training experience. These cutting-edge simulators offer a multitude of advantages that are crucial in shaping the skills and competencies of future aviators."
-heroImage: "/blog/simplifly-student-pilot-flying-over-mesa-arizona.webp"
+heroImage: "/blog/student-pilot-flying-over-arizona-simplifly-mesa-certified-flight-instructor.webp"
 readingTime: 4
 category: "Pilot Resources"
 tags:
@@ -27,7 +27,7 @@ Flight simulators at SimpliFly are pivotal in shaping the capabilities of future
 
 ---
 
-![SimpliFly flight school aircraft flying over valley of the sun](/blog/valley-of-the-sun-fly-over.webp)
+![SimpliFly flight school aircraft flying over valley of the sun](/blog/valley-of-the-sun-fly-over-simplifly-mesa-become-a-pilot.webp)
 _These views only come with enough simulator training!_
 
 ---
@@ -52,7 +52,7 @@ Visit SimpliFly Flight School in Mesa, AZ, and discover how our advanced simulat
 
 ---
 
-![SimpliFly flight school aircraft flying over valley of the sun view from the window](/blog/Phoenix-Valley-Flight.webp)
+![SimpliFly flight school aircraft flying over valley of the sun view from the window](/blog/phoenix-valley-flight-simplifly-arizona-pilot-training.webp)
 _The Phoenix Valley from the wing_
 
 ---

@@ -3,7 +3,7 @@ pubDate: "April 15, 2025"
 author: SimpliFly Flight School
 title: "SimpliFly Launches In-Person Ground School Sessions in Mesa, AZ"
 description: "SimpliFly Flight School is now offering 3-hour in-person ground school classes in Mesa, AZ for just $50. Open to students at any stage of training."
-heroImage: "/blog/simplifly-logo-bg-sky.jpg"
+heroImage: "/blog/logo-bg-sky-simplifly-arizona-flight-training.jpg"
 readingTime: 4
 category: "Announcements"
 tags:

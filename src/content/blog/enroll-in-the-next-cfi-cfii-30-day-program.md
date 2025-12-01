@@ -3,7 +3,7 @@ pubDate: "October 14, 2024"
 author: Greg Hadley
 title: "Enroll in the next CFI/CFII 30 Day Program"
 description: "SimpliFly Flight Training, located at Falcon Field in Mesa, AZ, is excited to announce its Accelerated CFI/CFII program. With classes starting on the 1st of each month, this small-group course (4-6 students) provides focused, hands-on instruction that has resulted in a 100% pass rate. Aspiring flight instructors looking to build their careers in Arizona now have a fast, reliable pathway to certification."
-heroImage: "/blog/simplifly-flight-school-female-pilots.webp"
+heroImage: "/blog/female-pilots-simplifly-arizona-certified-flight-instructor.webp"
 readingTime: 4
 category: "News"
 tags:

@@ -12,7 +12,7 @@ const coursesIndex = {
     // Top Header
     header: {
       stars: true,
-      imagePath: "/src/assets/airline-pilot-courses-at-simplifly-flight-school.webp",
+      imagePath: "/src/assets/airline-pilot-courses-at-flight-school-simplifly-arizona-flying-lessons.webp",
       imageAlt:
         "Photograph of a SimpliFly Flight School aircraft soaring over the Arizona landscape",
       headerH1: `Pilot <br>PROGRAMS</span>`,
