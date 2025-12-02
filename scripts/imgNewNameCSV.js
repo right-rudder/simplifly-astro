@@ -58,6 +58,8 @@ const CSV_ERRORS = {
 
 const IMG_EXT = [".jpg", ".jpeg", ".png", ".gif", ".webp", ".avif"];
 
+/* TODO : Use more relevant keywords */
+
 const keywords = {
   company: "simplifly",
   location: ["mesa", "arizona"],
@@ -93,6 +95,8 @@ const importFilePath = import.meta.url
   .replaceAll("/", "\\");
 const isCommandLineExecution = importFilePath === process.argv[1];
 
+/* TODO : Add weight to more important keywords? */
+
 function randomFromArray(array) {
   return array[Math.floor(Math.random() * array.length)];
 }
@@ -120,6 +124,10 @@ async function scanDirectory(dir, extensions) {
 
   return files;
 }
+
+/* TODO : Add some sort of protection or warning to duplicate names?
+OBS: The imgRenaming.js script already checks if a file with the new name exists before running the renaming operation, and skips it if that is the case. 
+Maybe a proper treatment could be done in that step, like generating a new csv file for the images that weren't renamed due to any given circumstance. */
 
 function generateNewImagePath(filePath) {
   const parsedPath = path.parse(filePath);
@@ -184,7 +192,7 @@ async function generateCSV() {
 
   try {
     await fs.promises.writeFile(
-      path.join(__dirname, "output.csv"),
+      path.join(__dirname, "images-to-rename.csv"),
       csvString,
       "utf-8",
     );
