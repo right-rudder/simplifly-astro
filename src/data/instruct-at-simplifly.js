@@ -1,7 +1,7 @@
 const instructAtSimplifly = {
   data: {
     //SEO Header Stuff
-    pageTitle: "Start Your Pilot Career || SimpliFly Flight School, Mesa, AZ",
+    pageTitle: "Start Your Pilot Career | SimpliFly Flight School, Mesa, AZ",
     pageDescription:
       "Begin your pilot career as a certified flight instructor (CFI) at SimpliFly Flight School. We offer a 30-day CFI program to help you build the necessary hours to become an airline pilot. Contact us today!",
     pageKeywords:
@@ -11,7 +11,7 @@ const instructAtSimplifly = {
     header: {
       stars: true,
       imagePath:
-        "/src/assets/airline-pilot-courses-at-simplifly-flight-school.webp",
+        "/src/assets/airline-pilot-courses-at-flight-school-simplifly-arizona-flying-lessons.webp",
       imageAlt:
         "SimpliFly Flight School airplane landing at Falcon Field Airport in Mesa, Arizona",
       headerH1: `Career Track<br>Pilots`,
@@ -103,7 +103,7 @@ const instructAtSimplifly = {
         link: "/accelerated-30-day-cfi-program",
         primary: true,
       },
-      imagePath: "/src/assets/female_pilot_smiling.webp",
+      imagePath: "/src/assets/female_pilot_smiling-simplifly-mesa-become-a-pilot.webp",
       imageAlt:
         "sun city aviation founder luke poulos in front of a sun city airplane",
     },

@@ -5,12 +5,12 @@ const multiEngineData = {
   pageDescription:
     "Earn your Multi-Engine Rating at SimpliFly Flight School in Mesa, AZ. Master twin-engine aircraft operations and expand your career opportunities with expert training.",
   pageKeywords:
-    "multi-engine rating Mesa AZ, twin-engine pilot training Mesa, flight school Mesa AZ, commercial pilot training Mesa, aviation school Mesa AZ, multi-engine certification Mesa",
+    "multi-engine rating Mesa AZ, twin-engine pilot training Mesa, flight school Mesa AZ, commercial pilot training Mesa, aviation school Mesa AZ, multi-engine certification Mesa, flight training Arizona",
 
   // Top Header
   header: {
     stars: true,
-    imagePath: "/src/assets/multi-pass.webp",
+    imagePath: "/src/assets/multi-pass-simplifly-mesa-flight-training.webp",
     imageAlt: "SimpliFly Flight School student by a multi-engine airplane",
     headerH1: `Multi-Engine <br>RATING</span>`,
     paragraph: `Take your flying skills to the next level with SimpliFly Flight School's Multi-Engine Rating program. Learn to operate twin-engine aircraft with confidence and precision.`,
@@ -57,7 +57,7 @@ const multiEngineData = {
     ],
 
     cta: {
-      imagePath: "/src/assets/female_pilot_smiling.webp",
+      imagePath: "/src/assets/female_pilot_smiling-simplifly-mesa-become-a-pilot.webp",
       imageAlt: "Female pilot smiling",
       title: "Enroll in the Multi-Engine Rating Program",
       description:

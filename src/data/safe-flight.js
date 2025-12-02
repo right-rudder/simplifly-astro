@@ -51,7 +51,7 @@ const contentSplit = {
     link: "/enroll-at-simplifly",
     primary: true,
   },
-  imagePath: "/src/assets/simplifly-flight-school-mesa-az-student-pilot-with-famyly-certified-private-pilot.jpg",
+  imagePath: "/src/assets/az-student-pilot-with-famyly-certified-private-pilot-simplifly-arizona-become-a-pilot.jpg",
   imageAlt: "Certified flight instructor assisting a student pilot in a safe training environment",
 };
 

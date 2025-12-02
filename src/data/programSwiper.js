@@ -6,7 +6,7 @@ const programsSwiper = {
   cards: [
     {
       title: "Private Pilot",
-      imagePath: "/src/assets/two-pilot-smiling.webp",
+      imagePath: "/src/assets/two-pilot-smiling-simplifly-arizona-multi-engine-rating.webp",
       imageAlt:
         "SimpliFly Flight School student and flight instructor in a Cessna airplane",
       description:
@@ -16,7 +16,7 @@ const programsSwiper = {
     {
       title: "Instrument Rating",
       imagePath:
-        "/src/assets/flying-a-multi-engine-plane-at-simplifly-flight-school-mesa-az.jpg",
+        "/src/assets/flying-a-multi-engine-plane-at-az-simplifly-arizona-flight-training.jpg",
       imageAlt: "SimpliFly Flight School Cirrus airplane instrument panel",
       description:
         "Navigate through clouds and the skies with precision through our Instrument Rating course.",
@@ -24,7 +24,7 @@ const programsSwiper = {
     },
     {
       title: "Commercial Pilot",
-      imagePath: "/src/assets/simplifly-cfi.webp",
+      imagePath: "/src/assets/cfi-simplifly-arizona-become-a-pilot.webp",
       imageAlt:
         "SimpliFly Flight School student and flight instructor in a Cessna airplane cockpit",
       description:
@@ -33,7 +33,7 @@ const programsSwiper = {
     },
     {
       title: "Multi-Engine Rating",
-      imagePath: "/src/assets/multi-pass.webp",
+      imagePath: "/src/assets/multi-pass-simplifly-mesa-flight-training.webp",
       imageAlt: "SimpliFly Flight School student by a multi-engine airplane",
       description:
         "Master the art of multi engine flying and unlock new horizons in your aviation career.",
@@ -41,7 +41,7 @@ const programsSwiper = {
     },
     {
       title: "Certified Flight Instructor",
-      imagePath: "/src/assets/simplifly-flexible-pilot-training-airline-cessna.webp",
+      imagePath: "/src/assets/flexible-airline-cessna-simplifly-arizona-private-pilot.webp",
       imageAlt:
         "SimpliFly Flight School student and flight instructor in a Cessna airplane cockpit",
       description:
@@ -50,7 +50,7 @@ const programsSwiper = {
     },
     {
       title: "Certified Flight Instructor Instruments",
-      imagePath: "/src/assets/SimpliFly-Flight-Training-Programs-CFII.jpg",
+      imagePath: "/src/assets/programs-cfii-simplifly-arizona-flight-school.jpg",
       imageAlt:
         "SimpliFly Flight School student and flight instructor in a Cessna airplane cockpit",
       description:
@@ -59,7 +59,7 @@ const programsSwiper = {
     },
     {
       title: "Multi-Engine Instructor",
-      imagePath: "/src/assets/SimpliFly-Flight-Training-Programs-MEI.png",
+      imagePath: "/src/assets/programs-mei-simplifly-mesa-pilot-training.png",
       imageAlt:
         "SimpliFly Flight School student and flight instructor in a Cessna airplane cockpit",
       description:

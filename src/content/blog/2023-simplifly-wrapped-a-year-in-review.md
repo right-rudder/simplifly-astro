@@ -3,7 +3,7 @@ pubDate: "January 15, 2024"
 author: Blake Murphy
 title: "2023 SimpliFly Wrapped: A Year in Review"
 description: "2023 was a big year for SimpliFly Flight School. From our operations out of Falcon Field Airport (KFFZ) in Mesa, Arizona, we experienced what can only be described as a record year. New students started their flight journeys."
-heroImage: "/blog/Simplifly-sunset-pilot.jpg"
+heroImage: "/blog/sunset-pilot-simplifly-mesa-pilot-training.jpg"
 readingTime: 4
 category: "News"
 tags:
@@ -28,7 +28,7 @@ Our expert team of CFIs logged countless hours this year. As we grew, so did our
 
 ---
 
-![Putting in the time - One of our students logging flight hours over the Phoenix Valley](/blog/simplifly-pilot-cfi-flying.webp)
+![Putting in the time - One of our students logging flight hours over the Phoenix Valley](/blog/pilot-cfi-flying-simplifly-arizona-multi-engine-rating.webp)
 _Putting in the time - One of our students logging flight hours over the Phoenix Valley_
 
 ---
@@ -39,7 +39,7 @@ A leading indicator of success at Simplifly Flight School is our checkride pass 
 
 ---
 
-![Hard to beat the views from the Arizona skies](/blog/SimpliFly-arizona-skies.webp)
+![Hard to beat the views from the Arizona skies](/blog/skies-simplifly-arizona-certified-flight-instructor.webp)
 _Hard to beat the views from the Arizona skies_
 
 ---
@@ -62,7 +62,7 @@ To keep up with the demand for flight school this year, we’ve grown our fleet 
 
 ---
 
-![Come check out our fleet at Falcon Field Airport (KFFZ)!](/blog/SimpliFly-KFFZ-aircraft.webp)
+![Come check out our fleet at Falcon Field Airport (KFFZ)!](/blog/kffz-aircraft-simplifly-mesa-instrument-rating.webp)
 _Come check out our fleet at Falcon Field Airport (KFFZ)!_
 
 ---

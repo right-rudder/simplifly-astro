@@ -10,7 +10,7 @@ interface Props {
 const {
   title = SITE_TITLE,
   description = SITE_DESCRIPTION,
-  logoUrl = "/simplifly_250.webp"
+  logoUrl = "/simplifly_250-simplifly-arizona-flight-training.webp"
 } = Astro.props;
 
 const fullLogoUrl = new URL(logoUrl, Astro.site?.toString() || "https://simpliflyco.com").toString();

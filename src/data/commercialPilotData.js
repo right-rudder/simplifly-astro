@@ -10,7 +10,7 @@ const commercialPilotData = {
   // Top Header
   header: {
     stars: true,
-    imagePath: "/src/assets/Simplifly-flight-school-pilots.png",
+    imagePath: "/src/assets/pilots-simplifly-mesa-private-pilot.png",
     imageAlt:
       "SimpliFly Flight School student and flight instructor in a Cessna airplane cockpit",
     headerH1: `Commercial <br>PILOT LICENSE</span>`,
@@ -49,7 +49,7 @@ const commercialPilotData = {
     ],
 
     cta: {
-      imagePath: "/src/assets/female_pilot_smiling.webp",
+      imagePath: "/src/assets/female_pilot_smiling-simplifly-mesa-become-a-pilot.webp",
       imageAlt: "Female pilot smiling",
       title: "Enroll in the Commercial Pilot Program",
       description:

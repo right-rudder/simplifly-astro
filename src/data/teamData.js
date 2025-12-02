@@ -10,7 +10,7 @@ const teamData = {
   // Top Header
   header: {
     stars: true,
-    imagePath: "/src/assets/simplifly-student-pilot-and-cfi-smiling-croped.jpg",
+    imagePath: "/src/assets/student-pilot-and-cfi-smiling-croped-simplifly-mesa-certified-flight-instructor.jpg",
     imageAlt:
       "SimpliFly Flight School student and flight instructor in a Cessna airplane cockpit",
     headerH1: `Meet Our <br>TEAM</span>`,
@@ -37,14 +37,14 @@ const teamData = {
     
     leadership:[
       {
-        img: "/src/assets/crew-simplifly-Greg-updated-headshot.jpg",
+        img: "/src/assets/crew-greg-updated-headshot-simplifly-arizona-flying-lessons.jpg",
         alt: "Greg Hadley Co-Owner at SimpliFly Flight School",
         name: "Greg Hadley",
         title: "Owner",
         summary: "Greg has had a lifelong passion for airplanes and flying, which began at a young age. While still in high school, he worked at Sky Park in Bountiful, Utah, and earned his private pilot's license. Though life led him through a successful career in HVAC construction and over 20 years in real estate, he has returned to his first love: aviation. Together with his wife, he owns and operates SimpliFly, a venture that combines their shared love for flying. As he continues to work toward earning additional ratings, Greg balances his professional pursuits with personal interests that include fishing, spending time with family, and solving puzzles.",
       },
       {
-        img: "/src/assets/Julie-Hadley.webp",
+        img: "/src/assets/julie-hadley-simplifly-arizona-multi-engine-rating.webp",
         alt: "Julie Hadley Co-Owner at SimpliFly Flight School",
         name: "Julie Hadley",
         title: "Owner",
@@ -57,87 +57,87 @@ const teamData = {
 
     team:[
       {
-        img: "/src/assets/Scott-Wilson.webp",
+        img: "/src/assets/scott-wilson-simplifly-mesa-instrument-rating.webp",
         name: "Scott Wilson",
         title: "A&P, IA, MEI",
       },
       {
-        img: "/src/assets/Anders-Jones.webp",
+        img: "/src/assets/anders-jones-simplifly-mesa-discovery-flight.webp",
         name: "Anders Jones",
         title: "CFI/CFII",
       },
       {
-        img: "/src/assets/Bridon-Bowen.webp",
+        img: "/src/assets/bridon-bowen-simplifly-mesa-multi-engine-rating.webp",
         name: "Bridon Bowen",
         title: "CFI/CFII",
       },
       {
-        img: "/src/assets/Blake-Meservy.webp",
+        img: "/src/assets/blake-meservy-simplifly-arizona-private-pilot.webp",
         name: "Blake Meservy",
         title: "CFI/CFII",
       },
       {
-        img: "/src/assets/Davin-Hansen.webp",
+        img: "/src/assets/davin-hansen-simplifly-mesa-instrument-rating.webp",
         name: "Davin Hansen",
         title: "CFI/CFII",
       },
       {
-        img: "/src/assets/Adel-Ho.webp",
+        img: "/src/assets/adel-ho-simplifly-mesa-certified-flight-instructor.webp",
         name: "Adel Ho",
         title: "CFI/CFII/MEI",
       },
       {
-        img: "/src/assets/Jake-Horn.webp",
+        img: "/src/assets/jake-horn-simplifly-arizona-instrument-rating.webp",
         name: "Jake Horn",
         title: "CFI/CFII/MEI",
       },
       {
-        img: "/src/assets/Josh-Perkins.webp",
+        img: "/src/assets/josh-perkins-simplifly-mesa-certified-flight-instructor.webp",
         name: "Josh Perkins",
         title: "CFI/CFII",
       },
       {
-        img: "/src/assets/Porter-Arnett.webp",
+        img: "/src/assets/porter-arnett-simplifly-arizona-discovery-flight.webp",
         name: "Porter Arnett",
         title: "CFI/CFII",
       },
       {
-        img: "/src/assets/Jessica-Roy.webp",
+        img: "/src/assets/jessica-roy-simplifly-arizona-commercial-pilot.webp",
         name: "Jessica Roy",
         title: "CFI/CFII",
       },
       {
-        img: "/src/assets/Zach-Figgins.webp",
+        img: "/src/assets/zach-figgins-simplifly-arizona-multi-engine-rating.webp",
         name: "Zach Figgins",
         title: "CFI/CFII",
       },
       {
-        img: "/src/assets/Isaac-Young.webp",
+        img: "/src/assets/isaac-young-simplifly-arizona-pilot-training.webp",
         name: "Isaac Young",
         title: "CFI/CFII/MEI",
       },
       {
-        img: "/src/assets/Mitch-Lovell.webp",
+        img: "/src/assets/mitch-lovell-simplifly-arizona-private-pilot.webp",
         name: "Mitch Lovell",
         title: "CFI/CFII",
       },
       {
-        img: "/src/assets/Devon-Webb.webp",
+        img: "/src/assets/devon-webb-simplifly-arizona-flight-school.webp",
         name: "Devon Webb",
         title: "CFI/CFII",
       },
       {
-        img: "/src/assets/crew-simplifly-Garrett-Ruddell-CFI.jpg",
+        img: "/src/assets/crew-garrett-ruddell-cfi-simplifly-mesa-instrument-rating.jpg",
         name: "Garrett Ruddell",
         title: "CFI",
       },
       {
-        img: "/src/assets/dakota-rice-offica-assistant-simplifly-cropped.jpg",
+        img: "/src/assets/dakota-rice-offica-assistant-cropped-simplifly-mesa-become-a-pilot.jpg",
         name: "Dakota Rice",
         title: "Office Assistant",
       },
       {
-        img: "/src/assets/crew-simplifly-daisy-carter-office-assistant.webp",
+        img: "/src/assets/crew-daisy-carter-office-assistant-simplifly-arizona-multi-engine-rating.webp",
         name: "Daisy Carter",
         title: "Office Assistant",
       },

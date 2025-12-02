@@ -3,7 +3,7 @@ pubDate: "July 27, 2023"
 author: Blake Murphy
 title: "What to Expect in Accelerated Flight Training as a Full Time Student Pilot"
 description: "Are you thinking of becoming a pilot? If so, you may be considering accelerated flight training. This type of training can help you earn your private pilot certificate in a shorter amount of time than traditional training."
-heroImage: "/blog/arms-up-wide-pilot.webp"
+heroImage: "/blog/arms-up-wide-pilot-simplifly-arizona-private-pilot.webp"
 readingTime: 4
 category: "Pilot Resources"
 tags:

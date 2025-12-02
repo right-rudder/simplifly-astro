@@ -3,7 +3,7 @@ pubDate: "February 7, 2024"
 author: Blake Murphy
 title: "How to Choose a Flight School: SimpliFly's Guide"
 description: "Choosing a flight school can be a daunting task, especially for those just breaching into the wide world of aviation. With a wealth of schools to choose from and even more ways to customize your certification path, it’s no wonder the prospect of choosing once (and choosing correctly) is intimidating."
-heroImage: "/blog/ppl-pass.webp"
+heroImage: "/blog/ppl-pass-simplifly-mesa-become-a-pilot.webp"
 readingTime: 4
 category: "Pilot Resources"
 tags:
@@ -55,7 +55,7 @@ SimpliFly boasts a team of experienced and active aviation professionals, each i
 
 ---
 
-![Get your Multi Engine Rating here at Simplifly](/blog/multi-pass.webp)
+![Get your Multi Engine Rating here at Simplifly](/blog/multi-pass-simplifly-arizona-commercial-pilot.webp)
 _Get your Multi Engine Rating here at SimpliFly_
 
 ---
@@ -66,7 +66,7 @@ Safety is paramount in this process, and Simplifly’s safety record reflects ho
 
 ---
 
-![Passing checkrides with ease](/blog/pilot_pass_checkride_cessna.webp)
+![Passing checkrides with ease](/blog/pilot_pass_checkride_cessna-simplifly-arizona-flying-lessons.webp)
 _Passing checkrides with ease_
 
 ---
@@ -93,7 +93,7 @@ Depending on your ability to commit time, you’ll want a flight school that is 
 
 ---
 
-![Come meet the team!](/blog/simplifly-team.webp)
+![Come meet the team!](/blog/team-simplifly-mesa-private-pilot.webp)
 _Come meet the team!_
 
 ---

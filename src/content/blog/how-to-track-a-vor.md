@@ -3,7 +3,7 @@ pubDate: "December 8, 2023"
 author: Blake Murphy
 title: "How to Track a VOR"
 description: "A VOR, or Very High Frequency Omnidirectional Range, is a navigation tool in aviation. It comprises a ground station and an aircraft receiver, which work together to provide pilots with accurate position and course information during flights."
-heroImage: "/blog/pxr-vortac.webp"
+heroImage: "/blog/pxr-vortac-simplifly-arizona-become-a-pilot.webp"
 readingTime: 4
 category: "Pilot Resources"
 tags:
@@ -39,7 +39,7 @@ Imagine you are south of the Phoenix VORTAC (PXR) over past Tempe near Chandler 
 
 ---
 
-![Phoenix Class B Airspace](/blog/phoenix-pxr-chandler-kchd.webp)
+![Phoenix Class B Airspace](/blog/phoenix-pxr-chandler-kchd-simplifly-mesa-private-pilot.webp)
 _Phoenix Class B Airspace Chart_
 
 ---
@@ -52,7 +52,7 @@ After flying towards and then reaching Phoenix VORTAC, we head home to KFFZ in M
 
 ---
 
-![Phoenix Falcon Field Airspace](/blog/phoenix-pxr-falcon-field-kffz.webp)
+![Phoenix Falcon Field Airspace](/blog/phoenix-pxr-falcon-field-kffz-simplifly-arizona-discovery-flight.webp)
 _Phoenix Falcon Field Airspace Chart_
 
 ---

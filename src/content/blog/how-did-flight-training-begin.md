@@ -3,7 +3,7 @@ pubDate: "March 6, 2024"
 author: Blake Murphy
 title: "How Did Flight Training Begin?"
 description: "Here at Simplifly, we would like to take a moment to look back at how we reached modern-day flight training by rewinding the years."
-heroImage: "/blog/wing-pitot-mountain.webp"
+heroImage: "/blog/wing-pitot-mountain-simplifly-arizona-certified-flight-instructor.webp"
 readingTime: 4
 category: "Pilot Resources"
 tags:

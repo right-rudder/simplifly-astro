@@ -5,12 +5,12 @@ const whyData = {
   pageDescription:
     "Discover why SimpliFly Flight School in Mesa, AZ, is the top choice for aspiring pilots. With experienced instructors, modern aircraft, and personalized training, we help you achieve your aviation dreams.",
   pageKeywords:
-    "flight school Mesa AZ, pilot training Mesa, aviation school Mesa, personalized flight training, modern aircraft Mesa AZ, experienced flight instructors Mesa AZ",
+    "flight school Mesa AZ, pilot training Mesa, aviation school Mesa, personalized flight training, modern aircraft Mesa AZ, experienced flight instructors Mesa AZ, flight training Arizona",
 
   // Top Header
   header: {
     stars: true,
-    imagePath: "/src/assets/student-pilot-commemorating-their-new-license.jpg",
+    imagePath: "/src/assets/student-pilot-commemorating-their-new-license-simplifly-mesa-discovery-flight.jpg",
     imageAlt: "SimpliFly Flight School campus and facilities",
     headerH1: `Why Choose <br>SimpliFly?</span>`,
     paragraph: `Discover the reasons why SimpliFly Flight School stands out as the premier choice for aspiring pilots. Our state-of-the-art facilities, experienced instructors, and personalized training programs are designed to help you achieve your aviation goals.`,
@@ -109,7 +109,7 @@ const whyData = {
       primary: true,
     },
     imagePath:
-      "/src/assets/female-student-pilot-commemorating-her-new-license.jpg",
+      "/src/assets/female-student-pilot-commemorating-her-new-license-simplifly-arizona-private-pilot.jpg",
     imageAlt: "SimpliFly Flight School student smiling in front of an airplane",
   },
 };

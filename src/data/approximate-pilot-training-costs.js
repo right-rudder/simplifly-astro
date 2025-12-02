@@ -11,7 +11,7 @@ const aproxPilotTrainingCosts = {
     //top header
     header: {
       stars: true,
-      imagePath: "/src/assets/Simplifly-flight-school-happy-pilots-2.jpg",
+      imagePath: "/src/assets/happy-pilots-2-simplifly-arizona-flying-lessons.jpg",
       imageAlt:
         "SimpliFly Flight School airplane landing at Falcon Field Airport in Mesa, Arizona",
       headerH1: `Approximate<br>Training Costs`,

@@ -3,7 +3,7 @@ pubDate: "September 11, 2024"
 author: Greg Hadley
 title: "Why Complete Zero-to-Hero Pilot Training at SimpliFly Flight School?"
 description: "Becoming a professional pilot is a significant goal that requires a dedicated and thorough training process. SimpliFly Flight School in Mesa, Arizona, offers a zero-to-hero pilot training program designed to guide students from their very first flight lesson all the way to obtaining a Certified Flight Instructor - Instrument (CFII) certification. This structured program allows aspiring pilots to achieve multiple certifications, all while training under Part 61 regulations, providing more flexibility in both schedule and training methods."
-heroImage: "/blog/the-da40-fleet-at-falcon-field-airport.webp"
+heroImage: "/blog/the-da40-fleet-at-falcon-field-airport-simplifly-mesa-flying-lessons.webp"
 readingTime: 4
 category: "Pilot Resources"
 tags:

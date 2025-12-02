@@ -3,7 +3,7 @@ pubDate: "July 8, 2025"
 author: Greg Hadley
 title: "The Student Pilot's Guide to Success: Avoiding Common Training Pitfalls"
 description: "Discover the top 10 mistakes student pilots make and how SimpliFly Flight School in Mesa, AZ helps you avoid them with expert instruction, modern training tools, and a supportive learning environment."
-heroImage: "/blog/SimplyFly-Flight-School-Overwhelmed-student.webp"
+heroImage: "/blog/simplyfly-overwhelmed-student-simplifly-arizona-private-pilot.webp"
 readingTime: 4
 category: "Tips & Tricks"
 tags:

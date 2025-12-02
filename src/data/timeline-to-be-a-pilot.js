@@ -10,7 +10,7 @@ const timelineToBePilot = {
     //top header
     header: {
       stars: true,
-      imagePath: "/src/assets/airplane-streaking-by-a-runway-in-mesa-az.webp",
+      imagePath: "/src/assets/airplane-streaking-by-a-runway-in-az-simplifly-arizona-commercial-pilot.webp",
       imageAlt:
         "SimpliFly Flight School airplane landing at Falcon Field Airport in Mesa, Arizona",
       headerH1: `Pilot Training<br>Timeline`,
@@ -53,7 +53,7 @@ const timelineToBePilot = {
         link: "/enroll-at-simplifly",
         primary: true,
       },
-      imagePath: "/src/assets/airline_pilot.webp",
+      imagePath: "/src/assets/airline_pilot-simplifly-arizona-flight-school.webp",
       imageAlt:
         "SimpliFly Flight School airline pilot next to a commercial airplane",
     },
@@ -67,7 +67,7 @@ const timelineToBePilot = {
         "The NTSB reported that the fatal accident rate for general aviation has been declining for over a decade, and in 2020, it reached its lowest level ever recorded.",
         "SimpliFly takes safety seriously. We are a team of highly trained professionals. In addition, our aircraft are meticulously maintained and inspected regularly.",
       ],
-      imagePath: "/src/assets/preflight.webp",
+      imagePath: "/src/assets/preflight-simplifly-mesa-become-a-pilot.webp",
       imageAlt:
         "SimpliFly Flight School student and instructor doing a preflight check on a Cessna 172",
     },

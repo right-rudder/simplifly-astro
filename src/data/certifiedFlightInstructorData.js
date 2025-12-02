@@ -10,7 +10,7 @@ const certifiedFlightInstructorData = {
   // Top Header
   header: {
     stars: true,
-    imagePath: "/src/assets/airline-pilot-courses-at-simplifly-flight-school.webp",
+    imagePath: "/src/assets/airline-pilot-courses-at-flight-school-simplifly-arizona-flying-lessons.webp",
     imageAlt:
       "SimpliFly Flight School student and flight instructor in a Cessna airplane cockpit",
     headerH1: `Certified Flight <br>INSTRUCTOR (CFI)</span>`,
@@ -67,7 +67,7 @@ const certifiedFlightInstructorData = {
     ],
 
     cta: {
-      imagePath: "/src/assets/female_pilot_smiling.webp",
+      imagePath: "/src/assets/female_pilot_smiling-simplifly-mesa-become-a-pilot.webp",
       imageAlt: "Female pilot smiling",
       title: "Enroll in the CFI Program",
       description:

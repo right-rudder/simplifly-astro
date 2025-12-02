@@ -35,7 +35,7 @@ const { content } = Astro.props;
       content.bullets && (
         <div class="mt-6 flex flex-col justify-center align-middle items-center">
           {content.bulletsTitle && (
-            <h4
+            <p
               class="font-title text-3xl mt-8 mb-3"
               set:html={content.bulletsTitle}
             />

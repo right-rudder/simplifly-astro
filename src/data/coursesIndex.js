@@ -12,7 +12,7 @@ const coursesIndex = {
     // Top Header
     header: {
       stars: true,
-      imagePath: "/src/assets/airline-pilot-courses-at-simplifly-flight-school.webp",
+      imagePath: "/src/assets/airline-pilot-courses-at-flight-school-simplifly-arizona-flying-lessons.webp",
       imageAlt:
         "Photograph of a SimpliFly Flight School aircraft soaring over the Arizona landscape",
       headerH1: `Pilot <br>PROGRAMS</span>`,
@@ -23,11 +23,12 @@ const coursesIndex = {
           link: "/enroll-at-simplifly",
           primary: false,
         },
-        {
+        /* TODO Guilherme : Remove? Not sure where this is supposed to point to */
+        /* {
           name: "Program Guide",
           link: "/path",
           primary: false,
-        },
+        }, */
       ],
     },
   },

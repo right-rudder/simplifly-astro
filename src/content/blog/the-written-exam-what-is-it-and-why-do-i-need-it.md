@@ -3,7 +3,7 @@ pubDate: "January 24, 2024"
 author: Blake Murphy
 title: "The Written Exam: What Is It and Why Do I Need It?"
 description: "The process of becoming a private pilot is an exciting venture filled with challenges and milestones. One significant checkpoint in this process is the Private Pilot License (PPL) written exam."
-heroImage: "/blog/pexels-photo-249360.webp"
+heroImage: "/blog/pexels-photo-249360-simplifly-arizona-flight-training.webp"
 readingTime: 4
 category: "Pilot Resources"
 tags:
@@ -35,7 +35,7 @@ The written exam focuses on assessing your understanding of vital aviation conce
 
 ---
 
-![Understanding safety and flight procedure from a conceptual perspective is key to eventually deploying them as a pilot](/blog/pilot-silhouette.webp)
+![Understanding safety and flight procedure from a conceptual perspective is key to eventually deploying them as a pilot](/blog/pilot-silhouette-simplifly-arizona-become-a-pilot.webp)
 _Understanding safety and flight procedure from a conceptual perspective is key to eventually deploying them as a pilot_
 
 ---
@@ -57,7 +57,7 @@ Mastering the PPL written exam demands a direct, strategic, and confident mindse
 
 ---
 
-![Happy flying!](/blog/Simpifly-Smile.webp)
+![Happy flying!](/blog/simpifly-smile-simplifly-mesa-pilot-training.webp)
 _Happy flying!_
 
 ---

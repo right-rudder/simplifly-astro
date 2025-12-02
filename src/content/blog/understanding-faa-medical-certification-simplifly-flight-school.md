@@ -3,7 +3,7 @@ pubDate: "October 15, 2025"
 author: Greg Hadley
 title: "Inside the FAA Medical Process: What Every Future Pilot Should Know"
 description: "Learn how to prepare for your FAA medical certification, understand the different medical classes, and ensure a smooth approval process before beginning your pilot training at SimpliFly Flight School in Mesa, AZ."
-heroImage: "/blog/doctor-lab-coat-stethoscope.jpg"
+heroImage: "/blog/doctor-lab-coat-stethoscope-simplifly-arizona-flying-lessons.jpg"
 readingTime: 7
 category: "Pilot Resources"
 tags:

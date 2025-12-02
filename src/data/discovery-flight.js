@@ -11,7 +11,7 @@ const discoveryFlight = {
     //top header
     header: {
       stars: true,
-      imagePath: "/src/assets/Simplifly-flight-school-discovery-flight.jpg",
+      imagePath: "/src/assets/discovery-flight-simplifly-mesa-multi-engine-rating.jpg",
       imageAlt: "SimpliFly Flight School flight over Mesa, AZ",
       headerH1: `Discovery Flight`,
       paragraph:

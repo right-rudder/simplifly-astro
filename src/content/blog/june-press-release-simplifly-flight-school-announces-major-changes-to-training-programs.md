@@ -3,7 +3,7 @@ pubDate: "June 21, 2024"
 author: Blake Murphy
 title: "June Press Release: SimpliFly Flight School Announces Major Changes to Training Programs"
 description: "SimpliFly Flight School, the flagship flight school for aspiring professional pilots in Mesa, AZ, is excited to announce significant updates to its training programs. These changes are designed to streamline the training process and better prepare students for successful careers as airline pilots."
-heroImage: "/blog/simplifly-flight-school-low-pass.png"
+heroImage: "/blog/low-pass-simplifly-arizona-flying-lessons.png"
 readingTime: 4
 category: "News"
 tags:
@@ -25,7 +25,7 @@ SimpliFly has established itself as a go-to Part 61 flight school for pilot trai
 
 ---
 
-![Cessna 172 Skyhawk](/blog/inside-the-diamond-da40-multi-engine-aircraft-at-simplifly.webp)
+![Cessna 172 Skyhawk](/blog/inside-the-diamond-da40-multi-engine-aircraft-at-simplifly-simplifly-arizona-become-a-pilot.webp)
 _SimpliFly conducts training over the unique landscapes of the Phoenix Valley_
 
 ---
@@ -48,7 +48,7 @@ SimpliFly continues to offer its renowned multi-engine training program, a cruci
 
 ---
 
-![Cessna 172 Skyhawk](/blog/airplane-landing-at-falcon-field-airport-pilot-training-mesa-arizona.webp)
+![Cessna 172 Skyhawk](/blog/airplane-landing-at-falcon-field-airport-arizona-simplifly-arizona-certified-flight-instructor.webp)
 _The Multi-Engine Rating is a part of the training program at SimpliFly_
 
 ---
@@ -61,7 +61,7 @@ SimpliFly Flight School remains committed to providing top-notch pilot training 
 
 ---
 
-![Cessna 172 Skyhawk](/blog/happy-visitors-at-simplifly-flight-school-in-mesa-arizona-for-pilot-training.webp)
+![Cessna 172 Skyhawk](/blog/happy-visitors-at-in-for-pilot-training-simplifly-mesa-instrument-rating.webp)
 _SimpliFly offers visits to their flight school too_
 
 ---

@@ -2,8 +2,8 @@
 pubDate: "August 15, 2024"
 author: Blake Murphy
 title: "Why Choose a Part 61 Flight School?"
-description: "If you’ve ever thought about becoming a pilot, now is the perfect time to start. SimpliFly Flight School, located right here in Mesa, Arizona, can help you reach your goals. Learning to fly is more than just a skill—it’s an opportunity to expand your horizons."
-heroImage: "/blog/inside-the-diamond-da40-multi-engine-aircraft-at-simplifly.webp"
+description: "Still deciding where to start your flight training lessons? At Simplifly, a part 61 flight school, we offer the very adaptable flight training syllabus derived from the part 61 characteristics. Enroll now at Simplifly's office in Mesa, Arizona and we will prepare the best flight lesson plan tailored specifically for you."
+heroImage: "/blog/inside-the-diamond-da40-multi-engine-aircraft-at-simplifly-simplifly-arizona-become-a-pilot.webp"
 readingTime: 4
 category: "Pilot Resources"
 tags:

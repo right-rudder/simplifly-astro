@@ -15,7 +15,7 @@ const contactConfirmation = {
 
     header: {
       imagePath:
-        "/src/assets/Simplifly-flight-school-discovery-flight.jpg",
+        "/src/assets/discovery-flight-simplifly-mesa-multi-engine-rating.jpg",
       imageAlt: `${COMPANY_NAME} crew pulling plane from hangar`,
       headerH1: "THANK YOU",
       paragraph:

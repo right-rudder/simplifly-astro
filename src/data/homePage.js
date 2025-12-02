@@ -8,7 +8,7 @@ const homePage = {
 
     //top header
     header: {
-      imagePath: "/src/assets/DSC02358 copy.png",
+      imagePath: "/src/assets/dsc02358 copy-simplifly-arizona-multi-engine-rating.png",
       imageAlt: "SimpliFly Flight School Team at the runway",
       headerH1: `PILOT TRAINING MADE SIMPLE`,
       paragraph:
@@ -30,57 +30,57 @@ const homePage = {
     airlinesCloud: {
       airlines: [
         {
-          imagePath: "/src/assets/southwest-airlines-logo.webp",
+          imagePath: "/src/assets/southwest-airlines-logo-simplifly-mesa-commercial-pilot.webp",
           imageAlt: "Southwest Airlines Logo",
           link: "https://www.southwest.com/",
         },
         {
-          imagePath: "/src/assets/allegiant-air-logo.webp",
+          imagePath: "/src/assets/allegiant-air-logo-simplifly-arizona-commercial-pilot.webp",
           imageAlt: "Allegiant Airlines Logo",
           link: "https://www.allegiantair.com/",
         },
         {
-          imagePath: "/src/assets/frontier-airlines-logo.webp",
+          imagePath: "/src/assets/frontier-airlines-logo-simplifly-arizona-flight-school.webp",
           imageAlt: "Frontier Airlines Logo",
           link: "https://www.flyfrontier.com/",
         },
         {
-          imagePath: "/src/assets/hawaiian-airlines-Logo.webp",
+          imagePath: "/src/assets/hawaiian-airlines-logo-simplifly-arizona-private-pilot.webp",
           imageAlt: "Hawaiian Airlines Logo",
           link: "https://www.hawaiianairlines.com/",
         },
         {
-          imagePath: "/src/assets/skywest-airlines-logo.webp",
+          imagePath: "/src/assets/skywest-airlines-logo-simplifly-arizona-instrument-rating.webp",
           imageAlt: "Skywest Airlines Logo",
           link: "https://www.skywest.com/",
         },
         {
-          imagePath: "/src/assets/envoy-air-logo.webp",
+          imagePath: "/src/assets/envoy-air-logo-simplifly-mesa-multi-engine-rating.webp",
           imageAlt: "Envoy Air Logo",
           link: "https://www.envoyair.com/",
         },
         {
-          imagePath: "/src/assets/Republic-Airways-Logo.webp",
+          imagePath: "/src/assets/republic-airways-logo-simplifly-arizona-become-a-pilot.webp",
           imageAlt: "Republic Airways Logo",
           link: "https://rjet.com/",
         },
         {
-          imagePath: "/src/assets/endeavor-air-logo.webp",
+          imagePath: "/src/assets/endeavor-air-logo-simplifly-mesa-flying-lessons.webp",
           imageAlt: "Endeavor Air Logo",
           link: "https://www.endeavorair.com/content/endeavor-air/en_us/home.html",
         },
         {
-          imagePath: "/src/assets/contour-airlines-logo.webp",
+          imagePath: "/src/assets/contour-airlines-logo-simplifly-mesa-discovery-flight.webp",
           imageAlt: "Contour Airlines Logo",
           link: "https://www.contourairlines.com/",
         },
         {
-          imagePath: "/src/assets/elite-jets-logo.webp",
+          imagePath: "/src/assets/elite-jets-logo-simplifly-mesa-flight-school.webp",
           imageAlt: "Elite Jets Logo",
           link: "https://www.elitejets.com/",
         },
         {
-          imagePath: "/src/assets/pinnacle-aviation-logo.webp",
+          imagePath: "/src/assets/pinnacle-aviation-logo-simplifly-arizona-certified-flight-instructor.webp",
           imageAlt: "Pinnacle Aviation Logo",
           link: "https://www.pinnacleaviation.com/",
         },
@@ -151,7 +151,7 @@ const homePage = {
     },
 
     flyWithUsCTA: {
-      imagePath: "/src/assets/jim-witkowski-sYHjFbnIYbA-unsplash.jpg",
+      imagePath: "/src/assets/jim-witkowski-syhjfbniyba-unsplash-simplifly-arizona-flight-training.jpg",
       imageAlt: "Right Rudder Marketing team on the runway",
       headerH1: `<span class="text-accent-600">Start Your Aviation Journey</br></span>With a Discovery Flight`,
       paragraph:
