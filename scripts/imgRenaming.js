@@ -23,7 +23,7 @@
 //   [...]
 //   /scripts
 //     thisFile.js
-//     output.csv 
+//     images-to-rename.csv 
 //   /src
 //   [...]
 //
@@ -55,7 +55,7 @@ async function parseCSV() {
   console.log("### Parsing CSV file");
 
   const records = [];
-  const csvPath = `${__dirname}/output.csv`;
+  const csvPath = `${__dirname}/images-to-rename.csv`;
 
   let parser;
   try {
