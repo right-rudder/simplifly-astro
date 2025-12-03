@@ -77,11 +77,6 @@ const teamData = {
         title: "CFI/CFII",
       },
       {
-        img: "/src/assets/davin-hansen-simplifly-mesa-instrument-rating.webp",
-        name: "Davin Hansen",
-        title: "CFI/CFII",
-      },
-      {
         img: "/src/assets/adel-ho-simplifly-mesa-certified-flight-instructor.webp",
         name: "Adel Ho",
         title: "CFI/CFII/MEI",
@@ -104,11 +99,6 @@ const teamData = {
       {
         img: "/src/assets/jessica-roy-simplifly-arizona-commercial-pilot.webp",
         name: "Jessica Roy",
-        title: "CFI/CFII",
-      },
-      {
-        img: "/src/assets/zach-figgins-simplifly-arizona-multi-engine-rating.webp",
-        name: "Zach Figgins",
         title: "CFI/CFII",
       },
       {
