@@ -106,8 +106,8 @@ export const navbarLinks = [
     ],
   },
   {
-    name: "Enroll Now",
-    link: "/enroll-at-simplifly",
+    name: "Contact Us",
+    link: "/contact",
     submenu: [],
   },
 ];
