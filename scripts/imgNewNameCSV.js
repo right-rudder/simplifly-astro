@@ -5,7 +5,7 @@
 // OBS: The script also removes keywords, from the list of keywords, from the original file name.
 // Required npm package: csv-parse
 //
-// To run: 
+// To run:
 // On the VS Code terminal at the root of the project run "node ./scripts/imgNewNameCSV.js"
 // You can also add the command above in the package.json similar to the astro commands:
 // "scripts": {
@@ -28,7 +28,7 @@
 //   [...]
 //   /public
 //   /scripts
-//     thisFile.js 
+//     thisFile.js
 //   /src
 //     /assets
 //   [...]
@@ -58,9 +58,19 @@ const CSV_ERRORS = {
 
 const IMG_EXT = [".jpg", ".jpeg", ".png", ".gif", ".webp", ".avif"];
 
+/* TODO : Use more relevant keywords */
+
 const keywords = {
-  company: "simplifly",
-  location: ["mesa", "arizona"],
+  company: "blitz-aviation",
+  location: [
+    "ogden",
+    "utah",
+    "salt-city-lake",
+    "northern-utah",
+    "weber-county",
+    "davis-county",
+    "wasatch-front",
+  ],
   generic: [
     "flight-school",
     "flight-training",
@@ -68,6 +78,7 @@ const keywords = {
     "flying-lessons",
     "become-a-pilot",
     "discovery-flight",
+    "aircraft-rental",
   ],
   programs: [
     "private-pilot",
@@ -75,6 +86,9 @@ const keywords = {
     "commercial-pilot",
     "multi-engine-rating",
     "certified-flight-instructor",
+    "certified-flight-instructor-instrument",
+    "accelerated-flight-training",
+    "zero-to-hero-pilot-program",
   ],
 };
 
@@ -88,10 +102,12 @@ const fullKeywordList = [
 const generalKeywords = [...keywords.generic, ...keywords.programs];
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const importFilePath = import.meta.url
-  .replace("file:///", "")
-  .replaceAll("/", "\\");
+const importFilePath = process.argv[1].includes("\\")
+  ? import.meta.url.replace("file:///", "").replaceAll("/", "\\")
+  : import.meta.url.replace("file://", "");
 const isCommandLineExecution = importFilePath === process.argv[1];
+
+/* TODO : Add weight to more important keywords? */
 
 function randomFromArray(array) {
   return array[Math.floor(Math.random() * array.length)];
@@ -121,10 +137,17 @@ async function scanDirectory(dir, extensions) {
   return files;
 }
 
+/* TODO : Add some sort of protection or warning to duplicate names?
+OBS: The imgRenaming.js script already checks if a file with the new name exists before running the renaming operation, and skips it if that is the case. 
+Maybe a proper treatment could be done in that step, like generating a new csv file for the images that weren't renamed due to any given circumstance. */
+
 function generateNewImagePath(filePath) {
   const parsedPath = path.parse(filePath);
 
   let newName = parsedPath.name.toLowerCase();
+
+  newName = newName.replaceAll(" ", "-");
+  newName = newName.replaceAll(",", "-");
 
   // Remove keywords from the name
   for (const keyword of fullKeywordList) {
@@ -140,7 +163,7 @@ function generateNewImagePath(filePath) {
   return path.join(
     parsedPath.dir,
     `${newName}-${keywords.company}-${randomFromArray(keywords.location)}-${randomFromArray(generalKeywords)}` +
-      parsedPath.ext,
+      parsedPath.ext.toLowerCase(),
   );
 }
 
@@ -184,7 +207,7 @@ async function generateCSV() {
 
   try {
     await fs.promises.writeFile(
-      path.join(__dirname, "output.csv"),
+      path.join(__dirname, "images-to-rename.csv"),
       csvString,
       "utf-8",
     );
