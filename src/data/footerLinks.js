@@ -63,6 +63,10 @@ export const footerLinks = [
         name: "MEI",
         link: "/programs/certified-flight-instructor/#addons",
       },
+      {
+        name: "Accelerated CFI",
+        link: "/programs/accelerated-certified-flight-instructor",
+      },
     ],
   },
   {

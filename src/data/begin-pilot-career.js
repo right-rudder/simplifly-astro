@@ -3,9 +3,9 @@ const beginPilotCareer = {
     //SEO Header Stuff
     pageTitle: "Start Your Pilot Career | SimpliFly Flight School, Mesa, AZ",
     pageDescription:
-      "Begin your pilot career as a certified flight instructor (CFI) at SimpliFly Flight School. We offer a 30-day CFI program to help you build the necessary hours to become an airline pilot. Contact us today!",
+      "Launch your aviation career from zero experience to fully licensed certified flight instructor with SimpliFly's comprehensive Zero-to-Hero program. Earn all certificates and ratings needed to become a professional pilot.",
     pageKeywords:
-      "flight training, flight training Mesa, flight training Arizona, flight school, flight school Mesa, flight school Arizona, pilot training, CFI training, certified flight instructor, pilot career, airline pilot, Mesa, AZ, Arizona",
+      "zero to hero pilot program, pilot training, flight training Mesa, flight school Arizona, become a pilot, airline pilot training, commercial pilot program, Mesa AZ flight school",
 
     //top header
     header: {
@@ -14,9 +14,9 @@ const beginPilotCareer = {
         "/src/assets/airline-pilot-courses-at-flight-school-simplifly-arizona-flying-lessons.webp",
       imageAlt:
         "SimpliFly Flight School airplane landing at Falcon Field Airport in Mesa, Arizona",
-      headerH1: `Career Track<br>Pilots`,
+      headerH1: `Zero-to-Hero<br>Pilot Training`,
       paragraph:
-        "Start your pilot career after getting your commercial certificate. Start flying now and build the necessary hours to become an airline pilot. One way SimpliFly can help is by becoming a certified flight instructor (CFI).",
+        "Start your aviation journey with no prior flight experience and progress all the way through your Private Pilot, Instrument Rating, Commercial Pilot, and Certified Flight Instructor certificates. SimpliFly’s Zero-to-Hero program provides the structured training path you need to become a professional pilot.",
       buttons: [
         {
           name: "Enroll Now",
@@ -27,11 +27,11 @@ const beginPilotCareer = {
     },
 
     pageSummary: {
-      title: "From Zero to Pilot",
+      title: "From Zero Experience to Certified Flight Instructor",
       paragraphs: [
-        "Start your pilot career after getting your commercial certificate. Start flying now and build the necessary hours to become an airline pilot. One way SimpliFly can help is by becoming a certified flight instructor (CFI).",
-        "Get all required licenses and ratings, log flight hours, and pass the necessary tests to become a CFI. SimpliFly will guide you through the process and help you achieve your aviation career goals.",
-        "Become a pilot and start your journey towards a rewarding career in aviation. Contact SimpliFly today to learn more about our pilot training programs and take the first step towards achieving your aviation career goals!",
+        "SimpliFly’s Zero-to-Hero program is designed for aspiring aviators who want a direct, streamlined path into the cockpit. Whether your goal is to fly for the airlines, corporate aviation, or other professional sectors, our curriculum takes you from your very first lesson through earning your commercial certificate.",
+        "You will complete all required licenses and ratings, accumulate flight hours, and build the knowledge base necessary to operate safely and confidently as a professional pilot. Our structured program ensures you progress efficiently through each training phase.",
+        "Begin your flight training journey today and take the first step toward a rewarding aviation career. Contact SimpliFly today to learn more about our pilot training programs and take the first step towards achieving your aviation career goals!",
       ],
       buttons: [
         {
@@ -44,65 +44,46 @@ const beginPilotCareer = {
 
     contentSplit: {
       upperHeading: "Get Started",
-      heading: "Your Pilot Career",
+      heading: "Your Path to Becoming a Pilot",
       descriptions: [
-        "Start your pilot career after getting your commercial certificate. Start flying now and build the necessary hours to become an airline pilot. One way SimpliFly can help is by becoming a certified flight instructor (CFI).",
-        "Being a CFI offers a valuable opportunity to rapidly accumulate flight experience for the minimum requirements of airlines and corporate aviation companies. It is a great opportunity that allows you to apply all the knowledge and skills acquired during your own flight training.",
-        "Flight instructors play a crucial role as ambassadors of the aviation community, imparting their knowledge and experience to their students. For many, it serves as their first aviation job that not only is an invaluable experience but also provides compensation.",
+        "SimpliFly provides a comprehensive, sequential training program that takes you from no experience to Certified Flight Instructor. Our syllabus covers Private Pilot, Instrument Rating, Commercial Pilot, and Certified Flight Instructor training in a structured, supportive environment.",
+        "As you advance, you will build essential flight experience, aviation knowledge, and aeronautical decision-making skills. These foundations prepare you for professional opportunities in airlines, corporate aviation, charter operations, and beyond.",
+        "Throughout your training, you will work with experienced flight instructors committed to your success. They will guide you through each milestone, helping ensure you are confident, competent, and ready for the next phase of your aviation career.",
       ],
-      bulletsTitle: "What are the Eligibility Requirements?",
+      bulletsTitle: "What Are the Eligibility Requirements?",
       bullets: [
         {
-          title: "Be 18 years of age.",
-          descriptions: ["To become a CFI, you must be at least 18 years old."],
+          title: "Be 16 years of age.",
+          descriptions: ["To solo, you must be at least 16 years old."],
           icon: "M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z",
         },
         {
           title: "English Proficiency",
           descriptions: [
-            "Read, speak, write and understand the English language.",
+            "Ability to read, speak, write, and understand the English language.",
           ],
-          icon: "M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z",
-        },
-        {
-          title: "Licenses & Ratings",
-          descriptions: [
-            "Hold a commercial pilot certificate and an instrument rating.",
-          ],
-          icon: "M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z",
-        },
-        {
-          title: "Flight Hours",
-          descriptions: ["Have logged at least 250 hours of flight time."],
           icon: "M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z",
         },
         {
           title: "Medical Certificate",
           descriptions: [
-            "Hold a valid FAA 3rd Class Medical Certificate (or higher)",
+            "Hold a valid FAA 3rd Class Medical Certificate (or higher). Required before solo flight.",
           ],
           icon: "M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z",
         },
         {
-          title: "Fundamentals of Instructing",
+          title: "Background Check (if applicable)",
           descriptions: [
-            "Receive a logbook endorsement from an authorized instructor on the fundamentals of instructing.",
-          ],
-          icon: "M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z",
-        },
-        {
-          title: "Knowledge Test",
-          descriptions: [
-            "Pass a knowledge test on the aeronautical knowledge areas appropriate to the flight instructor rating sought.",
+            "Required for foreign students (TSA Clearance) or those seeking advanced ratings.",
           ],
           icon: "M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z",
         },
       ],
       finalSection: {
-        heading: "How Long Will it Take?",
+        heading: "How Long Will It Take?",
         descriptions: [
-          "Becoming a flight instructor does not have a minimum time, but you do need a commercial pilot license along with an instrument rating. To qualify for a commercial pilot license, a pilot must accumulate a minimum of 250 flight hours. If studying part time when able (flexible), it can take from a few weeks to a few months to be prepared for the CFI checkride and receive your endorsement.",
-          "We offer an accelerated 30 day course because that is the fastest timeline. It takes at least 30 days if you are full time and accelerated. In this program, you will be working alongside pilots at a similar stage in their careers that are also working on their CFI certificates. Click the button below to get more information and start the enrollment process.",
+          "The duration of Zero-to-Hero training depends on enrollment type and student availability. Full-time students typically complete Private Pilot, Instrument Rating, Commercial Pilot, and Certified Flight Instructor certificates within 11 to 14 months. Part-time timelines vary based on scheduling and training frequency.",
+          "SimpliFly offers structured lesson plans, accelerated options, and flexible scheduling to support your progress. Our team ensures you remain on track toward your commercial certificate and future aviation career goals.",
         ],
       },
       finalButton: {
@@ -111,8 +92,7 @@ const beginPilotCareer = {
         primary: true,
       },
       imagePath: "/src/assets/female_pilot_smiling-simplifly-mesa-become-a-pilot.webp",
-      imageAlt:
-        "sun city aviation founder luke poulos in front of a sun city airplane",
+      imageAlt: "Two pilots with headsets smiling at the camera while piloting an airplane",
     },
   },
 };

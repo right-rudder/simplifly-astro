@@ -65,6 +65,10 @@ export const navbarLinks = [
         name: "Multi-Engine Instructor",
         link: "/programs/certified-flight-instructor/#addons",
       },
+      {
+        name: "Accelerated CFI Course",
+        link: "/programs/accelerated-certified-flight-instructor",
+      },
       // {
       //   name: "Ground School",
       //   link: "/programs/ground-school",
